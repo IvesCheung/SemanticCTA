@@ -16,8 +16,8 @@ set -euo pipefail
 # =================== 配置项（按需修改）====================
 
 # --- 模型 ---
-MODEL_PATH="./model/Qwen3-32B"           # 本地模型路径 (HuggingFace 格式)
-GPU_IDS="0,1,2,3"                         # 可用 GPU，逗号分隔；device_map=auto 自动分配
+MODEL_PATH="/home/project/schema_profiling/results/aitelco/model/qwen7B"           # 本地模型路径 (HuggingFace 格式)
+GPU_IDS="0,1"                         # 可用 GPU，逗号分隔；device_map=auto 自动分配
 LAYERS="-1"                               # 提取哪些层的隐藏状态 (例: "-1" 或 "-1,-4,-8,-12")
 MAX_PREFIX_LENGTH=2048                     # prefix 最大 token 数
 
@@ -72,7 +72,7 @@ echo ""
 echo ">>>>>>>>>> Step 1: Generating Embeddings >>>>>>>>>>"
 echo ""
 
-python "${SCRIPT_DIR}/column_type_annotation/index_cta_llm_hidden.py" \
+python3 "${SCRIPT_DIR}/column_type_annotation/index_cta_llm_hidden.py" \
     --model_path "${MODEL_PATH}" \
     --fold_dir "${DATASET_DIR}" \
     --table_dir "${DATASET_DIR}" \
@@ -95,7 +95,7 @@ echo ""
 
 mkdir -p "${TRAIN_RESULT_DIR}"
 
-python "${SCRIPT_DIR}/column_type_annotation/train_cta.py" \
+python3 "${SCRIPT_DIR}/column_type_annotation/train_cta.py" \
     --fold_dir "${DATASET_DIR}" \
     --embedding_path "${EMBEDDING_PATH}" \
     --result_dir "${TRAIN_RESULT_DIR}" \
