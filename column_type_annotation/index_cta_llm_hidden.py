@@ -323,18 +323,16 @@ class LLMHiddenStateEncoder:
         suffix_mask = suffix_mask.to(device)  # (num_cols, max_suffix_len)
 
         # 3b. 将 KV-cache 沿 batch 维度复制 num_cols 份
-        # 新版 transformers 返回 DynamicCache，需要构造同类型对象
+        # 用 DynamicCache.update() 写入，兼容不同 transformers 版本的内部存储格式
         from transformers import DynamicCache
         batch_kv_cache = DynamicCache()
-        num_layers = len(kv_cache.key_cache) if hasattr(kv_cache, 'key_cache') else len(kv_cache)
-        for i in range(num_layers):
-            if hasattr(kv_cache, 'key_cache'):
-                k = kv_cache.key_cache[i]   # (1, num_heads, prefix_len, head_dim)
-                v = kv_cache.value_cache[i]
-            else:
-                k, v = kv_cache[i]
-            batch_kv_cache.key_cache.append(k.expand(num_cols, -1, -1, -1).contiguous())
-            batch_kv_cache.value_cache.append(v.expand(num_cols, -1, -1, -1).contiguous())
+        for layer_idx in range(len(kv_cache)):
+            k, v = kv_cache[layer_idx]  # (1, num_heads, prefix_len, head_dim)
+            batch_kv_cache.update(
+                k.expand(num_cols, -1, -1, -1).contiguous(),
+                v.expand(num_cols, -1, -1, -1).contiguous(),
+                layer_idx,
+            )
 
         # 3c. 单次 batch 前向传播
         out = self.model(
