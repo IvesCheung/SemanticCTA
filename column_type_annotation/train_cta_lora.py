@@ -199,7 +199,7 @@ def collate_skip_none(batch):
 
 
 class CTAClassifierHead(nn.Module):
-    def __init__(self, hidden_dim: int, num_classes: int, dropout: float = 0.1):
+    def __init__(self, hidden_dim: int, num_classes: int, dropout: float = 0.3):
         super().__init__()
         self.head = nn.Sequential(
             nn.Linear(hidden_dim, hidden_dim // 4),
@@ -587,20 +587,20 @@ def parse_args():
     parser.add_argument("--max_prefix_length", type=int, default=1024)
 
     # LoRA
-    parser.add_argument("--lora_r", type=int, default=16)
-    parser.add_argument("--lora_alpha", type=int, default=32)
-    parser.add_argument("--lora_dropout", type=float, default=0.1)
-    parser.add_argument("--num_unfrozen_layers", type=int, default=2)
+    parser.add_argument("--lora_r", type=int, default=8)
+    parser.add_argument("--lora_alpha", type=int, default=16)
+    parser.add_argument("--lora_dropout", type=float, default=0.3)
+    parser.add_argument("--num_unfrozen_layers", type=int, default=0)
 
     # 训练
-    parser.add_argument("--learning_rate", type=float, default=1e-4)
-    parser.add_argument("--num_epochs", type=int, default=10)
-    parser.add_argument("--grad_accum_steps", type=int, default=8)
+    parser.add_argument("--learning_rate", type=float, default=2e-5)
+    parser.add_argument("--num_epochs", type=int, default=20)
+    parser.add_argument("--grad_accum_steps", type=int, default=16)
     parser.add_argument("--focal_gamma", type=float, default=2.0)
-    parser.add_argument("--label_smoothing", type=float, default=0.1)
-    parser.add_argument("--patience", type=int, default=3)
-    parser.add_argument("--warmup_ratio", type=float, default=0.1)
-    parser.add_argument("--weight_decay", type=float, default=0.01)
+    parser.add_argument("--label_smoothing", type=float, default=0.15)
+    parser.add_argument("--patience", type=int, default=4)
+    parser.add_argument("--warmup_ratio", type=float, default=0.15)
+    parser.add_argument("--weight_decay", type=float, default=0.05)
     parser.add_argument("--max_grad_norm", type=float, default=1.0)
     parser.add_argument("--save_model", action="store_true")
     parser.add_argument("--seed", type=int, default=42)
