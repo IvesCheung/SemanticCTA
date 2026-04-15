@@ -471,6 +471,78 @@ def _diagnose_embeddings(embeddings_map: Dict[str, torch.Tensor]) -> dict:
     }
 
 
+def _diagnose_class_separation(embeddings_map: Dict[str, torch.Tensor], fold_dir: str) -> dict:
+    """诊断 embedding 是否按类别聚簇：同类内 vs 类间余弦相似度"""
+    # 加载 fold 标签
+    all_rows = []
+    for i in range(5):
+        fp = os.path.join(fold_dir, f"fold_{i}.csv")
+        if os.path.exists(fp):
+            all_rows.append(pd.read_csv(fp))
+    if not all_rows:
+        return {}
+    labels_df = pd.concat(all_rows, ignore_index=True)
+    labels_df = labels_df[labels_df['class_id'] != -1]
+
+    # 构建 (col_embedding, class_id) 对
+    embs, class_ids = [], []
+    for _, row in labels_df.iterrows():
+        tid = row['table_id']
+        cidx = int(row['col_idx'])
+        if tid in embeddings_map:
+            t_emb = embeddings_map[tid]
+            if cidx < len(t_emb):
+                embs.append(t_emb[cidx])
+                class_ids.append(int(row['class_id']))
+
+    if len(embs) < 100:
+        return {}
+
+    embs = torch.stack(embs)
+    class_ids = torch.tensor(class_ids)
+    unique_classes = class_ids.unique()
+
+    # 只取样本数 >= 5 的类别
+    class_counts = torch.bincount(class_ids)
+    valid_classes = (class_counts >= 5).nonzero(as_tuple=True)[0]
+
+    within_sims, between_sims = [], []
+    for cls_id in valid_classes[:50]:  # 最多50个类
+        cls_mask = class_ids == cls_id.item()
+        cls_embs = embs[cls_mask]
+        other_embs = embs[~cls_mask]
+
+        # Within-class: 采样 200 对
+        n_cls = len(cls_embs)
+        if n_cls < 2:
+            continue
+        n_within = min(200, n_cls * (n_cls - 1) // 2)
+        for _ in range(n_within):
+            i, j = torch.randperm(n_cls)[:2]
+            within_sims.append(torch.dot(cls_embs[i], cls_embs[j]).item())
+
+        # Between-class: 采样 200 对
+        n_other = len(other_embs)
+        for _ in range(200):
+            i = torch.randint(n_cls, (1,)).item()
+            j = torch.randint(n_other, (1,)).item()
+            between_sims.append(torch.dot(cls_embs[i], other_embs[j]).item())
+
+    if not within_sims or not between_sims:
+        return {}
+
+    within_mean = sum(within_sims) / len(within_sims)
+    between_mean = sum(between_sims) / len(between_sims)
+    gap = within_mean - between_mean
+
+    return {
+        'within_class_sim': within_mean,
+        'between_class_sim': between_mean,
+        'class_separation_gap': gap,
+        'num_classes_sampled': min(len(valid_classes), 50),
+    }
+
+
 def generate_embeddings(
     table_ids: List[str],
     table_dir: str,
@@ -479,6 +551,7 @@ def generate_embeddings(
     sample_rows: int = 5,
     profilling_path: Optional[str] = None,
     require_profile: bool = True,
+    fold_dir: Optional[str] = None,
 ) -> Dict[str, torch.Tensor]:
     """为所有表生成 embedding"""
     embeddings_map = {}
@@ -554,6 +627,26 @@ def generate_embeddings(
         else:
             print(f"  ✓ Embeddings show reasonable diversity.")
 
+    # ---- 类别级诊断 ----
+    if embeddings_map and fold_dir:
+        cls_diag = _diagnose_class_separation(embeddings_map, fold_dir)
+        if cls_diag:
+            print(f"\n[Class Separation Diagnostics]")
+            print(f"  - Within-class cosine sim:  {cls_diag['within_class_sim']:.4f}")
+            print(f"  - Between-class cosine sim: {cls_diag['between_class_sim']:.4f}")
+            print(f"  - Gap (within - between):   {cls_diag['class_separation_gap']:.4f}")
+            print(f"  - Classes sampled:          {cls_diag['num_classes_sampled']}")
+            if cls_diag['class_separation_gap'] < 0.02:
+                print(f"  ⚠ WARNING: Gap < 0.02 — embeddings do NOT separate by class!")
+                print(f"    Within-class and between-class similarity are nearly equal.")
+                print(f"    The embedding diversity exists but does NOT align with column types.")
+                print(f"    Raw LLM hidden states lack class-discriminative signal.")
+            elif cls_diag['class_separation_gap'] < 0.1:
+                print(f"  ⚠ NOTE: Gap = {cls_diag['class_separation_gap']:.4f} — weak class separation.")
+                print(f"    Some signal exists but may not be sufficient for good classification.")
+            else:
+                print(f"  ✓ Good class separation — embeddings carry type-discriminative signal.")
+
     if missing_tables and len(missing_tables) <= 10:
         print(f"\nMissing tables: {missing_tables}")
     elif missing_tables:
@@ -615,6 +708,7 @@ def main():
         sample_rows=args.sample_rows,
         profilling_path=args.profilling_path,
         require_profile=args.require_profile,
+        fold_dir=args.fold_dir,
     )
 
     # 4. 保存
