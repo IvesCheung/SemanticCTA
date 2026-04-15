@@ -105,6 +105,49 @@ class FocalLoss(nn.Module):
         return ((1.0 - pt) ** self.gamma * ce).mean()
 
 
+class SupConLoss(nn.Module):
+    """Supervised Contrastive Loss — 同类拉近，异类推远"""
+
+    def __init__(self, temperature: float = 0.07):
+        super().__init__()
+        self.temperature = temperature
+
+    def forward(self, features: torch.Tensor, labels: torch.Tensor) -> torch.Tensor:
+        """
+        features: (N, D) — raw hidden states
+        labels:   (N,)
+        """
+        features = F.normalize(features, p=2, dim=-1)
+        device = features.device
+        N = features.shape[0]
+
+        if N < 2:
+            return torch.tensor(0.0, device=device, requires_grad=True)
+
+        sim = features @ features.T / self.temperature
+
+        label_mask = labels.unsqueeze(0) == labels.unsqueeze(1)
+        diag_mask = ~torch.eye(N, dtype=torch.bool, device=device)
+        pos_mask = label_mask & diag_mask
+
+        if pos_mask.sum() == 0:
+            # 无同类配对 → diversity loss: 最小化平均余弦相似度 (推开异类)
+            avg_sim = (sim * diag_mask.float()).sum() / (N * (N - 1))
+            return avg_sim
+
+        # 标准 SupCon
+        logits_max = sim.max(dim=1, keepdim=True).values.detach()
+        logits = sim - logits_max
+        exp_logits = torch.exp(logits) * diag_mask.float()
+        log_prob = logits - torch.log(exp_logits.sum(dim=1, keepdim=True) + 1e-12)
+
+        num_pos = pos_mask.sum(dim=1)
+        mean_log_prob = (pos_mask.float() * log_prob).sum(dim=1) / (num_pos + 1e-12)
+
+        has_pos = num_pos > 0
+        return -mean_log_prob[has_pos].mean()
+
+
 # ---------------------------------------------------------------------------
 #  Early Stopping
 # ---------------------------------------------------------------------------
@@ -247,11 +290,12 @@ def setup_model(model_path: str, num_classes: int, lora_r: int, lora_alpha: int,
                 param.requires_grad = True
         print(f"  Unfrozen last {len(layers_to_unfreeze)} layers")
 
-    # 添加 LoRA
+    # 添加 LoRA — 同时覆盖 attention 和 MLP 层
     lora_config = LoraConfig(
         r=lora_r,
         lora_alpha=lora_alpha,
-        target_modules=["q_proj", "v_proj", "k_proj", "o_proj"],
+        target_modules=["q_proj", "v_proj", "k_proj", "o_proj",
+                         "gate_proj", "up_proj", "down_proj"],
         lora_dropout=lora_dropout,
         task_type="FEATURE_EXTRACTION",
     )
@@ -320,7 +364,7 @@ def expand_kv_cache(kv_cache, num_cols: int):
 
 def process_table(model, tokenizer, classifier, device,
                   table_info, col_labels, sample_rows, max_prefix_length):
-    """处理一张表：prefix no_grad → suffix with grad → logits"""
+    """处理一张表：prefix no_grad → suffix with grad → logits + hidden states"""
     table_name = table_info['name']
     headers = table_info['headers']
     data = table_info['data']
@@ -328,7 +372,7 @@ def process_table(model, tokenizer, classifier, device,
     # 过滤有效列
     valid_cols = [(cidx, cid) for cidx, cid in col_labels if cidx < len(headers)]
     if not valid_cols:
-        return None, None
+        return None, None, None
 
     col_indices, labels = zip(*valid_cols)
     col_names = [headers[i] for i in col_indices]
@@ -367,11 +411,12 @@ def process_table(model, tokenizer, classifier, device,
     del out, batch_kv_cache
     torch.cuda.empty_cache()
 
-    return logits, labels
+    return logits, labels, hidden
 
 
 def train_one_fold(model, tokenizer, classifier, optimizer, scheduler,
-                   criterion, train_dataset, val_dataset,
+                   criterion, con_criterion, contrastive_weight,
+                   train_dataset, val_dataset,
                    num_epochs, grad_accum_steps, patience,
                    device, sample_rows, max_prefix_length,
                    fold_idx, result_dir, save_model):
@@ -385,6 +430,8 @@ def train_one_fold(model, tokenizer, classifier, optimizer, scheduler,
         model.train()
         classifier.train()
         train_loss = 0.0
+        train_cls_loss = 0.0
+        train_con_loss = 0.0
         train_steps = 0
         random.shuffle(train_dataset.groups)
 
@@ -396,16 +443,23 @@ def train_one_fold(model, tokenizer, classifier, optimizer, scheduler,
                 continue
 
             table_id, col_labels, table_info = item
-            logits, labels = process_table(
+            logits, labels, hidden = process_table(
                 model, tokenizer, classifier, device,
                 table_info, col_labels, sample_rows, max_prefix_length
             )
             if logits is None:
                 continue
 
-            loss = criterion(logits, labels) / grad_accum_steps
-            loss.backward()
-            train_loss += loss.item() * grad_accum_steps
+            # 分类 loss
+            cls_loss = criterion(logits, labels)
+            # 对比 loss — 直接在 hidden states 上优化类间分离
+            con_loss = con_criterion(hidden.float(), labels)
+            total_loss = (cls_loss + contrastive_weight * con_loss) / grad_accum_steps
+
+            total_loss.backward()
+            train_loss += total_loss.item() * grad_accum_steps
+            train_cls_loss += cls_loss.item()
+            train_con_loss += con_loss.item()
             train_steps += 1
 
             if train_steps % grad_accum_steps == 0:
@@ -416,7 +470,9 @@ def train_one_fold(model, tokenizer, classifier, optimizer, scheduler,
                 scheduler.step()
                 optimizer.zero_grad()
 
-            pbar.set_postfix(loss=f"{train_loss/max(train_steps,1):.4f}")
+            pbar.set_postfix(loss=f"{train_loss/max(train_steps,1):.4f}",
+                             cls=f"{train_cls_loss/max(train_steps,1):.4f}",
+                             con=f"{train_con_loss/max(train_steps,1):.4f}")
 
         avg_train_loss = train_loss / max(train_steps, 1)
 
@@ -473,7 +529,7 @@ def evaluate(model, tokenizer, classifier, dataset, criterion,
             continue
 
         table_id, col_labels, table_info = item
-        logits, labels = process_table(
+        logits, labels, _ = process_table(
             model, tokenizer, classifier, device,
             table_info, col_labels, sample_rows, max_prefix_length
         )
@@ -542,7 +598,7 @@ def ensemble_test(models_states, model_template, tokenizer, classifier_template,
             model_template.eval()
             classifier_template.eval()
 
-            logits, _ = process_table(
+            logits, _, _ = process_table(
                 model_template, tokenizer, classifier_template, device,
                 table_info, list(zip(col_indices, labels.tolist())),
                 sample_rows, max_prefix_length
@@ -602,6 +658,10 @@ def parse_args():
     parser.add_argument("--warmup_ratio", type=float, default=0.15)
     parser.add_argument("--weight_decay", type=float, default=0.05)
     parser.add_argument("--max_grad_norm", type=float, default=1.0)
+    parser.add_argument("--contrastive_weight", type=float, default=0.1,
+                        help="对比学习 loss 权重 (0 表示关闭, 默认 0.1)")
+    parser.add_argument("--contrastive_temperature", type=float, default=0.07,
+                        help="SupCon 温度参数 (默认 0.07)")
     parser.add_argument("--save_model", action="store_true")
     parser.add_argument("--seed", type=int, default=42)
 
@@ -627,10 +687,12 @@ def main():
     print(f"  Table dir:    {args.table_dir}")
     print(f"  Result dir:   {args.result_dir}")
     print(f"  LoRA r={args.lora_r}, alpha={args.lora_alpha}, dropout={args.lora_dropout}")
+    print(f"  Target modules: q/k/v/o_proj + gate/up/down_proj")
     print(f"  Unfrozen layers: {args.num_unfrozen_layers}")
     print(f"  LR:           {args.learning_rate}")
     print(f"  Epochs:       {args.num_epochs}")
     print(f"  Grad accum:   {args.grad_accum_steps}")
+    print(f"  Contrastive:  weight={args.contrastive_weight}, T={args.contrastive_temperature}")
     print("=" * 60)
 
     os.makedirs(args.result_dir, exist_ok=True)
@@ -689,6 +751,7 @@ def main():
         class_weights = class_weights.to(model.device)
         criterion = FocalLoss(gamma=args.focal_gamma, label_smoothing=args.label_smoothing,
                               weight=class_weights)
+        con_criterion = SupConLoss(temperature=args.contrastive_temperature)
 
         # Optimizer
         trainable_params = list(model.parameters()) + list(classifier.parameters())
@@ -707,7 +770,8 @@ def main():
         # Train
         best_state, best_f1 = train_one_fold(
             model, tokenizer, classifier, optimizer, scheduler,
-            criterion, train_dataset, val_dataset,
+            criterion, con_criterion, args.contrastive_weight,
+            train_dataset, val_dataset,
             args.num_epochs, args.grad_accum_steps, args.patience,
             model.device, args.sample_rows, args.max_prefix_length,
             fold_idx, args.result_dir, args.save_model,
