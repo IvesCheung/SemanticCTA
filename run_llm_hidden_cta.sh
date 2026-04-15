@@ -18,8 +18,10 @@ set -euo pipefail
 # --- 模型 ---
 MODEL_PATH="/home/project/schema_profiling/results/aitelco/model/qwen7B"           # 本地模型路径 (HuggingFace 格式)
 GPU_IDS="0,1"                         # 可用 GPU，逗号分隔；device_map=auto 自动分配
+
+export CUDA_LAUNCH_BLOCKING=1
 LAYERS="-1"                               # 提取哪些层的隐藏状态 (例: "-1" 或 "-1,-4,-8,-12")
-MAX_PREFIX_LENGTH=2048                     # prefix 最大 token 数
+MAX_PREFIX_LENGTH=1024                     # prefix 最大 token 数
 
 # --- 数据 ---
 DATASET_DIR="datasets/gittables-semtab22-db-all_wrangled"  # fold_*.csv 和表文件所在目录
@@ -29,10 +31,10 @@ SAMPLE_ROWS=5                             # 每张表序列化行数
 RESULT_DIR="results/cta_llm_hidden/gittables-semtab22"
 
 # --- 训练超参 ---
-HIDDEN_DIM=256                            # MLP 隐藏层维度
+HIDDEN_DIM=1024                            # MLP 隐藏层维度
 TRAIN_BATCH_SIZE=64
 LR=3e-4
-EPOCHS=30
+EPOCHS=300
 NUM_RESIDUAL_BLOCKS=2
 DROPOUT=0.3
 WEIGHT_DECAY=1e-2
@@ -40,7 +42,7 @@ LABEL_SMOOTHING=0.1
 WARMUP_EPOCHS=3
 FOCAL_GAMMA=2.0
 MIXUP_ALPHA=0.2
-PATIENCE=8
+PATIENCE=0
 SAVE_METRIC="f1"
 
 # =================== 配置项结束 ==========================
