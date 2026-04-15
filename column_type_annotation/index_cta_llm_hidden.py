@@ -137,7 +137,8 @@ SYSTEM_PROMPT = (
 )
 
 SUFFIX_TEMPLATE = (
-    'Based on the table above, the semantic type and meaning of column "{col_name}" is'
+    'Column "{col_name}" contains values: {col_values}. '
+    "Based on the table above, the semantic type and meaning of this column is"
 )
 
 
@@ -266,14 +267,23 @@ class LLMHiddenStateEncoder:
             input_ids = input_ids[:, -self.max_prefix_length:]
         return input_ids
 
-    def _tokenize_suffixes_batch(self, col_names: List[str]) -> Tuple[torch.Tensor, torch.Tensor]:
+    def _tokenize_suffixes_batch(
+        self, col_names: List[str], col_values_list: List[List[str]]
+    ) -> Tuple[torch.Tensor, torch.Tensor]:
         """Tokenize 多个列的 suffix 并 padding 到等长
+
+        Args:
+            col_names: 列名列表
+            col_values_list: 每列的采样值列表，如 [["25", "30"], ["Alice", "Bob"]]
 
         Returns:
             input_ids: (num_cols, max_suffix_len)
             attention_mask: (num_cols, max_suffix_len)
         """
-        texts = [SUFFIX_TEMPLATE.format(col_name=name) for name in col_names]
+        texts = []
+        for name, vals in zip(col_names, col_values_list):
+            values_str = ", ".join(str(v) for v in vals) if vals else "(empty)"
+            texts.append(SUFFIX_TEMPLATE.format(col_name=name, col_values=values_str))
         encoded = self.tokenizer(
             texts,
             padding=True,
@@ -317,12 +327,18 @@ class LLMHiddenStateEncoder:
         kv_cache = prefix_out.past_key_values
 
         # Step 3: Batch suffix 前向传播
-        # 3a. Tokenize 所有列的 suffix 并 padding
-        suffix_ids, suffix_mask = self._tokenize_suffixes_batch(headers)
+        # 3a. 提取每列的采样值
+        col_values_list = []
+        for col_idx in range(num_cols):
+            vals = [str(row[col_idx]) for row in data[:n_rows] if col_idx < len(row)]
+            col_values_list.append(vals)
+
+        # 3b. Tokenize 所有列的 suffix 并 padding
+        suffix_ids, suffix_mask = self._tokenize_suffixes_batch(headers, col_values_list)
         suffix_ids = suffix_ids.to(device)    # (num_cols, max_suffix_len)
         suffix_mask = suffix_mask.to(device)  # (num_cols, max_suffix_len)
 
-        # 3b. 将 KV-cache 沿 batch 维度复制 num_cols 份
+        # 3c. 将 KV-cache 沿 batch 维度复制 num_cols 份
         # 用 DynamicCache.update() 写入，兼容不同 transformers 版本的内部存储格式
         from transformers import DynamicCache
         batch_kv_cache = DynamicCache()
@@ -334,7 +350,7 @@ class LLMHiddenStateEncoder:
                 layer_idx,
             )
 
-        # 3c. 单次 batch 前向传播
+        # 3d. 单次 batch 前向传播
         out = self.model(
             input_ids=suffix_ids,
             attention_mask=suffix_mask,
@@ -342,7 +358,7 @@ class LLMHiddenStateEncoder:
             output_hidden_states=True,
         )
 
-        # 3d. 提取每个序列最后一个有效 token 的隐藏状态
+        # 3e. 提取每个序列最后一个有效 token 的隐藏状态
         # last_token_positions: (num_cols,) — 每行最后一个非 pad 位置
         last_token_positions = suffix_mask.sum(dim=1) - 1  # (num_cols,)
 
