@@ -376,6 +376,9 @@ class LLMHiddenStateEncoder:
             # 多层 mean pooling
             result = torch.stack(col_reprs, dim=0).mean(dim=0)
 
+        # L2 归一化：统一向量尺度，避免数值范围差异干扰分类器
+        result = torch.nn.functional.normalize(result, p=2, dim=-1)
+
         # Step 4: 清理 KV-cache 释放显存
         del prefix_out, kv_cache, batch_kv_cache, out
         torch.cuda.empty_cache()
