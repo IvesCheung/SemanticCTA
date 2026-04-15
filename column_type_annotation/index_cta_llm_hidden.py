@@ -438,6 +438,39 @@ def parse_layers(layers_str: str) -> List[int]:
     return [int(p) for p in parts if p]
 
 
+def _diagnose_embeddings(embeddings_map: Dict[str, torch.Tensor]) -> dict:
+    """快速诊断 embedding 质量：余弦相似度分布、方差等"""
+    all_embs = torch.cat(list(embeddings_map.values()), dim=0)  # (total_cols, dim)
+    total_cols, dim = all_embs.shape
+
+    # L2 norm
+    norms = torch.norm(all_embs, p=2, dim=1)
+
+    # Per-dim std（越高说明该维度有区分度）
+    per_dim_std = all_embs.std(dim=0)
+
+    # Pairwise cosine similarity（采样计算，避免 O(N^2)）
+    n_sample = min(1000, total_cols)
+    indices = torch.randperm(total_cols)[:n_sample]
+    sample = all_embs[indices]
+    # L2 normalized already, cosine sim = dot product
+    sim_matrix = sample @ sample.T
+    # 取上三角（排除对角线）
+    mask = torch.triu(torch.ones_like(sim_matrix, dtype=torch.bool), diagonal=1)
+    sim_values = sim_matrix[mask]
+
+    return {
+        'total_cols': total_cols,
+        'dim': dim,
+        'norm_mean': norms.mean().item(),
+        'norm_std': norms.std().item(),
+        'cosine_sim_mean': sim_values.mean().item(),
+        'cosine_sim_std': sim_values.std().item(),
+        'per_dim_std_mean': per_dim_std.mean().item(),
+        'per_dim_std_min': per_dim_std.min().item(),
+    }
+
+
 def generate_embeddings(
     table_ids: List[str],
     table_dir: str,
@@ -499,6 +532,27 @@ def generate_embeddings(
     print(f"  - Success: {len(embeddings_map)}")
     print(f"  - Missing tables: {len(missing_tables)}")
     print(f"  - Errors: {len(error_tables)}")
+
+    # ---- Embedding 质量诊断 ----
+    if embeddings_map:
+        diag = _diagnose_embeddings(embeddings_map)
+        print(f"\n[Embedding Diagnostics]")
+        print(f"  - Total columns:          {diag['total_cols']}")
+        print(f"  - Embedding dim:          {diag['dim']}")
+        print(f"  - Norm mean:              {diag['norm_mean']:.4f} (L2 normalized should be ~1.0)")
+        print(f"  - Norm std:               {diag['norm_std']:.6f}")
+        print(f"  - Pairwise cosine sim:    {diag['cosine_sim_mean']:.4f} (lower = more diverse)")
+        print(f"  - Pairwise cosine sim std:{diag['cosine_sim_std']:.4f}")
+        print(f"  - Per-dim std (mean):     {diag['per_dim_std_mean']:.6f} (higher = more signal)")
+        print(f"  - Per-dim std (min):      {diag['per_dim_std_min']:.6f}")
+        if diag['cosine_sim_mean'] > 0.95:
+            print(f"  ⚠ WARNING: Cosine similarity > 0.95 — embeddings are nearly identical!")
+            print(f"    Raw LLM hidden states may lack discriminative power for this task.")
+            print(f"    Consider: LoRA fine-tuning (approach 3) or a contrastive projection head.")
+        elif diag['cosine_sim_mean'] > 0.8:
+            print(f"  ⚠ NOTE: Cosine similarity > 0.8 — embeddings have limited diversity.")
+        else:
+            print(f"  ✓ Embeddings show reasonable diversity.")
 
     if missing_tables and len(missing_tables) <= 10:
         print(f"\nMissing tables: {missing_tables}")
