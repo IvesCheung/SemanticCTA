@@ -81,7 +81,7 @@ python3 "${SCRIPT_DIR}/column_type_annotation/index_cta_llm_hidden.py" \
     --output_path "${EMBEDDING_PATH}" \
     --sample_rows "${SAMPLE_ROWS}" \
     --max_prefix_length "${MAX_PREFIX_LENGTH}" \
-    --layers "${LAYERS}" \
+    --layers="${LAYERS}" \
     --no_require_profile
 
 echo ""
