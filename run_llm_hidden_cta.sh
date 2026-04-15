@@ -20,7 +20,7 @@ MODEL_PATH="/home/project/schema_profiling/results/aitelco/model/qwen7B"        
 GPU_IDS="0,1"                         # 可用 GPU，逗号分隔；device_map=auto 自动分配
 
 export CUDA_LAUNCH_BLOCKING=1
-LAYERS="-1"                               # 提取哪些层的隐藏状态 (例: "-1" 或 "-1,-4,-8,-12")
+LAYERS="-1,-4,-8,-12"                               # 提取哪些层的隐藏状态 (例: "-1" 或 "-1,-4,-8,-12")
 MAX_PREFIX_LENGTH=1024                     # prefix 最大 token 数
 
 # --- 数据 ---
@@ -81,7 +81,7 @@ python3 "${SCRIPT_DIR}/column_type_annotation/index_cta_llm_hidden.py" \
     --output_path "${EMBEDDING_PATH}" \
     --sample_rows "${SAMPLE_ROWS}" \
     --max_prefix_length "${MAX_PREFIX_LENGTH}" \
-    --layers "${LAYERS}" \
+    --layers="${LAYERS}" \
     --no_require_profile
 
 echo ""
