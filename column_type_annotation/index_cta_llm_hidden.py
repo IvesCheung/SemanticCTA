@@ -266,11 +266,22 @@ class LLMHiddenStateEncoder:
             input_ids = input_ids[:, -self.max_prefix_length:]
         return input_ids
 
-    def _tokenize_suffix(self, col_name: str) -> torch.Tensor:
-        """Tokenize 列级 suffix"""
-        text = SUFFIX_TEMPLATE.format(col_name=col_name)
-        ids = self.tokenizer.encode(text, return_tensors="pt", add_special_tokens=False)
-        return ids
+    def _tokenize_suffixes_batch(self, col_names: List[str]) -> Tuple[torch.Tensor, torch.Tensor]:
+        """Tokenize 多个列的 suffix 并 padding 到等长
+
+        Returns:
+            input_ids: (num_cols, max_suffix_len)
+            attention_mask: (num_cols, max_suffix_len)
+        """
+        texts = [SUFFIX_TEMPLATE.format(col_name=name) for name in col_names]
+        encoded = self.tokenizer(
+            texts,
+            padding=True,
+            truncation=True,
+            return_tensors="pt",
+            add_special_tokens=False,
+        )
+        return encoded.input_ids, encoded.attention_mask
 
     @torch.no_grad()
     def encode_table(
@@ -295,6 +306,7 @@ class LLMHiddenStateEncoder:
             tensor(num_cols, hidden_dim) — float32
         """
         device = self.device
+        num_cols = len(headers)
 
         # Step 1: 构建 & tokenize prefix
         prefix_text = self._build_prefix_text(table_name, headers, data, n_rows, profile)
@@ -304,37 +316,51 @@ class LLMHiddenStateEncoder:
         prefix_out = self.model(input_ids=prefix_ids, use_cache=True, output_hidden_states=True)
         kv_cache = prefix_out.past_key_values
 
-        # Step 3: 逐列 suffix，提取隐藏状态
-        column_embeddings = []
-        for col_name in headers:
-            suffix_ids = self._tokenize_suffix(col_name).to(device)
+        # Step 3: Batch suffix 前向传播
+        # 3a. Tokenize 所有列的 suffix 并 padding
+        suffix_ids, suffix_mask = self._tokenize_suffixes_batch(headers)
+        suffix_ids = suffix_ids.to(device)    # (num_cols, max_suffix_len)
+        suffix_mask = suffix_mask.to(device)  # (num_cols, max_suffix_len)
 
-            out = self.model(
-                input_ids=suffix_ids,
-                past_key_values=kv_cache,
-                output_hidden_states=True,
-            )
+        # 3b. 将 KV-cache 沿 batch 维度复制 num_cols 份
+        batch_kv_cache = []
+        for layer_cache in kv_cache:
+            # layer_cache: (k, v), each (1, num_heads, prefix_len, head_dim)
+            k, v = layer_cache
+            batch_kv_cache.append((k.expand(num_cols, -1, -1, -1),
+                                   v.expand(num_cols, -1, -1, -1)))
 
-            # 获取指定层的隐藏状态
-            all_hidden = out.hidden_states  # tuple: (num_layers,), each (1, seq_len, dim)
-            last_token_reprs = []
-            for abs_layer_idx in self._abs_layers:
-                h = all_hidden[abs_layer_idx]  # (1, suffix_len, dim)
-                last_token_reprs.append(h[0, -1, :])
+        # 3c. 单次 batch 前向传播
+        out = self.model(
+            input_ids=suffix_ids,
+            attention_mask=suffix_mask,
+            past_key_values=tuple(batch_kv_cache),
+            output_hidden_states=True,
+        )
 
-            if len(last_token_reprs) == 1:
-                col_repr = last_token_reprs[0]
-            else:
-                # 多层 mean pooling
-                col_repr = torch.stack(last_token_reprs, dim=0).mean(dim=0)
+        # 3d. 提取每个序列最后一个有效 token 的隐藏状态
+        # last_token_positions: (num_cols,) — 每行最后一个非 pad 位置
+        last_token_positions = suffix_mask.sum(dim=1) - 1  # (num_cols,)
 
-            column_embeddings.append(col_repr.float().cpu())
+        all_hidden = out.hidden_states  # tuple: (num_layers,), each (num_cols, max_suffix_len, dim)
+        col_reprs = []
+        for abs_layer_idx in self._abs_layers:
+            h = all_hidden[abs_layer_idx]  # (num_cols, max_suffix_len, dim)
+            # 取每个序列最后一个有效 token
+            gathered = h[torch.arange(num_cols, device=device), last_token_positions]
+            col_reprs.append(gathered)
+
+        if len(col_reprs) == 1:
+            result = col_reprs[0]
+        else:
+            # 多层 mean pooling
+            result = torch.stack(col_reprs, dim=0).mean(dim=0)
 
         # Step 4: 清理 KV-cache 释放显存
-        del prefix_out, kv_cache
+        del prefix_out, kv_cache, batch_kv_cache, out
         torch.cuda.empty_cache()
 
-        return torch.stack(column_embeddings, dim=0)  # (num_cols, hidden_dim)
+        return result.float().cpu()  # (num_cols, hidden_dim)
 
 
 # ---------------------------------------------------------------------------

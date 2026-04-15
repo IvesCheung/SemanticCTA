@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nadd LLM hidden-state embedding extraction for CTA\n\nNew approach: extract per-column embeddings directly from LLM hidden states\n\\(prefix-cache + per-column suffix\\) instead of generating text descriptions\nthen re-encoding. Includes shell script for one-click pipeline execution.\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push)"
+    ]
+  }
+}
