@@ -201,12 +201,17 @@ class LLMHiddenStateEncoder:
         model_kwargs = {
             "torch_dtype": torch.float16,
             "trust_remote_code": True,
-            "output_hidden_states": True,
         }
         if device != "auto":
             model_kwargs["device_map"] = device
         else:
             model_kwargs["device_map"] = "auto"
+            # 多 GPU 时预留显存给 KV-cache 和激活，避免 OOM
+            n_gpus = torch.cuda.device_count()
+            if n_gpus > 1:
+                gpu_mem = {i: "70GiB" for i in range(n_gpus)}
+                model_kwargs["max_memory"] = gpu_mem
+                print(f"  max_memory: {gpu_mem}")
 
         self.model = AutoModelForCausalLM.from_pretrained(model_path, **model_kwargs)
         self.model.eval()
@@ -322,9 +327,10 @@ class LLMHiddenStateEncoder:
         prefix_text = self._build_prefix_text(table_name, headers, data, n_rows, profile)
         prefix_ids = self._tokenize_prefix(prefix_text).to(device)
 
-        # Step 2: 前向传播 prefix，获取 KV-cache
-        prefix_out = self.model(input_ids=prefix_ids, use_cache=True, output_hidden_states=True)
+        # Step 2: 前向传播 prefix，获取 KV-cache (不需要 hidden states，节省显存)
+        prefix_out = self.model(input_ids=prefix_ids, use_cache=True, output_hidden_states=False)
         kv_cache = prefix_out.past_key_values
+        del prefix_out  # 立即释放 prefix 输出 (含 logits 等)
 
         # Step 3: Batch suffix 前向传播
         # 3a. 提取每列的采样值
@@ -349,6 +355,8 @@ class LLMHiddenStateEncoder:
                 v.expand(num_cols, -1, -1, -1).contiguous(),
                 layer_idx,
             )
+        # 立即释放原始 prefix KV-cache（已在 batch_kv_cache 中复制）
+        del kv_cache
 
         # 3d. 单次 batch 前向传播
         out = self.model(
@@ -379,9 +387,12 @@ class LLMHiddenStateEncoder:
         # L2 归一化：统一向量尺度，避免数值范围差异干扰分类器
         result = torch.nn.functional.normalize(result, p=2, dim=-1)
 
-        # Step 4: 清理 KV-cache 释放显存
-        del prefix_out, kv_cache, batch_kv_cache, out
-        torch.cuda.empty_cache()
+        # Step 4: 清理释放显存
+        del batch_kv_cache, out, col_reprs
+        # 多 GPU 时清理所有可见 GPU 的 cache
+        for gpu_idx in range(torch.cuda.device_count()):
+            with torch.cuda.device(gpu_idx):
+                torch.cuda.empty_cache()
 
         return result.float().cpu()  # (num_cols, hidden_dim)
 
