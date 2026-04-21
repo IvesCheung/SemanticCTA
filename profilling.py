@@ -136,7 +136,7 @@ def process_single_file(file_path: str, **kwargs):
     """
     处理单个文件的包装函数，用于多线程处理
     """
-    print(f"开始处理: {file_path}", flush=True)
+    # print(f"开始处理: {file_path}", flush=True)
     try:
         result, raw_response = profilling_table(file_path, **kwargs)
         return file_path_to_key(file_path), result, raw_response, None
