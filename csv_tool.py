@@ -63,14 +63,20 @@ def get_csv_column_groups(file_path: str,
                           step: int,
                           drop_empty_rows: bool = True,
                           sample_size: int | None = None,
-                          sample_frac: float | None = None):
+                          sample_frac: float | None = None,
+                          max_cell_length: int = 256):
     """
     按列步长生成子集数据的 CSV 字符串, 已清洗与(可选)采样。
+    max_cell_length: 单个单元格最大字符数，超长截断。
     """
     if step <= 0:
         raise ValueError("step 必须为正整数")
     df = _load_csv(file_path, drop_empty_rows,
                    sample_size, sample_frac)
+    # 截断过长的单元格
+    if max_cell_length and max_cell_length > 0:
+        df = df.map(lambda x: str(x)[:max_cell_length] if isinstance(
+            x, str) and len(str(x)) > max_cell_length else x)
     cols = df.columns.tolist()
     for i in range(0, len(cols), step):
         group_cols = cols[i:i + step]
