@@ -9,6 +9,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import threading
 
 import argparse
+import glob
 
 
 def build_profilling_parser():
@@ -85,6 +86,10 @@ def profilling_table(file_path: str,
                             )
         raw_responses[f"{','.join(cols)}"] = response
         response = safe_json_loads(response)
+        if isinstance(response, list):
+            response = {k: v for item in response if isinstance(item, dict) for k, v in item.items()}
+        if not isinstance(response, dict):
+            continue
         response_col_keys = response.keys()
         for col in cols:
             for response_key in response_col_keys:
@@ -213,9 +218,6 @@ if __name__ == "__main__":
         f"总共 {len(all_csvfiles)} 个文件，已处理 {len(files_profilling_results)} 个文件，剩余 {len(unprocessed_files)} 个文件待处理。")
     print(f"使用 {args.max_workers} 个线程并行处理，每 {args.save_interval} 个文件保存一次结果。")
 
-    # 线程锁，保证文件写入的线程安全
-    save_lock = threading.Lock()
-
     # 使用多线程并行处理
     model_name = args.model or CONFIG["profilling_model"]
 
@@ -226,24 +228,33 @@ if __name__ == "__main__":
     # 输出文件路径
     output_path = args.output_file or f"./output/{get_basename(root_dir)}_{args.prompt_version}_profilling_row{args.sample_size}_{model_name_safe}.json"
 
-    # 定义保存回调函数
+    # 分片目录
+    shard_dir = output_path + ".shards"
+    os.makedirs(shard_dir, exist_ok=True)
+    shard_index = [0]  # 用 list 包装以便闭包修改
+    save_lock = threading.Lock()
+
+    # 定义保存回调函数 —— 每次写入独立的分片文件
     def save_results(new_results):
         with save_lock:
+            shard_index[0] += 1
+            shard_path = os.path.join(shard_dir, f"part_{shard_index[0]:04d}.json")
+            shard_data = {}
             for file_key, result, raw in new_results:
-                files_profilling_results[str(file_key)] = result
+                shard_data[str(file_key)] = result
                 if args.log:
                     raw_responses[str(file_key)] = raw
 
-            # 保存结果到文件
-            with open(output_path, "w", encoding="utf-8") as f:
-                json.dump(files_profilling_results, f,
-                          ensure_ascii=False, indent=2)
+            with open(shard_path, "w", encoding="utf-8") as f:
+                json.dump(shard_data, f, ensure_ascii=False, indent=2)
 
             if args.log:
-                with open(log_path, "w", encoding="utf-8") as f:
+                shard_raw_path = os.path.join(shard_dir, f"part_{shard_index[0]:04d}_raw.json")
+                with open(shard_raw_path, "w", encoding="utf-8") as f:
                     json.dump(raw_responses, f, ensure_ascii=False, indent=2)
 
-            print(f"\n💾 已保存 {len(files_profilling_results)} 个文件的剖析结果")
+            print(f"\n💾 已保存分片 {shard_index[0]}，包含 {len(shard_data)} 个文件")
+
     print(f"使用模型: {model_name}")
     remaining_results = profilling_csv_files_parallel(
         unprocessed_files,
@@ -259,5 +270,27 @@ if __name__ == "__main__":
     if remaining_results:
         save_results(remaining_results)
 
-    print(f"\n✅ 所有文件处理完成！总共处理了 {len(files_profilling_results)} 个文件。")
+    # 合并所有分片
+    print(f"\n正在合并分片文件...")
+    merged = {}
+    for shard_file in sorted(glob.glob(os.path.join(shard_dir, "part_*[!_raw].json"))):
+        with open(shard_file, "r", encoding="utf-8") as f:
+            merged.update(json.load(f))
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(merged, f, ensure_ascii=False, indent=2)
+
+    # 合并 raw 日志
+    if args.log:
+        merged_raw = {}
+        for shard_file in sorted(glob.glob(os.path.join(shard_dir, "part_*_raw.json"))):
+            with open(shard_file, "r", encoding="utf-8") as f:
+                merged_raw.update(json.load(f))
+        with open(log_path, "w", encoding="utf-8") as f:
+            json.dump(merged_raw, f, ensure_ascii=False, indent=2)
+
+    # 清理分片目录
+    import shutil
+    shutil.rmtree(shard_dir, ignore_errors=True)
+
+    print(f"\n✅ 所有文件处理完成！总共处理了 {len(merged)} 个文件。")
     print(f"结果已保存到: {output_path}")
