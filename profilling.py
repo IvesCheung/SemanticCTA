@@ -205,19 +205,6 @@ if __name__ == "__main__":
 
     import json
 
-    # 加载checkpoint
-    if args.ckpt is not None and os.path.exists(args.ckpt):
-        files_profilling_results = json.load(
-            open(args.ckpt, "r", encoding="utf-8"))
-
-    all_csvfiles = list_csv_files(root_dir)
-    unprocessed_files = [f for f in all_csvfiles if file_path_to_key(
-        f) not in files_profilling_results.keys()]
-    files_profilling_results = {}
-    print(
-        f"总共 {len(all_csvfiles)} 个文件，已处理 {len(files_profilling_results)} 个文件，剩余 {len(unprocessed_files)} 个文件待处理。")
-    print(f"使用 {args.max_workers} 个线程并行处理，每 {args.save_interval} 个文件保存一次结果。")
-
     # 使用多线程并行处理
     model_name = args.model or CONFIG["profilling_model"]
 
@@ -230,8 +217,33 @@ if __name__ == "__main__":
 
     # 分片目录
     shard_dir = output_path + ".shards"
+
+    # 加载checkpoint：优先从分片目录恢复，其次从 --ckpt 文件恢复
+    if os.path.isdir(shard_dir):
+        shard_files = sorted(glob.glob(os.path.join(shard_dir, "part_*[!_raw].json")))
+        for sf in shard_files:
+            with open(sf, "r", encoding="utf-8") as f:
+                files_profilling_results.update(json.load(f))
+        print(f"从分片目录恢复: 已加载 {len(shard_files)} 个分片，共 {len(files_profilling_results)} 个文件")
+    elif args.ckpt is not None and os.path.exists(args.ckpt):
+        files_profilling_results = json.load(open(args.ckpt, "r", encoding="utf-8"))
+        print(f"从checkpoint文件恢复: 已加载 {len(files_profilling_results)} 个文件")
+
+    all_csvfiles = list_csv_files(root_dir)
+    unprocessed_files = [f for f in all_csvfiles if file_path_to_key(
+        f) not in files_profilling_results.keys()]
+    print(
+        f"总共 {len(all_csvfiles)} 个文件，已处理 {len(files_profilling_results)} 个文件，剩余 {len(unprocessed_files)} 个文件待处理。")
+    print(f"使用 {args.max_workers} 个线程并行处理，每 {args.save_interval} 个文件保存一次结果。")
+
+    if not unprocessed_files:
+        print("所有文件已处理完毕，无需继续。")
+        exit(0)
+
+    # 分片目录：追加模式，已有的分片保留
     os.makedirs(shard_dir, exist_ok=True)
-    shard_index = [0]  # 用 list 包装以便闭包修改
+    existing_shards = glob.glob(os.path.join(shard_dir, "part_*[!_raw].json"))
+    shard_index = [len(existing_shards)]  # 从已有分片数量继续编号
     save_lock = threading.Lock()
 
     # 定义保存回调函数 —— 每次写入独立的分片文件
