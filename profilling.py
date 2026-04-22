@@ -219,8 +219,11 @@ if __name__ == "__main__":
     # 分片目录
     shard_dir = output_path + ".shards"
 
-    # 加载checkpoint：优先从分片目录恢复，其次从 --ckpt 文件恢复
-    if os.path.isdir(shard_dir):
+    # 加载checkpoint：优先从目标JSON文件恢复，其次从分片目录恢复，最后从 --ckpt 文件恢复
+    if os.path.isfile(output_path):
+        files_profilling_results = json.load(open(output_path, "r", encoding="utf-8"))
+        print(f"从已有输出文件恢复: 已加载 {len(files_profilling_results)} 个文件")
+    elif os.path.isdir(shard_dir):
         shard_files = sorted(glob.glob(os.path.join(shard_dir, "part_*[!_raw].json")))
         for sf in shard_files:
             with open(sf, "r", encoding="utf-8") as f:
