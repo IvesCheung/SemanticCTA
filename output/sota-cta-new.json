@@ -1,0 +1,4076 @@
+{
+  "datalake/HMRC_Officials_meetings_with_tobacco_stakeholders_Apr_2015_to_Jun_2015.csv": {
+    "HMRC OFFICIALS' MEETINGS WITH TOBACCO STAKEHOLDERS": {
+      "__type__": "object"
+    },
+    "Unnamed: 1": {
+      "__type__": "object"
+    },
+    "Unnamed: 2": {
+      "__type__": "object"
+    },
+    "Unnamed: 3": {
+      "__type__": "object"
+    },
+    "Unnamed: 4": {
+      "__type__": "object"
+    }
+  },
+  "santos_small_join_groundtruth.csv": {
+    "query_table": {
+      "__type__": "object",
+      "query_table": "The name of the table from which the query data is derived."
+    },
+    "candidate_table": {
+      "__type__": "object",
+      "candidate_table": "The name of the table that is being compared or matched against the query table."
+    },
+    "query_column": {
+      "__type__": "object",
+      "query_column": "The specific column in the query table that is being used for comparison or matching."
+    },
+    "candidate_column": {
+      "__type__": "object",
+      "candidate_column": "The specific column in the candidate table that is being compared or matched against the query column."
+    }
+  },
+  "datalake/HMRC_Officials_meetings_with_tobacco_stakeholders_Apr_2018_to_June_2018.csv": {
+    "HMRC OFFICIALS' MEETINGS WITH TOBACCO STAKEHOLDERS": {
+      "__type__": "object"
+    },
+    "Unnamed: 1": {
+      "__type__": "object"
+    },
+    "Unnamed: 2": {
+      "__type__": "object"
+    },
+    "Unnamed: 3": {
+      "__type__": "object"
+    },
+    "Unnamed: 4": {
+      "__type__": "object"
+    }
+  },
+  "datalake/HMRC_Officials_meetings_with_tobacco_stakeholders_Apr_2017_to_June_2017.csv": {
+    "HMRC OFFICIALS' MEETINGS WITH TOBACCO STAKEHOLDERS": {
+      "__type__": "object"
+    },
+    "Unnamed: 1": {
+      "__type__": "object"
+    },
+    "Unnamed: 2": {
+      "__type__": "object"
+    },
+    "Unnamed: 3": {
+      "__type__": "object"
+    },
+    "Unnamed: 4": {
+      "__type__": "object"
+    }
+  },
+  "datalake/311_calls_historic_data_0.csv": {
+    "ticket_id": {
+      "__type__": "int64",
+      "ticket_id": "A unique identifier for each 311 service request ticket."
+    },
+    "issue_type": {
+      "__type__": "object",
+      "issue_type": "The category or type of issue reported by the citizen."
+    },
+    "ticket_created_date_time": {
+      "__type__": "object",
+      "ticket_created_date_time": "The date and time when the 311 service request ticket was created."
+    },
+    "ticket_closed_date_time": {
+      "__type__": "object",
+      "ticket_closed_date_time": "The date and time when the 311 service request ticket was closed."
+    },
+    "ticket_status": {
+      "__type__": "object",
+      "ticket_status": "The current status of the 311 service request ticket, such as 'Closed' or 'Open'."
+    },
+    "neighborhood_district": {
+      "__type__": "object",
+      "neighborhood_district": "The name of the neighborhood or district where the issue was reported."
+    },
+    "city": {
+      "__type__": "object",
+      "city": "The city where the 311 service request was made."
+    },
+    "state": {
+      "__type__": "object",
+      "state": "The state where the 311 service request was made."
+    },
+    "case_title": {
+      "__type__": "object",
+      "case_title": "A brief description or title of the 311 service request."
+    }
+  },
+  "datalake/311_calls_historic_data_1.csv": {
+    "ticket_id": {
+      "__type__": "int64",
+      "ticket_id": "A unique identifier for each 311 service request ticket."
+    },
+    "issue_type": {
+      "__type__": "object",
+      "issue_type": "The category or type of issue reported in the 311 service request."
+    },
+    "ticket_created_date_time": {
+      "__type__": "object",
+      "ticket_created_date_time": "The date and time when the 311 service request ticket was created."
+    },
+    "ticket_closed_date_time": {
+      "__type__": "object",
+      "ticket_closed_date_time": "The date and time when the 311 service request ticket was closed, if applicable."
+    },
+    "ticket_status": {
+      "__type__": "object",
+      "ticket_status": "The current status of the 311 service request ticket, such as 'Open' or 'Closed'."
+    },
+    "neighborhood_district": {
+      "__type__": "object",
+      "neighborhood_district": "The neighborhood or district where the 311 service request was reported."
+    },
+    "city": {
+      "__type__": "object",
+      "city": "The city where the 311 service request was reported."
+    },
+    "state": {
+      "__type__": "object",
+      "state": "The state where the 311 service request was reported."
+    },
+    "case_title": {
+      "__type__": "object",
+      "case_title": "A brief description or title of the 311 service request."
+    }
+  },
+  "datalake/311_calls_historic_data_2.csv": {
+    "ticket_id": {
+      "__type__": "int64",
+      "ticket_id": "A unique identifier for each 311 service request ticket."
+    },
+    "issue_type": {
+      "__type__": "object",
+      "issue_type": "The category or type of issue reported in the 311 service request."
+    },
+    "ticket_created_date_time": {
+      "__type__": "object",
+      "ticket_created_date_time": "The date and time when the 311 service request ticket was created."
+    },
+    "ticket_closed_date_time": {
+      "__type__": "object",
+      "ticket_closed_date_time": "The date and time when the 311 service request ticket was closed, if applicable."
+    },
+    "ticket_status": {
+      "__type__": "object",
+      "ticket_status": "The current status of the 311 service request ticket, such as 'Open' or 'Closed'."
+    },
+    "neighborhood_district": {
+      "__type__": "object",
+      "neighborhood_district": "The neighborhood or district where the 311 service request was reported."
+    },
+    "city": {
+      "__type__": "object",
+      "city": "The city where the 311 service request was reported."
+    },
+    "state": {
+      "__type__": "object",
+      "state": "The state where the 311 service request was reported."
+    },
+    "case_title": {
+      "__type__": "object",
+      "case_title": "A brief description or title of the 311 service request."
+    }
+  },
+  "datalake/HMRC_Officials_meetings_with_tobacco_stakeholders_Jul_2014_to_Sept_2014.csv": {
+    "HMRC OFFICIALS' MEETINGS WITH TOBACCO STAKEHOLDERS": {
+      "__type__": "object"
+    },
+    "Unnamed: 1": {
+      "__type__": "object"
+    },
+    "Unnamed: 2": {
+      "__type__": "object"
+    },
+    "Unnamed: 3": {
+      "__type__": "object"
+    },
+    "Unnamed: 4": {
+      "__type__": "object"
+    }
+  },
+  "datalake/HMRC_Officials_meetings_with_tobacco_stakeholders_Jan_2020_to_Mar_2020.csv": {
+    "HMRC OFFICIALS' MEETINGS WITH TOBACCO STAKEHOLDERS": {
+      "__type__": "object"
+    },
+    "Unnamed: 1": {
+      "__type__": "object"
+    },
+    "Unnamed: 2": {
+      "__type__": "object"
+    },
+    "Unnamed: 3": {
+      "__type__": "object"
+    },
+    "Unnamed: 4": {
+      "__type__": "object"
+    }
+  },
+  "santos_small_benchmark_groundtruth.csv": {
+    "serial_num": {
+      "__type__": "int64",
+      "serial_num": "A unique identifier for each record in the table."
+    },
+    "query_table": {
+      "__type__": "object",
+      "query_table": "The name of the table from which the query is derived, including the file extension."
+    },
+    "intent_col_index": {
+      "__type__": "int64",
+      "intent_col_index": "The index of the column in the query table that is the focus of the query."
+    },
+    "data_lake_table": {
+      "__type__": "object",
+      "data_lake_table": "The name of the table in the data lake that is related to the query table, including the file extension."
+    },
+    "intent_col_name": {
+      "__type__": "object",
+      "intent_col_name": "The name of the column in the data lake table that corresponds to the intent column in the query table."
+    }
+  },
+  "datalake/HMRC_Officials_meetings_with_tobacco_stakeholders_Jul_2015_to__Sept_2015.csv": {
+    "HMRC OFFICIALS' MEETINGS WITH TOBACCO STAKEHOLDERS": {
+      "__type__": "object"
+    },
+    "Unnamed: 1": {
+      "__type__": "object"
+    },
+    "Unnamed: 2": {
+      "__type__": "object"
+    },
+    "Unnamed: 3": {
+      "__type__": "object"
+    },
+    "Unnamed: 4": {
+      "__type__": "object"
+    }
+  },
+  "datalake/311_calls_historic_data_3.csv": {
+    "ticket_id": {
+      "__type__": "int64",
+      "ticket_id": "A unique identifier for each 311 service request ticket."
+    },
+    "issue_type": {
+      "__type__": "object",
+      "issue_type": "The type of issue or service request reported by the citizen."
+    },
+    "ticket_created_date_time": {
+      "__type__": "object",
+      "ticket_created_date_time": "The date and time when the 311 service request ticket was created."
+    },
+    "ticket_closed_date_time": {
+      "__type__": "object",
+      "ticket_closed_date_time": "The date and time when the 311 service request ticket was closed or resolved."
+    },
+    "ticket_status": {
+      "__type__": "object",
+      "ticket_status": "The current status of the 311 service request ticket, such as 'Closed' or 'Open'."
+    },
+    "neighborhood_district": {
+      "__type__": "object",
+      "neighborhood_district": "The neighborhood or district in which the 311 service request was reported."
+    },
+    "city": {
+      "__type__": "object",
+      "city": "The city where the 311 service request was reported."
+    },
+    "state": {
+      "__type__": "object",
+      "state": "The state where the 311 service request was reported."
+    },
+    "case_title": {
+      "__type__": "object",
+      "case_title": "A brief title or description of the 311 service request."
+    }
+  },
+  "datalake/311_calls_historic_data_8.csv": {
+    "ticket_id": {
+      "__type__": "int64",
+      "ticket_id": "A unique identifier for each 311 service request ticket."
+    },
+    "issue_type": {
+      "__type__": "object",
+      "issue_type": "The category or type of issue reported in the 311 service request."
+    },
+    "ticket_created_date_time": {
+      "__type__": "object",
+      "ticket_created_date_time": "The date and time when the 311 service request ticket was created."
+    },
+    "ticket_closed_date_time": {
+      "__type__": "object",
+      "ticket_closed_date_time": "The date and time when the 311 service request ticket was closed, if applicable."
+    },
+    "ticket_status": {
+      "__type__": "object",
+      "ticket_status": "The current status of the 311 service request ticket, such as 'Closed' or 'Open'."
+    },
+    "neighborhood_district": {
+      "__type__": "object",
+      "neighborhood_district": "The neighborhood or district where the 311 service request was reported."
+    },
+    "city": {
+      "__type__": "object",
+      "city": "The city where the 311 service request was reported."
+    },
+    "state": {
+      "__type__": "object",
+      "state": "The state where the 311 service request was reported."
+    },
+    "case_title": {
+      "__type__": "object",
+      "case_title": "A brief description or title of the 311 service request."
+    }
+  },
+  "datalake/311_calls_historic_data_5.csv": {
+    "ticket_id": {
+      "__type__": "int64",
+      "ticket_id": "A unique identifier for each 311 service request ticket."
+    },
+    "issue_type": {
+      "__type__": "object",
+      "issue_type": "The category or type of issue reported in the 311 service request."
+    },
+    "ticket_created_date_time": {
+      "__type__": "object",
+      "ticket_created_date_time": "The date and time when the 311 service request ticket was created."
+    },
+    "ticket_closed_date_time": {
+      "__type__": "object",
+      "ticket_closed_date_time": "The date and time when the 311 service request ticket was closed, if applicable."
+    },
+    "ticket_status": {
+      "__type__": "object",
+      "ticket_status": "The current status of the 311 service request ticket, such as 'Closed' or 'Open'."
+    },
+    "neighborhood_district": {
+      "__type__": "object",
+      "neighborhood_district": "The name of the neighborhood or district where the 311 service request was made."
+    },
+    "city": {
+      "__type__": "object",
+      "city": "The city where the 311 service request was made."
+    },
+    "state": {
+      "__type__": "object",
+      "state": "The state where the 311 service request was made."
+    },
+    "case_title": {
+      "__type__": "object",
+      "case_title": "A brief description or title of the 311 service request."
+    }
+  },
+  "datalake/311_calls_historic_data_6.csv": {
+    "ticket_id": {
+      "__type__": "int64",
+      "ticket_id": "A unique identifier for each 311 service request ticket."
+    },
+    "issue_type": {
+      "__type__": "object",
+      "issue_type": "The category or type of issue reported in the 311 service request."
+    },
+    "ticket_created_date_time": {
+      "__type__": "object",
+      "ticket_created_date_time": "The date and time when the 311 service request ticket was created."
+    },
+    "ticket_closed_date_time": {
+      "__type__": "object",
+      "ticket_closed_date_time": "The date and time when the 311 service request ticket was closed, if applicable."
+    },
+    "ticket_status": {
+      "__type__": "object",
+      "ticket_status": "The current status of the 311 service request ticket, such as 'Open' or 'Closed'."
+    },
+    "neighborhood_district": {
+      "__type__": "object",
+      "neighborhood_district": "The neighborhood or district where the 311 service request was reported."
+    },
+    "city": {
+      "__type__": "object",
+      "city": "The city where the 311 service request was reported."
+    },
+    "state": {
+      "__type__": "object",
+      "state": "The state where the 311 service request was reported."
+    },
+    "case_title": {
+      "__type__": "object",
+      "case_title": "A brief description or title of the 311 service request."
+    }
+  },
+  "datalake/311_calls_historic_data_7.csv": {
+    "ticket_id": {
+      "__type__": "int64",
+      "ticket_id": "A unique identifier for each 311 service request ticket."
+    },
+    "issue_type": {
+      "__type__": "object",
+      "issue_type": "The category or type of issue reported in the 311 service request."
+    },
+    "ticket_created_date_time": {
+      "__type__": "object",
+      "ticket_created_date_time": "The date and time when the 311 service request ticket was created."
+    },
+    "ticket_closed_date_time": {
+      "__type__": "object",
+      "ticket_closed_date_time": "The date and time when the 311 service request ticket was closed or resolved."
+    },
+    "ticket_status": {
+      "__type__": "object",
+      "ticket_status": "The current status of the 311 service request ticket, such as 'Closed' or 'Open'."
+    },
+    "neighborhood_district": {
+      "__type__": "object",
+      "neighborhood_district": "The name of the neighborhood or district where the 311 service request was made."
+    },
+    "city": {
+      "__type__": "object",
+      "city": "The city where the 311 service request was made."
+    },
+    "state": {
+      "__type__": "object",
+      "state": "The state where the 311 service request was made."
+    },
+    "case_title": {
+      "__type__": "object",
+      "case_title": "A brief description or title of the specific issue reported in the 311 service request."
+    }
+  },
+  "datalake/311_calls_historic_data_9.csv": {
+    "ticket_id": {
+      "__type__": "int64",
+      "ticket_id": "A unique identifier for each 311 service request ticket."
+    },
+    "issue_type": {
+      "__type__": "object",
+      "issue_type": "The category or type of issue reported in the 311 service request."
+    },
+    "ticket_created_date_time": {
+      "__type__": "object",
+      "ticket_created_date_time": "The date and time when the 311 service request ticket was created."
+    },
+    "ticket_closed_date_time": {
+      "__type__": "object",
+      "ticket_closed_date_time": "The date and time when the 311 service request ticket was closed, if applicable."
+    },
+    "ticket_status": {
+      "__type__": "object",
+      "ticket_status": "The current status of the 311 service request ticket, such as 'Open' or 'Closed'."
+    },
+    "neighborhood_district": {
+      "__type__": "object",
+      "neighborhood_district": "The neighborhood or district where the 311 service request was reported."
+    },
+    "city": {
+      "__type__": "object",
+      "city": "The city where the 311 service request was reported."
+    },
+    "state": {
+      "__type__": "object",
+      "state": "The state where the 311 service request was reported."
+    },
+    "case_title": {
+      "__type__": "object",
+      "case_title": "A brief description or title of the 311 service request."
+    }
+  },
+  "datalake/311_calls_historic_data_4.csv": {
+    "ticket_id": {
+      "__type__": "int64",
+      "ticket_id": "A unique identifier for each 311 service request ticket."
+    },
+    "issue_type": {
+      "__type__": "object",
+      "issue_type": "The category or type of issue reported in the 311 service request."
+    },
+    "ticket_created_date_time": {
+      "__type__": "object",
+      "ticket_created_date_time": "The date and time when the 311 service request ticket was created."
+    },
+    "ticket_closed_date_time": {
+      "__type__": "object",
+      "ticket_closed_date_time": "The date and time when the 311 service request ticket was closed, if applicable."
+    },
+    "ticket_status": {
+      "__type__": "object",
+      "ticket_status": "The current status of the 311 service request ticket, such as 'Closed' or 'Open'."
+    },
+    "neighborhood_district": {
+      "__type__": "object",
+      "neighborhood_district": "The neighborhood or district where the 311 service request was reported."
+    },
+    "city": {
+      "__type__": "object",
+      "city": "The city where the 311 service request was reported."
+    },
+    "state": {
+      "__type__": "object",
+      "state": "The state where the 311 service request was reported."
+    },
+    "case_title": {
+      "__type__": "object",
+      "case_title": "A brief description or title of the 311 service request."
+    }
+  },
+  "datalake/311_calls_historic_data_a.csv": {
+    "ticket_id": {
+      "__type__": "int64",
+      "ticket_id": "A unique identifier for each 311 service request or case."
+    },
+    "issue_type": {
+      "__type__": "object",
+      "issue_type": "The category or type of issue reported, such as 'Street Light' or 'Trash/Garbage Pickup'."
+    },
+    "ticket_status": {
+      "__type__": "object",
+      "ticket_status": "The current status of the service request, such as 'Open' or 'Closed'."
+    },
+    "neighborhood_district": {
+      "__type__": "object",
+      "neighborhood_district": "The specific neighborhood or district where the issue is located."
+    },
+    "council_district": {
+      "__type__": "object",
+      "council_district": "The city council district where the issue is located, typically denoted by a letter."
+    },
+    "city": {
+      "__type__": "object",
+      "city": "The city where the service request was made, in this case, 'NEW ORLEANS'."
+    },
+    "closure_reason": {
+      "__type__": "object",
+      "closure_reason": "The reason for the closure of the service request, such as 'Case Resolved' or 'Case is Invalid'."
+    },
+    "case_title": {
+      "__type__": "object",
+      "case_title": "A brief description or title of the specific issue or request, such as 'Streetlight - Outage Or Cycling'."
+    }
+  },
+  "datalake/HMRC_exceptions_to_spending_controls_April_to_June_2018_facilities_management.csv": {
+    "HMG Ref": {
+      "__type__": "object",
+      "HMG Ref": "A unique reference number assigned by Her Majesty's Government for tracking purposes."
+    },
+    "Title": {
+      "__type__": "object",
+      "Title": "The title or name of the exception request."
+    },
+    "Description/Notes for Minister": {
+      "__type__": "object",
+      "Description/Notes for Minister": "A detailed description or notes provided for the minister to understand the context and specifics of the exception request."
+    },
+    "Dept": {
+      "__type__": "object",
+      "Dept": "The department within the government that is making the exception request."
+    },
+    "Control Type": {
+      "__type__": "object",
+      "Control Type": "The type of spending control that the exception is being requested for."
+    },
+    "Requested Value": {
+      "__type__": "object",
+      "Requested Value": "The monetary value of the spending request being made."
+    },
+    "Status/Decision/Result": {
+      "__type__": "object",
+      "Status/Decision/Result": "The current status or final decision/result of the exception request."
+    },
+    "Minister Sub Date": {
+      "__type__": "object",
+      "Minister Sub Date": "The date on which the exception request was submitted to the minister for review."
+    }
+  },
+  "datalake/HMRC_exceptions_to_spending_controls_April_to_June_2018_consultancy.csv": {
+    "HMG Ref": {
+      "__type__": "object",
+      "HMG Ref": "A unique reference number assigned by Her Majesty's Government to track each exception request."
+    },
+    "Title": {
+      "__type__": "object",
+      "Title": "A brief title or name given to the exception request for easy identification."
+    },
+    "Description/Notes for Minister": {
+      "__type__": "object",
+      "Description/Notes for Minister": "A detailed description or notes provided to the minister, explaining the context and rationale behind the exception request."
+    },
+    "Dept": {
+      "__type__": "object",
+      "Dept": "The department within the government that is requesting the exception to spending controls."
+    },
+    "Control Type": {
+      "__type__": "object",
+      "Control Type": "The specific type of spending control that the request is seeking to bypass or modify."
+    },
+    "Requested Value": {
+      "__type__": "object",
+      "Requested Value": "The monetary value of the spending that is being requested as an exception."
+    },
+    "Status/Decision/Result": {
+      "__type__": "object",
+      "Status/Decision/Result": "The current status or final decision/result of the exception request, indicating whether it has been approved, rejected, or is pending."
+    },
+    "Minister Sub Date": {
+      "__type__": "object",
+      "Minister Sub Date": "The date on which the exception request was submitted to the minister for review and decision."
+    }
+  },
+  "datalake/HMRC_exceptions_to_spending_controls_April_to_June_2019_commercial.csv": {
+    "Reference Number": {
+      "__type__": "object",
+      "Reference Number": "A unique alphanumeric code identifying a specific case or exception."
+    },
+    "Owning Dept/ALB Department": {
+      "__type__": "object",
+      "Owning Dept/ALB Department": "The department or agency within HMRC that owns or is responsible for the case."
+    },
+    "ALB": {
+      "__type__": "float64",
+      "ALB": "Indicates whether the case is related to an Arm's Length Body (ALB) of HMRC."
+    },
+    "Case Name": {
+      "__type__": "object",
+      "Case Name": "The name or title of the specific case or project."
+    },
+    "Case details": {
+      "__type__": "object",
+      "Case details": "A detailed description of the case, including the context and purpose of the exception."
+    },
+    "Value (£) (excluding VAT)": {
+      "__type__": "object",
+      "Value (£) (excluding VAT)": "The monetary value of the case or exception, excluding Value Added Tax (VAT)."
+    },
+    "Approval date": {
+      "__type__": "object",
+      "Approval date": "The date on which the case or exception was approved."
+    },
+    "Control": {
+      "__type__": "object",
+      "Control": "The type of control or category under which the case falls, such as Commercial."
+    }
+  },
+  "datalake/HMRC_exceptions_to_spending_controls_April_to_June_2019_consultancy.csv": {
+    "Reference Number": {
+      "__type__": "object",
+      "Reference Number": "A unique identifier for each exception to spending controls."
+    },
+    "Owning Dept/ALB Department": {
+      "__type__": "object",
+      "Owning Dept/ALB Department": "The department or agency within HMRC that owns the case."
+    },
+    "ALB": {
+      "__type__": "float64",
+      "ALB": "Indicates whether the case is related to an Arm's Length Body (ALB) of HMRC."
+    },
+    "Case Name": {
+      "__type__": "object",
+      "Case Name": "The name or title of the specific case or project."
+    },
+    "Case details": {
+      "__type__": "object",
+      "Case details": "A detailed description of the case or project, including its purpose and scope."
+    },
+    "Value (£) (excluding VAT)": {
+      "__type__": "object",
+      "Value (£) (excluding VAT)": "The monetary value of the case or project in British Pounds, excluding Value Added Tax (VAT)."
+    },
+    "Approval date": {
+      "__type__": "object",
+      "Approval date": "The date on which the exception to spending controls was approved."
+    },
+    "Control": {
+      "__type__": "object",
+      "Control": "The type of control or category under which the exception falls, such as Consultancy."
+    }
+  },
+  "datalake/HMRC_exceptions_to_spending_controls_April_to_June_2019_ICT.csv": {
+    "Reference Number": {
+      "__type__": "object",
+      "Reference Number": "A unique alphanumeric code identifying a specific exception to spending controls."
+    },
+    "Owning Dept/ALB Department": {
+      "__type__": "object",
+      "Owning Dept/ALB Department": "The department or agency within HMRC that owns the case or project."
+    },
+    "ALB": {
+      "__type__": "float64",
+      "ALB": "Indicates if the case or project is associated with an Arm's Length Body (ALB) of HMRC."
+    },
+    "Case Name": {
+      "__type__": "object",
+      "Case Name": "The name or title of the project or case for which the spending exception is being made."
+    },
+    "Case details": {
+      "__type__": "object",
+      "Case details": "A brief description of the project or case, including its purpose and scope."
+    },
+    "Value (£) (excluding VAT)": {
+      "__type__": "object",
+      "Value (£) (excluding VAT)": "The monetary value of the project or case, excluding Value Added Tax (VAT), in British Pounds Sterling (£)."
+    },
+    "Approval date": {
+      "__type__": "object",
+      "Approval date": "The date on which the spending exception was approved."
+    },
+    "Control": {
+      "__type__": "object",
+      "Control": "The category or type of spending control that the exception pertains to, such as Information and Communication Technology (ICT)."
+    }
+  },
+  "datalake/abandoned_wells_2.csv": {
+    "COMPANY NAME": {
+      "__type__": "object",
+      "COMPANY NAME": "The name of the company that owns or operates the well."
+    },
+    "COUNTY": {
+      "__type__": "object",
+      "COUNTY": "The county in which the well is located."
+    },
+    "TOWN": {
+      "__type__": "object",
+      "TOWN": "The town or municipality in which the well is located."
+    },
+    "API WELL NUMBER": {
+      "__type__": "int64",
+      "API WELL NUMBER": "A unique identifier assigned to the well by the American Petroleum Institute (API)."
+    },
+    "WELL NAME": {
+      "__type__": "object",
+      "WELL NAME": "The name given to the well, often including a number or identifier."
+    },
+    "WELL STATUS CODE": {
+      "__type__": "object",
+      "WELL STATUS CODE": "A code indicating the current status of the well (e.g., active, abandoned, under maintenance)."
+    },
+    "WELL TYPE CODE": {
+      "__type__": "object",
+      "WELL TYPE CODE": "A code indicating the type of well (e.g., oil, gas, water disposal)."
+    },
+    "SURFACE LONGITUDE": {
+      "__type__": "float64",
+      "SURFACE LONGITUDE": "The longitude coordinate of the well's surface location."
+    },
+    "SURFACE LATITUDE": {
+      "__type__": "float64",
+      "SURFACE LATITUDE": "The latitude coordinate of the well's surface location."
+    }
+  },
+  "datalake/HMRC_exceptions_to_spending_controls_October_to_December_2017_ICT.csv": {
+    "Department": {
+      "__type__": "object",
+      "Department": "The government department responsible for the project or program."
+    },
+    "Business Stream": {
+      "__type__": "float64",
+      "Business Stream": "The specific business area or function within the department that the project or program belongs to."
+    },
+    "ALB": {
+      "__type__": "float64",
+      "ALB": "The Arm's Length Body (ALB) involved in the project or program, if applicable."
+    },
+    "Reference Number": {
+      "__type__": "object",
+      "Reference Number": "A unique identifier assigned to the case or project for tracking and reference purposes."
+    },
+    "Case Name": {
+      "__type__": "object",
+      "Case Name": "The name or title of the project or program."
+    },
+    "Case Description": {
+      "__type__": "object",
+      "Case Description": "A brief description of the project or program, including its objectives and scope."
+    },
+    "Lead Control": {
+      "__type__": "object",
+      "Lead Control": "The primary control or department responsible for overseeing the project or program."
+    },
+    "Controls Entry Stage": {
+      "__type__": "object",
+      "Controls Entry Stage": "The stage in the project lifecycle at which the controls were applied or reviewed."
+    },
+    "Total value approved (Revised value)": {
+      "__type__": "object",
+      "Total value approved (Revised value)": "The total financial value approved for the project or program, as revised."
+    },
+    "Decision": {
+      "__type__": "object",
+      "Decision": "The final decision made regarding the project or program, such as 'Accept' or 'Reject'."
+    },
+    "Decision Sent to Department": {
+      "__type__": "object",
+      "Decision Sent to Department": "The date on which the final decision was communicated to the department."
+    }
+  },
+  "datalake/abandoned_wells_1.csv": {
+    "COMPANY NAME": {
+      "__type__": "object",
+      "COMPANY NAME": "The name of the company that owns or operates the well."
+    },
+    "COUNTY": {
+      "__type__": "object",
+      "COUNTY": "The county in which the well is located."
+    },
+    "TOWN": {
+      "__type__": "object",
+      "TOWN": "The town or municipality in which the well is located."
+    },
+    "API WELL NUMBER": {
+      "__type__": "int64",
+      "API WELL NUMBER": "A unique identifier assigned to the well by the American Petroleum Institute (API)."
+    },
+    "WELL NAME": {
+      "__type__": "object",
+      "WELL NAME": "The name assigned to the well, often reflecting the owner or location."
+    },
+    "WELL STATUS CODE": {
+      "__type__": "object",
+      "WELL STATUS CODE": "A code indicating the current status of the well (e.g., active, abandoned, under construction)."
+    },
+    "WELL TYPE CODE": {
+      "__type__": "object",
+      "WELL TYPE CODE": "A code indicating the type of well (e.g., oil, gas, injection)."
+    },
+    "SURFACE LONGITUDE": {
+      "__type__": "float64",
+      "SURFACE LONGITUDE": "The longitude coordinate of the well's surface location."
+    },
+    "SURFACE LATITUDE": {
+      "__type__": "float64",
+      "SURFACE LATITUDE": "The latitude coordinate of the well's surface location."
+    }
+  },
+  "datalake/HMRC_exceptions_to_spending_controls_October_to_December_2017_property.csv": {
+    "Department": {
+      "__type__": "object",
+      "Department": "The government department responsible for the property or the case."
+    },
+    "Business Stream": {
+      "__type__": "float64",
+      "Business Stream": "The specific business area or stream within the department that the case pertains to."
+    },
+    "ALB": {
+      "__type__": "float64",
+      "ALB": "The Arm's Length Body (ALB) involved in the case, if applicable."
+    },
+    "Reference Number": {
+      "__type__": "object",
+      "Reference Number": "A unique identifier assigned to each case or property for reference purposes."
+    },
+    "Case Name": {
+      "__type__": "object",
+      "Case Name": "The name or title of the property or case being considered."
+    },
+    "Case Description": {
+      "__type__": "object",
+      "Case Description": "A detailed description of the case, including the reasons for the exception to spending controls and any relevant background information."
+    },
+    "Department.1": {
+      "__type__": "object",
+      "Department.1": "A duplicate or secondary reference to the department, possibly for cross-verification or additional context."
+    },
+    "Lead Control": {
+      "__type__": "object",
+      "Lead Control": "The type of control or process leading the decision-making for the case."
+    },
+    "Controls Entry Stage": {
+      "__type__": "object",
+      "Controls Entry Stage": "The stage in the control process at which the case was evaluated or entered."
+    },
+    "Total value approved (Revised value)": {
+      "__type__": "object",
+      "Total value approved (Revised value)": "The total financial value approved for the case, which may be a revised figure from an initial estimate."
+    },
+    "Decision": {
+      "__type__": "object",
+      "Decision": "The final decision made regarding the case, such as 'Accept' or 'Accept with conditions'."
+    },
+    "Decision Sent to Department": {
+      "__type__": "object",
+      "Decision Sent to Department": "The date on which the decision was communicated to the relevant department."
+    }
+  },
+  "datalake/abandoned_wells_4.csv": {
+    "COMPANY NAME": {
+      "__type__": "object",
+      "COMPANY NAME": "The name of the company that owns or operates the well."
+    },
+    "COUNTY": {
+      "__type__": "object",
+      "COUNTY": "The county in which the well is located."
+    },
+    "TOWN": {
+      "__type__": "object",
+      "TOWN": "The town in which the well is located."
+    },
+    "API WELL NUMBER": {
+      "__type__": "int64",
+      "API WELL NUMBER": "A unique identifier assigned to the well by the American Petroleum Institute (API)."
+    },
+    "WELL NAME": {
+      "__type__": "object",
+      "WELL NAME": "The name given to the well, often reflecting the owner or location."
+    },
+    "WELL STATUS CODE": {
+      "__type__": "object",
+      "WELL STATUS CODE": "A code indicating the current status of the well (e.g., active, abandoned, under maintenance)."
+    },
+    "WELL TYPE CODE": {
+      "__type__": "object",
+      "WELL TYPE CODE": "A code indicating the type of well (e.g., oil, gas, water)."
+    },
+    "SURFACE LONGITUDE": {
+      "__type__": "float64",
+      "SURFACE LONGITUDE": "The longitude coordinate of the well's surface location."
+    },
+    "SURFACE LATITUDE": {
+      "__type__": "float64",
+      "SURFACE LATITUDE": "The latitude coordinate of the well's surface location."
+    }
+  },
+  "datalake/abandoned_wells_5.csv": {
+    "COMPANY NAME": {
+      "__type__": "object",
+      "COMPANY NAME": "The name of the company that owns or operates the well."
+    },
+    "COUNTY": {
+      "__type__": "object",
+      "COUNTY": "The county in which the well is located."
+    },
+    "TOWN": {
+      "__type__": "object",
+      "TOWN": "The town or municipality in which the well is located."
+    },
+    "API WELL NUMBER": {
+      "__type__": "int64",
+      "API WELL NUMBER": "A unique identifier assigned to the well by the American Petroleum Institute (API)."
+    },
+    "WELL NAME": {
+      "__type__": "object",
+      "WELL NAME": "The name assigned to the well, often reflecting the owner or location."
+    },
+    "WELL STATUS CODE": {
+      "__type__": "object",
+      "WELL STATUS CODE": "A code indicating the current status of the well (e.g., active, abandoned, under construction)."
+    },
+    "WELL TYPE CODE": {
+      "__type__": "object",
+      "WELL TYPE CODE": "A code indicating the type of well (e.g., oil, gas, injection)."
+    },
+    "SURFACE LONGITUDE": {
+      "__type__": "float64",
+      "SURFACE LONGITUDE": "The longitude coordinate of the well's surface location."
+    },
+    "SURFACE LATITUDE": {
+      "__type__": "float64",
+      "SURFACE LATITUDE": "The latitude coordinate of the well's surface location."
+    }
+  },
+  "datalake/abandoned_wells_3.csv": {
+    "COMPANY NAME": {
+      "__type__": "object",
+      "COMPANY NAME": "The name of the company that owns or operates the well."
+    },
+    "COUNTY": {
+      "__type__": "object",
+      "COUNTY": "The county in which the well is located."
+    },
+    "TOWN": {
+      "__type__": "object",
+      "TOWN": "The town in which the well is located."
+    },
+    "API WELL NUMBER": {
+      "__type__": "int64",
+      "API WELL NUMBER": "A unique identifier assigned to the well by the American Petroleum Institute (API)."
+    },
+    "WELL NAME": {
+      "__type__": "object",
+      "WELL NAME": "The name given to the well, often including a directional or sequence identifier."
+    },
+    "WELL STATUS CODE": {
+      "__type__": "object",
+      "WELL STATUS CODE": "A code indicating the current status of the well (e.g., UL for under lease, UN for unknown)."
+    },
+    "WELL TYPE CODE": {
+      "__type__": "object",
+      "WELL TYPE CODE": "A code indicating the type of well (e.g., OD for oil, NL for natural gas, GD for gas, DH for dry hole, IW for injection well)."
+    },
+    "SURFACE LONGITUDE": {
+      "__type__": "float64",
+      "SURFACE LONGITUDE": "The longitude coordinate of the well's surface location."
+    },
+    "SURFACE LATITUDE": {
+      "__type__": "float64",
+      "SURFACE LATITUDE": "The latitude coordinate of the well's surface location."
+    }
+  },
+  "datalake/abandoned_wells_0.csv": {
+    "COMPANY NAME": {
+      "__type__": "object",
+      "COMPANY NAME": "The name of the company that owns or operates the well."
+    },
+    "COUNTY": {
+      "__type__": "object",
+      "COUNTY": "The county in which the well is located."
+    },
+    "TOWN": {
+      "__type__": "object",
+      "TOWN": "The town or municipality in which the well is located."
+    },
+    "API WELL NUMBER": {
+      "__type__": "int64",
+      "API WELL NUMBER": "A unique identifier assigned to the well by the American Petroleum Institute (API)."
+    },
+    "WELL NAME": {
+      "__type__": "object",
+      "WELL NAME": "The name given to the well, often including the name of the owner or operator."
+    },
+    "WELL STATUS CODE": {
+      "__type__": "object",
+      "WELL STATUS CODE": "A code indicating the current status of the well (e.g., UM for unknown, UL for under lease)."
+    },
+    "WELL TYPE CODE": {
+      "__type__": "object",
+      "WELL TYPE CODE": "A code indicating the type of well (e.g., GD for gas, NL for non-producing, DW for dry well, MM for mineral, OD for oil, IW for injection well, SG for salt gas)."
+    },
+    "SURFACE LONGITUDE": {
+      "__type__": "float64",
+      "SURFACE LONGITUDE": "The longitude coordinate of the well's surface location."
+    },
+    "SURFACE LATITUDE": {
+      "__type__": "float64",
+      "SURFACE LATITUDE": "The latitude coordinate of the well's surface location."
+    }
+  },
+  "datalake/abandoned_wells_6.csv": {
+    "COMPANY NAME": {
+      "__type__": "object",
+      "COMPANY NAME": "The name of the company that owns or operates the well."
+    },
+    "COUNTY": {
+      "__type__": "object",
+      "COUNTY": "The county in which the well is located."
+    },
+    "TOWN": {
+      "__type__": "object",
+      "TOWN": "The town or municipality in which the well is located."
+    },
+    "API WELL NUMBER": {
+      "__type__": "int64",
+      "API WELL NUMBER": "A unique identifier assigned to the well by the American Petroleum Institute (API)."
+    },
+    "WELL NAME": {
+      "__type__": "object",
+      "WELL NAME": "The name assigned to the well, often reflecting the owner or a specific designation."
+    },
+    "WELL STATUS CODE": {
+      "__type__": "object",
+      "WELL STATUS CODE": "A code indicating the current status of the well (e.g., active, abandoned, under maintenance)."
+    },
+    "WELL TYPE CODE": {
+      "__type__": "object",
+      "WELL TYPE CODE": "A code indicating the type of well (e.g., oil, gas, brine)."
+    },
+    "SURFACE LONGITUDE": {
+      "__type__": "float64",
+      "SURFACE LONGITUDE": "The longitude coordinate of the well's surface location."
+    },
+    "SURFACE LATITUDE": {
+      "__type__": "float64",
+      "SURFACE LATITUDE": "The latitude coordinate of the well's surface location."
+    }
+  },
+  "datalake/abandoned_wells_8.csv": {
+    "COMPANY NAME": {
+      "__type__": "object",
+      "COMPANY NAME": "The name of the company that owns or operates the well."
+    },
+    "COUNTY": {
+      "__type__": "object",
+      "COUNTY": "The county in which the well is located."
+    },
+    "TOWN": {
+      "__type__": "object",
+      "TOWN": "The town or municipality in which the well is located."
+    },
+    "API WELL NUMBER": {
+      "__type__": "int64",
+      "API WELL NUMBER": "A unique identifier assigned to the well by the American Petroleum Institute (API)."
+    },
+    "WELL NAME": {
+      "__type__": "object",
+      "WELL NAME": "The name given to the well, often used for identification purposes."
+    },
+    "WELL STATUS CODE": {
+      "__type__": "object",
+      "WELL STATUS CODE": "A code indicating the current status of the well (e.g., active, abandoned, under maintenance)."
+    },
+    "WELL TYPE CODE": {
+      "__type__": "object",
+      "WELL TYPE CODE": "A code indicating the type of well (e.g., oil, gas, brine)."
+    },
+    "SURFACE LONGITUDE": {
+      "__type__": "float64",
+      "SURFACE LONGITUDE": "The longitude coordinate of the well's surface location."
+    },
+    "SURFACE LATITUDE": {
+      "__type__": "float64",
+      "SURFACE LATITUDE": "The latitude coordinate of the well's surface location."
+    }
+  },
+  "datalake/abandoned_wells_7.csv": {
+    "COMPANY NAME": {
+      "__type__": "object",
+      "COMPANY NAME": "The name of the company that owns or operates the well."
+    },
+    "COUNTY": {
+      "__type__": "object",
+      "COUNTY": "The county in which the well is located."
+    },
+    "TOWN": {
+      "__type__": "object",
+      "TOWN": "The town or municipality in which the well is located."
+    },
+    "API WELL NUMBER": {
+      "__type__": "int64",
+      "API WELL NUMBER": "A unique identifier assigned to the well by the American Petroleum Institute (API)."
+    },
+    "WELL NAME": {
+      "__type__": "object",
+      "WELL NAME": "The name assigned to the well, often including a combination of the owner's name and a numerical identifier."
+    },
+    "WELL STATUS CODE": {
+      "__type__": "object",
+      "WELL STATUS CODE": "A code indicating the current status of the well (e.g., active, abandoned, under construction)."
+    },
+    "WELL TYPE CODE": {
+      "__type__": "object",
+      "WELL TYPE CODE": "A code indicating the type of well (e.g., oil, gas, injection)."
+    },
+    "SURFACE LONGITUDE": {
+      "__type__": "float64",
+      "SURFACE LONGITUDE": "The longitude coordinate of the well's surface location."
+    },
+    "SURFACE LATITUDE": {
+      "__type__": "float64",
+      "SURFACE LATITUDE": "The latitude coordinate of the well's surface location."
+    }
+  },
+  "datalake/abandoned_wells_9.csv": {
+    "COMPANY NAME": {
+      "__type__": "object",
+      "COMPANY NAME": "The name of the company that owns or operates the well."
+    },
+    "COUNTY": {
+      "__type__": "object",
+      "COUNTY": "The county in which the well is located."
+    },
+    "TOWN": {
+      "__type__": "object",
+      "TOWN": "The town or municipality in which the well is located."
+    },
+    "API WELL NUMBER": {
+      "__type__": "int64",
+      "API WELL NUMBER": "A unique identifier assigned to the well by the American Petroleum Institute (API)."
+    },
+    "WELL NAME": {
+      "__type__": "object",
+      "WELL NAME": "The name assigned to the well, often reflecting the owner or location."
+    },
+    "WELL STATUS CODE": {
+      "__type__": "object",
+      "WELL STATUS CODE": "A code indicating the current status of the well (e.g., active, abandoned, under construction)."
+    },
+    "WELL TYPE CODE": {
+      "__type__": "object",
+      "WELL TYPE CODE": "A code indicating the type of well (e.g., oil, gas, injection)."
+    },
+    "SURFACE LONGITUDE": {
+      "__type__": "float64",
+      "SURFACE LONGITUDE": "The longitude coordinate of the well's surface location."
+    },
+    "SURFACE LATITUDE": {
+      "__type__": "float64",
+      "SURFACE LATITUDE": "The latitude coordinate of the well's surface location."
+    }
+  },
+  "datalake/abandoned_wells_a.csv": {
+    "COMPANY NAME": {
+      "__type__": "object",
+      "COMPANY NAME": "The name of the company that owns or operates the well."
+    },
+    "COUNTY": {
+      "__type__": "object",
+      "COUNTY": "The county in which the well is located."
+    },
+    "TOWN": {
+      "__type__": "object",
+      "TOWN": "The town or municipality in which the well is located."
+    },
+    "API WELL NUMBER": {
+      "__type__": "int64",
+      "API WELL NUMBER": "A unique identifier assigned to the well by the American Petroleum Institute (API)."
+    },
+    "WELL NAME": {
+      "__type__": "object",
+      "WELL NAME": "The name assigned to the well, often reflecting the owner or location."
+    },
+    "WELL STATUS CODE": {
+      "__type__": "object",
+      "WELL STATUS CODE": "A code indicating the current status of the well (e.g., unknown, unproductive, under maintenance)."
+    },
+    "WELL TYPE CODE": {
+      "__type__": "object",
+      "WELL TYPE CODE": "A code indicating the type of well (e.g., natural gas, oil, injection well)."
+    }
+  },
+  "datalake/HMRC_exceptions_to_spending_controls_October_to_December_2017_recruitment.csv": {
+    "Department": {
+      "__type__": "object",
+      "Department": "The department within HMRC that is responsible for the recruitment or expenditure."
+    },
+    "Business Stream": {
+      "__type__": "object",
+      "Business Stream": "The specific business area or stream within the department that is involved in the recruitment or expenditure."
+    },
+    "Basis for expenditure approval": {
+      "__type__": "object",
+      "Basis for expenditure approval": "The reason or justification for the expenditure approval, such as external recruitment or business critical needs."
+    },
+    "Approval month": {
+      "__type__": "object",
+      "Approval month": "The month in which the expenditure approval was granted."
+    },
+    "Civil Service Grade (FTE)": {
+      "__type__": "object",
+      "Civil Service Grade (FTE)": "The civil service grade of the position being recruited, expressed in Full-Time Equivalent (FTE) terms."
+    },
+    "Unnamed: 5": {
+      "__type__": "object",
+      "Unnamed: 5": "The number of positions at the AA/AO (Administrative Assistant / Administrative Officer) grade."
+    },
+    "Unnamed: 6": {
+      "__type__": "object",
+      "Unnamed: 6": "The number of positions at the EO (Executive Officer) grade."
+    },
+    "Unnamed: 7": {
+      "__type__": "object",
+      "Unnamed: 7": "The number of positions at the HEO (Higher Executive Officer) grade."
+    },
+    "Unnamed: 8": {
+      "__type__": "object",
+      "Unnamed: 8": "The number of positions at the SEO (Senior Executive Officer) grade."
+    },
+    "Unnamed: 9": {
+      "__type__": "object",
+      "Unnamed: 9": "The number of positions at the Grade 6 / 7 level."
+    },
+    "Civil Service Grade (Headcount)": {
+      "__type__": "object",
+      "Civil Service Grade (Headcount)": "The civil service grade of the position being recruited, expressed in headcount terms."
+    },
+    "Unnamed: 11": {
+      "__type__": "object",
+      "Unnamed: 11": "The number of positions at the AA/AO (Administrative Assistant / Administrative Officer) grade, in headcount terms."
+    },
+    "Unnamed: 12": {
+      "__type__": "object",
+      "Unnamed: 12": "The number of positions at the EO (Executive Officer) grade, in headcount terms."
+    },
+    "Unnamed: 13": {
+      "__type__": "object",
+      "Unnamed: 13": "The number of positions at the HEO (Higher Executive Officer) grade, in headcount terms."
+    },
+    "Unnamed: 14": {
+      "__type__": "object",
+      "Unnamed: 14": "The number of positions at the SEO (Senior Executive Officer) grade, in headcount terms."
+    },
+    "Unnamed: 15": {
+      "__type__": "object",
+      "Unnamed: 15": "The number of positions at the Grade 6 / 7 level, in headcount terms."
+    },
+    "Total approvals (Headcount)": {
+      "__type__": "float64",
+      "Total approvals (Headcount)": "The total number of positions approved, expressed in headcount terms."
+    },
+    "Total Approvals (FTE)": {
+      "__type__": "float64",
+      "Total Approvals (FTE)": "The total number of positions approved, expressed in Full-Time Equivalent (FTE) terms."
+    },
+    "Date of approval": {
+      "__type__": "object",
+      "Date of approval": "The specific date on which the expenditure approval was granted."
+    }
+  },
+  "datalake/advertising-July-Sept-2018.csv": {
+    "HMG Ref": {
+      "__type__": "object",
+      "HMG Ref": "A unique reference number assigned to each advertising request within the government system."
+    },
+    "Title": {
+      "__type__": "object",
+      "Title": "The title or name of the event or campaign for which advertising is requested."
+    },
+    "Description/Notes for Minister": {
+      "__type__": "object",
+      "Description/Notes for Minister": "A detailed description of the event or campaign, including its purpose and any relevant notes for the minister."
+    },
+    "Dept": {
+      "__type__": "object",
+      "Dept": "The department or agency within the government that is requesting the advertising."
+    },
+    "Control Type": {
+      "__type__": "object",
+      "Control Type": "The type of control or category under which the advertising request falls, such as 'Advertising and Marketing'."
+    },
+    "Requested Value": {
+      "__type__": "object",
+      "Requested Value": "The amount of money requested for the advertising, typically expressed in pounds sterling."
+    },
+    "Status/Decision/Result": {
+      "__type__": "object",
+      "Status/Decision/Result": "The current status or final decision regarding the advertising request, such as 'Approved' or 'Rejected'."
+    },
+    "Minister Sub Date": {
+      "__type__": "object",
+      "Minister Sub Date": "The date on which the request was submitted to the minister for approval."
+    }
+  },
+  "datalake/admissionssummaryallocatedsecondary2012.csv": {
+    "DfENumber": {
+      "__type__": "int64",
+      "DfENumber": "A unique identifier assigned to each school by the Department for Education."
+    },
+    "SchoolName": {
+      "__type__": "object",
+      "SchoolName": "The name of the school."
+    },
+    "Year": {
+      "__type__": "int64",
+      "Year": "The academic year for which the admission data is recorded."
+    },
+    "Places": {
+      "__type__": "int64",
+      "Places": "The total number of places available for admission in the school."
+    },
+    "PlaceAllocated": {
+      "__type__": "int64",
+      "PlaceAllocated": "The number of places that were actually allocated to students."
+    },
+    "1stPref": {
+      "__type__": "int64",
+      "1stPref": "The number of students who were allocated a place based on their first preference."
+    },
+    "2ndPref": {
+      "__type__": "int64",
+      "2ndPref": "The number of students who were allocated a place based on their second preference."
+    },
+    "3rdPref": {
+      "__type__": "int64",
+      "3rdPref": "The number of students who were allocated a place based on their third preference."
+    },
+    "4thPref": {
+      "__type__": "int64",
+      "4thPref": "The number of students who were allocated a place based on their fourth preference."
+    },
+    "5thPref": {
+      "__type__": "int64",
+      "5thPref": "The number of students who were allocated a place based on their fifth preference."
+    },
+    "Unplaced": {
+      "__type__": "int64",
+      "Unplaced": "The number of students who were not allocated a place at the school."
+    },
+    "SLE": {
+      "__type__": "int64",
+      "SLE": "The number of students allocated a place based on special educational needs criteria."
+    },
+    "Catchment": {
+      "__type__": "int64",
+      "Catchment": "The number of students allocated a place based on living within the school's catchment area."
+    },
+    "Sibling": {
+      "__type__": "int64",
+      "Sibling": "The number of students allocated a place based on having a sibling already attending the school."
+    },
+    "Distance": {
+      "__type__": "int64",
+      "Distance": "The number of students allocated a place based on their proximity to the school."
+    },
+    "OutsideSpecifiedArea": {
+      "__type__": "int64",
+      "OutsideSpecifiedArea": "The number of students allocated a place who live outside the specified catchment area."
+    },
+    "InsideSpecifiedArea": {
+      "__type__": "int64",
+      "InsideSpecifiedArea": "The number of students allocated a place who live within the specified catchment area."
+    },
+    "Religion": {
+      "__type__": "int64",
+      "Religion": "The number of students allocated a place based on religious criteria."
+    },
+    "Feeder": {
+      "__type__": "int64",
+      "Feeder": "The number of students allocated a place based on attending a feeder primary school."
+    },
+    "Other": {
+      "__type__": "int64",
+      "Other": "The number of students allocated a place based on other criteria not specified."
+    },
+    "Total": {
+      "__type__": "int64",
+      "Total": "The total number of students who were allocated a place, including all criteria."
+    }
+  },
+  "datalake/admissionssummaryallocatedsecondary2016.csv": {
+    "DfENumber": {
+      "__type__": "int64",
+      "DfENumber": "A unique identifier assigned to each school by the Department for Education."
+    },
+    "SchoolName": {
+      "__type__": "object",
+      "SchoolName": "The name of the school."
+    },
+    "Year": {
+      "__type__": "int64",
+      "Year": "The academic year for which the admission data is recorded."
+    },
+    "Places": {
+      "__type__": "int64",
+      "Places": "The total number of places available for admission in the school."
+    },
+    "PlaceAllocated": {
+      "__type__": "int64",
+      "PlaceAllocated": "The number of places that were actually allocated to students."
+    },
+    "1stPref": {
+      "__type__": "int64",
+      "1stPref": "The number of students who were allocated a place based on their first preference."
+    },
+    "2ndPref": {
+      "__type__": "int64",
+      "2ndPref": "The number of students who were allocated a place based on their second preference."
+    },
+    "3rdPref": {
+      "__type__": "int64",
+      "3rdPref": "The number of students who were allocated a place based on their third preference."
+    },
+    "4thPref": {
+      "__type__": "int64",
+      "4thPref": "The number of students who were allocated a place based on their fourth preference."
+    },
+    "5thPref": {
+      "__type__": "int64",
+      "5thPref": "The number of students who were allocated a place based on their fifth preference."
+    },
+    "Unplaced": {
+      "__type__": "int64",
+      "Unplaced": "The number of students who were not allocated a place at the school."
+    },
+    "SLE": {
+      "__type__": "int64",
+      "SLE": "The number of students allocated a place based on Special Legislative Entitlement (SLE)."
+    },
+    "Catchment": {
+      "__type__": "int64",
+      "Catchment": "The number of students allocated a place based on living within the school's catchment area."
+    },
+    "Sibling": {
+      "__type__": "int64",
+      "Sibling": "The number of students allocated a place based on having a sibling already attending the school."
+    },
+    "Distance": {
+      "__type__": "int64",
+      "Distance": "The number of students allocated a place based on their proximity to the school."
+    },
+    "OutsideSpecifiedArea": {
+      "__type__": "int64",
+      "OutsideSpecifiedArea": "The number of students allocated a place who live outside the specified catchment area."
+    },
+    "InsideSpecifiedArea": {
+      "__type__": "int64",
+      "InsideSpecifiedArea": "The number of students allocated a place who live within the specified catchment area."
+    },
+    "Religion": {
+      "__type__": "int64",
+      "Religion": "The number of students allocated a place based on religious criteria."
+    },
+    "Feeder": {
+      "__type__": "int64",
+      "Feeder": "The number of students allocated a place based on attending a feeder primary school."
+    },
+    "Other": {
+      "__type__": "int64",
+      "Other": "The number of students allocated a place based on other criteria not specified."
+    },
+    "Total": {
+      "__type__": "int64",
+      "Total": "The total number of students who were allocated a place, including those who were unplaced."
+    }
+  },
+  "datalake/admissionssummaryallocatedsecondary2017.csv": {
+    "DfENumber": {
+      "__type__": "int64",
+      "DfENumber": "A unique identifier assigned by the Department for Education to each school."
+    },
+    "SchoolName": {
+      "__type__": "object",
+      "SchoolName": "The name of the school."
+    },
+    "Year": {
+      "__type__": "int64",
+      "Year": "The academic year for which the admission data is recorded."
+    },
+    "Places": {
+      "__type__": "int64",
+      "Places": "The total number of places available for admission in the school."
+    },
+    "PlaceAllocated": {
+      "__type__": "int64",
+      "PlaceAllocated": "The number of places that have been allocated to students."
+    },
+    "1stPref": {
+      "__type__": "int64",
+      "1stPref": "The number of students who were allocated a place based on their first preference."
+    },
+    "2ndPref": {
+      "__type__": "int64",
+      "2ndPref": "The number of students who were allocated a place based on their second preference."
+    },
+    "3rdPref": {
+      "__type__": "int64",
+      "3rdPref": "The number of students who were allocated a place based on their third preference."
+    },
+    "4thPref": {
+      "__type__": "int64",
+      "4thPref": "The number of students who were allocated a place based on their fourth preference."
+    },
+    "5thPref": {
+      "__type__": "int64",
+      "5thPref": "The number of students who were allocated a place based on their fifth preference."
+    },
+    "Unplaced": {
+      "__type__": "int64",
+      "Unplaced": "The number of students who were not allocated a place."
+    },
+    "SLE": {
+      "__type__": "int64",
+      "SLE": "The number of students allocated through Special Legislative Entry (SLE)."
+    },
+    "Catchment": {
+      "__type__": "int64",
+      "Catchment": "The number of students allocated based on their catchment area."
+    },
+    "Sibling": {
+      "__type__": "int64",
+      "Sibling": "The number of students allocated based on having a sibling at the school."
+    },
+    "Distance": {
+      "__type__": "int64",
+      "Distance": "The number of students allocated based on their proximity to the school."
+    },
+    "OutsideSpecifiedArea": {
+      "__type__": "int64",
+      "OutsideSpecifiedArea": "The number of students allocated from outside the specified catchment area."
+    },
+    "InsideSpecifiedArea": {
+      "__type__": "int64",
+      "InsideSpecifiedArea": "The number of students allocated from within the specified catchment area."
+    },
+    "Religion": {
+      "__type__": "int64",
+      "Religion": "The number of students allocated based on religious criteria."
+    },
+    "Feeder": {
+      "__type__": "int64",
+      "Feeder": "The number of students allocated based on their feeder school."
+    },
+    "Other": {
+      "__type__": "int64",
+      "Other": "The number of students allocated based on other criteria."
+    },
+    "Total": {
+      "__type__": "int64",
+      "Total": "The total number of students allocated places."
+    }
+  },
+  "datalake/admissionssummaryallocatedsecondary2014.csv": {
+    "DfENumber": {
+      "__type__": "int64",
+      "DfENumber": "A unique identifier assigned to each school by the Department for Education."
+    },
+    "SchoolName": {
+      "__type__": "object",
+      "SchoolName": "The name of the school."
+    },
+    "Year": {
+      "__type__": "int64",
+      "Year": "The academic year for which the admission data is recorded."
+    },
+    "Places": {
+      "__type__": "int64",
+      "Places": "The total number of places available for admission in the school."
+    },
+    "PlaceAllocated": {
+      "__type__": "int64",
+      "PlaceAllocated": "The number of places that were successfully allocated to students."
+    },
+    "1stPref": {
+      "__type__": "int64",
+      "1stPref": "The number of students who were allocated a place based on their first preference."
+    },
+    "2ndPref": {
+      "__type__": "int64",
+      "2ndPref": "The number of students who were allocated a place based on their second preference."
+    },
+    "3rdPref": {
+      "__type__": "int64",
+      "3rdPref": "The number of students who were allocated a place based on their third preference."
+    },
+    "4thPref": {
+      "__type__": "int64",
+      "4thPref": "The number of students who were allocated a place based on their fourth preference."
+    },
+    "5thPref": {
+      "__type__": "int64",
+      "5thPref": "The number of students who were allocated a place based on their fifth preference."
+    },
+    "Unplaced": {
+      "__type__": "int64",
+      "Unplaced": "The number of students who were not allocated a place."
+    },
+    "SLE": {
+      "__type__": "int64",
+      "SLE": "The number of students allocated a place under the Special Legislative Exemption (SLE) criteria."
+    },
+    "Catchment": {
+      "__type__": "int64",
+      "Catchment": "The number of students allocated a place based on their residence within the school's catchment area."
+    },
+    "Sibling": {
+      "__type__": "int64",
+      "Sibling": "The number of students allocated a place based on having a sibling already attending the school."
+    },
+    "Distance": {
+      "__type__": "int64",
+      "Distance": "The number of students allocated a place based on their proximity to the school."
+    },
+    "OutsideSpecifiedArea": {
+      "__type__": "int64",
+      "OutsideSpecifiedArea": "The number of students allocated a place who reside outside the specified catchment area."
+    },
+    "InsideSpecifiedArea": {
+      "__type__": "int64",
+      "InsideSpecifiedArea": "The number of students allocated a place who reside inside the specified catchment area."
+    },
+    "Religion": {
+      "__type__": "int64",
+      "Religion": "The number of students allocated a place based on religious criteria."
+    },
+    "Feeder": {
+      "__type__": "int64",
+      "Feeder": "The number of students allocated a place based on their attendance at a feeder primary school."
+    },
+    "Other": {
+      "__type__": "int64",
+      "Other": "The number of students allocated a place based on other criteria not specified in the other columns."
+    },
+    "Total": {
+      "__type__": "int64",
+      "Total": "The total number of students considered for allocation, including those who were placed and unplaced."
+    }
+  },
+  "datalake/admissionssummaryallocatedsecondary2015.csv": {
+    "DfENumber": {
+      "__type__": "int64",
+      "DfENumber": "A unique identifier assigned to each educational institution by the Department for Education."
+    },
+    "SchoolName": {
+      "__type__": "object",
+      "SchoolName": "The name of the school."
+    },
+    "Year": {
+      "__type__": "int64",
+      "Year": "The academic year for which the admission data is recorded."
+    },
+    "Places": {
+      "__type__": "int64",
+      "Places": "The total number of places available for admission in the school."
+    },
+    "PlaceAllocated": {
+      "__type__": "int64",
+      "PlaceAllocated": "The total number of places that were allocated to students."
+    },
+    "1stPref": {
+      "__type__": "int64",
+      "1stPref": "The number of students who were allocated a place based on their first preference."
+    },
+    "2ndPref": {
+      "__type__": "int64",
+      "2ndPref": "The number of students who were allocated a place based on their second preference."
+    },
+    "3rdPref": {
+      "__type__": "int64",
+      "3rdPref": "The number of students who were allocated a place based on their third preference."
+    },
+    "4thPref": {
+      "__type__": "int64",
+      "4thPref": "The number of students who were allocated a place based on their fourth preference."
+    },
+    "5thPref": {
+      "__type__": "int64",
+      "5thPref": "The number of students who were allocated a place based on their fifth preference."
+    },
+    "Unplaced": {
+      "__type__": "int64",
+      "Unplaced": "The number of students who were not allocated a place."
+    },
+    "SLE": {
+      "__type__": "int64",
+      "SLE": "The number of students allocated through Special Legislative Entry (SLE)."
+    },
+    "Catchment": {
+      "__type__": "int64",
+      "Catchment": "The number of students allocated based on their residence within the school's catchment area."
+    },
+    "Sibling": {
+      "__type__": "int64",
+      "Sibling": "The number of students allocated based on having a sibling already attending the school."
+    },
+    "Distance": {
+      "__type__": "int64",
+      "Distance": "The number of students allocated based on their proximity to the school."
+    },
+    "OutsideSpecifiedArea": {
+      "__type__": "int64",
+      "OutsideSpecifiedArea": "The number of students allocated who reside outside the specified catchment area."
+    },
+    "InsideSpecifiedArea": {
+      "__type__": "int64",
+      "InsideSpecifiedArea": "The number of students allocated who reside inside the specified catchment area."
+    },
+    "Religion": {
+      "__type__": "int64",
+      "Religion": "The number of students allocated based on religious criteria."
+    },
+    "Feeder": {
+      "__type__": "int64",
+      "Feeder": "The number of students allocated based on their attendance at a feeder primary school."
+    },
+    "Other": {
+      "__type__": "int64",
+      "Other": "The number of students allocated based on other criteria not specified in the other columns."
+    },
+    "Total": {
+      "__type__": "int64",
+      "Total": "The total number of students who were considered for allocation."
+    }
+  },
+  "datalake/admissionssummaryallocatedsecondary2019.csv": {
+    "DfENumber": {
+      "__type__": "int64",
+      "DfENumber": "A unique identifier assigned to each school by the Department for Education."
+    },
+    "SchoolName": {
+      "__type__": "object",
+      "SchoolName": "The name of the school."
+    },
+    "Year": {
+      "__type__": "int64",
+      "Year": "The academic year for which the admission data is recorded."
+    },
+    "Places": {
+      "__type__": "int64",
+      "Places": "The total number of places available for admission in the school."
+    },
+    "PlaceAllocated": {
+      "__type__": "int64",
+      "PlaceAllocated": "The number of places that were allocated to students."
+    },
+    "1stPref": {
+      "__type__": "int64",
+      "1stPref": "The number of students who were allocated a place based on their first preference."
+    },
+    "2ndPref": {
+      "__type__": "int64",
+      "2ndPref": "The number of students who were allocated a place based on their second preference."
+    },
+    "3rdPref": {
+      "__type__": "int64",
+      "3rdPref": "The number of students who were allocated a place based on their third preference."
+    },
+    "4thPref": {
+      "__type__": "int64",
+      "4thPref": "The number of students who were allocated a place based on their fourth preference."
+    },
+    "5thPref": {
+      "__type__": "int64",
+      "5thPref": "The number of students who were allocated a place based on their fifth preference."
+    },
+    "Unplaced": {
+      "__type__": "int64",
+      "Unplaced": "The number of students who were not allocated a place."
+    },
+    "SLE": {
+      "__type__": "int64",
+      "SLE": "The number of students allocated through Special Legislative Entry (SLE)."
+    },
+    "Catchment": {
+      "__type__": "int64",
+      "Catchment": "The number of students allocated based on their catchment area."
+    },
+    "Sibling": {
+      "__type__": "int64",
+      "Sibling": "The number of students allocated based on having a sibling at the school."
+    },
+    "Distance": {
+      "__type__": "int64",
+      "Distance": "The number of students allocated based on their proximity to the school."
+    },
+    "OutsideSpecifiedArea": {
+      "__type__": "int64",
+      "OutsideSpecifiedArea": "The number of students allocated from outside the specified catchment area."
+    },
+    "InsideSpecifiedArea": {
+      "__type__": "int64",
+      "InsideSpecifiedArea": "The number of students allocated from within the specified catchment area."
+    },
+    "Religion": {
+      "__type__": "int64",
+      "Religion": "The number of students allocated based on religious criteria."
+    },
+    "Feeder": {
+      "__type__": "int64",
+      "Feeder": "The number of students allocated based on their feeder school."
+    },
+    "Other": {
+      "__type__": "int64",
+      "Other": "The number of students allocated based on other criteria."
+    },
+    "Total": {
+      "__type__": "int64",
+      "Total": "The total number of students who were allocated a place."
+    }
+  },
+  "datalake/advertising-april-june-2015.csv": {
+    "Tool Ref": {
+      "__type__": "float64",
+      "Tool Ref": "A reference code or identifier for the specific tool or system used for the project."
+    },
+    "Department": {
+      "__type__": "object",
+      "Department": "The department within the organization responsible for the project."
+    },
+    "Organisation Name": {
+      "__type__": "float64",
+      "Organisation Name": "The name of the organization or entity that is undertaking the project."
+    },
+    "Project name": {
+      "__type__": "float64",
+      "Project name": "The name or title of the specific project being funded or approved."
+    },
+    "Basis for expenditure approval": {
+      "__type__": "float64",
+      "Basis for expenditure approval": "The rationale or justification for approving the expenditure for the project."
+    },
+    "Total Value Approved (£)": {
+      "__type__": "float64",
+      "Total Value Approved (£)": "The total monetary value, in British Pounds, that has been approved for the project."
+    },
+    "Date of approval": {
+      "__type__": "float64",
+      "Date of approval": "The date on which the expenditure for the project was approved."
+    }
+  },
+  "datalake/admissionssummaryallocatedsecondary2013.csv": {
+    "DfENumber": {
+      "__type__": "int64",
+      "DfENumber": "A unique identifier assigned to each school by the Department for Education."
+    },
+    "SchoolName": {
+      "__type__": "object",
+      "SchoolName": "The name of the school."
+    },
+    "Year": {
+      "__type__": "int64",
+      "Year": "The academic year for which the admission data is recorded."
+    },
+    "Places": {
+      "__type__": "int64",
+      "Places": "The total number of places available for admission in the school."
+    },
+    "PlaceAllocated": {
+      "__type__": "int64",
+      "PlaceAllocated": "The number of places that were successfully allocated to students."
+    },
+    "1stPref": {
+      "__type__": "int64",
+      "1stPref": "The number of students who were allocated a place based on their first preference."
+    },
+    "2ndPref": {
+      "__type__": "int64",
+      "2ndPref": "The number of students who were allocated a place based on their second preference."
+    },
+    "3rdPref": {
+      "__type__": "int64",
+      "3rdPref": "The number of students who were allocated a place based on their third preference."
+    },
+    "4thPref": {
+      "__type__": "int64",
+      "4thPref": "The number of students who were allocated a place based on their fourth preference."
+    },
+    "5thPref": {
+      "__type__": "int64",
+      "5thPref": "The number of students who were allocated a place based on their fifth preference."
+    },
+    "Unplaced": {
+      "__type__": "int64",
+      "Unplaced": "The number of students who were not allocated a place in the school."
+    },
+    "SLE": {
+      "__type__": "int64",
+      "SLE": "The number of students allocated a place through the Special Legislative Entry (SLE) process."
+    },
+    "Catchment": {
+      "__type__": "int64",
+      "Catchment": "The number of students allocated a place based on their residence within the school's catchment area."
+    },
+    "Sibling": {
+      "__type__": "int64",
+      "Sibling": "The number of students allocated a place based on having a sibling already attending the school."
+    },
+    "Distance": {
+      "__type__": "int64",
+      "Distance": "The number of students allocated a place based on their proximity to the school."
+    },
+    "OutsideSpecifiedArea": {
+      "__type__": "int64",
+      "OutsideSpecifiedArea": "The number of students allocated a place who reside outside the specified catchment area."
+    },
+    "InsideSpecifiedArea": {
+      "__type__": "int64",
+      "InsideSpecifiedArea": "The number of students allocated a place who reside within the specified catchment area."
+    },
+    "Religion": {
+      "__type__": "int64",
+      "Religion": "The number of students allocated a place based on religious criteria."
+    },
+    "Feeder": {
+      "__type__": "int64",
+      "Feeder": "The number of students allocated a place based on their attendance at a feeder primary school."
+    },
+    "Other": {
+      "__type__": "int64",
+      "Other": "The number of students allocated a place based on other criteria not specified in the other columns."
+    },
+    "Total": {
+      "__type__": "int64",
+      "Total": "The total number of students who were allocated a place in the school."
+    }
+  },
+  "datalake/advertising-July-Sept-2019.csv": {
+    "HMG Ref": {
+      "__type__": "object",
+      "HMG Ref": "A unique reference code assigned to each advertising request within the government system."
+    },
+    "Title": {
+      "__type__": "object",
+      "Title": "A brief title or name given to the advertising or marketing campaign."
+    },
+    "Description/Notes for Minister": {
+      "__type__": "object",
+      "Description/Notes for Minister": "A detailed description of the campaign, including its purpose, key performance indicators (KPIs), and any additional notes for the minister."
+    },
+    "Dept": {
+      "__type__": "object",
+      "Dept": "The department or agency responsible for the advertising or marketing campaign."
+    },
+    "Control Type": {
+      "__type__": "object",
+      "Control Type": "The type of control or category under which the advertising or marketing campaign falls, such as 'Advertising and Marketing'."
+    },
+    "Requested Value": {
+      "__type__": "object",
+      "Requested Value": "The amount of money requested for the campaign, typically expressed in pounds sterling (GBP)."
+    },
+    "Approval Date": {
+      "__type__": "object",
+      "Approval Date": "The date on which the advertising or marketing campaign was approved, in the format DD/MM/YYYY."
+    }
+  },
+  "datalake/albums_1.csv": {
+    "artist": {
+      "__type__": "object",
+      "artist": "The name of the musical artist or band that performed the song."
+    },
+    "title": {
+      "__type__": "object",
+      "title": "The title of the song."
+    },
+    "album": {
+      "__type__": "object",
+      "album": "The name of the album on which the song appears."
+    }
+  },
+  "datalake/albums_0.csv": {
+    "title": {
+      "__type__": "object",
+      "title": "The name of the song or track."
+    },
+    "album": {
+      "__type__": "object",
+      "album": "The name of the album or soundtrack on which the track appears."
+    },
+    "track": {
+      "__type__": "float64",
+      "track": "The track number of the song on the album or soundtrack."
+    },
+    "year": {
+      "__type__": "float64",
+      "year": "The year the album or soundtrack was released."
+    }
+  },
+  "datalake/admissionssummaryallocatedsecondary2020.csv": {
+    "DfENumber": {
+      "__type__": "int64",
+      "DfENumber": "A unique identifier assigned to each school by the Department for Education."
+    },
+    "SchoolName": {
+      "__type__": "object",
+      "SchoolName": "The name of the school."
+    },
+    "Year": {
+      "__type__": "int64",
+      "Year": "The academic year for which the admission data is recorded."
+    },
+    "Places": {
+      "__type__": "int64",
+      "Places": "The total number of places available for admission in the school."
+    },
+    "PlaceAllocated": {
+      "__type__": "int64",
+      "PlaceAllocated": "The number of places that were successfully allocated to students."
+    },
+    "1stPref": {
+      "__type__": "int64",
+      "1stPref": "The number of students who were allocated a place based on their first preference."
+    },
+    "2ndPref": {
+      "__type__": "int64",
+      "2ndPref": "The number of students who were allocated a place based on their second preference."
+    },
+    "3rdPref": {
+      "__type__": "int64",
+      "3rdPref": "The number of students who were allocated a place based on their third preference."
+    },
+    "4thPref": {
+      "__type__": "int64",
+      "4thPref": "The number of students who were allocated a place based on their fourth preference."
+    },
+    "5thPref": {
+      "__type__": "int64",
+      "5thPref": "The number of students who were allocated a place based on their fifth preference."
+    },
+    "Unplaced": {
+      "__type__": "int64",
+      "Unplaced": "The number of students who were not allocated a place at the school."
+    },
+    "SLE": {
+      "__type__": "int64",
+      "SLE": "The number of students allocated a place through Special Legislative Entry (SLE)."
+    },
+    "Catchment": {
+      "__type__": "int64",
+      "Catchment": "The number of students allocated a place based on their residence within the school's catchment area."
+    },
+    "Sibling": {
+      "__type__": "int64",
+      "Sibling": "The number of students allocated a place based on having a sibling already attending the school."
+    },
+    "Distance": {
+      "__type__": "int64",
+      "Distance": "The number of students allocated a place based on their proximity to the school."
+    },
+    "InsideSpecifiedArea": {
+      "__type__": "int64",
+      "InsideSpecifiedArea": "The number of students allocated a place based on residing within a specified area."
+    },
+    "Religion": {
+      "__type__": "int64",
+      "Religion": "The number of students allocated a place based on religious criteria."
+    },
+    "Feeder": {
+      "__type__": "int64",
+      "Feeder": "The number of students allocated a place based on attending a feeder primary school."
+    },
+    "Other": {
+      "__type__": "int64",
+      "Other": "The number of students allocated a place based on other criteria not specified in the other columns."
+    },
+    "Total": {
+      "__type__": "int64",
+      "Total": "The total number of students who applied for admission to the school."
+    }
+  },
+  "datalake/albums_10.csv": {
+    "title": {
+      "__type__": "object",
+      "title": "The name of the song or track."
+    },
+    "album": {
+      "__type__": "object",
+      "album": "The name of the album on which the song or track appears."
+    },
+    "track": {
+      "__type__": "float64",
+      "track": "The track number of the song on the album."
+    },
+    "year": {
+      "__type__": "float64",
+      "year": "The year the album was released."
+    }
+  },
+  "datalake/HMRC_WMI_headcount_and_payroll_data_Nov_2015.csv": {
+    "Nov-15": {
+      "__type__": "object",
+      "Nov-15": "The month and year of the data collection, specifically November 2015."
+    },
+    "Unnamed: 1": {
+      "__type__": "object",
+      "Unnamed: 1": "The name of the organization or department."
+    },
+    "Unnamed: 2": {
+      "__type__": "object",
+      "Unnamed: 2": "The type of organization, such as Executive Agency or Non-Ministerial Department."
+    },
+    "Unnamed: 3": {
+      "__type__": "object",
+      "Unnamed: 3": "The main, parent, or sponsoring department of the organization."
+    },
+    "Unnamed: 4": {
+      "__type__": "object",
+      "Unnamed: 4": "The headcount of AO/AA grade employees."
+    },
+    "Unnamed: 5": {
+      "__type__": "object",
+      "Unnamed: 5": "The full-time equivalent (FTE) of AO/AA grade employees."
+    },
+    "Unnamed: 6": {
+      "__type__": "object",
+      "Unnamed: 6": "The headcount of EO grade employees."
+    },
+    "Unnamed: 7": {
+      "__type__": "object",
+      "Unnamed: 7": "The full-time equivalent (FTE) of EO grade employees."
+    },
+    "Unnamed: 8": {
+      "__type__": "object",
+      "Unnamed: 8": "The headcount of SEO/HEO grade employees."
+    },
+    "Unnamed: 9": {
+      "__type__": "object",
+      "Unnamed: 9": "The full-time equivalent (FTE) of SEO/HEO grade employees."
+    },
+    "Unnamed: 10": {
+      "__type__": "object",
+      "Unnamed: 10": "The headcount of Grade 6/7 employees."
+    },
+    "Unnamed: 11": {
+      "__type__": "object",
+      "Unnamed: 11": "The full-time equivalent (FTE) of Grade 6/7 employees."
+    },
+    "Unnamed: 12": {
+      "__type__": "object",
+      "Unnamed: 12": "The headcount of SCS grade employees."
+    },
+    "Unnamed: 13": {
+      "__type__": "object",
+      "Unnamed: 13": "The full-time equivalent (FTE) of SCS grade employees."
+    },
+    "Unnamed: 14": {
+      "__type__": "object",
+      "Unnamed: 14": "The headcount of employees with other, unknown, or unspecified grades."
+    },
+    "Unnamed: 15": {
+      "__type__": "object",
+      "Unnamed: 15": "The full-time equivalent (FTE) of employees with other, unknown, or unspecified grades."
+    },
+    "Unnamed: 16": {
+      "__type__": "object",
+      "Unnamed: 16": "The total headcount of all employees."
+    },
+    "Unnamed: 17": {
+      "__type__": "object",
+      "Unnamed: 17": "The total full-time equivalent (FTE) of all employees."
+    },
+    "Unnamed: 18": {
+      "__type__": "object",
+      "Unnamed: 18": "The headcount of agency staff (clerical/admin)."
+    },
+    "Unnamed: 19": {
+      "__type__": "object",
+      "Unnamed: 19": "The full-time equivalent (FTE) of agency staff (clerical/admin)."
+    },
+    "Unnamed: 20": {
+      "__type__": "object",
+      "Unnamed: 20": "The headcount of interim managers."
+    },
+    "Unnamed: 21": {
+      "__type__": "object",
+      "Unnamed: 21": "The full-time equivalent (FTE) of interim managers."
+    },
+    "Unnamed: 22": {
+      "__type__": "object",
+      "Unnamed: 22": "The headcount of specialist contractors."
+    },
+    "Unnamed: 23": {
+      "__type__": "object",
+      "Unnamed: 23": "The full-time equivalent (FTE) of specialist contractors."
+    },
+    "Unnamed: 24": {
+      "__type__": "object",
+      "Unnamed: 24": "The headcount of consultants/consultancy."
+    },
+    "Unnamed: 25": {
+      "__type__": "object",
+      "Unnamed: 25": "The full-time equivalent (FTE) of consultants/consultancy."
+    },
+    "Unnamed: 26": {
+      "__type__": "object",
+      "Unnamed: 26": "The total headcount of non-payroll staff (contingent labour and consultants/consultancy)."
+    },
+    "Unnamed: 27": {
+      "__type__": "object",
+      "Unnamed: 27": "The total full-time equivalent (FTE) of non-payroll staff (contingent labour and consultants/consultancy)."
+    },
+    "Unnamed: 28": {
+      "__type__": "object",
+      "Unnamed: 28": "The grand total headcount of all workforce numbers (payroll and non-payroll)."
+    },
+    "Unnamed: 29": {
+      "__type__": "object",
+      "Unnamed: 29": "The grand total full-time equivalent (FTE) of all workforce numbers (payroll and non-payroll)."
+    },
+    "Unnamed: 30": {
+      "__type__": "object",
+      "Unnamed: 30": "The total payroll staff costs for salary."
+    },
+    "Unnamed: 31": {
+      "__type__": "object",
+      "Unnamed: 31": "The total payroll staff costs for allowances."
+    },
+    "Unnamed: 32": {
+      "__type__": "object",
+      "Unnamed: 32": "The total payroll staff costs for non-consolidated performance payments."
+    },
+    "Unnamed: 33": {
+      "__type__": "object",
+      "Unnamed: 33": "The total payroll staff costs for overtime."
+    },
+    "Unnamed: 34": {
+      "__type__": "object",
+      "Unnamed: 34": "The total payroll staff costs for employer pension contributions."
+    },
+    "Unnamed: 35": {
+      "__type__": "object",
+      "Unnamed: 35": "The total payroll staff costs for employer national insurance contributions."
+    },
+    "Unnamed: 36": {
+      "__type__": "object",
+      "Unnamed: 36": "The total paybill for payroll staff."
+    },
+    "Unnamed: 37": {
+      "__type__": "object",
+      "Unnamed: 37": "The total monthly cost of contingent labour: agency (clerical and admin) staff, interim managers, and specialist contractors."
+    },
+    "Unnamed: 38": {
+      "__type__": "object",
+      "Unnamed: 38": "The total monthly cost of consultants/consultancy."
+    },
+    "Unnamed: 39": {
+      "__type__": "object",
+      "Unnamed: 39": "The total non-payroll (CCL) staff costs."
+    },
+    "Unnamed: 40": {
+      "__type__": "object",
+      "Unnamed: 40": "The grand total paybill/staffing (payroll and non-payroll) costs."
+    },
+    "Unnamed: 41": {
+      "__type__": "float64",
+      "Unnamed: 41": "Comments or notes that will be published alongside the row of information."
+    }
+  },
+  "datalake/albums_11.csv": {
+    "title": {
+      "__type__": "object",
+      "title": "The name of the song or track."
+    },
+    "album": {
+      "__type__": "object",
+      "album": "The name of the album on which the song or track appears."
+    },
+    "track": {
+      "__type__": "float64",
+      "track": "The track number of the song on the album."
+    },
+    "year": {
+      "__type__": "float64",
+      "year": "The year the album was released."
+    }
+  },
+  "datalake/albums_12.csv": {
+    "title": {
+      "__type__": "object",
+      "title": "The name of the song or track."
+    },
+    "album": {
+      "__type__": "object",
+      "album": "The name of the album or soundtrack on which the track appears."
+    },
+    "track": {
+      "__type__": "float64",
+      "track": "The track number of the song on the album or soundtrack."
+    },
+    "year": {
+      "__type__": "float64",
+      "year": "The year the album or soundtrack was released."
+    }
+  },
+  "datalake/advertising-april-june14.csv": {
+    "Tool Ref": {
+      "__type__": "float64",
+      "Tool Ref": "A reference code or identifier for the specific tool or system used for the project."
+    },
+    "Department": {
+      "__type__": "float64",
+      "Department": "The department within the organization responsible for the project."
+    },
+    "Organisation Name": {
+      "__type__": "object",
+      "Organisation Name": "The name of the organization or entity involved in the project."
+    },
+    "Project name": {
+      "__type__": "float64",
+      "Project name": "The name of the project for which the expenditure is approved."
+    },
+    "Basis for expenditure approval": {
+      "__type__": "float64",
+      "Basis for expenditure approval": "The rationale or criteria used to approve the expenditure."
+    },
+    "Total Value Approved (£M)": {
+      "__type__": "object",
+      "Total Value Approved (£M)": "The total monetary value of the approved expenditure in millions of pounds."
+    },
+    "Date of approval": {
+      "__type__": "float64",
+      "Date of approval": "The date on which the expenditure was approved."
+    }
+  },
+  "datalake/albums_5.csv": {
+    "artist": {
+      "__type__": "object",
+      "artist": "The name of the artist or band that performed the song."
+    },
+    "title": {
+      "__type__": "object",
+      "title": "The title of the song."
+    },
+    "album": {
+      "__type__": "object",
+      "album": "The name of the album on which the song appears."
+    }
+  },
+  "datalake/advertising-jan-march2016.csv": {
+    "Advertising & Marketing": {
+      "__type__": "object",
+      "Advertising & Marketing": "The category or department responsible for the advertising and marketing activities."
+    },
+    "Unnamed: 1": {
+      "__type__": "object",
+      "Unnamed: 1": "The name of the organization involved in the advertising and marketing activity."
+    },
+    "Unnamed: 2": {
+      "__type__": "object",
+      "Unnamed: 2": "The reference number assigned to the project or activity by the government (HMG)."
+    },
+    "Unnamed: 3": {
+      "__type__": "object",
+      "Unnamed: 3": "The name or title of the project or campaign."
+    },
+    "Unnamed: 4": {
+      "__type__": "object",
+      "Unnamed: 4": "The basis or justification for the expenditure approval."
+    },
+    "Unnamed: 5": {
+      "__type__": "object",
+      "Unnamed: 5": "The total value of the approved expenditure in British Pounds (£)."
+    },
+    "Unnamed: 6": {
+      "__type__": "object",
+      "Unnamed: 6": "The date on which the expenditure was approved."
+    }
+  },
+  "datalake/admissionssummaryallocatedsecondary2021.csv": {
+    "DfENumber": {
+      "__type__": "int64",
+      "DfENumber": "A unique identifier assigned to each school by the Department for Education."
+    },
+    "SchoolName": {
+      "__type__": "object",
+      "SchoolName": "The name of the school."
+    },
+    "Year": {
+      "__type__": "int64",
+      "Year": "The academic year for which the admission data is recorded."
+    },
+    "Places": {
+      "__type__": "int64",
+      "Places": "The total number of places available for admission in the school."
+    },
+    "PlaceAllocated": {
+      "__type__": "int64",
+      "PlaceAllocated": "The total number of places that have been allocated to students."
+    },
+    "1stPref": {
+      "__type__": "int64",
+      "1stPref": "The number of students who were allocated a place based on their first preference."
+    },
+    "2ndPref": {
+      "__type__": "int64",
+      "2ndPref": "The number of students who were allocated a place based on their second preference."
+    },
+    "3rdPref": {
+      "__type__": "int64",
+      "3rdPref": "The number of students who were allocated a place based on their third preference."
+    },
+    "4thPref": {
+      "__type__": "int64",
+      "4thPref": "The number of students who were allocated a place based on their fourth preference."
+    },
+    "5thPref": {
+      "__type__": "int64",
+      "5thPref": "The number of students who were allocated a place based on their fifth preference."
+    },
+    "Unplaced": {
+      "__type__": "int64",
+      "Unplaced": "The number of students who were not allocated a place at the school."
+    },
+    "SLE": {
+      "__type__": "int64",
+      "SLE": "The number of students allocated a place through Special Legislative Entry (SLE)."
+    },
+    "Catchment": {
+      "__type__": "int64",
+      "Catchment": "The number of students allocated a place based on their residence within the school's catchment area."
+    },
+    "Sibling": {
+      "__type__": "int64",
+      "Sibling": "The number of students allocated a place based on having a sibling already attending the school."
+    },
+    "Distance": {
+      "__type__": "int64",
+      "Distance": "The number of students allocated a place based on their proximity to the school."
+    },
+    "InsideSpecifiedArea": {
+      "__type__": "int64",
+      "InsideSpecifiedArea": "The number of students allocated a place based on residing within a specified area."
+    },
+    "Religion": {
+      "__type__": "int64",
+      "Religion": "The number of students allocated a place based on religious affiliation."
+    },
+    "Feeder School": {
+      "__type__": "int64",
+      "Feeder School": "The number of students allocated a place based on attending a specific feeder school."
+    },
+    "Total": {
+      "__type__": "int64",
+      "Total": "The total number of students who applied for admission to the school."
+    }
+  },
+  "datalake/admissionssummaryallocatedsecondary2018.csv": {
+    "DfENumber": {
+      "__type__": "int64",
+      "DfENumber": "A unique identifier assigned to each educational institution by the Department for Education."
+    },
+    "SchoolName": {
+      "__type__": "object",
+      "SchoolName": "The name of the school."
+    },
+    "Year": {
+      "__type__": "int64",
+      "Year": "The academic year for which the admission data is recorded."
+    },
+    "Places": {
+      "__type__": "int64",
+      "Places": "The total number of places available for admission in the school."
+    },
+    "PlaceAllocated": {
+      "__type__": "int64",
+      "PlaceAllocated": "The number of places that were successfully allocated to students."
+    },
+    "1stPref": {
+      "__type__": "int64",
+      "1stPref": "The number of students who were allocated a place based on their first preference."
+    },
+    "2ndPref": {
+      "__type__": "int64",
+      "2ndPref": "The number of students who were allocated a place based on their second preference."
+    },
+    "3rdPref": {
+      "__type__": "int64",
+      "3rdPref": "The number of students who were allocated a place based on their third preference."
+    },
+    "4thPref": {
+      "__type__": "int64",
+      "4thPref": "The number of students who were allocated a place based on their fourth preference."
+    },
+    "5thPref": {
+      "__type__": "int64",
+      "5thPref": "The number of students who were allocated a place based on their fifth preference."
+    },
+    "Unplaced": {
+      "__type__": "int64",
+      "Unplaced": "The number of students who were not allocated a place in the school."
+    },
+    "SLE": {
+      "__type__": "int64",
+      "SLE": "The number of students allocated a place through the Special Legislative Entry (SLE) process."
+    },
+    "Catchment": {
+      "__type__": "int64",
+      "Catchment": "The number of students allocated a place based on their residence within the school's catchment area."
+    },
+    "Sibling": {
+      "__type__": "int64",
+      "Sibling": "The number of students allocated a place based on having a sibling already attending the school."
+    },
+    "Distance": {
+      "__type__": "int64",
+      "Distance": "The number of students allocated a place based on their proximity to the school."
+    },
+    "OutsideSpecifiedArea": {
+      "__type__": "float64",
+      "OutsideSpecifiedArea": "The number of students allocated a place who reside outside the specified catchment area."
+    },
+    "InsideSpecifiedArea": {
+      "__type__": "int64",
+      "InsideSpecifiedArea": "The number of students allocated a place who reside within the specified catchment area."
+    },
+    "Religion": {
+      "__type__": "int64",
+      "Religion": "The number of students allocated a place based on religious criteria."
+    },
+    "Feeder": {
+      "__type__": "int64",
+      "Feeder": "The number of students allocated a place based on their attendance at a feeder school."
+    },
+    "Other": {
+      "__type__": "int64",
+      "Other": "The number of students allocated a place based on other criteria not specified in the other columns."
+    },
+    "Total": {
+      "__type__": "int64",
+      "Total": "The total number of students who applied for admission to the school."
+    }
+  },
+  "datalake/albums_9.csv": {
+    "artist": {
+      "__type__": "object",
+      "artist": "The name of the artist or band that performed the song."
+    },
+    "title": {
+      "__type__": "object",
+      "title": "The title of the song or track."
+    },
+    "album": {
+      "__type__": "object",
+      "album": "The name of the album on which the song or track appears."
+    }
+  },
+  "datalake/albums_6.csv": {
+    "artist": {
+      "__type__": "object",
+      "artist": "The name of the artist or band that performed the song."
+    },
+    "title": {
+      "__type__": "object",
+      "title": "The title of the song."
+    },
+    "album": {
+      "__type__": "object",
+      "album": "The name of the album on which the song appears."
+    }
+  },
+  "datalake/albums_2.csv": {
+    "artist": {
+      "__type__": "object",
+      "artist": "The name of the artist or band that performed the song."
+    },
+    "title": {
+      "__type__": "object",
+      "title": "The title of the song."
+    },
+    "album": {
+      "__type__": "object",
+      "album": "The name of the album on which the song appears."
+    }
+  },
+  "datalake/albums_4.csv": {
+    "artist": {
+      "__type__": "object",
+      "artist": "The name of the artist or band that performed the song."
+    },
+    "title": {
+      "__type__": "object",
+      "title": "The title of the song."
+    },
+    "album": {
+      "__type__": "object",
+      "album": "The name of the album on which the song appears."
+    }
+  },
+  "datalake/albums_3.csv": {
+    "artist": {
+      "__type__": "object",
+      "artist": "The name of the artist or band that performed the song."
+    },
+    "title": {
+      "__type__": "object",
+      "title": "The title of the song."
+    },
+    "album": {
+      "__type__": "object",
+      "album": "The name of the album on which the song appears."
+    }
+  },
+  "datalake/albums_7.csv": {
+    "artist": {
+      "__type__": "object",
+      "artist": "The name of the artist or band that performed the song."
+    },
+    "title": {
+      "__type__": "object",
+      "title": "The title of the song."
+    },
+    "album": {
+      "__type__": "object",
+      "album": "The name of the album on which the song appears."
+    }
+  },
+  "datalake/albums_8.csv": {
+    "artist": {
+      "__type__": "object",
+      "artist": "The name of the musical artist or band that created the album."
+    },
+    "title": {
+      "__type__": "object",
+      "title": "The title of the specific song or track from the album."
+    },
+    "album": {
+      "__type__": "object",
+      "album": "The name of the album on which the song or track appears."
+    }
+  },
+  "datalake/albums_13.csv": {
+    "title": {
+      "__type__": "object",
+      "title": "The name of the song or track."
+    },
+    "album": {
+      "__type__": "object",
+      "album": "The name of the album on which the song or track appears."
+    },
+    "track": {
+      "__type__": "float64",
+      "track": "The track number of the song on the album."
+    },
+    "year": {
+      "__type__": "float64",
+      "year": "The year the album was released."
+    }
+  },
+  "datalake/HMRC_WMI_headcount_and_payroll_data_Nov_2014.csv": {
+    "Nov-14": {
+      "__type__": "object",
+      "Nov-14": "The month and year of the data collection, specifically November 2014."
+    },
+    "Unnamed: 1": {
+      "__type__": "object",
+      "Unnamed: 1": "The name of the organization or department."
+    },
+    "Unnamed: 2": {
+      "__type__": "object",
+      "Unnamed: 2": "The type of organization, such as Executive Agency or Non-Ministerial Department."
+    },
+    "Unnamed: 3": {
+      "__type__": "object",
+      "Unnamed: 3": "The main, parent, or sponsoring department of the organization."
+    },
+    "Unnamed: 4": {
+      "__type__": "object",
+      "Unnamed: 4": "The headcount of AO/AA grade employees."
+    },
+    "Unnamed: 5": {
+      "__type__": "object",
+      "Unnamed: 5": "The full-time equivalent (FTE) of AO/AA grade employees."
+    },
+    "Unnamed: 6": {
+      "__type__": "object",
+      "Unnamed: 6": "The headcount of EO grade employees."
+    },
+    "Unnamed: 7": {
+      "__type__": "object",
+      "Unnamed: 7": "The full-time equivalent (FTE) of EO grade employees."
+    },
+    "Unnamed: 8": {
+      "__type__": "object",
+      "Unnamed: 8": "The headcount of SEO/HEO grade employees."
+    },
+    "Unnamed: 9": {
+      "__type__": "object",
+      "Unnamed: 9": "The full-time equivalent (FTE) of SEO/HEO grade employees."
+    },
+    "Unnamed: 10": {
+      "__type__": "object",
+      "Unnamed: 10": "The headcount of Grade 6/7 employees."
+    },
+    "Unnamed: 11": {
+      "__type__": "object",
+      "Unnamed: 11": "The full-time equivalent (FTE) of Grade 6/7 employees."
+    },
+    "Unnamed: 12": {
+      "__type__": "object",
+      "Unnamed: 12": "The headcount of SCS grade employees."
+    },
+    "Unnamed: 13": {
+      "__type__": "object",
+      "Unnamed: 13": "The full-time equivalent (FTE) of SCS grade employees."
+    },
+    "Unnamed: 14": {
+      "__type__": "object",
+      "Unnamed: 14": "The headcount of employees with other, unknown, or unspecified grades."
+    },
+    "Unnamed: 15": {
+      "__type__": "object",
+      "Unnamed: 15": "The full-time equivalent (FTE) of employees with other, unknown, or unspecified grades."
+    },
+    "Unnamed: 16": {
+      "__type__": "object",
+      "Unnamed: 16": "The total headcount of all payroll employees."
+    },
+    "Unnamed: 17": {
+      "__type__": "object",
+      "Unnamed: 17": "The total full-time equivalent (FTE) of all payroll employees."
+    },
+    "Unnamed: 18": {
+      "__type__": "object",
+      "Unnamed: 18": "The headcount of agency staff (clerical/admin)."
+    },
+    "Unnamed: 19": {
+      "__type__": "object",
+      "Unnamed: 19": "The full-time equivalent (FTE) of agency staff (clerical/admin)."
+    },
+    "Unnamed: 20": {
+      "__type__": "object",
+      "Unnamed: 20": "The headcount of interim managers."
+    },
+    "Unnamed: 21": {
+      "__type__": "object",
+      "Unnamed: 21": "The full-time equivalent (FTE) of interim managers."
+    },
+    "Unnamed: 22": {
+      "__type__": "object",
+      "Unnamed: 22": "The headcount of specialist contractors."
+    },
+    "Unnamed: 23": {
+      "__type__": "object",
+      "Unnamed: 23": "The full-time equivalent (FTE) of specialist contractors."
+    },
+    "Unnamed: 24": {
+      "__type__": "object",
+      "Unnamed: 24": "The headcount of consultants/consultancy."
+    },
+    "Unnamed: 25": {
+      "__type__": "object",
+      "Unnamed: 25": "The full-time equivalent (FTE) of consultants/consultancy."
+    },
+    "Unnamed: 26": {
+      "__type__": "object",
+      "Unnamed: 26": "The total headcount of non-payroll staff (contingent labour and consultants/consultancy)."
+    },
+    "Unnamed: 27": {
+      "__type__": "object",
+      "Unnamed: 27": "The total full-time equivalent (FTE) of non-payroll staff (contingent labour and consultants/consultancy)."
+    },
+    "Unnamed: 28": {
+      "__type__": "object",
+      "Unnamed: 28": "The grand total headcount of all workforce (payroll and non-payroll)."
+    },
+    "Unnamed: 29": {
+      "__type__": "object",
+      "Unnamed: 29": "The grand total full-time equivalent (FTE) of all workforce (payroll and non-payroll)."
+    },
+    "Unnamed: 30": {
+      "__type__": "object",
+      "Unnamed: 30": "The total payroll staff costs for salary."
+    },
+    "Unnamed: 31": {
+      "__type__": "object",
+      "Unnamed: 31": "The total payroll staff costs for allowances."
+    },
+    "Unnamed: 32": {
+      "__type__": "object",
+      "Unnamed: 32": "The total payroll staff costs for non-consolidated performance payments."
+    },
+    "Unnamed: 33": {
+      "__type__": "object",
+      "Unnamed: 33": "The total payroll staff costs for overtime."
+    },
+    "Unnamed: 34": {
+      "__type__": "object",
+      "Unnamed: 34": "The total payroll staff costs for employer pension contributions."
+    },
+    "Unnamed: 35": {
+      "__type__": "object",
+      "Unnamed: 35": "The total payroll staff costs for employer national insurance contributions."
+    },
+    "Unnamed: 36": {
+      "__type__": "object",
+      "Unnamed: 36": "The total paybill for payroll staff."
+    },
+    "Unnamed: 37": {
+      "__type__": "object",
+      "Unnamed: 37": "The total monthly cost of contingent labour: agency (clerical and admin) staff, interim managers, and specialist contractors."
+    },
+    "Unnamed: 38": {
+      "__type__": "object",
+      "Unnamed: 38": "The total monthly cost of consultants/consultancy."
+    },
+    "Unnamed: 39": {
+      "__type__": "object",
+      "Unnamed: 39": "The total non-payroll (CCL) staff costs."
+    },
+    "Unnamed: 40": {
+      "__type__": "object",
+      "Unnamed: 40": "The grand total paybill/staffing (payroll and non-payroll) costs."
+    },
+    "Unnamed: 41": {
+      "__type__": "float64",
+      "Unnamed: 41": "Comments or notes that will be published alongside the row of information."
+    }
+  },
+  "datalake/albums_b.csv": {
+    "artist": {
+      "__type__": "object",
+      "artist": "The name of the artist or band performing the song."
+    },
+    "title": {
+      "__type__": "object",
+      "title": "The title of the song."
+    },
+    "album": {
+      "__type__": "object",
+      "album": "The name of the album on which the song appears."
+    }
+  },
+  "datalake/advertising-july-sept2015.csv": {
+    "Tool Ref": {
+      "__type__": "object",
+      "Tool Ref": "A unique reference code assigned to each tool or project for identification."
+    },
+    "Department": {
+      "__type__": "object",
+      "Department": "The government department responsible for the project or expenditure."
+    },
+    "Organisation Name": {
+      "__type__": "float64",
+      "Organisation Name": "The name of the organization or entity involved in the project."
+    },
+    "Project name": {
+      "__type__": "object",
+      "Project name": "The name of the specific project for which the expenditure is being requested."
+    },
+    "Basis for expenditure approval": {
+      "__type__": "object",
+      "Basis for expenditure approval": "A detailed description or justification for the expenditure request."
+    },
+    "Total Value Requested (£)": {
+      "__type__": "float64",
+      "Total Value Requested (£)": "The total amount of money requested for the project in British Pounds."
+    },
+    "Total Value Approved (£)": {
+      "__type__": "float64",
+      "Total Value Approved (£)": "The total amount of money approved for the project in British Pounds."
+    },
+    "Date of approval": {
+      "__type__": "object",
+      "Date of approval": "The date on which the expenditure was approved."
+    },
+    "Lead Control": {
+      "__type__": "object",
+      "Lead Control": "The department or team responsible for overseeing the approved expenditure."
+    }
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20180801-20180831.csv": {
+    "ï»¿Terme_de_recherche": {
+      "__type__": "object",
+      "ï»¿Terme_de_recherche": "The search term used by users to find content."
+    },
+    "Nombre_total_de_recherches": {
+      "__type__": "int64",
+      "Nombre_total_de_recherches": "The total number of times the search term was used."
+    },
+    "Nombre_total_de_recherches_uniques": {
+      "__type__": "int64",
+      "Nombre_total_de_recherches_uniques": "The total number of unique users who used the search term."
+    }
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20180901-20180930.csv": {
+    "ï»¿Terme_de_recherche": {
+      "__type__": "object",
+      "ï»¿Terme_de_recherche": "The search term used by users to find content."
+    },
+    "Nombre_total_de_recherches": {
+      "__type__": "int64",
+      "Nombre_total_de_recherches": "The total number of times the search term was used."
+    },
+    "Nombre_total_de_recherches_uniques": {
+      "__type__": "int64",
+      "Nombre_total_de_recherches_uniques": "The total number of unique users who used the search term."
+    }
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20181001-20181031.csv": {
+    "ï»¿Terme_de_recherche": {
+      "__type__": "object",
+      "ï»¿Terme_de_recherche": "The search term used by users to find content."
+    },
+    "Nombre_total_de_recherches": {
+      "__type__": "int64",
+      "Nombre_total_de_recherches": "The total number of times the search term was used."
+    },
+    "Nombre_total_de_recherches_uniques": {
+      "__type__": "int64",
+      "Nombre_total_de_recherches_uniques": "The total number of unique users who used the search term."
+    }
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20190401-20190430.csv": {
+    "ï»¿Terme_de_recherche": {
+      "__type__": "object",
+      "ï»¿Terme_de_recherche": "The search term used by users on the platform."
+    },
+    "Nombre_total_de_recherches": {
+      "__type__": "int64",
+      "Nombre_total_de_recherches": "The total number of times the search term was used."
+    },
+    "Nombre_total_de_recherches_uniques": {
+      "__type__": "int64",
+      "Nombre_total_de_recherches_uniques": "The total number of unique users who performed the search."
+    }
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20191101-20191130.csv": {
+    "ï»¿CatÃ©gorie;Terme_de_recherche;Nombre_total_de_recherches;Nombre_total_de_recherches_uniques": {
+      "__type__": "object"
+    }
+  },
+  "datalake/HMRC_WMI_headcount_and_payroll_data_Mar_2015.csv": {
+    "Mar-15": {
+      "__type__": "object",
+      "Mar-15": "The month and year of the data collection, specifically March 2015."
+    },
+    "Unnamed: 1": {
+      "__type__": "object",
+      "Unnamed: 1": "The name of the organization or department."
+    },
+    "Unnamed: 2": {
+      "__type__": "object",
+      "Unnamed: 2": "The type of organization, such as Executive Agency or Non-Ministerial Department."
+    },
+    "Unnamed: 3": {
+      "__type__": "object",
+      "Unnamed: 3": "The main, parent, or sponsoring department of the organization."
+    },
+    "Unnamed: 4": {
+      "__type__": "object",
+      "Unnamed: 4": "The headcount of AO/AA grade employees."
+    },
+    "Unnamed: 5": {
+      "__type__": "object",
+      "Unnamed: 5": "The full-time equivalent (FTE) of AO/AA grade employees."
+    },
+    "Unnamed: 6": {
+      "__type__": "object",
+      "Unnamed: 6": "The headcount of EO grade employees."
+    },
+    "Unnamed: 7": {
+      "__type__": "object",
+      "Unnamed: 7": "The full-time equivalent (FTE) of EO grade employees."
+    },
+    "Unnamed: 8": {
+      "__type__": "object",
+      "Unnamed: 8": "The headcount of SEO/HEO grade employees."
+    },
+    "Unnamed: 9": {
+      "__type__": "object",
+      "Unnamed: 9": "The full-time equivalent (FTE) of SEO/HEO grade employees."
+    },
+    "Unnamed: 10": {
+      "__type__": "object",
+      "Unnamed: 10": "The headcount of Grade 6/7 employees."
+    },
+    "Unnamed: 11": {
+      "__type__": "object",
+      "Unnamed: 11": "The full-time equivalent (FTE) of Grade 6/7 employees."
+    },
+    "Unnamed: 12": {
+      "__type__": "object",
+      "Unnamed: 12": "The headcount of SCS grade employees."
+    },
+    "Unnamed: 13": {
+      "__type__": "object",
+      "Unnamed: 13": "The full-time equivalent (FTE) of SCS grade employees."
+    },
+    "Unnamed: 14": {
+      "__type__": "object",
+      "Unnamed: 14": "The headcount of employees with other, unknown, or unspecified grades."
+    },
+    "Unnamed: 15": {
+      "__type__": "object",
+      "Unnamed: 15": "The full-time equivalent (FTE) of employees with other, unknown, or unspecified grades."
+    },
+    "Unnamed: 16": {
+      "__type__": "object",
+      "Unnamed: 16": "The total headcount of all payroll employees."
+    },
+    "Unnamed: 17": {
+      "__type__": "object",
+      "Unnamed: 17": "The total full-time equivalent (FTE) of all payroll employees."
+    },
+    "Unnamed: 18": {
+      "__type__": "object",
+      "Unnamed: 18": "The headcount of agency staff (clerical/admin)."
+    },
+    "Unnamed: 19": {
+      "__type__": "object",
+      "Unnamed: 19": "The full-time equivalent (FTE) of agency staff (clerical/admin)."
+    },
+    "Unnamed: 20": {
+      "__type__": "object",
+      "Unnamed: 20": "The headcount of interim managers."
+    },
+    "Unnamed: 21": {
+      "__type__": "object",
+      "Unnamed: 21": "The full-time equivalent (FTE) of interim managers."
+    },
+    "Unnamed: 22": {
+      "__type__": "object",
+      "Unnamed: 22": "The headcount of specialist contractors."
+    },
+    "Unnamed: 23": {
+      "__type__": "object",
+      "Unnamed: 23": "The full-time equivalent (FTE) of specialist contractors."
+    },
+    "Unnamed: 24": {
+      "__type__": "object",
+      "Unnamed: 24": "The headcount of consultants/consultancy."
+    },
+    "Unnamed: 25": {
+      "__type__": "object",
+      "Unnamed: 25": "The full-time equivalent (FTE) of consultants/consultancy."
+    },
+    "Unnamed: 26": {
+      "__type__": "object",
+      "Unnamed: 26": "The total headcount of non-payroll staff (contingent labour and consultants/consultancy)."
+    },
+    "Unnamed: 27": {
+      "__type__": "object",
+      "Unnamed: 27": "The total full-time equivalent (FTE) of non-payroll staff (contingent labour and consultants/consultancy)."
+    },
+    "Unnamed: 28": {
+      "__type__": "object",
+      "Unnamed: 28": "The grand total headcount of all workforce (payroll and non-payroll)."
+    },
+    "Unnamed: 29": {
+      "__type__": "object",
+      "Unnamed: 29": "The grand total full-time equivalent (FTE) of all workforce (payroll and non-payroll)."
+    },
+    "Unnamed: 30": {
+      "__type__": "object",
+      "Unnamed: 30": "The total payroll staff costs for salary."
+    },
+    "Unnamed: 31": {
+      "__type__": "object",
+      "Unnamed: 31": "The total payroll staff costs for allowances."
+    },
+    "Unnamed: 32": {
+      "__type__": "object",
+      "Unnamed: 32": "The total payroll staff costs for non-consolidated performance payments."
+    },
+    "Unnamed: 33": {
+      "__type__": "object",
+      "Unnamed: 33": "The total payroll staff costs for overtime."
+    },
+    "Unnamed: 34": {
+      "__type__": "object",
+      "Unnamed: 34": "The total payroll staff costs for employer pension contributions."
+    },
+    "Unnamed: 35": {
+      "__type__": "object",
+      "Unnamed: 35": "The total payroll staff costs for employer national insurance contributions."
+    },
+    "Unnamed: 36": {
+      "__type__": "object",
+      "Unnamed: 36": "The total paybill for payroll staff."
+    },
+    "Unnamed: 37": {
+      "__type__": "object",
+      "Unnamed: 37": "The total monthly cost of contingent labour: agency (clerical and admin) staff, interim managers, and specialist contractors."
+    },
+    "Unnamed: 38": {
+      "__type__": "object",
+      "Unnamed: 38": "The total monthly cost of consultants/consultancy."
+    },
+    "Unnamed: 39": {
+      "__type__": "object",
+      "Unnamed: 39": "The total non-payroll (CCL) staff costs."
+    },
+    "Unnamed: 40": {
+      "__type__": "object",
+      "Unnamed: 40": "The grand total paybill/staffing (payroll and non-payroll) costs."
+    },
+    "Unnamed: 41": {
+      "__type__": "float64",
+      "Unnamed: 41": "Comments or notes that will be published alongside the row of information."
+    }
+  },
+  "datalake/albums_a.csv": {
+    "ï»¿#": {
+      "__type__": "int64",
+      "ï»¿#": "A unique identifier for each entry in the albums_a table."
+    },
+    "artist": {
+      "__type__": "object",
+      "artist": "The name of the artist or band that performed the track."
+    },
+    "title": {
+      "__type__": "object",
+      "title": "The title of the specific track or song."
+    },
+    "album": {
+      "__type__": "object",
+      "album": "The name of the album on which the track appears."
+    },
+    "track": {
+      "__type__": "float64",
+      "track": "The track number of the song on the album."
+    },
+    "year": {
+      "__type__": "float64",
+      "year": "The year the album was released."
+    }
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20200201-20200229.csv": {
+    "ï»¿CatÃ©gorie;Terme_de_recherche;Nombre_total_de_recherches;Nombre_total_de_recherches_uniques": {
+      "__type__": "object"
+    }
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20200901-20200930.csv": {
+    "ï»¿CatÃ©gorie;Terme_de_recherche;Nombre_total_de_recherches;Nombre_total_de_recherches_uniques": {
+      "__type__": "object"
+    }
+  },
+  "datalake/HMRC_WMI_headcount_and_payroll_data_May_2016.csv": {
+    "May-16": {
+      "__type__": "object",
+      "May-16": "The month and year of the data collection, specifically May 2016."
+    },
+    "Unnamed: 1": {
+      "__type__": "object",
+      "Unnamed: 1": "The name of the organization or department."
+    },
+    "Unnamed: 2": {
+      "__type__": "object",
+      "Unnamed: 2": "The type of organization, such as Executive Agency or Non-Ministerial Department."
+    },
+    "Unnamed: 3": {
+      "__type__": "object",
+      "Unnamed: 3": "The main, parent, or sponsoring department of the organization."
+    },
+    "Unnamed: 4": {
+      "__type__": "object",
+      "Unnamed: 4": "The headcount of AO/AA grade employees."
+    },
+    "Unnamed: 5": {
+      "__type__": "object",
+      "Unnamed: 5": "The full-time equivalent (FTE) of AO/AA grade employees."
+    },
+    "Unnamed: 6": {
+      "__type__": "object",
+      "Unnamed: 6": "The headcount of EO grade employees."
+    },
+    "Unnamed: 7": {
+      "__type__": "object",
+      "Unnamed: 7": "The full-time equivalent (FTE) of EO grade employees."
+    },
+    "Unnamed: 8": {
+      "__type__": "object",
+      "Unnamed: 8": "The headcount of SEO/HEO grade employees."
+    },
+    "Unnamed: 9": {
+      "__type__": "object",
+      "Unnamed: 9": "The full-time equivalent (FTE) of SEO/HEO grade employees."
+    },
+    "Unnamed: 10": {
+      "__type__": "object",
+      "Unnamed: 10": "The headcount of Grade 6/7 employees."
+    },
+    "Unnamed: 11": {
+      "__type__": "object",
+      "Unnamed: 11": "The full-time equivalent (FTE) of Grade 6/7 employees."
+    },
+    "Unnamed: 12": {
+      "__type__": "object",
+      "Unnamed: 12": "The headcount of SCS grade employees."
+    },
+    "Unnamed: 13": {
+      "__type__": "object",
+      "Unnamed: 13": "The full-time equivalent (FTE) of SCS grade employees."
+    },
+    "Unnamed: 14": {
+      "__type__": "object",
+      "Unnamed: 14": "The headcount of employees with other, unknown, or unspecified grades."
+    },
+    "Unnamed: 15": {
+      "__type__": "object",
+      "Unnamed: 15": "The full-time equivalent (FTE) of employees with other, unknown, or unspecified grades."
+    },
+    "Unnamed: 16": {
+      "__type__": "object",
+      "Unnamed: 16": "The total headcount of all payroll employees."
+    },
+    "Unnamed: 17": {
+      "__type__": "object",
+      "Unnamed: 17": "The total full-time equivalent (FTE) of all payroll employees."
+    },
+    "Unnamed: 18": {
+      "__type__": "object",
+      "Unnamed: 18": "The headcount of agency staff (clerical and administrative)."
+    },
+    "Unnamed: 19": {
+      "__type__": "object",
+      "Unnamed: 19": "The full-time equivalent (FTE) of agency staff (clerical and administrative)."
+    },
+    "Unnamed: 20": {
+      "__type__": "object",
+      "Unnamed: 20": "The headcount of interim managers."
+    },
+    "Unnamed: 21": {
+      "__type__": "object",
+      "Unnamed: 21": "The full-time equivalent (FTE) of interim managers."
+    },
+    "Unnamed: 22": {
+      "__type__": "object",
+      "Unnamed: 22": "The headcount of specialist contractors."
+    },
+    "Unnamed: 23": {
+      "__type__": "object",
+      "Unnamed: 23": "The full-time equivalent (FTE) of specialist contractors."
+    },
+    "Unnamed: 24": {
+      "__type__": "object",
+      "Unnamed: 24": "The headcount of consultants/consultancy."
+    },
+    "Unnamed: 25": {
+      "__type__": "object",
+      "Unnamed: 25": "The full-time equivalent (FTE) of consultants/consultancy."
+    },
+    "Unnamed: 26": {
+      "__type__": "object",
+      "Unnamed: 26": "The total headcount of non-payroll staff (contingent labour and consultants/consultancy)."
+    },
+    "Unnamed: 27": {
+      "__type__": "object",
+      "Unnamed: 27": "The total full-time equivalent (FTE) of non-payroll staff (contingent labour and consultants/consultancy)."
+    },
+    "Unnamed: 28": {
+      "__type__": "object",
+      "Unnamed: 28": "The grand total headcount of all workforce numbers (payroll and non-payroll)."
+    },
+    "Unnamed: 29": {
+      "__type__": "object",
+      "Unnamed: 29": "The grand total full-time equivalent (FTE) of all workforce numbers (payroll and non-payroll)."
+    },
+    "Unnamed: 30": {
+      "__type__": "object",
+      "Unnamed: 30": "The total payroll staff costs for salary."
+    },
+    "Unnamed: 31": {
+      "__type__": "object",
+      "Unnamed: 31": "The total payroll staff costs for allowances."
+    },
+    "Unnamed: 32": {
+      "__type__": "object",
+      "Unnamed: 32": "The total payroll staff costs for non-consolidated performance payments."
+    },
+    "Unnamed: 33": {
+      "__type__": "object",
+      "Unnamed: 33": "The total payroll staff costs for overtime."
+    },
+    "Unnamed: 34": {
+      "__type__": "object",
+      "Unnamed: 34": "The total payroll staff costs for employer pension contributions."
+    },
+    "Unnamed: 35": {
+      "__type__": "object",
+      "Unnamed: 35": "The total payroll staff costs for employer national insurance contributions."
+    },
+    "Unnamed: 36": {
+      "__type__": "object",
+      "Unnamed: 36": "The total paybill for payroll staff."
+    },
+    "Unnamed: 37": {
+      "__type__": "object",
+      "Unnamed: 37": "The total monthly cost of contingent labour: agency (clerical and administrative) staff, interim managers, and specialist contractors."
+    },
+    "Unnamed: 38": {
+      "__type__": "object",
+      "Unnamed: 38": "The total monthly cost of consultants/consultancy."
+    },
+    "Unnamed: 39": {
+      "__type__": "object",
+      "Unnamed: 39": "The total non-payroll (CCL) staff costs."
+    },
+    "Unnamed: 40": {
+      "__type__": "object",
+      "Unnamed: 40": "The grand total paybill/staffing costs (payroll and non-payroll)."
+    },
+    "Unnamed: 41": {
+      "__type__": "float64",
+      "Unnamed: 41": "Comments or notes that will be published alongside the row of information."
+    }
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20191001-20191031.csv": {
+    "ï»¿CatÃ©gorie;Terme_de_recherche;Nombre_total_de_recherches;Nombre_total_de_recherches_uniques": {
+      "__type__": "object"
+    }
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20201201-20201231.csv": {
+    "ï»¿CatÃ©gorie;Terme_de_recherche;Nombre_total_de_recherches;Nombre_total_de_recherches_uniques": {
+      "__type__": "object"
+    }
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20210301-20210331-.csv": {
+    "ï»¿CatÃ©gorie;Terme_de_recherche;Nombre_total_de_recherches;Nombre_total_de_recherches_uniques;;": {
+      "__type__": "object"
+    }
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20201001-20201031.csv": {
+    "ï»¿CatÃ©gorie;Terme_de_recherche;Nombre_total_de_recherches;Nombre_total_de_recherches_uniques": {
+      "__type__": "object"
+    }
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20200801-20200831.csv": {
+    "ï»¿CatÃ©gorie;Terme_de_recherche;Nombre_total_de_recherches;Nombre_total_de_recherches_uniques": {
+      "__type__": "object"
+    }
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20201101-20201130.csv": {
+    "ï»¿LibellÃ© d'Ã©vÃ©nement;;Nombre total d'Ã©vÃ©nements;ÃvÃ©nements uniques": {
+      "__type__": "object"
+    }
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20191201-20191231.csv": {
+    "ï»¿CatÃ©gorie;Terme_de_recherche;Nombre_total_de_recherches;Nombre_total_de_recherches_uniques": {
+      "__type__": "object"
+    }
+  },
+  "datalake/analytics-numerique-complet-principaux-evenements-20210601-20210630.csv": {
+    "ï»¿Terme de recherche;Nombre total de recherches;Nombre total de recherches uniques": {
+      "__type__": "object"
+    }
+  },
+  "datalake/analytics-numerique-complet-principaux-evenements-20210201-20210228.csv": {
+    "ï»¿Terme de recherche;Nombre total de recherches;Nombre total de recherches uniques": {
+      "__type__": "object"
+    }
+  },
+  "datalake/analytics-iris-complet-termes-de-recherche-20170101-20170131.csv": {
+    "ï»¿Terme_de_recherche": {
+      "__type__": "object",
+      "ï»¿Terme_de_recherche": "The search term used by users on the platform."
+    },
+    "Nombre_total_de_recherches_uniques": {
+      "__type__": "int64",
+      "Nombre_total_de_recherches_uniques": "The total number of unique searches for the given term."
+    },
+    "Pages_vues_(resultats)_par_recherche": {
+      "__type__": "float64",
+      "Pages_vues_(resultats)_par_recherche": "The average number of pages viewed (results) per search for the given term."
+    },
+    "Sorties_apres_recherche_(%)": {
+      "__type__": "object",
+      "Sorties_apres_recherche_(%)": "The percentage of searches that resulted in the user leaving the site after the search."
+    },
+    "Precision_des_recherches_(%)": {
+      "__type__": "object",
+      "Precision_des_recherches_(%)": "The percentage of searches that were considered precise or relevant to the user."
+    },
+    "Temps_apres_recherche": {
+      "__type__": "float64",
+      "Temps_apres_recherche": "The average time (in seconds) spent on the site after performing the search."
+    },
+    "Etendue_moy._de_la_recherche": {
+      "__type__": "float64",
+      "Etendue_moy._de_la_recherche": "The average extent or depth of the search, typically measured by the number of interactions or clicks."
+    }
+  },
+  "datalake/analytics-iris-complet-termes-de-recherche-20180201-20180228.csv": {
+    "ï»¿Terme_de_recherche": {
+      "__type__": "object",
+      "ï»¿Terme_de_recherche": "The search term used by users to find content."
+    },
+    "Nombre_total_de_recherches_uniques": {
+      "__type__": "int64",
+      "Nombre_total_de_recherches_uniques": "The total number of unique searches for the given term."
+    },
+    "Pages_vues_(resultats)_par_recherche": {
+      "__type__": "float64",
+      "Pages_vues_(resultats)_par_recherche": "The average number of pages viewed (results) per search."
+    },
+    "Sorties_apres_recherche_(%)": {
+      "__type__": "object",
+      "Sorties_apres_recherche_(%)": "The percentage of searches that resulted in the user leaving the site."
+    },
+    "Precision_des_recherches_(%)": {
+      "__type__": "object",
+      "Precision_des_recherches_(%)": "The percentage of searches that resulted in a precise or relevant result."
+    },
+    "Temps_apres_recherche": {
+      "__type__": "float64",
+      "Temps_apres_recherche": "The average time (in seconds) spent on the site after the search."
+    },
+    "Etendue_moy._de_la_recherche": {
+      "__type__": "float64",
+      "Etendue_moy._de_la_recherche": "The average scope or breadth of the search, indicating how many different topics or results were explored."
+    }
+  },
+  "datalake/analytics-iris-complet-termes-de-recherche-20170601-20170630.csv": {
+    "ï»¿Terme_de_recherche": {
+      "__type__": "object",
+      "ï»¿Terme_de_recherche": "The search term used by users to find content."
+    },
+    "Nombre_total_de_recherches_uniques": {
+      "__type__": "int64",
+      "Nombre_total_de_recherches_uniques": "The total number of unique searches performed using the search term."
+    },
+    "Pages vues_(resultats)_par_recherche": {
+      "__type__": "float64",
+      "Pages vues_(resultats)_par_recherche": "The average number of pages viewed (results) per search."
+    },
+    "Sorties_apres_recherche_(%)": {
+      "__type__": "object",
+      "Sorties_apres_recherche_(%)": "The percentage of searches that resulted in the user leaving the site."
+    },
+    "Precision_des_recherches_(%)": {
+      "__type__": "object",
+      "Precision_des_recherches_(%)": "The percentage of searches that led to a relevant result, indicating the accuracy of the search."
+    },
+    "Temps_apres_recherche": {
+      "__type__": "float64",
+      "Temps_apres_recherche": "The average time (in seconds) users spent on the site after performing the search."
+    },
+    "Etendue_moy._de_la_recherche": {
+      "__type__": "float64",
+      "Etendue_moy._de_la_recherche": "The average scope or depth of the search, which could indicate the number of search refinements or additional queries made."
+    }
+  },
+  "datalake/analytics-iris-complet-termes-de-recherche-20160701-20160731.csv": {
+    "Terme_de_recherche": {
+      "__type__": "object",
+      "Terme_de_recherche": "The search term used by users to find content."
+    },
+    "Nombre_total_de_recherches_uniques": {
+      "__type__": "object",
+      "Nombre_total_de_recherches_uniques": "The total number of unique searches for the given term."
+    },
+    "Pages_vues_(resultats)_par_recherche": {
+      "__type__": "object",
+      "Pages_vues_(resultats)_par_recherche": "The average number of pages viewed (results) per search."
+    },
+    "Sorties_apres_recherche_(%)": {
+      "__type__": "object",
+      "Sorties_apres_recherche_(%)": "The percentage of searches that resulted in the user leaving the site."
+    },
+    "Precision_des_recherches_(%)": {
+      "__type__": "object",
+      "Precision_des_recherches_(%)": "The percentage of searches that were considered precise or relevant."
+    },
+    "Temps_apres_recherche": {
+      "__type__": "object",
+      "Temps_apres_recherche": "The average time spent on the site after performing a search."
+    },
+    "Etendue_moyenne_de_la_recherche": {
+      "__type__": "object",
+      "Etendue_moyenne_de_la_recherche": "The average scope or depth of the search, indicating how many terms or filters were used."
+    }
+  },
+  "datalake/analytics-iris-complet-termes-de-recherche-20180301-20180331.csv": {
+    "ï»¿Terme_de_recherche": {
+      "__type__": "object",
+      "ï»¿Terme_de_recherche": "The search term used by users to find content."
+    },
+    "Nombre_total_de_recherches_uniques": {
+      "__type__": "int64",
+      "Nombre_total_de_recherches_uniques": "The total number of unique searches for the given term."
+    },
+    "Pages_vues_(resultats)_par_recherche": {
+      "__type__": "float64",
+      "Pages_vues_(resultats)_par_recherche": "The average number of pages viewed (results) per search."
+    },
+    "Sorties_apres_recherche_(%)": {
+      "__type__": "object",
+      "Sorties_apres_recherche_(%)": "The percentage of searches that resulted in the user leaving the site."
+    },
+    "Precision_des_recherches_(%)": {
+      "__type__": "object",
+      "Precision_des_recherches_(%)": "The percentage of searches that were precise or relevant to the user's query."
+    },
+    "Temps_apres_recherche": {
+      "__type__": "float64",
+      "Temps_apres_recherche": "The average time (in seconds) spent on the site after the search."
+    },
+    "Etendue_moy._de_la_recherche": {
+      "__type__": "float64",
+      "Etendue_moy._de_la_recherche": "The average scope or depth of the search, indicating how many results were explored."
+    }
+  },
+  "datalake/analytics-iris-complet-termes-de-recherche-20170701-20170731.csv": {
+    "ï»¿Terme_de_recherche": {
+      "__type__": "object",
+      "ï»¿Terme_de_recherche": "The search term used by users to find content."
+    },
+    "Nombre_total_de_recherches_uniques": {
+      "__type__": "int64",
+      "Nombre_total_de_recherches_uniques": "The total number of unique searches for the given term."
+    },
+    "Pages vues_(resultats)_par_recherche": {
+      "__type__": "float64",
+      "Pages vues_(resultats)_par_recherche": "The average number of pages viewed (results) per search."
+    },
+    "Sorties_apres_recherche_(%)": {
+      "__type__": "object",
+      "Sorties_apres_recherche_(%)": "The percentage of searches that resulted in the user leaving the site."
+    },
+    "Precision_des_recherches_(%)": {
+      "__type__": "object",
+      "Precision_des_recherches_(%)": "The percentage of searches that resulted in a precise match to the user's query."
+    },
+    "Temps_apres_recherche": {
+      "__type__": "float64",
+      "Temps_apres_recherche": "The average time (in seconds) spent on the site after the search."
+    },
+    "Etendue_moy._de_la_recherche": {
+      "__type__": "float64",
+      "Etendue_moy._de_la_recherche": "The average scope or breadth of the search, indicating how many different topics or results were explored."
+    }
+  },
+  "datalake/analytics-iris-externe-termes-de-recherche-20170901-20170930.csv": {
+    "ï»¿Terme_de_recherche": {
+      "__type__": "object",
+      "ï»¿Terme_de_recherche": "The search term used by users to find content."
+    },
+    "Nombre_total_de_recherches_uniques": {
+      "__type__": "int64",
+      "Nombre_total_de_recherches_uniques": "The total number of unique searches for the given term."
+    },
+    "Pages_vues_(resultats)_par_recherche": {
+      "__type__": "float64",
+      "Pages_vues_(resultats)_par_recherche": "The average number of pages viewed (results) per search."
+    },
+    "Sorties_apres_recherche_(%)": {
+      "__type__": "object",
+      "Sorties_apres_recherche_(%)": "The percentage of searches that resulted in the user leaving the site."
+    },
+    "Precision_des_recherches_(%)": {
+      "__type__": "object",
+      "Precision_des_recherches_(%)": "The percentage of searches that were precise or relevant to the user's query."
+    },
+    "Temps_apres_recherche": {
+      "__type__": "float64",
+      "Temps_apres_recherche": "The average time (in seconds) spent on the site after the search."
+    },
+    "Etendue_moy._de_la_recherche": {
+      "__type__": "float64",
+      "Etendue_moy._de_la_recherche": "The average scope or depth of the search, indicating how many results were explored."
+    }
+  },
+  "datalake/analytics-iris-complet-termes-de-recherche-20160801-20160831.csv": {
+    "ï»¿Terme_de_recherche": {
+      "__type__": "object",
+      "ï»¿Terme_de_recherche": "The search term used by users to find content."
+    },
+    "Nombre_total_de_recherches_uniques": {
+      "__type__": "float64",
+      "Nombre_total_de_recherches_uniques": "The total number of unique searches for the given term."
+    },
+    "Pages_vues_(resultats)_par_recherche": {
+      "__type__": "float64",
+      "Pages_vues_(resultats)_par_recherche": "The average number of pages viewed (results) per search."
+    },
+    "Sorties_apres_recherche_(%)": {
+      "__type__": "object",
+      "Sorties_apres_recherche_(%)": "The percentage of searches that resulted in the user leaving the site."
+    },
+    "Precision_des_recherches_(%)": {
+      "__type__": "object",
+      "Precision_des_recherches_(%)": "The percentage of searches that were precise or relevant to the user's query."
+    },
+    "Temps_apres_recherche": {
+      "__type__": "float64",
+      "Temps_apres_recherche": "The average time (in seconds) spent on the site after performing a search."
+    },
+    "Etendue_moyenne_de_la_recherche": {
+      "__type__": "float64",
+      "Etendue_moyenne_de_la_recherche": "The average depth or extent of the search, indicating how many results were explored."
+    }
+  },
+  "datalake/analytics-iris-complet-termes-de-recherche-20161001-20161031.csv": {
+    "ï»¿Terme_de_recherche": {
+      "__type__": "object",
+      "ï»¿Terme_de_recherche": "The search term used by users to find content."
+    },
+    "Nombre_total_de_recherches_uniques": {
+      "__type__": "int64",
+      "Nombre_total_de_recherches_uniques": "The total number of unique searches for the given term."
+    },
+    "Pages_vues_(resultats)_par_recherche": {
+      "__type__": "float64",
+      "Pages_vues_(resultats)_par_recherche": "The average number of pages viewed (results) per search."
+    },
+    "Sorties_apres_recherche_(%)": {
+      "__type__": "object",
+      "Sorties_apres_recherche_(%)": "The percentage of searches that resulted in the user leaving the site."
+    },
+    "Precision_des_recherches_(%)": {
+      "__type__": "object",
+      "Precision_des_recherches_(%)": "The percentage of searches that were precise or relevant to the user's query."
+    },
+    "Temps_apres_recherche": {
+      "__type__": "float64",
+      "Temps_apres_recherche": "The average time (in seconds) spent on the site after performing a search."
+    },
+    "Etendue_moyenne_de_la_recherche": {
+      "__type__": "float64",
+      "Etendue_moyenne_de_la_recherche": "The average depth or extent of the search, typically measured by the number of pages or results viewed."
+    }
+  },
+  "datalake/analytics-iris-complet-termes-de-recherche-20170501-20170531.csv": {
+    "ï»¿Terme_de_recherche": {
+      "__type__": "object",
+      "ï»¿Terme_de_recherche": "The search term used by users to find content."
+    },
+    "Nombre_total_de_recherches_uniques": {
+      "__type__": "int64",
+      "Nombre_total_de_recherches_uniques": "The total number of unique searches for the given term."
+    },
+    "Pages_vues_(resultats)_par_recherche": {
+      "__type__": "float64",
+      "Pages_vues_(resultats)_par_recherche": "The average number of pages viewed (results) per search."
+    },
+    "Sorties_apres_recherche_(%)": {
+      "__type__": "object",
+      "Sorties_apres_recherche_(%)": "The percentage of searches that resulted in the user leaving the site."
+    },
+    "Precision_des_recherches_(%)": {
+      "__type__": "object",
+      "Precision_des_recherches_(%)": "The percentage of searches that were precise or relevant to the user's query."
+    },
+    "Temps_apres_recherche": {
+      "__type__": "float64",
+      "Temps_apres_recherche": "The average time (in seconds) spent on the site after performing a search."
+    },
+    "Etendue_moy._de_la_recherche": {
+      "__type__": "float64",
+      "Etendue_moy._de_la_recherche": "The average scope or depth of the search, indicating how many results were explored."
+    }
+  },
+  "datalake/analytics-iris-complet-termes-de-recherche-20170201-20170228.csv": {
+    "ï»¿Terme_de_recherche": {
+      "__type__": "object",
+      "ï»¿Terme_de_recherche": "The search term used by users to find content."
+    },
+    "Nombre_total_de_recherches_uniques": {
+      "__type__": "int64",
+      "Nombre_total_de_recherches_uniques": "The total number of unique searches for the given term."
+    },
+    "Pages_vues_(resultats)_par_recherche": {
+      "__type__": "float64",
+      "Pages_vues_(resultats)_par_recherche": "The average number of pages viewed (results) per search."
+    },
+    "Sorties_apres_recherche_(%)": {
+      "__type__": "object",
+      "Sorties_apres_recherche_(%)": "The percentage of searches that resulted in the user leaving the site."
+    },
+    "Precision_des_recherches_(%)": {
+      "__type__": "object",
+      "Precision_des_recherches_(%)": "The percentage of searches that resulted in a precise match to the user's query."
+    },
+    "Temps_apres_recherche": {
+      "__type__": "float64",
+      "Temps_apres_recherche": "The average time (in seconds) users spent on the site after performing the search."
+    },
+    "Etendue_moy._de_la_recherche": {
+      "__type__": "float64",
+      "Etendue_moy._de_la_recherche": "The average scope or depth of the search, indicating how many results were explored."
+    }
+  },
+  "datalake/analytics-iris-complet-termes-de-recherche-20170401-20170430.csv": {
+    "ï»¿Terme_de_recherche": {
+      "__type__": "object",
+      "ï»¿Terme_de_recherche": "The search term used by users to find content."
+    },
+    "Nombre_total_de_recherches_uniques": {
+      "__type__": "int64",
+      "Nombre_total_de_recherches_uniques": "The total number of unique searches for the given term."
+    },
+    "Pages_vues_(resultats)_par_recherche": {
+      "__type__": "float64",
+      "Pages_vues_(resultats)_par_recherche": "The average number of pages viewed (results) per search."
+    },
+    "Sorties_apres_recherche_(%)": {
+      "__type__": "object",
+      "Sorties_apres_recherche_(%)": "The percentage of searches that resulted in the user leaving the site."
+    },
+    "Precision_des_recherches_(%)": {
+      "__type__": "object",
+      "Precision_des_recherches_(%)": "The percentage of searches that resulted in a precise or relevant result."
+    },
+    "Temps_apres_recherche": {
+      "__type__": "float64",
+      "Temps_apres_recherche": "The average time (in seconds) spent on the site after the search."
+    },
+    "Etendue_moy._de_la_recherche": {
+      "__type__": "float64",
+      "Etendue_moy._de_la_recherche": "The average scope or breadth of the search, indicating how many different pages or sections were explored."
+    }
+  },
+  "datalake/analytics-iris-complet-termes-de-recherche-20171201-20171231.csv": {
+    "ï»¿Terme_de_recherche": {
+      "__type__": "object",
+      "ï»¿Terme_de_recherche": "The search term used by users to find content."
+    },
+    "Nombre_total_de_recherches_uniques": {
+      "__type__": "int64",
+      "Nombre_total_de_recherches_uniques": "The total number of unique searches for the given term."
+    },
+    "Pages_vues_(resultats)_par_recherche": {
+      "__type__": "float64",
+      "Pages_vues_(resultats)_par_recherche": "The average number of pages viewed (results) per search."
+    },
+    "Sorties_apres_recherche_(%)": {
+      "__type__": "object",
+      "Sorties_apres_recherche_(%)": "The percentage of searches that resulted in the user leaving the site."
+    },
+    "Precision_des_recherches_(%)": {
+      "__type__": "object",
+      "Precision_des_recherches_(%)": "The percentage of searches that resulted in a precise or relevant result."
+    },
+    "Temps_apres_recherche": {
+      "__type__": "float64",
+      "Temps_apres_recherche": "The average time (in seconds) spent on the site after performing the search."
+    },
+    "Etendue_moy._de_la_recherche": {
+      "__type__": "float64",
+      "Etendue_moy._de_la_recherche": "The average scope or depth of the search, indicating how many results were explored."
+    }
+  },
+  "datalake/analytics-iris-complet-termes-de-recherche-20171101-20171130.csv": {
+    "ï»¿Terme_de_recherche": {
+      "__type__": "object",
+      "ï»¿Terme_de_recherche": "The search term used by users to find content."
+    },
+    "Nombre_total_de_recherches_uniques": {
+      "__type__": "int64",
+      "Nombre_total_de_recherches_uniques": "The total number of unique searches for the given term."
+    },
+    "Pages_vues_(resultats)_par_recherche": {
+      "__type__": "float64",
+      "Pages_vues_(resultats)_par_recherche": "The average number of pages viewed (results) per search."
+    },
+    "Sorties_apres_recherche_(%)": {
+      "__type__": "object",
+      "Sorties_apres_recherche_(%)": "The percentage of searches that resulted in the user leaving the site."
+    },
+    "Precision_des_recherches_(%)": {
+      "__type__": "object",
+      "Precision_des_recherches_(%)": "The percentage of searches that were precise or relevant to the user's query."
+    },
+    "Temps_apres_recherche": {
+      "__type__": "float64",
+      "Temps_apres_recherche": "The average time (in seconds) users spent on the site after performing the search."
+    },
+    "Etendue_moy._de_la_recherche": {
+      "__type__": "float64",
+      "Etendue_moy._de_la_recherche": "The average scope or depth of the search, indicating how many results were explored."
+    }
+  },
+  "datalake/biodiversity_0.csv": {
+    "scientific name": {
+      "__type__": "object",
+      "scientific name": "The formal name of the species, following binomial nomenclature."
+    },
+    "family name": {
+      "__type__": "object",
+      "family name": "The taxonomic family to which the species belongs."
+    },
+    "common name": {
+      "__type__": "object",
+      "common name": "The colloquial or vernacular name of the species, often used in everyday language."
+    }
+  },
+  "datalake/biodiversity_1.csv": {
+    "scientific name": {
+      "__type__": "object",
+      "scientific name": "The formal name of the species, following binomial nomenclature."
+    },
+    "family name": {
+      "__type__": "object",
+      "family name": "The taxonomic family to which the species belongs."
+    },
+    "common name": {
+      "__type__": "object",
+      "common name": "The colloquial or vernacular name of the species, often used in everyday language."
+    }
+  },
+  "datalake/biodiversity_2.csv": {
+    "scientific name": {
+      "__type__": "object",
+      "scientific name": "The formal name of the species, following binomial nomenclature."
+    },
+    "family name": {
+      "__type__": "object",
+      "family name": "The taxonomic family to which the species belongs."
+    },
+    "common name": {
+      "__type__": "object",
+      "common name": "The colloquial or vernacular name of the species, often used in everyday language."
+    }
+  },
+  "datalake/animal_tag_data_0.csv": {
+    "animal_id": {
+      "__type__": "object",
+      "animal_id": "A unique identifier for each animal in the database."
+    },
+    "animal_type": {
+      "__type__": "object",
+      "animal_type": "The type of animal, such as DOG, CAT, or OTHER."
+    },
+    "breed_group": {
+      "__type__": "object",
+      "breed_group": "The general breed group of the animal, such as MIX, MASTIFF, or SHEPHERD."
+    },
+    "primary_breed": {
+      "__type__": "object",
+      "primary_breed": "The primary breed of the animal, such as MIX, BOXER, or GERM SHEPHERD."
+    },
+    "tag_no": {
+      "__type__": "object",
+      "tag_no": "The unique number or code assigned to the tag associated with the animal."
+    },
+    "tag_type": {
+      "__type__": "object",
+      "tag_type": "The type of tag, such as LIC ALTERED, RAB VAC CERT., or MICROCHIP."
+    },
+    "tag_subtype": {
+      "__type__": "object",
+      "tag_subtype": "The subtype of the tag, providing additional details such as HLP SCAN, VET, or HOME AGAIN."
+    },
+    "price": {
+      "__type__": "float64",
+      "price": "The cost of the tag in the local currency."
+    },
+    "tag_date": {
+      "__type__": "object",
+      "tag_date": "The date when the tag was issued or applied to the animal."
+    },
+    "tag_exp": {
+      "__type__": "object",
+      "tag_exp": "The expiration date of the tag, indicating when it is no longer valid."
+    },
+    "tag_stat": {
+      "__type__": "object",
+      "tag_stat": "The current status of the tag, such as CURRENT or RENEWED."
+    }
+  },
+  "datalake/biodiversity_5.csv": {
+    "Data_Field_EN_Champ_de_la_donnée": {
+      "__type__": "object",
+      "Data_Field_EN_Champ_de_la_donnée": "The English name of the data field or attribute being described."
+    },
+    "Data_Field_FR_Champ_de_la_donnée": {
+      "__type__": "object",
+      "Data_Field_FR_Champ_de_la_donnée": "The French name of the data field or attribute being described."
+    },
+    "Data_Value_Valeur_de_la_donnée": {
+      "__type__": "object",
+      "Data_Value_Valeur_de_la_donnée": "The specific value or code for the data field being described."
+    },
+    "Value_Description_EN_Description_de_la_valeur": {
+      "__type__": "object",
+      "Value_Description_EN_Description_de_la_valeur": "The English description or explanation of the specific value or code."
+    },
+    "Value_Description_FR_Description_de_la_valeur": {
+      "__type__": "object",
+      "Value_Description_FR_Description_de_la_valeur": "The French description or explanation of the specific value or code."
+    }
+  },
+  "datalake/animal_tag_data_1.csv": {
+    "animal_id": {
+      "__type__": "object",
+      "animal_id": "A unique alphanumeric identifier for each animal in the database."
+    },
+    "animal_type": {
+      "__type__": "object",
+      "animal_type": "The type of animal, such as DOG or CAT."
+    },
+    "breed_group": {
+      "__type__": "object",
+      "breed_group": "The general breed group to which the animal belongs, such as SETTER/RETRIEVE or MASTIFF."
+    },
+    "primary_breed": {
+      "__type__": "object",
+      "primary_breed": "The specific breed of the animal, such as GOLDEN RETRIEVER or BEAGLE."
+    },
+    "tag_no": {
+      "__type__": "object",
+      "tag_no": "The unique alphanumeric identifier for the tag assigned to the animal."
+    },
+    "tag_type": {
+      "__type__": "object",
+      "tag_type": "The type of tag, such as LIC ALTERED, MICROCHIP, or RABIES CERT."
+    },
+    "tag_subtype": {
+      "__type__": "object",
+      "tag_subtype": "The subtype of the tag, indicating the specific service or provider, such as COUNTER, HOME AGAIN, or HLP WEB."
+    },
+    "price": {
+      "__type__": "float64",
+      "price": "The cost of the tag in the local currency."
+    },
+    "tag_date": {
+      "__type__": "object",
+      "tag_date": "The date when the tag was issued or applied to the animal."
+    },
+    "tag_exp": {
+      "__type__": "object",
+      "tag_exp": "The expiration date of the tag, indicating when it needs to be renewed."
+    },
+    "tag_stat": {
+      "__type__": "object",
+      "tag_stat": "The current status of the tag, such as CURRENT, RENEWED, or MOVED JEFF."
+    }
+  },
+  "datalake/animal_tag_data_6.csv": {
+    "animal_id": {
+      "__type__": "object",
+      "animal_id": "A unique identifier for each animal in the system."
+    },
+    "animal_type": {
+      "__type__": "object",
+      "animal_type": "The type of animal, such as CAT, DOG, or BIRD."
+    },
+    "color_group": {
+      "__type__": "object",
+      "color_group": "A broad category of the animal's primary color."
+    },
+    "primary_color": {
+      "__type__": "object",
+      "primary_color": "The main color of the animal's fur or feathers."
+    },
+    "breed_group": {
+      "__type__": "object",
+      "breed_group": "A broad category of the animal's breed, such as LONGHAIR, TOY, or HOUND."
+    },
+    "primary_breed": {
+      "__type__": "object",
+      "primary_breed": "The specific breed of the animal."
+    },
+    "status_date": {
+      "__type__": "object",
+      "status_date": "The date when the animal's status was last updated."
+    },
+    "location": {
+      "__type__": "object",
+      "location": "The current location of the animal, such as SHELTER, LOCKBOX, or LICENSE."
+    },
+    "animal_identity": {
+      "__type__": "float64",
+      "animal_identity": "A unique identifier for the animal, often used for internal tracking."
+    },
+    "tag_no": {
+      "__type__": "object",
+      "tag_no": "The number or code of the tag assigned to the animal."
+    },
+    "tag_type": {
+      "__type__": "object",
+      "tag_type": "The type of tag, such as LIC ALTERED, RABIES CERT, or MICROCHIP."
+    },
+    "tag_subtype": {
+      "__type__": "object",
+      "tag_subtype": "Additional information about the tag, such as the method of issuance or the organization that issued it."
+    }
+  },
+  "datalake/animal_tag_data_4.csv": {
+    "animal_id": {
+      "__type__": "object",
+      "animal_id": "A unique alphanumeric identifier for each animal in the database."
+    },
+    "animal_type": {
+      "__type__": "object",
+      "animal_type": "The type of animal, such as DOG or CAT."
+    },
+    "breed_group": {
+      "__type__": "object",
+      "breed_group": "The general breed group to which the animal belongs, such as TOY, MASTIFF, or TERRIER."
+    },
+    "primary_breed": {
+      "__type__": "object",
+      "primary_breed": "The specific breed of the animal, such as YORKSHIRE TERR, SHIH TZU, or LABRADOR RETR."
+    },
+    "tag_no": {
+      "__type__": "object",
+      "tag_no": "The unique alphanumeric identifier for the tag assigned to the animal."
+    },
+    "tag_type": {
+      "__type__": "object",
+      "tag_type": "The type of tag, such as RAB VAC CERT., MICROCHIP ADO, or LIC ALTERED."
+    },
+    "tag_subtype": {
+      "__type__": "object",
+      "tag_subtype": "The subtype of the tag, indicating the specific service or provider, such as VET, HOME AGAIN, or HLP SCAN."
+    },
+    "price": {
+      "__type__": "float64",
+      "price": "The cost of the tag in the local currency."
+    },
+    "tag_date": {
+      "__type__": "object",
+      "tag_date": "The date when the tag was issued or applied to the animal."
+    },
+    "tag_exp": {
+      "__type__": "object",
+      "tag_exp": "The expiration date of the tag, indicating when it is no longer valid."
+    },
+    "tag_stat": {
+      "__type__": "object",
+      "tag_stat": "The current status of the tag, such as CURRENT or RENEWED."
+    }
+  }
+}

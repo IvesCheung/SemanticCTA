@@ -1,0 +1,1580 @@
+{
+  "cohort.csv": {
+    "cohort_definition_id": {
+      "__type__": "object",
+      "cohort_definition_id": "A unique identifier for the definition of a specific cohort."
+    },
+    "subject_id": {
+      "__type__": "object",
+      "subject_id": "A unique identifier for an individual subject within the cohort."
+    },
+    "cohort_start_date": {
+      "__type__": "object",
+      "cohort_start_date": "The date when the subject's participation in the cohort begins."
+    },
+    "cohort_end_date": {
+      "__type__": "object",
+      "cohort_end_date": "The date when the subject's participation in the cohort ends."
+    }
+  },
+  "allergies.csv": {
+    "start": {
+      "__type__": "object",
+      "start": "The date and time when the allergy record was created or started."
+    },
+    "stop": {
+      "__type__": "object",
+      "stop": "The date and time when the allergy record was ended or terminated."
+    },
+    "patient": {
+      "__type__": "object",
+      "patient": "The unique identifier for the patient who has the allergy."
+    },
+    "encounter": {
+      "__type__": "object",
+      "encounter": "The unique identifier for the medical encounter or visit during which the allergy was recorded."
+    },
+    "code": {
+      "__type__": "object",
+      "code": "The standardized code representing the specific allergy."
+    },
+    "description": {
+      "__type__": "object",
+      "description": "A textual description of the allergy, providing more detailed information about the allergen."
+    }
+  },
+  "conditions.csv": {
+    "start": {
+      "__type__": "object",
+      "start": "The date and time when the condition was first identified or recorded."
+    },
+    "stop": {
+      "__type__": "object",
+      "stop": "The date and time when the condition was resolved or no longer applicable."
+    },
+    "patient": {
+      "__type__": "object",
+      "patient": "The unique identifier for the patient who has the condition."
+    },
+    "encounter": {
+      "__type__": "object",
+      "encounter": "The unique identifier for the encounter or visit during which the condition was recorded."
+    },
+    "code": {
+      "__type__": "object",
+      "code": "The standardized code representing the specific condition or diagnosis."
+    },
+    "description": {
+      "__type__": "object",
+      "description": "A textual description of the condition or diagnosis."
+    }
+  },
+  "immunizations.csv": {
+    "date": {
+      "__type__": "object",
+      "date": "The date when the immunization was administered."
+    },
+    "patient": {
+      "__type__": "object",
+      "patient": "The identifier for the patient who received the immunization."
+    },
+    "encounter": {
+      "__type__": "object",
+      "encounter": "The identifier for the medical encounter during which the immunization was administered."
+    },
+    "code": {
+      "__type__": "object",
+      "code": "The standardized code representing the type of immunization administered."
+    },
+    "description": {
+      "__type__": "object",
+      "description": "A textual description of the immunization administered."
+    },
+    "cost": {
+      "__type__": "object",
+      "cost": "The cost of the immunization in the local currency."
+    }
+  },
+  "fact_relationship.csv": {
+    "domain_concept_id_1": {
+      "__type__": "object",
+      "domain_concept_id_1": "The concept ID representing the domain of the first entity in the relationship."
+    },
+    "fact_id_1": {
+      "__type__": "object",
+      "fact_id_1": "The unique identifier for the first entity in the relationship."
+    },
+    "domain_concept_id_2": {
+      "__type__": "object",
+      "domain_concept_id_2": "The concept ID representing the domain of the second entity in the relationship."
+    },
+    "fact_id_2": {
+      "__type__": "object",
+      "fact_id_2": "The unique identifier for the second entity in the relationship."
+    },
+    "relationship_concept_id": {
+      "__type__": "object",
+      "relationship_concept_id": "The concept ID representing the type of relationship between the two entities."
+    }
+  },
+  "care_site.csv": {
+    "care_site_id": {
+      "__type__": "object",
+      "care_site_id": "A unique identifier for a specific care site."
+    },
+    "care_site_name": {
+      "__type__": "object",
+      "care_site_name": "The name of the care site."
+    },
+    "place_of_service_concept_id": {
+      "__type__": "object",
+      "place_of_service_concept_id": "A standardized identifier for the type of place where the care is provided."
+    },
+    "location_id": {
+      "__type__": "object",
+      "location_id": "A reference to the specific location where the care site is situated."
+    },
+    "care_site_source_value": {
+      "__type__": "object",
+      "care_site_source_value": "The original source value for the care site, as recorded in the source system."
+    },
+    "place_of_service_source_value": {
+      "__type__": "object",
+      "place_of_service_source_value": "The original source value for the place of service, as recorded in the source system."
+    }
+  },
+  "death.csv": {
+    "person_id": {
+      "__type__": "object",
+      "person_id": "A unique identifier for each person in the dataset."
+    },
+    "death_date": {
+      "__type__": "object",
+      "death_date": "The date on which the person died."
+    },
+    "death_datetime": {
+      "__type__": "object",
+      "death_datetime": "The exact date and time of the person's death."
+    },
+    "death_type_concept_id": {
+      "__type__": "object",
+      "death_type_concept_id": "A standardized code representing the type of death (e.g., natural, accidental)."
+    },
+    "cause_concept_id": {
+      "__type__": "object",
+      "cause_concept_id": "A standardized code representing the cause of death."
+    },
+    "cause_source_value": {
+      "__type__": "object",
+      "cause_source_value": "The original value or code from the source system that describes the cause of death."
+    },
+    "cause_source_concept_id": {
+      "__type__": "object",
+      "cause_source_concept_id": "A standardized code representing the source system's concept of the cause of death."
+    }
+  },
+  "cohort_definition.csv": {
+    "cohort_definition_id": {
+      "__type__": "object",
+      "cohort_definition_id": "A unique identifier for a specific cohort definition."
+    },
+    "cohort_definition_name": {
+      "__type__": "object",
+      "cohort_definition_name": "The name given to the cohort definition for easy reference."
+    },
+    "cohort_definition_description": {
+      "__type__": "object",
+      "cohort_definition_description": "A detailed description of the cohort definition, including criteria and purpose."
+    },
+    "definition_type_concept_id": {
+      "__type__": "object",
+      "definition_type_concept_id": "A concept identifier that specifies the type of the cohort definition."
+    },
+    "cohort_definition_syntax": {
+      "__type__": "object",
+      "cohort_definition_syntax": "The syntax or query used to define the cohort, often in a structured format."
+    },
+    "subject_concept_id": {
+      "__type__": "object",
+      "subject_concept_id": "The concept identifier for the subject (e.g., patient, drug) that the cohort is based on."
+    },
+    "cohort_initiation_date": {
+      "__type__": "object",
+      "cohort_initiation_date": "The date when the cohort was first defined or initiated."
+    }
+  },
+  "location.csv": {
+    "location_id": {
+      "__type__": "object",
+      "location_id": "A unique identifier for each location."
+    },
+    "address_1": {
+      "__type__": "object",
+      "address_1": "The primary address line for the location."
+    },
+    "address_2": {
+      "__type__": "object",
+      "address_2": "The secondary address line for the location, if applicable."
+    },
+    "city": {
+      "__type__": "object",
+      "city": "The city where the location is situated."
+    },
+    "state": {
+      "__type__": "object",
+      "state": "The state or province where the location is situated."
+    },
+    "zip": {
+      "__type__": "object",
+      "zip": "The postal or zip code for the location."
+    },
+    "county": {
+      "__type__": "object",
+      "county": "The county or district where the location is situated."
+    },
+    "location_source_value": {
+      "__type__": "object",
+      "location_source_value": "The original source value or identifier for the location, as provided by an external system or data source."
+    }
+  },
+  "careplans.csv": {
+    "id": {
+      "__type__": "object",
+      "id": "A unique identifier for each care plan."
+    },
+    "start": {
+      "__type__": "object",
+      "start": "The date and time when the care plan begins."
+    },
+    "stop": {
+      "__type__": "object",
+      "stop": "The date and time when the care plan ends."
+    },
+    "patient": {
+      "__type__": "object",
+      "patient": "The identifier for the patient to whom the care plan is assigned."
+    },
+    "encounter": {
+      "__type__": "object",
+      "encounter": "The identifier for the encounter or visit during which the care plan was initiated."
+    },
+    "code": {
+      "__type__": "object",
+      "code": "A standardized code representing the type of care plan."
+    },
+    "description": {
+      "__type__": "object",
+      "description": "A textual description of the care plan."
+    },
+    "reasoncode": {
+      "__type__": "object",
+      "reasoncode": "A standardized code representing the reason for the care plan."
+    },
+    "reasondescription": {
+      "__type__": "object",
+      "reasondescription": "A textual description of the reason for the care plan."
+    }
+  },
+  "encounters.csv": {
+    "id": {
+      "__type__": "object",
+      "id": "A unique identifier for each encounter record."
+    },
+    "start": {
+      "__type__": "object",
+      "start": "The start time of the encounter."
+    },
+    "stop": {
+      "__type__": "object",
+      "stop": "The end time of the encounter."
+    },
+    "patient": {
+      "__type__": "object",
+      "patient": "The identifier for the patient involved in the encounter."
+    },
+    "provider": {
+      "__type__": "object",
+      "provider": "The identifier for the healthcare provider who conducted the encounter."
+    },
+    "encounterclass": {
+      "__type__": "object",
+      "encounterclass": "The classification of the encounter, such as inpatient, outpatient, or emergency."
+    },
+    "code": {
+      "__type__": "object",
+      "code": "A standardized code representing the type of encounter."
+    },
+    "description": {
+      "__type__": "object",
+      "description": "A textual description of the encounter type."
+    },
+    "cost": {
+      "__type__": "object",
+      "cost": "The cost associated with the encounter, typically in the local currency."
+    },
+    "reasoncode": {
+      "__type__": "object",
+      "reasoncode": "A standardized code representing the reason for the encounter."
+    },
+    "reasondescription": {
+      "__type__": "object",
+      "reasondescription": "A textual description of the reason for the encounter."
+    }
+  },
+  "imaging_studies.csv": {
+    "id": {
+      "__type__": "object",
+      "id": "A unique identifier for each imaging study record."
+    },
+    "date": {
+      "__type__": "object",
+      "date": "The date on which the imaging study was performed."
+    },
+    "patient": {
+      "__type__": "object",
+      "patient": "The identifier or name of the patient who underwent the imaging study."
+    },
+    "encounter": {
+      "__type__": "object",
+      "encounter": "The identifier for the specific medical encounter or visit during which the imaging study was conducted."
+    },
+    "body site code": {
+      "__type__": "object",
+      "body site code": "A standardized code representing the anatomical location or body part that was imaged."
+    },
+    "body site description": {
+      "__type__": "object",
+      "body site description": "A textual description of the anatomical location or body part that was imaged."
+    },
+    "modality code": {
+      "__type__": "object",
+      "modality code": "A standardized code representing the type of imaging modality used (e.g., X-ray, MRI, CT)."
+    },
+    "modality description": {
+      "__type__": "object",
+      "modality description": "A textual description of the type of imaging modality used (e.g., X-ray, MRI, CT)."
+    },
+    "sop code": {
+      "__type__": "object",
+      "sop code": "A standardized code representing the specific imaging procedure or service performed."
+    },
+    "sop description": {
+      "__type__": "object",
+      "sop description": "A textual description of the specific imaging procedure or service performed."
+    }
+  },
+  "observation_period.csv": {
+    "observation_period_id": {
+      "__type__": "object",
+      "observation_period_id": "A unique identifier for each observation period."
+    },
+    "person_id": {
+      "__type__": "object",
+      "person_id": "The unique identifier for the person associated with the observation period."
+    },
+    "observation_period_start_date": {
+      "__type__": "object",
+      "observation_period_start_date": "The start date of the observation period."
+    },
+    "observation_period_end_date": {
+      "__type__": "object",
+      "observation_period_end_date": "The end date of the observation period."
+    },
+    "period_type_concept_id": {
+      "__type__": "object",
+      "period_type_concept_id": "A concept identifier that specifies the type of the observation period."
+    }
+  },
+  "cdm_source.csv": {
+    "cdm_source_name": {
+      "__type__": "object",
+      "cdm_source_name": "The full name of the source from which the Common Data Model (CDM) data is derived."
+    },
+    "cdm_source_abbreviation": {
+      "__type__": "object",
+      "cdm_source_abbreviation": "A short, unique identifier or abbreviation for the CDM source."
+    },
+    "cdm_holder": {
+      "__type__": "object",
+      "cdm_holder": "The organization or entity that holds or manages the CDM data."
+    },
+    "source_description": {
+      "__type__": "object",
+      "source_description": "A detailed description of the source data, including its origin and content."
+    },
+    "source_documentation_reference": {
+      "__type__": "object",
+      "source_documentation_reference": "A reference to the documentation or resources that describe the source data in detail."
+    },
+    "cdm_etl_reference": {
+      "__type__": "object",
+      "cdm_etl_reference": "A reference to the Extract, Transform, Load (ETL) process used to convert the source data into the CDM format."
+    },
+    "source_release_date": {
+      "__type__": "object",
+      "source_release_date": "The date on which the source data was released or last updated."
+    },
+    "cdm_release_date": {
+      "__type__": "object",
+      "cdm_release_date": "The date on which the CDM data was released or last updated."
+    },
+    "cdm_version": {
+      "__type__": "object",
+      "cdm_version": "The version number of the CDM used to structure the data."
+    },
+    "vocabulary_version": {
+      "__type__": "object",
+      "vocabulary_version": "The version number of the vocabulary used in the CDM data."
+    }
+  },
+  "observations.csv": {
+    "date": {
+      "__type__": "object",
+      "date": "The date when the observation was recorded."
+    },
+    "patient": {
+      "__type__": "object",
+      "patient": "The identifier for the patient associated with the observation."
+    },
+    "encounter": {
+      "__type__": "object",
+      "encounter": "The identifier for the specific encounter or visit during which the observation was made."
+    },
+    "code": {
+      "__type__": "object",
+      "code": "A standardized code representing the type of observation."
+    },
+    "description": {
+      "__type__": "object",
+      "description": "A textual description of the observation."
+    },
+    "value": {
+      "__type__": "object",
+      "value": "The numerical value of the observation."
+    },
+    "units": {
+      "__type__": "object",
+      "units": "The units in which the observation value is measured."
+    },
+    "type": {
+      "__type__": "object",
+      "type": "The type of the observation, such as lab result, vital sign, etc."
+    }
+  },
+  "organizations.csv": {
+    "id": {
+      "__type__": "object",
+      "id": "A unique identifier for each organization."
+    },
+    "name": {
+      "__type__": "object",
+      "name": "The name of the organization."
+    },
+    "address": {
+      "__type__": "object",
+      "address": "The street address of the organization."
+    },
+    "city": {
+      "__type__": "object",
+      "city": "The city where the organization is located."
+    },
+    "state": {
+      "__type__": "object",
+      "state": "The state or province where the organization is located."
+    },
+    "zip": {
+      "__type__": "object",
+      "zip": "The postal or zip code of the organization's address."
+    },
+    "phone": {
+      "__type__": "object",
+      "phone": "The contact phone number for the organization."
+    },
+    "utilization": {
+      "__type__": "object",
+      "utilization": "The level of usage or activity of the organization, often expressed as a percentage or ratio."
+    }
+  },
+  "medications.csv": {
+    "start": {
+      "__type__": "object",
+      "start": "The date and time when the medication was first prescribed or administered."
+    },
+    "stop": {
+      "__type__": "object",
+      "stop": "The date and time when the medication was discontinued or the prescription ended."
+    },
+    "patient": {
+      "__type__": "object",
+      "patient": "The unique identifier for the patient to whom the medication was prescribed."
+    },
+    "encounter": {
+      "__type__": "object",
+      "encounter": "The unique identifier for the medical encounter or visit during which the medication was prescribed."
+    },
+    "code": {
+      "__type__": "object",
+      "code": "A standardized code representing the specific medication prescribed."
+    },
+    "description": {
+      "__type__": "object",
+      "description": "A textual description of the medication, including its name and form."
+    },
+    "cost": {
+      "__type__": "object",
+      "cost": "The cost of the medication, typically in the local currency."
+    },
+    "reasoncode": {
+      "__type__": "object",
+      "reasoncode": "A standardized code representing the medical reason or diagnosis for which the medication was prescribed."
+    },
+    "reasondescription": {
+      "__type__": "object",
+      "reasondescription": "A textual description of the medical reason or diagnosis for which the medication was prescribed."
+    }
+  },
+  "device_exposure.csv": {
+    "device_exposure_id": {
+      "__type__": "object",
+      "device_exposure_id": "A unique identifier for each device exposure record."
+    },
+    "person_id": {
+      "__type__": "object",
+      "person_id": "The unique identifier for the person who was exposed to the device."
+    },
+    "device_concept_id": {
+      "__type__": "object",
+      "device_concept_id": "The standardized concept identifier for the device."
+    },
+    "device_exposure_start_date": {
+      "__type__": "object",
+      "device_exposure_start_date": "The date when the device exposure started."
+    },
+    "device_exposure_start_datetime": {
+      "__type__": "object",
+      "device_exposure_start_datetime": "The date and time when the device exposure started."
+    },
+    "device_exposure_end_date": {
+      "__type__": "object",
+      "device_exposure_end_date": "The date when the device exposure ended."
+    },
+    "device_exposure_end_datetime": {
+      "__type__": "object",
+      "device_exposure_end_datetime": "The date and time when the device exposure ended."
+    },
+    "device_type_concept_id": {
+      "__type__": "object",
+      "device_type_concept_id": "The standardized concept identifier for the type of device exposure."
+    },
+    "unique_device_id": {
+      "__type__": "object",
+      "unique_device_id": "A unique identifier for the specific device used."
+    },
+    "quantity": {
+      "__type__": "object",
+      "quantity": "The number of devices used in this exposure."
+    },
+    "provider_id": {
+      "__type__": "object",
+      "provider_id": "The unique identifier for the provider who administered the device exposure."
+    },
+    "visit_occurrence_id": {
+      "__type__": "object",
+      "visit_occurrence_id": "The unique identifier for the visit during which the device exposure occurred."
+    },
+    "visit_detail_id": {
+      "__type__": "object",
+      "visit_detail_id": "The unique identifier for the detailed visit during which the device exposure occurred."
+    },
+    "device_source_value": {
+      "__type__": "object",
+      "device_source_value": "The source code or value for the device as recorded in the source data."
+    },
+    "device_source_concept_id": {
+      "__type__": "object",
+      "device_source_concept_id": "The standardized concept identifier for the source code of the device."
+    }
+  },
+  "payer_plan_period.csv": {
+    "payer_plan_period_id": {
+      "__type__": "object",
+      "payer_plan_period_id": "A unique identifier for each payer plan period record."
+    },
+    "person_id": {
+      "__type__": "object",
+      "person_id": "The unique identifier for the person associated with the payer plan period."
+    },
+    "payer_plan_period_start_date": {
+      "__type__": "object",
+      "payer_plan_period_start_date": "The start date of the payer plan period."
+    },
+    "payer_plan_period_end_date": {
+      "__type__": "object",
+      "payer_plan_period_end_date": "The end date of the payer plan period."
+    },
+    "payer_source_value": {
+      "__type__": "object",
+      "payer_source_value": "The source value from the original data that identifies the payer."
+    },
+    "plan_source_value": {
+      "__type__": "object",
+      "plan_source_value": "The source value from the original data that identifies the plan."
+    },
+    "family_source_value": {
+      "__type__": "object",
+      "family_source_value": "The source value from the original data that identifies the family or group plan."
+    }
+  },
+  "condition_occurrence.csv": {
+    "condition_occurrence_id": {
+      "__type__": "object",
+      "condition_occurrence_id": "A unique identifier for each condition occurrence record."
+    },
+    "person_id": {
+      "__type__": "object",
+      "person_id": "The unique identifier for the person who experienced the condition."
+    },
+    "condition_concept_id": {
+      "__type__": "object",
+      "condition_concept_id": "A standardized concept identifier for the condition."
+    },
+    "condition_start_date": {
+      "__type__": "object",
+      "condition_start_date": "The date when the condition was first recorded or started."
+    },
+    "condition_start_datetime": {
+      "__type__": "object",
+      "condition_start_datetime": "The precise datetime when the condition was first recorded or started."
+    },
+    "condition_end_date": {
+      "__type__": "object",
+      "condition_end_date": "The date when the condition ended or was last recorded."
+    },
+    "condition_end_datetime": {
+      "__type__": "object",
+      "condition_end_datetime": "The precise datetime when the condition ended or was last recorded."
+    },
+    "condition_type_concept_id": {
+      "__type__": "object",
+      "condition_type_concept_id": "A standardized concept identifier for the type of condition occurrence (e.g., diagnosis, procedure)."
+    },
+    "condition_status_concept_id": {
+      "__type__": "object",
+      "condition_status_concept_id": "A standardized concept identifier for the status of the condition (e.g., active, resolved)."
+    },
+    "stop_reason": {
+      "__type__": "object",
+      "stop_reason": "The reason why the condition ended or was stopped, if applicable."
+    },
+    "provider_id": {
+      "__type__": "object",
+      "provider_id": "The unique identifier for the healthcare provider who recorded the condition."
+    },
+    "visit_occurrence_id": {
+      "__type__": "object",
+      "visit_occurrence_id": "The unique identifier for the visit during which the condition was recorded."
+    },
+    "visit_detail_id": {
+      "__type__": "object",
+      "visit_detail_id": "The unique identifier for the detailed visit during which the condition was recorded."
+    },
+    "condition_source_value": {
+      "__type__": "object",
+      "condition_source_value": "The original source value for the condition, as recorded in the source system."
+    },
+    "condition_source_concept_id": {
+      "__type__": "object",
+      "condition_source_concept_id": "A standardized concept identifier for the source value of the condition."
+    },
+    "condition_status_source_value": {
+      "__type__": "object",
+      "condition_status_source_value": "The original source value for the status of the condition, as recorded in the source system."
+    }
+  },
+  "procedures.csv": {
+    "date": {
+      "__type__": "object",
+      "date": "The date on which the medical procedure was performed."
+    },
+    "patient": {
+      "__type__": "object",
+      "patient": "The identifier for the patient who underwent the medical procedure."
+    },
+    "encounter": {
+      "__type__": "object",
+      "encounter": "The unique identifier for the medical encounter during which the procedure was performed."
+    },
+    "code": {
+      "__type__": "object",
+      "code": "The standardized code representing the specific medical procedure performed."
+    },
+    "description": {
+      "__type__": "object",
+      "description": "A textual description of the medical procedure performed."
+    },
+    "cost": {
+      "__type__": "object",
+      "cost": "The cost of the medical procedure in the local currency."
+    },
+    "reasoncode": {
+      "__type__": "object",
+      "reasoncode": "The standardized code representing the reason for performing the medical procedure."
+    },
+    "reasondescription": {
+      "__type__": "object",
+      "reasondescription": "A textual description of the reason for performing the medical procedure."
+    }
+  },
+  "providers.csv": {
+    "id": {
+      "__type__": "object",
+      "id": "A unique identifier for each provider."
+    },
+    "organization": {
+      "__type__": "object",
+      "organization": "The name of the organization or institution the provider is associated with."
+    },
+    "name": {
+      "__type__": "object",
+      "name": "The full name of the provider."
+    },
+    "gender": {
+      "__type__": "object",
+      "gender": "The gender of the provider."
+    },
+    "speciality": {
+      "__type__": "object",
+      "speciality": "The medical speciality or field of expertise of the provider."
+    },
+    "address": {
+      "__type__": "object",
+      "address": "The street address of the provider's practice or office."
+    },
+    "city": {
+      "__type__": "object",
+      "city": "The city where the provider's practice or office is located."
+    },
+    "state": {
+      "__type__": "object",
+      "state": "The state where the provider's practice or office is located."
+    },
+    "zip": {
+      "__type__": "object",
+      "zip": "The zip code of the provider's practice or office location."
+    },
+    "utilization": {
+      "__type__": "object",
+      "utilization": "The level of utilization or frequency of services provided by the provider."
+    }
+  },
+  "note.csv": {
+    "note_id": {
+      "__type__": "object",
+      "note_id": "A unique identifier for each note entry in the database."
+    },
+    "person_id": {
+      "__type__": "object",
+      "person_id": "The unique identifier of the person to whom the note pertains."
+    },
+    "note_event_id": {
+      "__type__": "object",
+      "note_event_id": "The identifier of the event associated with the note, if applicable."
+    },
+    "note_event_field_concept_id": {
+      "__type__": "object",
+      "note_event_field_concept_id": "The concept identifier for the field of the event associated with the note, if applicable."
+    },
+    "note_date": {
+      "__type__": "object",
+      "note_date": "The date on which the note was created or recorded."
+    },
+    "note_datetime": {
+      "__type__": "object",
+      "note_datetime": "The exact date and time when the note was created or recorded."
+    },
+    "note_type_concept_id": {
+      "__type__": "object",
+      "note_type_concept_id": "The concept identifier for the type of note, such as clinical, administrative, etc."
+    },
+    "note_class_concept_id": {
+      "__type__": "object",
+      "note_class_concept_id": "The concept identifier for the class of note, such as progress note, discharge summary, etc."
+    },
+    "note_title": {
+      "__type__": "object",
+      "note_title": "The title or subject of the note."
+    },
+    "note_text": {
+      "__type__": "object",
+      "note_text": "The full text content of the note."
+    },
+    "encoding_concept_id": {
+      "__type__": "object",
+      "encoding_concept_id": "The concept identifier for the encoding format used for the note text."
+    },
+    "language_concept_id": {
+      "__type__": "object",
+      "language_concept_id": "The concept identifier for the language in which the note is written."
+    },
+    "provider_id": {
+      "__type__": "object",
+      "provider_id": "The unique identifier of the provider or healthcare professional who created the note."
+    },
+    "visit_occurrence_id": {
+      "__type__": "object",
+      "visit_occurrence_id": "The unique identifier of the visit occurrence during which the note was created."
+    },
+    "visit_detail_id": {
+      "__type__": "object",
+      "visit_detail_id": "The unique identifier of the detailed visit during which the note was created, if applicable."
+    },
+    "note_source_value": {
+      "__type__": "object",
+      "note_source_value": "The source value or original identifier of the note from the source system."
+    }
+  },
+  "patients.csv": {
+    "id": {
+      "__type__": "object",
+      "id": "A unique identifier for each patient in the system."
+    },
+    "birthdate": {
+      "__type__": "object",
+      "birthdate": "The date of birth of the patient."
+    },
+    "deathdate": {
+      "__type__": "object",
+      "deathdate": "The date of death of the patient, if applicable."
+    },
+    "ssn": {
+      "__type__": "object",
+      "ssn": "The Social Security Number of the patient."
+    },
+    "drivers": {
+      "__type__": "object",
+      "drivers": "The driver's license number of the patient."
+    },
+    "passport": {
+      "__type__": "object",
+      "passport": "The passport number of the patient."
+    },
+    "prefix": {
+      "__type__": "object",
+      "prefix": "The prefix (e.g., Mr., Mrs., Dr.) used before the patient's name."
+    },
+    "first": {
+      "__type__": "object",
+      "first": "The first name of the patient."
+    },
+    "last": {
+      "__type__": "object",
+      "last": "The last name of the patient."
+    },
+    "suffix": {
+      "__type__": "object",
+      "suffix": "The suffix (e.g., Jr., Sr., III) used after the patient's name."
+    },
+    "maiden": {
+      "__type__": "object",
+      "maiden": "The maiden name of the patient, if applicable."
+    },
+    "marital": {
+      "__type__": "object",
+      "marital": "The marital status of the patient (e.g., single, married, divorced)."
+    },
+    "race": {
+      "__type__": "object",
+      "race": "The race of the patient."
+    },
+    "ethnicity": {
+      "__type__": "object",
+      "ethnicity": "The ethnicity of the patient."
+    },
+    "gender": {
+      "__type__": "object",
+      "gender": "The gender of the patient."
+    },
+    "birthplace": {
+      "__type__": "object",
+      "birthplace": "The place of birth of the patient."
+    },
+    "address": {
+      "__type__": "object",
+      "address": "The street address of the patient."
+    },
+    "city": {
+      "__type__": "object",
+      "city": "The city where the patient resides."
+    },
+    "state": {
+      "__type__": "object",
+      "state": "The state where the patient resides."
+    },
+    "zip": {
+      "__type__": "object",
+      "zip": "The zip code of the patient's residence."
+    }
+  },
+  "procedure_occurrence.csv": {
+    "procedure_occurrence_id": {
+      "__type__": "object",
+      "procedure_occurrence_id": "A unique identifier for each procedure occurrence record."
+    },
+    "person_id": {
+      "__type__": "object",
+      "person_id": "The unique identifier for the person who underwent the procedure."
+    },
+    "procedure_concept_id": {
+      "__type__": "object",
+      "procedure_concept_id": "A standardized code representing the specific procedure performed."
+    },
+    "procedure_date": {
+      "__type__": "object",
+      "procedure_date": "The date on which the procedure was performed."
+    },
+    "procedure_datetime": {
+      "__type__": "object",
+      "procedure_datetime": "The exact date and time when the procedure was performed."
+    },
+    "procedure_type_concept_id": {
+      "__type__": "object",
+      "procedure_type_concept_id": "A standardized code indicating the type of procedure, such as surgical, diagnostic, etc."
+    },
+    "modifier_concept_id": {
+      "__type__": "object",
+      "modifier_concept_id": "A standardized code representing any modifiers or additional details about the procedure."
+    },
+    "quantity": {
+      "__type__": "object",
+      "quantity": "The number of times the procedure was performed on the person."
+    },
+    "provider_id": {
+      "__type__": "object",
+      "provider_id": "The unique identifier for the healthcare provider who performed the procedure."
+    },
+    "visit_occurrence_id": {
+      "__type__": "object",
+      "visit_occurrence_id": "The unique identifier for the visit during which the procedure was performed."
+    },
+    "visit_detail_id": {
+      "__type__": "object",
+      "visit_detail_id": "The unique identifier for the detailed visit record associated with the procedure."
+    },
+    "procedure_source_value": {
+      "__type__": "object",
+      "procedure_source_value": "The original source code or value from the source system that represents the procedure."
+    },
+    "procedure_source_concept_id": {
+      "__type__": "object",
+      "procedure_source_concept_id": "A standardized code representing the source of the procedure information."
+    },
+    "modifier_source_value": {
+      "__type__": "object",
+      "modifier_source_value": "The original source code or value from the source system that represents any modifiers or additional details about the procedure."
+    }
+  },
+  "drug_exposure.csv": {
+    "drug_exposure_id": {
+      "__type__": "object",
+      "drug_exposure_id": "A unique identifier for each drug exposure record."
+    },
+    "person_id": {
+      "__type__": "object",
+      "person_id": "The unique identifier for the person who received the drug."
+    },
+    "drug_concept_id": {
+      "__type__": "object",
+      "drug_concept_id": "A standardized identifier for the drug concept from a controlled vocabulary."
+    },
+    "drug_exposure_start_date": {
+      "__type__": "object",
+      "drug_exposure_start_date": "The date when the drug exposure started."
+    },
+    "drug_exposure_start_datetime": {
+      "__type__": "object",
+      "drug_exposure_start_datetime": "The exact date and time when the drug exposure started."
+    },
+    "drug_exposure_end_date": {
+      "__type__": "object",
+      "drug_exposure_end_date": "The date when the drug exposure ended."
+    },
+    "drug_exposure_end_datetime": {
+      "__type__": "object",
+      "drug_exposure_end_datetime": "The exact date and time when the drug exposure ended."
+    },
+    "verbatim_end_date": {
+      "__type__": "object",
+      "verbatim_end_date": "The date when the drug exposure ended as recorded in the source data, if different from the standardized end date."
+    },
+    "drug_type_concept_id": {
+      "__type__": "object",
+      "drug_type_concept_id": "A standardized identifier for the type of drug exposure from a controlled vocabulary."
+    },
+    "stop_reason": {
+      "__type__": "object",
+      "stop_reason": "The reason why the drug exposure was stopped, if applicable."
+    },
+    "refills": {
+      "__type__": "object",
+      "refills": "The number of refills authorized for the drug prescription."
+    },
+    "quantity": {
+      "__type__": "object",
+      "quantity": "The quantity of the drug dispensed or administered."
+    },
+    "days_supply": {
+      "__type__": "object",
+      "days_supply": "The number of days the dispensed quantity of the drug is expected to last."
+    },
+    "sig": {
+      "__type__": "object",
+      "sig": "The instructions for the use of the drug, often in free text form."
+    },
+    "route_concept_id": {
+      "__type__": "object",
+      "route_concept_id": "A standardized identifier for the route of administration of the drug from a controlled vocabulary."
+    },
+    "lot_number": {
+      "__type__": "object",
+      "lot_number": "The lot or batch number of the drug."
+    },
+    "provider_id": {
+      "__type__": "object",
+      "provider_id": "The unique identifier for the provider who prescribed or administered the drug."
+    },
+    "visit_occurrence_id": {
+      "__type__": "object",
+      "visit_occurrence_id": "The unique identifier for the visit during which the drug was prescribed or administered."
+    },
+    "visit_detail_id": {
+      "__type__": "object",
+      "visit_detail_id": "The unique identifier for the detailed visit during which the drug was prescribed or administered."
+    },
+    "drug_source_value": {
+      "__type__": "object",
+      "drug_source_value": "The source code or name of the drug as recorded in the source data."
+    },
+    "drug_source_concept_id": {
+      "__type__": "object",
+      "drug_source_concept_id": "A standardized identifier for the source code or name of the drug from a controlled vocabulary."
+    },
+    "route_source_value": {
+      "__type__": "object",
+      "route_source_value": "The source code or name for the route of administration as recorded in the source data."
+    },
+    "dose_unit_source_value": {
+      "__type__": "object",
+      "dose_unit_source_value": "The source code or name for the unit of dose as recorded in the source data."
+    }
+  },
+  "measurement.csv": {
+    "measurement_id": {
+      "__type__": "object",
+      "measurement_id": "A unique identifier for each measurement record."
+    },
+    "person_id": {
+      "__type__": "object",
+      "person_id": "The unique identifier for the person to whom the measurement pertains."
+    },
+    "measurement_concept_id": {
+      "__type__": "object",
+      "measurement_concept_id": "A standardized concept identifier for the type of measurement being recorded."
+    },
+    "measurement_date": {
+      "__type__": "object",
+      "measurement_date": "The date on which the measurement was taken."
+    },
+    "measurement_datetime": {
+      "__type__": "object",
+      "measurement_datetime": "The date and time on which the measurement was taken."
+    },
+    "measurement_time": {
+      "__type__": "object",
+      "measurement_time": "The time of day when the measurement was taken."
+    },
+    "measurement_type_concept_id": {
+      "__type__": "object",
+      "measurement_type_concept_id": "A standardized concept identifier for the type of measurement (e.g., lab result, vital sign)."
+    },
+    "operator_concept_id": {
+      "__type__": "object",
+      "operator_concept_id": "A standardized concept identifier for the operator used to compare the measurement value (e.g., less than, greater than)."
+    },
+    "value_as_number": {
+      "__type__": "object",
+      "value_as_number": "The numeric value of the measurement."
+    },
+    "value_as_concept_id": {
+      "__type__": "object",
+      "value_as_concept_id": "A standardized concept identifier for the value of the measurement if it is not numeric (e.g., positive, negative)."
+    },
+    "unit_concept_id": {
+      "__type__": "object",
+      "unit_concept_id": "A standardized concept identifier for the unit of measurement."
+    },
+    "range_low": {
+      "__type__": "object",
+      "range_low": "The lower bound of the normal range for the measurement."
+    },
+    "range_high": {
+      "__type__": "object",
+      "range_high": "The upper bound of the normal range for the measurement."
+    },
+    "provider_id": {
+      "__type__": "object",
+      "provider_id": "The unique identifier for the provider who recorded the measurement."
+    },
+    "visit_occurrence_id": {
+      "__type__": "object",
+      "visit_occurrence_id": "The unique identifier for the visit during which the measurement was taken."
+    },
+    "visit_detail_id": {
+      "__type__": "object",
+      "visit_detail_id": "The unique identifier for the detailed visit during which the measurement was taken."
+    },
+    "measurement_source_value": {
+      "__type__": "object",
+      "measurement_source_value": "The original value of the measurement as recorded in the source system."
+    },
+    "measurement_source_concept_id": {
+      "__type__": "object",
+      "measurement_source_concept_id": "A standardized concept identifier for the source of the measurement."
+    },
+    "unit_source_value": {
+      "__type__": "object",
+      "unit_source_value": "The original unit of measurement as recorded in the source system."
+    },
+    "value_source_value": {
+      "__type__": "object",
+      "value_source_value": "The original value of the measurement as recorded in the source system."
+    }
+  },
+  "provider.csv": {
+    "provider_id": {
+      "__type__": "object",
+      "provider_id": "A unique identifier for each healthcare provider."
+    },
+    "provider_name": {
+      "__type__": "object",
+      "provider_name": "The name of the healthcare provider."
+    },
+    "npi": {
+      "__type__": "object",
+      "npi": "The National Provider Identifier, a unique 10-digit identification number for healthcare providers in the United States."
+    },
+    "dea": {
+      "__type__": "object",
+      "dea": "The Drug Enforcement Administration (DEA) number, a unique identifier for healthcare providers who prescribe controlled substances."
+    },
+    "specialty_concept_id": {
+      "__type__": "object",
+      "specialty_concept_id": "A standardized identifier for the medical specialty of the provider, linking to a concept table for detailed information."
+    },
+    "care_site_id": {
+      "__type__": "object",
+      "care_site_id": "A unique identifier for the care site or location where the provider practices."
+    },
+    "year_of_birth": {
+      "__type__": "object",
+      "year_of_birth": "The year in which the provider was born."
+    },
+    "gender_concept_id": {
+      "__type__": "object",
+      "gender_concept_id": "A standardized identifier for the gender of the provider, linking to a concept table for detailed information."
+    },
+    "provider_source_value": {
+      "__type__": "object",
+      "provider_source_value": "The original source value for the provider identifier, as recorded in the source system."
+    },
+    "specialty_source_value": {
+      "__type__": "object",
+      "specialty_source_value": "The original source value for the provider's specialty, as recorded in the source system."
+    },
+    "specialty_source_concept_id": {
+      "__type__": "object",
+      "specialty_source_concept_id": "A standardized identifier for the source system's specialty value, linking to a concept table for detailed information."
+    },
+    "gender_source_value": {
+      "__type__": "object",
+      "gender_source_value": "The original source value for the provider's gender, as recorded in the source system."
+    },
+    "gender_source_concept_id": {
+      "__type__": "object",
+      "gender_source_concept_id": "A standardized identifier for the source system's gender value, linking to a concept table for detailed information."
+    }
+  },
+  "observation.csv": {
+    "observation_id": {
+      "__type__": "object",
+      "observation_id": "A unique identifier for each observation record."
+    },
+    "person_id": {
+      "__type__": "object",
+      "person_id": "The unique identifier of the person to whom the observation pertains."
+    },
+    "observation_concept_id": {
+      "__type__": "object",
+      "observation_concept_id": "A standardized concept identifier for the type of observation being recorded."
+    },
+    "observation_date": {
+      "__type__": "object",
+      "observation_date": "The date on which the observation was made."
+    },
+    "observation_datetime": {
+      "__type__": "object",
+      "observation_datetime": "The date and time on which the observation was made."
+    },
+    "observation_type_concept_id": {
+      "__type__": "object",
+      "observation_type_concept_id": "A standardized concept identifier for the type of observation (e.g., lab result, physical exam)."
+    },
+    "value_as_number": {
+      "__type__": "object",
+      "value_as_number": "The numeric value of the observation, if applicable."
+    },
+    "value_as_string": {
+      "__type__": "object",
+      "value_as_string": "The string value of the observation, if applicable."
+    },
+    "value_as_concept_id": {
+      "__type__": "object",
+      "value_as_concept_id": "A standardized concept identifier for the value of the observation, if applicable."
+    },
+    "qualifier_concept_id": {
+      "__type__": "object",
+      "qualifier_concept_id": "A standardized concept identifier for the qualifier of the observation, if applicable."
+    },
+    "unit_concept_id": {
+      "__type__": "object",
+      "unit_concept_id": "A standardized concept identifier for the unit of measurement of the observation, if applicable."
+    },
+    "provider_id": {
+      "__type__": "object",
+      "provider_id": "The unique identifier of the provider who recorded the observation."
+    },
+    "visit_occurrence_id": {
+      "__type__": "object",
+      "visit_occurrence_id": "The unique identifier of the visit during which the observation was made."
+    },
+    "visit_detail_id": {
+      "__type__": "object",
+      "visit_detail_id": "The unique identifier of the detailed visit during which the observation was made."
+    },
+    "observation_source_value": {
+      "__type__": "object",
+      "observation_source_value": "The original source value of the observation, as recorded in the source system."
+    },
+    "observation_source_concept_id": {
+      "__type__": "object",
+      "observation_source_concept_id": "A standardized concept identifier for the source of the observation."
+    },
+    "unit_source_value": {
+      "__type__": "object",
+      "unit_source_value": "The original source value for the unit of measurement of the observation, as recorded in the source system."
+    },
+    "qualifier_source_value": {
+      "__type__": "object",
+      "qualifier_source_value": "The original source value for the qualifier of the observation, as recorded in the source system."
+    },
+    "observation_event_id": {
+      "__type__": "object",
+      "observation_event_id": "The unique identifier of the event to which the observation is related."
+    },
+    "obs_event_field_concept_id": {
+      "__type__": "object",
+      "obs_event_field_concept_id": "A standardized concept identifier for the field of the observation event."
+    },
+    "value_as_datetime": {
+      "__type__": "object",
+      "value_as_datetime": "The date and time value of the observation, if applicable."
+    }
+  },
+  "person.csv": {
+    "person_id": {
+      "__type__": "object",
+      "person_id": "A unique identifier for each person in the dataset."
+    },
+    "gender_concept_id": {
+      "__type__": "object",
+      "gender_concept_id": "A standardized code representing the gender of the person."
+    },
+    "year_of_birth": {
+      "__type__": "object",
+      "year_of_birth": "The year in which the person was born."
+    },
+    "month_of_birth": {
+      "__type__": "object",
+      "month_of_birth": "The month in which the person was born."
+    },
+    "day_of_birth": {
+      "__type__": "object",
+      "day_of_birth": "The day of the month on which the person was born."
+    },
+    "birth_datetime": {
+      "__type__": "object",
+      "birth_datetime": "The exact date and time of the person's birth."
+    },
+    "death_datetime": {
+      "__type__": "object",
+      "death_datetime": "The exact date and time of the person's death, if applicable."
+    },
+    "race_concept_id": {
+      "__type__": "object",
+      "race_concept_id": "A standardized code representing the race of the person."
+    },
+    "ethnicity_concept_id": {
+      "__type__": "object",
+      "ethnicity_concept_id": "A standardized code representing the ethnicity of the person."
+    },
+    "location_id": {
+      "__type__": "object",
+      "location_id": "A unique identifier for the location associated with the person."
+    },
+    "provider_id": {
+      "__type__": "object",
+      "provider_id": "A unique identifier for the healthcare provider associated with the person."
+    },
+    "care_site_id": {
+      "__type__": "object",
+      "care_site_id": "A unique identifier for the care site where the person receives healthcare services."
+    },
+    "person_source_value": {
+      "__type__": "object",
+      "person_source_value": "The original value from the source system that represents the person."
+    },
+    "gender_source_value": {
+      "__type__": "object",
+      "gender_source_value": "The original value from the source system that represents the gender of the person."
+    },
+    "gender_source_concept_id": {
+      "__type__": "object",
+      "gender_source_concept_id": "A standardized code representing the gender of the person as recorded in the source system."
+    },
+    "race_source_value": {
+      "__type__": "object",
+      "race_source_value": "The original value from the source system that represents the race of the person."
+    },
+    "race_source_concept_id": {
+      "__type__": "object",
+      "race_source_concept_id": "A standardized code representing the race of the person as recorded in the source system."
+    },
+    "ethnicity_source_value": {
+      "__type__": "object",
+      "ethnicity_source_value": "The original value from the source system that represents the ethnicity of the person."
+    },
+    "ethnicity_source_concept_id": {
+      "__type__": "object",
+      "ethnicity_source_concept_id": "A standardized code representing the ethnicity of the person as recorded in the source system."
+    }
+  },
+  "specimen.csv": {
+    "specimen_id": {
+      "__type__": "object",
+      "specimen_id": "A unique identifier for each specimen record."
+    },
+    "person_id": {
+      "__type__": "object",
+      "person_id": "The unique identifier of the person from whom the specimen was collected."
+    },
+    "specimen_concept_id": {
+      "__type__": "object",
+      "specimen_concept_id": "A standardized code representing the type of specimen collected."
+    },
+    "specimen_type_concept_id": {
+      "__type__": "object",
+      "specimen_type_concept_id": "A standardized code representing the type of specimen, such as blood, tissue, or urine."
+    },
+    "specimen_date": {
+      "__type__": "object",
+      "specimen_date": "The date when the specimen was collected."
+    },
+    "specimen_datetime": {
+      "__type__": "object",
+      "specimen_datetime": "The date and time when the specimen was collected."
+    },
+    "quantity": {
+      "__type__": "object",
+      "quantity": "The amount or volume of the specimen collected."
+    },
+    "unit_concept_id": {
+      "__type__": "object",
+      "unit_concept_id": "A standardized code representing the unit of measurement for the quantity of the specimen."
+    },
+    "anatomic_site_concept_id": {
+      "__type__": "object",
+      "anatomic_site_concept_id": "A standardized code representing the anatomic site from which the specimen was collected."
+    },
+    "disease_status_concept_id": {
+      "__type__": "object",
+      "disease_status_concept_id": "A standardized code representing the disease status of the specimen, such as normal or diseased."
+    },
+    "specimen_source_id": {
+      "__type__": "object",
+      "specimen_source_id": "A unique identifier for the source of the specimen, such as a laboratory or hospital."
+    },
+    "specimen_source_value": {
+      "__type__": "object",
+      "specimen_source_value": "The original value or identifier of the specimen as recorded by the source."
+    },
+    "unit_source_value": {
+      "__type__": "object",
+      "unit_source_value": "The original unit of measurement for the quantity of the specimen as recorded by the source."
+    },
+    "anatomic_site_source_value": {
+      "__type__": "object",
+      "anatomic_site_source_value": "The original value or identifier for the anatomic site from which the specimen was collected as recorded by the source."
+    },
+    "disease_status_source_value": {
+      "__type__": "object",
+      "disease_status_source_value": "The original value or identifier for the disease status of the specimen as recorded by the source."
+    }
+  },
+  "visit_occurrence.csv": {
+    "visit_occurrence_id": {
+      "__type__": "object",
+      "visit_occurrence_id": "A unique identifier for each visit occurrence."
+    },
+    "person_id": {
+      "__type__": "object",
+      "person_id": "The unique identifier for the person who had the visit."
+    },
+    "visit_concept_id": {
+      "__type__": "object",
+      "visit_concept_id": "A standardized concept identifier for the type of visit (e.g., inpatient, outpatient)."
+    },
+    "visit_start_date": {
+      "__type__": "object",
+      "visit_start_date": "The date when the visit started."
+    },
+    "visit_start_datetime": {
+      "__type__": "object",
+      "visit_start_datetime": "The exact date and time when the visit started."
+    },
+    "visit_end_date": {
+      "__type__": "object",
+      "visit_end_date": "The date when the visit ended."
+    },
+    "visit_end_datetime": {
+      "__type__": "object",
+      "visit_end_datetime": "The exact date and time when the visit ended."
+    },
+    "visit_type_concept_id": {
+      "__type__": "object",
+      "visit_type_concept_id": "A standardized concept identifier for the type of visit occurrence (e.g., emergency, elective)."
+    },
+    "provider_id": {
+      "__type__": "object",
+      "provider_id": "The unique identifier for the provider who was responsible for the visit."
+    },
+    "care_site_id": {
+      "__type__": "object",
+      "care_site_id": "The unique identifier for the care site where the visit took place."
+    },
+    "visit_source_value": {
+      "__type__": "object",
+      "visit_source_value": "The source code or value from the original data source that describes the visit."
+    },
+    "visit_source_concept_id": {
+      "__type__": "object",
+      "visit_source_concept_id": "A standardized concept identifier for the source code or value that describes the visit."
+    },
+    "admitted_from_concept_id": {
+      "__type__": "object",
+      "admitted_from_concept_id": "A standardized concept identifier for the location or context from which the patient was admitted."
+    },
+    "admitted_from_source_value": {
+      "__type__": "object",
+      "admitted_from_source_value": "The source code or value from the original data source that describes the location or context from which the patient was admitted."
+    },
+    "discharge_to_concept_id": {
+      "__type__": "object",
+      "discharge_to_concept_id": "A standardized concept identifier for the location or context to which the patient was discharged."
+    },
+    "discharge_to_source_value": {
+      "__type__": "object",
+      "discharge_to_source_value": "The source code or value from the original data source that describes the location or context to which the patient was discharged."
+    },
+    "preceding_visit_occurrence_id": {
+      "__type__": "object",
+      "preceding_visit_occurrence_id": "The unique identifier for the visit occurrence that immediately preceded this one for the same person."
+    }
+  },
+  "visit_detail.csv": {
+    "visit_detail_id": {
+      "__type__": "object",
+      "visit_detail_id": "A unique identifier for each visit detail record."
+    },
+    "person_id": {
+      "__type__": "object",
+      "person_id": "The unique identifier for the person associated with the visit detail."
+    },
+    "visit_detail_concept_id": {
+      "__type__": "object",
+      "visit_detail_concept_id": "A concept ID that categorizes the type of visit detail."
+    },
+    "visit_detail_start_date": {
+      "__type__": "object",
+      "visit_detail_start_date": "The date when the visit detail started."
+    },
+    "visit_detail_start_datetime": {
+      "__type__": "object",
+      "visit_detail_start_datetime": "The date and time when the visit detail started."
+    },
+    "visit_detail_end_date": {
+      "__type__": "object",
+      "visit_detail_end_date": "The date when the visit detail ended."
+    },
+    "visit_detail_end_datetime": {
+      "__type__": "object",
+      "visit_detail_end_datetime": "The date and time when the visit detail ended."
+    },
+    "visit_detail_type_concept_id": {
+      "__type__": "object",
+      "visit_detail_type_concept_id": "A concept ID that specifies the type of visit detail record."
+    },
+    "provider_id": {
+      "__type__": "object",
+      "provider_id": "The unique identifier for the provider who was responsible for the visit detail."
+    },
+    "care_site_id": {
+      "__type__": "object",
+      "care_site_id": "The unique identifier for the care site where the visit detail occurred."
+    },
+    "visit_detail_source_value": {
+      "__type__": "object",
+      "visit_detail_source_value": "The source value that describes the visit detail."
+    },
+    "visit_detail_source_concept_id": {
+      "__type__": "object",
+      "visit_detail_source_concept_id": "A concept ID that maps the source value to a standardized concept."
+    },
+    "admitted_from_source_value": {
+      "__type__": "object",
+      "admitted_from_source_value": "The source value that describes where the person was admitted from."
+    },
+    "admitted_from_concept_id": {
+      "__type__": "object",
+      "admitted_from_concept_id": "A concept ID that maps the admitted from source value to a standardized concept."
+    },
+    "discharge_to_source_value": {
+      "__type__": "object",
+      "discharge_to_source_value": "The source value that describes where the person was discharged to."
+    },
+    "discharge_to_concept_id": {
+      "__type__": "object",
+      "discharge_to_concept_id": "A concept ID that maps the discharge to source value to a standardized concept."
+    },
+    "preceding_visit_detail_id": {
+      "__type__": "object",
+      "preceding_visit_detail_id": "The unique identifier for the visit detail that occurred immediately before this one."
+    },
+    "visit_detail_parent_id": {
+      "__type__": "object",
+      "visit_detail_parent_id": "The unique identifier for the parent visit detail, if this visit detail is a sub-visit."
+    },
+    "visit_occurrence_id": {
+      "__type__": "object",
+      "visit_occurrence_id": "The unique identifier for the visit occurrence that this visit detail is part of."
+    }
+  }
+}

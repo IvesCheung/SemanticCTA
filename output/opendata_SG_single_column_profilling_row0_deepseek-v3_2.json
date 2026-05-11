@@ -1,0 +1,2818 @@
+{
+  "datalake/SG_CSV0000000000000287.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the data pertains."
+    },
+    "types_of_workers_covered": {
+      "__type__": "object",
+      "types_of_workers_covered": "The categories or classifications of workers included in the coverage."
+    },
+    "no._certified": {
+      "__type__": "float64",
+      "no._certified": "The count of individuals or entities that have been officially certified."
+    }
+  },
+  "datalake/SG_CSV0000000000000204.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the data pertains."
+    },
+    "industry1": {
+      "__type__": "object",
+      "industry1": "A classification or code representing a specific industry sector."
+    },
+    "total_paid_hours": {
+      "__type__": "float64",
+      "total_paid_hours": "The aggregate number of hours for which compensation was provided across the specified industry and year."
+    }
+  },
+  "datalake/SG_CSV0000000000000000.csv": {
+    "month": {
+      "__type__": "object",
+      "month": "The month to which the data pertains, typically in a year-month format."
+    },
+    "telco": {
+      "__type__": "object",
+      "telco": "The telecommunications company or service provider being referenced."
+    },
+    "service_coverage": {
+      "__type__": "float64",
+      "service_coverage": "A measure of the extent or quality of service coverage provided by the telco, such as geographic reach or network availability."
+    }
+  },
+  "datalake/SG_CSV0000000000000152.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year for which the average annual mileage data is reported."
+    },
+    "vehicle_type": {
+      "__type__": "object",
+      "vehicle_type": "The category or classification of the vehicle, such as car, truck, or SUV."
+    },
+    "average_annual_mileage": {
+      "__type__": "int64",
+      "average_annual_mileage": "The mean distance traveled per year by vehicles of the specified type, typically measured in miles."
+    }
+  },
+  "datalake/SG_CSV0000000000000002.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the data point pertains."
+    },
+    "category": {
+      "__type__": "object",
+      "category": "A classification or grouping that organizes the data into broader subject areas."
+    },
+    "topic": {
+      "__type__": "object",
+      "topic": "A specific subject or theme within the given category."
+    },
+    "level": {
+      "__type__": "object",
+      "level": "A measure of depth, difficulty, or hierarchical position associated with the topic."
+    }
+  },
+  "datalake/SG_CSV0000000000000124.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the data point corresponds."
+    },
+    "level_1": {
+      "__type__": "object",
+      "level_1": "A primary categorical classification or grouping for the data."
+    },
+    "level_2": {
+      "__type__": "object",
+      "level_2": "A secondary categorical classification or sub-grouping within the primary level."
+    },
+    "value": {
+      "__type__": "int64",
+      "value": "The numerical measurement or quantity associated with the specified year and categories."
+    }
+  },
+  "opendata_join_ground_truth_SG.csv": {
+    "query_table": {
+      "__type__": "object",
+      "query_table": "The name or identifier of the source table that contains the query column being matched."
+    },
+    "candidate_table": {
+      "__type__": "object",
+      "candidate_table": "The name or identifier of a potential matching table that contains the candidate column."
+    },
+    "query_column": {
+      "__type__": "object",
+      "query_column": "The specific column from the query table that is being considered for matching."
+    },
+    "candidate_column": {
+      "__type__": "object",
+      "candidate_column": "The specific column from the candidate table that is being evaluated as a potential match to the query column."
+    }
+  },
+  "datalake/SG_CSV0000000000000220.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the data pertains."
+    },
+    "industry1": {
+      "__type__": "object",
+      "industry1": "A classification or category representing a primary industry sector."
+    },
+    "industry2": {
+      "__type__": "object",
+      "industry2": "A secondary or more detailed industry classification within the broader sector."
+    },
+    "industry3": {
+      "__type__": "object",
+      "industry3": "A tertiary or further detailed industry classification for granular categorization."
+    },
+    "overtime_paid_hours": {
+      "__type__": "float64",
+      "overtime_paid_hours": "The total number of hours of overtime work that were compensated."
+    }
+  },
+  "datalake/SG_CSV0000000000000153.csv": {
+    "epi_year": {
+      "__type__": "int64",
+      "epi_year": "The epidemiological year to which the data belongs, often used in public health reporting."
+    },
+    "epi_week": {
+      "__type__": "int64",
+      "epi_week": "The epidemiological week within the given year, typically following a standard calendar for tracking health events."
+    },
+    "status": {
+      "__type__": "object",
+      "status": "The classification or state of the reported cases, such as confirmed, probable, or suspected."
+    },
+    "count": {
+      "__type__": "float64",
+      "count": "The number of cases or events recorded for the specified epidemiological week and status."
+    }
+  },
+  "datalake/SG_CSV0000000000000205.csv": {
+    "quarter": {
+      "__type__": "object",
+      "quarter": "The time period, typically a three-month interval within a fiscal or calendar year, to which the data pertains."
+    },
+    "industry1": {
+      "__type__": "object",
+      "industry1": "A primary classification or sector grouping for the economic activity or business type."
+    },
+    "industry2": {
+      "__type__": "object",
+      "industry2": "A secondary or more detailed sub-classification within the primary industry category."
+    },
+    "total_paid_hours": {
+      "__type__": "float64",
+      "total_paid_hours": "The aggregate number of hours for which compensation was provided across the specified industries and quarter."
+    }
+  },
+  "datalake/SG_CSV0000000000000161.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the data pertains."
+    },
+    "type_of_employee": {
+      "__type__": "object",
+      "type_of_employee": "The classification or category of the employee (e.g., full-time, part-time, contract)."
+    },
+    "sick_leave": {
+      "__type__": "object",
+      "sick_leave": "The total number of sick leave days taken by employees in the given year."
+    },
+    "avg_days_per_absentee": {
+      "__type__": "float64",
+      "avg_days_per_absentee": "The average number of sick leave days taken per employee who was absent due to sickness."
+    },
+    "avg_days_per_employee": {
+      "__type__": "float64",
+      "avg_days_per_employee": "The average number of sick leave days taken across all employees, regardless of whether they were absent."
+    }
+  },
+  "datalake/SG_CSV0000000000000219.csv": {
+    "quarter": {
+      "__type__": "object",
+      "quarter": "The fiscal or calendar quarter to which the data pertains, indicating the time period of measurement."
+    },
+    "industry1": {
+      "__type__": "object",
+      "industry1": "A primary industry classification or sector code for grouping economic activities."
+    },
+    "industry2": {
+      "__type__": "object",
+      "industry2": "A secondary industry classification or sub-sector code providing further detail within the primary industry."
+    },
+    "industry3": {
+      "__type__": "object",
+      "industry3": "A tertiary industry classification or detailed category code offering the most granular level of industry breakdown."
+    },
+    "overtime_paid_hours": {
+      "__type__": "object",
+      "overtime_paid_hours": "The total number of hours of overtime work that have been compensated, typically reflecting labor beyond standard working hours."
+    }
+  },
+  "datalake/SG_CSV0000000000000047__7.csv": {
+    "level_no": {
+      "__type__": "object",
+      "level_no": "A numeric identifier indicating the hierarchical level or tier within the organizational or classification structure."
+    },
+    "block": {
+      "__type__": "object",
+      "block": "A code or identifier representing a specific block, zone, or administrative division."
+    },
+    "business_constitution_description": {
+      "__type__": "object",
+      "business_constitution_description": "A textual description of the legal or organizational structure of the business entity."
+    },
+    "entity_name": {
+      "__type__": "object",
+      "entity_name": "The official name of the business or organizational entity."
+    },
+    "entity_status_description": {
+      "__type__": "object",
+      "entity_status_description": "A description of the current operational or legal status of the entity."
+    },
+    "primary_ssic_code": {
+      "__type__": "int64",
+      "primary_ssic_code": "The primary Singapore Standard Industrial Classification code categorizing the main economic activity of the entity."
+    },
+    "secondary_ssic_code": {
+      "__type__": "float64",
+      "secondary_ssic_code": "An additional Singapore Standard Industrial Classification code for secondary or supplementary economic activities."
+    },
+    "no_of_officers": {
+      "__type__": "int64",
+      "no_of_officers": "The count of officers, such as directors or executives, associated with the entity."
+    }
+  },
+  "datalake/SG_CSV0000000000000209.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the employment and hours data pertain."
+    },
+    "industry1": {
+      "__type__": "object",
+      "industry1": "A classification or category representing the primary industry or sector of the business."
+    },
+    "nature_of_employment": {
+      "__type__": "object",
+      "nature_of_employment": "Describes the type or status of employment, such as full-time, part-time, or contract."
+    },
+    "total_paid_hours": {
+      "__type__": "float64",
+      "total_paid_hours": "The aggregate number of hours for which employees were compensated, including both regular and overtime hours."
+    },
+    "standard_hours": {
+      "__type__": "float64",
+      "standard_hours": "The baseline or scheduled hours that employees are expected to work under normal conditions."
+    },
+    "overtime_of_all_employees": {
+      "__type__": "object",
+      "overtime_of_all_employees": "The total overtime hours worked by all employees, regardless of whether they individually worked overtime."
+    },
+    "overtime_of_employees_who_worked_overtime": {
+      "__type__": "object",
+      "overtime_of_employees_who_worked_overtime": "The total overtime hours worked specifically by employees who actually performed overtime work."
+    }
+  },
+  "datalake/SG_CSV0000000000000470.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the data pertains."
+    },
+    "type": {
+      "__type__": "object",
+      "type": "A classification or category describing the nature of the employment data."
+    },
+    "employment": {
+      "__type__": "int64",
+      "employment": "A numerical measure representing the level of employment, such as total number of employed individuals or an employment rate."
+    }
+  },
+  "datalake/SG_CSV0000000000000473.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the data point corresponds."
+    },
+    "level_1": {
+      "__type__": "object",
+      "level_1": "A primary categorical grouping or dimension for the data."
+    },
+    "level_2": {
+      "__type__": "object",
+      "level_2": "A secondary categorical grouping or sub‑dimension within the primary level."
+    },
+    "value": {
+      "__type__": "float64",
+      "value": "The numerical measurement or quantity associated with the given year and categorical levels."
+    }
+  },
+  "datalake/SG_CSV0000000000000303.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the data pertains."
+    },
+    "number_of_computer": {
+      "__type__": "object",
+      "number_of_computer": "The count of computers available or in use."
+    },
+    "computer_access_at_home": {
+      "__type__": "int64",
+      "computer_access_at_home": "Indicates whether computer access is available at home, likely as a binary or categorical measure."
+    }
+  },
+  "datalake/SG_CSV0000000000000308.csv": {
+    "month": {
+      "__type__": "object",
+      "month": "The month to which the data point corresponds, typically in a year-month format."
+    },
+    "level_1": {
+      "__type__": "object",
+      "level_1": "A categorical classification or grouping variable that further segments the data."
+    },
+    "value": {
+      "__type__": "float64",
+      "value": "The numerical measurement or metric associated with the given month and category."
+    }
+  },
+  "datalake/SG_CSV0000000000000441.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year in which the water quality measurement was recorded."
+    },
+    "water_quality_parameter": {
+      "__type__": "object",
+      "water_quality_parameter": "The specific characteristic or metric being measured to assess water quality, such as pH, dissolved oxygen, or turbidity."
+    },
+    "average_value": {
+      "__type__": "object",
+      "average_value": "The mean value of the water quality parameter over the specified period or set of observations."
+    },
+    "unit": {
+      "__type__": "object",
+      "unit": "The standard unit of measurement for the water quality parameter, such as mg/L, NTU, or degrees Celsius."
+    }
+  },
+  "datalake/SG_CSV0000000000000598.csv": {
+    "quarter": {
+      "__type__": "object",
+      "quarter": "The fiscal quarter (e.g., Q1, Q2, Q3, Q4) to which the data pertains."
+    },
+    "industry": {
+      "__type__": "object",
+      "industry": "The sector or business category (e.g., manufacturing, technology, retail) being analyzed."
+    },
+    "gross_allocation": {
+      "__type__": "float64",
+      "gross_allocation": "The total amount of resources, funds, or capital assigned to the industry before any adjustments."
+    },
+    "returns": {
+      "__type__": "float64",
+      "returns": "The financial gains, profits, or yields generated by the industry during the specified quarter."
+    }
+  },
+  "datalake/SG_CSV0000000000000632.csv": {
+    "shs_year": {
+      "__type__": "int64",
+      "shs_year": "The year in which the survey of households was conducted."
+    },
+    "flat_type": {
+      "__type__": "object",
+      "flat_type": "The classification or category of the residential flat (e.g., HDB flat type)."
+    },
+    "no_of_households": {
+      "__type__": "int64",
+      "no_of_households": "The count of households recorded for the given flat type in the specified survey year."
+    }
+  },
+  "datalake/SG_CSV0000000000000338.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the population data pertains."
+    },
+    "population_by_gender": {
+      "__type__": "object",
+      "population_by_gender": "A categorical variable indicating the gender group (e.g., male, female, total) for which the population count is reported."
+    },
+    "number_of_population": {
+      "__type__": "int64",
+      "number_of_population": "The numerical count of individuals belonging to the specified gender group for the given year."
+    }
+  },
+  "datalake/SG_CSV0000000000000696.csv": {
+    "month": {
+      "__type__": "object",
+      "month": "The month to which the data point corresponds, typically indicating a specific period in time."
+    },
+    "level_1": {
+      "__type__": "object",
+      "level_1": "A categorical classification or grouping label that provides context for the data, such as a region, product type, or demographic segment."
+    },
+    "value": {
+      "__type__": "float64",
+      "value": "The numerical measurement or metric associated with the given month and level_1 category, representing the primary data of interest."
+    }
+  },
+  "datalake/SG_CSV0000000000000779.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the data point corresponds."
+    },
+    "level_1": {
+      "__type__": "object",
+      "level_1": "A categorical classification or grouping label for the data."
+    },
+    "value": {
+      "__type__": "float64",
+      "value": "The numerical measurement or quantity associated with the given year and category."
+    }
+  },
+  "datalake/SG_CSV0000000000000403.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the data pertains."
+    },
+    "industry1": {
+      "__type__": "object",
+      "industry1": "A broad classification or sector grouping for the industry."
+    },
+    "industry2": {
+      "__type__": "object",
+      "industry2": "A more specific sub‑classification or detailed industry category."
+    },
+    "annual_leave_entitlement": {
+      "__type__": "object",
+      "annual_leave_entitlement": "The number of paid leave days an employee is entitled to in a year."
+    },
+    "distribution": {
+      "__type__": "float64",
+      "distribution": "The spread or allocation of leave entitlements across different employee groups or categories."
+    }
+  },
+  "datalake/SG_CSV0000000000000769.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the data point corresponds."
+    },
+    "level_1": {
+      "__type__": "object",
+      "level_1": "A primary categorical grouping or classification for the data."
+    },
+    "level_2": {
+      "__type__": "object",
+      "level_2": "A secondary, more detailed categorical grouping nested under level_1."
+    },
+    "value": {
+      "__type__": "float64",
+      "value": "The numerical measurement or quantity associated with the given year and categories."
+    }
+  },
+  "datalake/SG_CSV0000000000000751.csv": {
+    "quarter": {
+      "__type__": "object",
+      "quarter": "The time period (quarter of a year) to which the data pertains."
+    },
+    "industry1": {
+      "__type__": "object",
+      "industry1": "A classification or category representing a specific industry sector."
+    },
+    "occupation1": {
+      "__type__": "object",
+      "occupation1": "A classification or category representing a specific job occupation or role."
+    },
+    "job_vacancy": {
+      "__type__": "object",
+      "job_vacancy": "The number of open job positions available in the given quarter, industry, and occupation."
+    }
+  },
+  "datalake/SG_CSV0000000000000300.csv": {
+    "financial_year": {
+      "__type__": "int64",
+      "financial_year": "The fiscal year to which the data pertains, typically indicating the period of financial reporting."
+    },
+    "town_or_estate": {
+      "__type__": "object",
+      "town_or_estate": "The geographical area, such as a town or housing estate, where the housing units are located."
+    },
+    "hdb_or_dbss": {
+      "__type__": "object",
+      "hdb_or_dbss": "Indicates whether the housing units are part of a Housing & Development Board (HDB) project or a Design, Build and Sell Scheme (DBSS) development."
+    },
+    "status": {
+      "__type__": "object",
+      "status": "The current condition or stage of the housing units, such as completed, under construction, or planned."
+    },
+    "no_of_units": {
+      "__type__": "int64",
+      "no_of_units": "The total count of housing units recorded for the specified combination of financial year, town/estate, type, and status."
+    }
+  },
+  "datalake/SG_CSV0000000000000840.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year in which the births occurred."
+    },
+    "mother_nationality": {
+      "__type__": "object",
+      "mother_nationality": "The nationality or country of origin of the mother at the time of birth."
+    },
+    "father_nationality": {
+      "__type__": "object",
+      "father_nationality": "The nationality or country of origin of the father at the time of birth."
+    },
+    "birth_count": {
+      "__type__": "int64",
+      "birth_count": "The number of births recorded for the given combination of year, mother nationality, and father nationality."
+    }
+  },
+  "datalake/SG_CSV0000000000000925__32.csv": {
+    "personalincome": {
+      "__type__": "object",
+      "personalincome": "The total income earned by an individual from all sources before taxes and deductions."
+    },
+    "ban_age": {
+      "__type__": "object",
+      "ban_age": "The age at which an individual is subject to a specific restriction, prohibition, or eligibility cutoff."
+    },
+    "socialnetwork_dp03": {
+      "__type__": "object",
+      "socialnetwork_dp03": "A derived or processed metric related to social network activity, likely representing a specific dimension or category within a broader social network dataset."
+    }
+  },
+  "datalake/SG_CSV0000000000000806.csv": {
+    "service_type": {
+      "__type__": "object",
+      "service_type": "The category or classification of the service provided by the organization."
+    },
+    "organisation": {
+      "__type__": "object",
+      "organisation": "The name of the entity or company offering the services."
+    },
+    "address": {
+      "__type__": "object",
+      "address": "The physical location or postal address of the organization."
+    },
+    "general_line": {
+      "__type__": "object",
+      "general_line": "The primary telephone contact number for general inquiries."
+    },
+    "enquiry_email": {
+      "__type__": "object",
+      "enquiry_email": "The email address designated for receiving questions or requests."
+    },
+    "website": {
+      "__type__": "object",
+      "website": "The URL of the organization's official online presence."
+    },
+    "services": {
+      "__type__": "object",
+      "services": "A description or list of the specific services offered by the organization."
+    }
+  },
+  "datalake/SG_CSV0000000000000345.csv": {
+    "date_figure": {
+      "__type__": "object",
+      "date_figure": "The date on which the reported COVID-19 statistics were recorded."
+    },
+    "confirmed_total": {
+      "__type__": "int64",
+      "confirmed_total": "The cumulative total number of confirmed COVID-19 cases up to the given date."
+    },
+    "daily_cases": {
+      "__type__": "int64",
+      "daily_cases": "The number of new confirmed COVID-19 cases reported on the given date."
+    },
+    "discharge_volume": {
+      "__type__": "int64",
+      "discharge_volume": "The number of patients discharged from hospitals on the given date."
+    },
+    "discharge_total": {
+      "__type__": "int64",
+      "discharge_total": "The cumulative total number of patients discharged from hospitals up to the given date."
+    },
+    "hospitalised_total": {
+      "__type__": "int64",
+      "hospitalised_total": "The total number of patients currently hospitalized due to COVID-19 on the given date."
+    },
+    "hopitalised_critical": {
+      "__type__": "int64",
+      "hopitalised_critical": "The number of hospitalized patients in critical condition on the given date."
+    },
+    "hospitalised_stable": {
+      "__type__": "int64",
+      "hospitalised_stable": "The number of hospitalized patients in stable condition on the given date."
+    }
+  },
+  "datalake/SG_CSV0000000000000978.csv": {
+    "yr": {
+      "__type__": "int64",
+      "yr": "The year in which the data point is recorded, likely indicating the time period of the housing scheme activity."
+    },
+    "housing_schm_type": {
+      "__type__": "object",
+      "housing_schm_type": "The type or category of housing scheme, describing the specific program or arrangement under consideration."
+    },
+    "net_wdl_amt": {
+      "__type__": "int64",
+      "net_wdl_amt": "The net withdrawal amount, representing the total funds withdrawn minus any deposits or credits, typically in a monetary unit."
+    }
+  },
+  "datalake/SG_CSV0000000000000029.csv": {
+    "issuance_agency_id": {
+      "__type__": "object",
+      "issuance_agency_id": "Identifier of the government agency that issued the UEN."
+    },
+    "uen": {
+      "__type__": "object",
+      "uen": "Unique Entity Number assigned to the business entity in Singapore."
+    },
+    "entity_name": {
+      "__type__": "object",
+      "entity_name": "Official registered name of the business entity."
+    },
+    "entity_type_description": {
+      "__type__": "object",
+      "entity_type_description": "Description of the legal structure or type of the entity (e.g., company, partnership)."
+    },
+    "business_constitution_description": {
+      "__type__": "object",
+      "business_constitution_description": "Description of the business constitution or formation type."
+    },
+    "entity_status_description": {
+      "__type__": "object",
+      "entity_status_description": "Current operational status of the entity (e.g., active, dissolved)."
+    },
+    "registration_incorporation_date": {
+      "__type__": "object",
+      "registration_incorporation_date": "Date when the entity was officially registered or incorporated."
+    },
+    "uen_issue_date": {
+      "__type__": "object",
+      "uen_issue_date": "Date when the Unique Entity Number was issued to the entity."
+    },
+    "address_type": {
+      "__type__": "object",
+      "address_type": "Type of address recorded (e.g., registered office, business address)."
+    },
+    "block": {
+      "__type__": "object",
+      "block": "Block number of the entity's address."
+    },
+    "street_name": {
+      "__type__": "object",
+      "street_name": "Name of the street where the entity is located."
+    },
+    "level_no": {
+      "__type__": "object",
+      "level_no": "Floor or level number within the building."
+    },
+    "unit_no": {
+      "__type__": "object",
+      "unit_no": "Unit or suite number at the given level."
+    },
+    "building_name": {
+      "__type__": "object",
+      "building_name": "Name of the building where the entity is situated."
+    },
+    "postal_code": {
+      "__type__": "object",
+      "postal_code": "Postal code corresponding to the entity's address."
+    },
+    "no_of_charges": {
+      "__type__": "int64",
+      "no_of_charges": "Number of charges or encumbrances registered against the entity."
+    },
+    "primary_ssic_code": {
+      "__type__": "int64",
+      "primary_ssic_code": "Primary Singapore Standard Industrial Classification code representing the main business activity."
+    },
+    "primary_ssic_description": {
+      "__type__": "object",
+      "primary_ssic_description": "Description of the primary business activity based on the SSIC code."
+    },
+    "auxiliary_industry_code": {
+      "__type__": "float64",
+      "auxiliary_industry_code": "Auxiliary industry code for secondary business activities."
+    },
+    "secondary_ssic_description": {
+      "__type__": "object",
+      "secondary_ssic_description": "Description of the secondary business activity based on the auxiliary SSIC code."
+    },
+    "no_of_officers": {
+      "__type__": "int64",
+      "no_of_officers": "Number of officers (e.g., directors, secretaries) associated with the entity."
+    }
+  },
+  "datalake/SG_CSV0000000000000959.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the breastfeeding data pertains."
+    },
+    "time_interval": {
+      "__type__": "object",
+      "time_interval": "The specific period or duration within the year being measured, such as a month, quarter, or age range of infants."
+    },
+    "exclusive_breastfeeding": {
+      "__type__": "float64",
+      "exclusive_breastfeeding": "The percentage or proportion of infants who are fed only breast milk, with no other liquids or solids, during the specified time interval."
+    },
+    "any_breastfeeding": {
+      "__type__": "float64",
+      "any_breastfeeding": "The percentage or proportion of infants who receive any breast milk, including those who are exclusively breastfed as well as those who also receive other foods or liquids, during the specified time interval."
+    }
+  },
+  "datalake/SG_CSV0000000000000816.csv": {
+    "product_name": {
+      "__type__": "object",
+      "product_name": "The name or brand of the pharmaceutical or related product."
+    },
+    "dosage_form": {
+      "__type__": "object",
+      "dosage_form": "The physical form in which the product is administered, such as tablet, capsule, or liquid."
+    },
+    "dosage_form_colour": {
+      "__type__": "object",
+      "dosage_form_colour": "The color of the dosage form, which may help in identification or differentiation."
+    },
+    "dosage_form_shape": {
+      "__type__": "object",
+      "dosage_form_shape": "The geometric shape of the dosage form, such as round, oval, or oblong."
+    },
+    "dosage_form_marking": {
+      "__type__": "object",
+      "dosage_form_marking": "Any imprints, codes, or symbols present on the dosage form for identification."
+    },
+    "adulterant_type": {
+      "__type__": "object",
+      "adulterant_type": "The type of substance that may have been added to the product, potentially indicating contamination or tampering."
+    },
+    "manufacturer_name": {
+      "__type__": "object",
+      "manufacturer_name": "The name of the company or entity that produced the product."
+    },
+    "manufacturer_country": {
+      "__type__": "object",
+      "manufacturer_country": "The country where the manufacturer is located or where the product was produced."
+    }
+  },
+  "datalake/SG_CSV0000000000000028.csv": {
+    "issuance_agency_id": {
+      "__type__": "object",
+      "issuance_agency_id": "Identifier of the agency that issued the UEN (Unique Entity Number)."
+    },
+    "uen": {
+      "__type__": "object",
+      "uen": "Unique Entity Number assigned to the registered entity."
+    },
+    "entity_name": {
+      "__type__": "object",
+      "entity_name": "Official name of the registered entity."
+    },
+    "entity_type_description": {
+      "__type__": "object",
+      "entity_type_description": "Description of the legal structure or type of the entity (e.g., company, partnership)."
+    },
+    "entity_status_description": {
+      "__type__": "object",
+      "entity_status_description": "Current operational status of the entity (e.g., active, dissolved)."
+    },
+    "registration_incorporation_date": {
+      "__type__": "object",
+      "registration_incorporation_date": "Date when the entity was formally registered or incorporated."
+    },
+    "uen_issue_date": {
+      "__type__": "object",
+      "uen_issue_date": "Date when the Unique Entity Number was issued to the entity."
+    },
+    "address_type": {
+      "__type__": "object",
+      "address_type": "Type of address recorded (e.g., registered office, business address)."
+    },
+    "block": {
+      "__type__": "object",
+      "block": "Block number of the entity's address."
+    },
+    "street_name": {
+      "__type__": "object",
+      "street_name": "Name of the street where the entity is located."
+    },
+    "level_no": {
+      "__type__": "object",
+      "level_no": "Floor or level number within the building."
+    },
+    "unit_no": {
+      "__type__": "object",
+      "unit_no": "Unit or suite number within the level."
+    },
+    "building_name": {
+      "__type__": "object",
+      "building_name": "Name of the building where the entity is situated."
+    },
+    "postal_code": {
+      "__type__": "object",
+      "postal_code": "Postal code corresponding to the entity's address."
+    },
+    "no_of_charges": {
+      "__type__": "int64",
+      "no_of_charges": "Number of charges or encumbrances registered against the entity."
+    },
+    "primary_ssic_code": {
+      "__type__": "int64",
+      "primary_ssic_code": "Primary Singapore Standard Industrial Classification code representing the main business activity."
+    },
+    "primary_ssic_description": {
+      "__type__": "object",
+      "primary_ssic_description": "Description of the primary business activity based on the SSIC code."
+    },
+    "secondary_ssic_code": {
+      "__type__": "float64",
+      "secondary_ssic_code": "Secondary Singapore Standard Industrial Classification code for additional business activities."
+    },
+    "secondary_ssic_description": {
+      "__type__": "object",
+      "secondary_ssic_description": "Description of the secondary business activity based on the SSIC code."
+    },
+    "no_of_officers": {
+      "__type__": "int64",
+      "no_of_officers": "Number of officers (e.g., directors, secretaries) associated with the entity."
+    }
+  },
+  "datalake/SG_CSV0000000000001084.csv": {
+    "epi_year": {
+      "__type__": "int64",
+      "epi_year": "The epidemiological year to which the data point belongs, typically used in public health reporting."
+    },
+    "epi_week": {
+      "__type__": "int64",
+      "epi_week": "The epidemiological week within the given year, often used for tracking disease incidence over time."
+    },
+    "est_count": {
+      "__type__": "int64",
+      "est_count": "An estimated count of cases, incidents, or occurrences reported for the specified epidemiological week and year."
+    }
+  },
+  "datalake/SG_CSV0000000000001052.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the data point corresponds."
+    },
+    "artform": {
+      "__type__": "object",
+      "artform": "The category or type of artistic discipline or creative medium."
+    },
+    "valueadded": {
+      "__type__": "float64",
+      "valueadded": "A quantitative measure, likely in monetary terms, representing the economic contribution or incremental value generated by the artform."
+    }
+  },
+  "datalake/SG_CSV0000000000001021.csv": {
+    "newspaper_title": {
+      "__type__": "object",
+      "newspaper_title": "The name of the newspaper from which the article originates."
+    },
+    "issue_id": {
+      "__type__": "object",
+      "issue_id": "A unique identifier for a specific issue of the newspaper."
+    },
+    "issue_date": {
+      "__type__": "object",
+      "issue_date": "The publication date of the newspaper issue."
+    },
+    "edition": {
+      "__type__": "int64",
+      "edition": "The specific edition or version of the newspaper issue."
+    },
+    "page_id": {
+      "__type__": "object",
+      "page_id": "A unique identifier for a page within the newspaper issue."
+    },
+    "page_number": {
+      "__type__": "int64",
+      "page_number": "The sequential number of the page within the issue."
+    },
+    "article_id": {
+      "__type__": "object",
+      "article_id": "A unique identifier for an article within the newspaper."
+    },
+    "article_title": {
+      "__type__": "object",
+      "article_title": "The headline or title of the article."
+    },
+    "article_text_1st50words": {
+      "__type__": "object",
+      "article_text_1st50words": "The first 50 words of the article's main text content."
+    }
+  },
+  "datalake/SG_CSV0000000000001036.csv": {
+    "newspaper_title": {
+      "__type__": "object",
+      "newspaper_title": "The name of the newspaper from which the article originates."
+    },
+    "issue_id": {
+      "__type__": "object",
+      "issue_id": "A unique identifier for a specific issue of the newspaper."
+    },
+    "issue_date": {
+      "__type__": "object",
+      "issue_date": "The publication date of the newspaper issue."
+    },
+    "edition": {
+      "__type__": "int64",
+      "edition": "The specific version or edition of the newspaper issue."
+    },
+    "page_id": {
+      "__type__": "object",
+      "page_id": "A unique identifier for a page within the newspaper issue."
+    },
+    "page_number": {
+      "__type__": "int64",
+      "page_number": "The numerical position of the page within the issue."
+    },
+    "article_id": {
+      "__type__": "object",
+      "article_id": "A unique identifier for an article within the newspaper."
+    },
+    "article_title": {
+      "__type__": "object",
+      "article_title": "The headline or title of the article."
+    },
+    "article_text_1st50words": {
+      "__type__": "object",
+      "article_text_1st50words": "The first 50 words of the article's main text content."
+    }
+  },
+  "datalake/SG_CSV0000000000001316.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the population data pertains."
+    },
+    "population_by_gender": {
+      "__type__": "object",
+      "population_by_gender": "A categorical variable indicating the gender group (e.g., male, female, total) for which the population count is reported."
+    },
+    "number_of_population": {
+      "__type__": "int64",
+      "number_of_population": "The count of individuals belonging to the specified gender group in the given year."
+    }
+  },
+  "datalake/SG_CSV0000000000001320.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the data pertains."
+    },
+    "category": {
+      "__type__": "object",
+      "category": "A classification or grouping of the data, possibly indicating a type, region, or segment."
+    },
+    "sales_of_potable_water": {
+      "__type__": "float64",
+      "sales_of_potable_water": "The volume or revenue from sales of drinkable water, likely measured in units such as liters or currency."
+    }
+  },
+  "datalake/SG_CSV0000000000001348.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year in which the data was recorded."
+    },
+    "gender": {
+      "__type__": "object",
+      "gender": "The gender classification of the individuals involved."
+    },
+    "new_probation_orders": {
+      "__type__": "int64",
+      "new_probation_orders": "The count of new probation orders issued during the specified period."
+    }
+  },
+  "datalake/SG_CSV0000000000001222.csv": {
+    "quarter": {
+      "__type__": "object",
+      "quarter": "The reporting period, typically a three-month interval within a fiscal year."
+    },
+    "limits_granted": {
+      "__type__": "float64",
+      "limits_granted": "The total amount of credit or borrowing limits approved for customers during the quarter."
+    },
+    "utilised": {
+      "__type__": "float64",
+      "utilised": "The portion of the granted limits that customers have actually drawn or used."
+    },
+    "non-performing_percentage": {
+      "__type__": "float64",
+      "non-performing_percentage": "The proportion of outstanding credit that is classified as non-performing, expressed as a percentage of total exposure."
+    }
+  },
+  "datalake/SG_CSV0000000000001044.csv": {
+    "key_uid": {
+      "__type__": "int64",
+      "key_uid": "A unique identifier for the primary concept or entity in the relationship."
+    },
+    "key_descriptor": {
+      "__type__": "object",
+      "key_descriptor": "A human-readable label or description of the primary concept or entity."
+    },
+    "key_vocabulary": {
+      "__type__": "object",
+      "key_vocabulary": "The controlled vocabulary or terminology system from which the primary concept is sourced."
+    },
+    "relationship_type": {
+      "__type__": "object",
+      "relationship_type": "The nature of the association between the primary and related concepts, such as 'broader', 'narrower', or 'related'."
+    },
+    "related_uid": {
+      "__type__": "float64",
+      "related_uid": "A unique identifier for the secondary concept or entity linked to the primary concept."
+    },
+    "related_descriptor": {
+      "__type__": "object",
+      "related_descriptor": "A human-readable label or description of the secondary concept or entity."
+    },
+    "related_vocabulary": {
+      "__type__": "object",
+      "related_vocabulary": "The controlled vocabulary or terminology system from which the secondary concept is sourced."
+    }
+  },
+  "datalake/SG_CSV0000000000001342.csv": {
+    "quarter": {
+      "__type__": "object",
+      "quarter": "The fiscal quarter or time period during which the sales data is recorded."
+    },
+    "type_of_sale": {
+      "__type__": "object",
+      "type_of_sale": "The category or classification of the sales transaction, such as retail, wholesale, or online."
+    },
+    "units": {
+      "__type__": "int64",
+      "units": "The count of items or products sold in the specified quarter and sale type."
+    }
+  },
+  "datalake/SG_CSV0000000000001325.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The year in which the election or voting event took place."
+    },
+    "candidates": {
+      "__type__": "object",
+      "candidates": "The names or identifiers of the individuals or options being voted for."
+    },
+    "vote_count": {
+      "__type__": "float64",
+      "vote_count": "The total number of votes cast for a particular candidate or option."
+    },
+    "vote_percentage": {
+      "__type__": "float64",
+      "vote_percentage": "The proportion of total votes received by a candidate or option, expressed as a percentage."
+    }
+  },
+  "datalake/SG_CSV0000000000001338.csv": {
+    "quarter": {
+      "__type__": "object",
+      "quarter": "The time period, typically a three-month interval within a year, to which the data pertains."
+    },
+    "property_type": {
+      "__type__": "object",
+      "property_type": "The category or classification of the real estate property, such as residential, commercial, or industrial."
+    },
+    "locality": {
+      "__type__": "object",
+      "locality": "The specific geographic area or neighborhood where the property is located."
+    },
+    "index": {
+      "__type__": "float64",
+      "index": "A numerical measure or indicator, likely representing a price index, performance metric, or aggregated value for the property type in that locality and quarter."
+    }
+  },
+  "datalake/SG_CSV0000000000000925__43.csv": {
+    "ban_q30_4": {
+      "__type__": "object",
+      "ban_q30_4": "Likely a categorical or numeric variable from a survey question (Q30.4) about a specific topic, possibly related to attitudes or behaviors."
+    },
+    "vbc": {
+      "__type__": "object",
+      "vbc": "Abbreviation possibly standing for a variable category, such as 'value-based care' or another domain-specific classification."
+    },
+    "ban_q28": {
+      "__type__": "object",
+      "ban_q28": "Likely a categorical or numeric variable from a survey question (Q28) about a specific topic, possibly related to demographics or opinions."
+    },
+    "md_segment": {
+      "__type__": "object",
+      "md_segment": "A segmentation variable, possibly indicating a marketing, demographic, or behavioral segment for analysis."
+    },
+    "socialnetwork_dp10": {
+      "__type__": "object",
+      "socialnetwork_dp10": "A derived or processed variable related to social network metrics, possibly representing a decile or percentile grouping."
+    },
+    "ban_children4": {
+      "__type__": "object",
+      "ban_children4": "Likely a categorical variable indicating the presence or number of children, possibly from a survey question about household composition."
+    },
+    "ban_marital": {
+      "__type__": "object",
+      "ban_marital": "A categorical variable indicating marital status, such as single, married, divorced, or widowed."
+    },
+    "highestlevel": {
+      "__type__": "object",
+      "highestlevel": "Likely a categorical variable representing the highest level of education or another hierarchical attainment."
+    },
+    "ban_q18_q194": {
+      "__type__": "object",
+      "ban_q18_q194": "Likely a combined or derived variable from survey questions Q18 and Q194, possibly merging related responses."
+    },
+    "q20_q211": {
+      "__type__": "object",
+      "q20_q211": "Likely a combined or derived variable from survey questions Q20 and Q211, possibly merging related responses."
+    },
+    "socialnetwork_1_slice": {
+      "__type__": "object",
+      "socialnetwork_1_slice": "A segmentation or grouping variable derived from social network data, possibly indicating a specific subset or cluster."
+    },
+    "socialnetwork_dp01": {
+      "__type__": "object",
+      "socialnetwork_dp01": "A derived or processed variable related to social network metrics, possibly representing a percentile or another statistical transformation."
+    }
+  },
+  "datalake/SG_CSV0000000000001378.csv": {
+    "length_of_service": {
+      "__type__": "object",
+      "length_of_service": "The duration of time an individual has been employed in the public service, typically measured in years."
+    },
+    "public_service_sector": {
+      "__type__": "object",
+      "public_service_sector": "The specific government department or agency within the public service where the individual is employed."
+    },
+    "executive_level": {
+      "__type__": "object",
+      "executive_level": "The hierarchical rank or grade of the employee within the public service organizational structure."
+    },
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the data pertains, indicating the time period of the recorded outflow."
+    },
+    "outflow_count": {
+      "__type__": "int64",
+      "outflow_count": "The number of employees who left the public service during the specified year, sector, and executive level."
+    }
+  },
+  "datalake/SG_CSV0000000000001384.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year for which the ridership data is recorded."
+    },
+    "type_of_public_transport": {
+      "__type__": "object",
+      "type_of_public_transport": "The category or mode of public transportation, such as bus, train, or tram."
+    },
+    "average_ridership": {
+      "__type__": "int64",
+      "average_ridership": "The mean number of passengers or riders for the specified transport type over a given period, typically per day, month, or year."
+    }
+  },
+  "datalake/SG_CSV0000000000001385.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year in which the data was recorded or the observation period applies."
+    },
+    "mode": {
+      "__type__": "object",
+      "mode": "The type or method of transportation used for the trips, such as car, bus, train, bicycle, or walking."
+    },
+    "ave_distance_per_trip": {
+      "__type__": "float64",
+      "ave_distance_per_trip": "The average distance traveled per trip, typically measured in kilometers or miles, for the specified mode and year."
+    }
+  },
+  "datalake/SG_CSV0000000000000970.csv": {
+    "identifier_uri": {
+      "__type__": "object",
+      "identifier_uri": "A persistent Uniform Resource Identifier (URI) that uniquely identifies the digital resource."
+    },
+    "identifier_uuid": {
+      "__type__": "object",
+      "identifier_uuid": "A universally unique identifier (UUID) assigned to the resource for internal tracking and linking."
+    },
+    "title": {
+      "__type__": "object",
+      "title": "The official name or heading given to the resource."
+    },
+    "contributor": {
+      "__type__": "object",
+      "contributor": "An individual, organization, or entity that contributed to the creation or development of the resource."
+    },
+    "digital_publisher": {
+      "__type__": "object",
+      "digital_publisher": "The organization or entity responsible for making the resource available in digital form."
+    },
+    "original_publisher": {
+      "__type__": "object",
+      "original_publisher": "The organization or entity that originally published or released the resource in its initial format."
+    },
+    "date_created": {
+      "__type__": "object",
+      "date_created": "The date when the resource was originally created or produced."
+    },
+    "description": {
+      "__type__": "object",
+      "description": "A textual summary or abstract providing details about the content and scope of the resource."
+    },
+    "subject_lcsh": {
+      "__type__": "object",
+      "subject_lcsh": "Subject terms assigned from the Library of Congress Subject Headings (LCSH) vocabulary to describe the resource's topics."
+    },
+    "subject_singheritage": {
+      "__type__": "object",
+      "subject_singheritage": "Subject terms related to Singapore's heritage, culture, or history used to categorize the resource."
+    },
+    "language": {
+      "__type__": "object",
+      "language": "The primary language or languages in which the resource is written or presented."
+    },
+    "ispartof_collection": {
+      "__type__": "object",
+      "ispartof_collection": "Indicates whether the resource belongs to a larger collection or series, often referencing the collection's name or identifier."
+    },
+    "nlb_type": {
+      "__type__": "object",
+      "nlb_type": "A classification or type code used by the National Library Board (NLB) to categorize the resource format or genre."
+    },
+    "rights": {
+      "__type__": "object",
+      "rights": "Information about the copyright, licensing, or usage restrictions applicable to the resource."
+    }
+  },
+  "datalake/SG_CSV0000000000001730.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year in which the course was offered or recorded."
+    },
+    "course_name": {
+      "__type__": "object",
+      "course_name": "The official title or name of the educational course."
+    },
+    "course_description": {
+      "__type__": "object",
+      "course_description": "A brief summary or overview of the course content and objectives."
+    },
+    "reference": {
+      "__type__": "object",
+      "reference": "An identifier, code, or link to additional documentation or resources related to the course."
+    }
+  },
+  "datalake/SG_CSV0000000000001228.csv": {
+    "period": {
+      "__type__": "object",
+      "period": "The time interval or date range to which the data pertains, likely indicating when the travel or activity occurred."
+    },
+    "region": {
+      "__type__": "object",
+      "region": "The geographic area or location associated with the travel data, such as a country, state, or city."
+    },
+    "cor": {
+      "__type__": "object",
+      "cor": "The number or proportion of travelers whose purpose is corporate or business-related travel."
+    },
+    "leisure": {
+      "__type__": "float64",
+      "leisure": "The number or proportion of travelers whose purpose is leisure or recreational activities."
+    },
+    "holiday": {
+      "__type__": "float64",
+      "holiday": "The number or proportion of travelers whose purpose is holiday or vacation travel."
+    },
+    "vfr": {
+      "__type__": "float64",
+      "vfr": "The number or proportion of travelers whose purpose is visiting friends or relatives."
+    },
+    "business": {
+      "__type__": "object",
+      "business": "The number or proportion of travelers whose purpose is general business activities."
+    },
+    "general_business_purpose": {
+      "__type__": "float64",
+      "general_business_purpose": "A broader category encompassing various business-related travel purposes."
+    },
+    "mice": {
+      "__type__": "float64",
+      "mice": "The number or proportion of travelers whose purpose is related to meetings, incentives, conferences, and exhibitions (MICE)."
+    },
+    "others": {
+      "__type__": "float64",
+      "others": "The number or proportion of travelers whose purpose does not fit into the other specified categories."
+    },
+    "not_stated": {
+      "__type__": "float64",
+      "not_stated": "The number or proportion of travelers for whom the travel purpose was not reported or is unknown."
+    }
+  },
+  "datalake/SG_CSV0000000000001886.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the data point corresponds."
+    },
+    "type": {
+      "__type__": "object",
+      "type": "The classification or category of the item being measured."
+    },
+    "quantity": {
+      "__type__": "int64",
+      "quantity": "The numerical count or amount of the specified type for the given year."
+    }
+  },
+  "datalake/SG_CSV0000000000001682.csv": {
+    "quarter": {
+      "__type__": "object",
+      "quarter": "The calendar quarter (e.g., Q1, Q2) to which the data pertains."
+    },
+    "industry1": {
+      "__type__": "object",
+      "industry1": "A classification or category representing a specific industry sector."
+    },
+    "total": {
+      "__type__": "object",
+      "total": "The overall count or sum of relevant items (e.g., total number of workers or cases) for the given quarter and industry."
+    },
+    "short_work_week": {
+      "__type__": "object",
+      "short_work_week": "The number of instances or workers affected by a reduced work schedule (fewer hours than standard) during the quarter."
+    },
+    "temporary_layoff": {
+      "__type__": "object",
+      "temporary_layoff": "The number of workers placed on temporary layoff (unpaid leave with expectation of recall) during the quarter."
+    }
+  },
+  "datalake/SG_CSV0000000000001825.csv": {
+    "month": {
+      "__type__": "object",
+      "month": "The month to which the data point corresponds, typically indicating a specific period in time."
+    },
+    "level_1": {
+      "__type__": "object",
+      "level_1": "A categorical classification or grouping variable that provides a first-level breakdown of the data."
+    },
+    "value": {
+      "__type__": "int64",
+      "value": "The numerical measurement or quantity associated with the given month and level_1 category."
+    }
+  },
+  "datalake/SG_CSV0000000000001821.csv": {
+    "month": {
+      "__type__": "object",
+      "month": "The month to which the data point corresponds, typically indicating a specific period in time."
+    },
+    "level_1": {
+      "__type__": "object",
+      "level_1": "A primary categorization or grouping dimension for the data, representing a high-level classification."
+    },
+    "level_2": {
+      "__type__": "object",
+      "level_2": "A secondary categorization or sub-grouping dimension, providing further detail within the primary level."
+    },
+    "value": {
+      "__type__": "float64",
+      "value": "The numerical measurement or metric associated with the specified month and categorization levels."
+    }
+  },
+  "datalake/SG_CSV0000000000001895.csv": {
+    "shs_year": {
+      "__type__": "int64",
+      "shs_year": "The year in which the survey or data collection for the Singapore Household Survey was conducted."
+    },
+    "ethnic_group": {
+      "__type__": "object",
+      "ethnic_group": "The ethnic classification of the household or individuals, such as Chinese, Malay, Indian, or Others."
+    },
+    "type_of_family_nucleus": {
+      "__type__": "object",
+      "type_of_family_nucleus": "The structural classification of the family unit, such as married couple with children, single-parent family, or extended family."
+    },
+    "percentage": {
+      "__type__": "float64",
+      "percentage": "The proportion or share of households or individuals within the specified ethnic group and family nucleus type, expressed as a percentage of the total for that year."
+    }
+  },
+  "datalake/SG_CSV0000000000001805.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The academic year or calendar year to which the course data pertains."
+    },
+    "school": {
+      "__type__": "object",
+      "school": "The educational institution or polytechnic offering the course."
+    },
+    "course_name": {
+      "__type__": "object",
+      "course_name": "The official title or name of the course as designated by the institution."
+    },
+    "moe_course_code": {
+      "__type__": "object",
+      "moe_course_code": "A unique identifier assigned by the Ministry of Education (MOE) for the course."
+    },
+    "poly_course_code": {
+      "__type__": "object",
+      "poly_course_code": "A unique identifier assigned by the polytechnic for the course."
+    },
+    "course_description": {
+      "__type__": "object",
+      "course_description": "A brief summary or overview of the course content, objectives, and scope."
+    },
+    "reference": {
+      "__type__": "object",
+      "reference": "A citation, link, or source document providing additional information about the course."
+    }
+  },
+  "datalake/SG_CSV0000000000000003.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year in which the course was offered or recorded."
+    },
+    "course_name": {
+      "__type__": "object",
+      "course_name": "The official title or name of the educational course."
+    },
+    "course_description": {
+      "__type__": "object",
+      "course_description": "A brief summary or overview of the course content and objectives."
+    },
+    "reference": {
+      "__type__": "object",
+      "reference": "An identifier, code, or link to additional documentation or resources related to the course."
+    }
+  },
+  "datalake/SG_CSV0000000000000964.csv": {
+    "identifier_uuid": {
+      "__type__": "object",
+      "identifier_uuid": "A universally unique identifier (UUID) assigned to the record."
+    },
+    "identifier_uri": {
+      "__type__": "object",
+      "identifier_uri": "A Uniform Resource Identifier (URI) that provides a persistent link to the digital resource."
+    },
+    "title": {
+      "__type__": "object",
+      "title": "The name or heading given to the work or item."
+    },
+    "contributor": {
+      "__type__": "object",
+      "contributor": "Individuals or organizations that have contributed to the creation or development of the resource."
+    },
+    "digital_publisher": {
+      "__type__": "object",
+      "digital_publisher": "The entity responsible for making the digital version of the resource available."
+    },
+    "original_publisher": {
+      "__type__": "object",
+      "original_publisher": "The entity that originally published or released the physical or initial version of the resource."
+    },
+    "is_referenced_by": {
+      "__type__": "object",
+      "is_referenced_by": "A reference or citation that points to this resource from another work."
+    },
+    "date_created": {
+      "__type__": "object",
+      "date_created": "The date when the resource was originally created or produced."
+    },
+    "abstract": {
+      "__type__": "object",
+      "abstract": "A brief summary or description of the content and scope of the resource."
+    },
+    "subject_lcsh": {
+      "__type__": "object",
+      "subject_lcsh": "Subject terms assigned from the Library of Congress Subject Headings (LCSH) vocabulary."
+    },
+    "subject_singheritage": {
+      "__type__": "object",
+      "subject_singheritage": "Subject terms related to Singapore's heritage, culture, or history."
+    },
+    "language": {
+      "__type__": "object",
+      "language": "The language or languages in which the resource is written or presented."
+    },
+    "ispartof_collections": {
+      "__type__": "object",
+      "ispartof_collections": "Indicates the collection or set to which this resource belongs."
+    },
+    "nlb_type": {
+      "__type__": "object",
+      "nlb_type": "A classification or type code used by the National Library Board (NLB) for cataloging."
+    },
+    "rights": {
+      "__type__": "object",
+      "rights": "Information about copyright, licensing, or usage rights associated with the resource."
+    },
+    "access_rights": {
+      "__type__": "object",
+      "access_rights": "Terms or conditions that govern who can access the resource and under what circumstances."
+    }
+  },
+  "datalake/SG_CSV0000000000001963.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the data pertains."
+    },
+    "number_of_staff": {
+      "__type__": "object",
+      "number_of_staff": "The count of personnel or employees recorded for that year."
+    },
+    "prevalence": {
+      "__type__": "float64",
+      "prevalence": "A measure, likely a rate or proportion, indicating how common or widespread a particular condition or characteristic is within the context of the data."
+    }
+  },
+  "datalake/SG_CSV0000000000001714__16.csv": {
+    "rankmostimptchild_new_1": {
+      "__type__": "int64",
+      "rankmostimptchild_new_1": "A derived variable indicating the ranking of the most important child-related attribute or response."
+    },
+    "ban_children3": {
+      "__type__": "object",
+      "ban_children3": "A binary or categorical variable capturing whether the respondent has three or more children."
+    },
+    "ban_q28": {
+      "__type__": "object",
+      "ban_q28": "A variable derived from survey question 28, likely related to household or demographic characteristics."
+    },
+    "ban_q437": {
+      "__type__": "object",
+      "ban_q437": "A variable derived from survey question 437, possibly concerning attitudes, behaviors, or specific life events."
+    },
+    "ban_age": {
+      "__type__": "object",
+      "ban_age": "A variable representing the respondent's age, possibly binned or categorized."
+    },
+    "highestlevel": {
+      "__type__": "object",
+      "highestlevel": "The highest educational attainment or qualification level reported by the respondent."
+    },
+    "respondent_id": {
+      "__type__": "object",
+      "respondent_id": "A unique identifier for each survey participant or respondent."
+    },
+    "yearbornin_1_slice": {
+      "__type__": "int64",
+      "yearbornin_1_slice": "A grouped or sliced representation of the respondent's year of birth, possibly for cohort analysis."
+    },
+    "q20_q214": {
+      "__type__": "object",
+      "q20_q214": "A combined or derived variable from survey questions 20 and 214, likely merging related responses into a single measure."
+    }
+  },
+  "datalake/SG_CSV0000000000000005.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The academic year or calendar year in which the course is offered or recorded."
+    },
+    "course_name": {
+      "__type__": "object",
+      "course_name": "The official title or name of the educational course."
+    },
+    "course_description": {
+      "__type__": "object",
+      "course_description": "A brief summary or overview of the course content, objectives, and scope."
+    },
+    "reference": {
+      "__type__": "object",
+      "reference": "An identifier, code, or link to external documentation or source material related to the course."
+    }
+  },
+  "datalake/SG_CSV0000000000000028__3.csv": {
+    "block": {
+      "__type__": "object",
+      "block": "A categorical or identifier field representing a grouping, region, or administrative division within the dataset."
+    },
+    "entity_status_description": {
+      "__type__": "object",
+      "entity_status_description": "A textual description indicating the current operational or legal status of the entity (e.g., active, inactive, pending)."
+    },
+    "issuance_agency_id": {
+      "__type__": "object",
+      "issuance_agency_id": "An identifier code for the agency or organization responsible for issuing or authorizing the entity or record."
+    }
+  },
+  "datalake/SG_CSV0000000000000012.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The academic year or calendar year to which the enrollment data pertains."
+    },
+    "school": {
+      "__type__": "object",
+      "school": "The name or identifier of the educational institution offering the course."
+    },
+    "course_type": {
+      "__type__": "object",
+      "course_type": "The classification or category of the course, such as elective, core, vocational, etc."
+    },
+    "course_name": {
+      "__type__": "object",
+      "course_name": "The specific title or name of the course being taken."
+    },
+    "gender": {
+      "__type__": "object",
+      "gender": "The gender of the students enrolled, typically recorded as male, female, or other categories."
+    },
+    "count": {
+      "__type__": "int64",
+      "count": "The number of students enrolled in the specified course for the given year, school, course type, course name, and gender."
+    }
+  },
+  "datalake/SG_CSV0000000000000008.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The academic year or calendar year to which the enrollment data pertains."
+    },
+    "school": {
+      "__type__": "object",
+      "school": "The educational institution or department offering the course."
+    },
+    "course_type": {
+      "__type__": "object",
+      "course_type": "The classification or category of the course, such as undergraduate, graduate, or vocational."
+    },
+    "course_name": {
+      "__type__": "object",
+      "course_name": "The specific title or name of the course being offered."
+    },
+    "gender": {
+      "__type__": "object",
+      "gender": "The gender identity of the enrolled students, typically male, female, or other categories."
+    },
+    "count": {
+      "__type__": "int64",
+      "count": "The number of students enrolled in the specified course for the given year, school, course type, course name, and gender."
+    }
+  },
+  "datalake/SG_CSV0000000000000023.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The academic year or calendar year to which the enrollment data pertains."
+    },
+    "school": {
+      "__type__": "object",
+      "school": "The educational institution or school where the course is offered."
+    },
+    "course_type": {
+      "__type__": "object",
+      "course_type": "The classification or category of the course, such as elective, core, vocational, etc."
+    },
+    "course_name": {
+      "__type__": "object",
+      "course_name": "The specific title or name of the course being taken."
+    },
+    "gender": {
+      "__type__": "object",
+      "gender": "The gender of the students enrolled in the course, typically male or female."
+    },
+    "count": {
+      "__type__": "int64",
+      "count": "The number of students of the specified gender enrolled in the given course for that year and school."
+    }
+  },
+  "datalake/SG_CSV0000000000000107.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The year associated with the record, likely indicating a model year or production year."
+    },
+    "type": {
+      "__type__": "object",
+      "type": "The category or classification of the item, such as vehicle type or equipment type."
+    },
+    "engine": {
+      "__type__": "object",
+      "engine": "The engine specification or model, describing the power unit used."
+    },
+    "number": {
+      "__type__": "int64",
+      "number": "A numerical identifier, possibly representing a serial number, count, or registration number."
+    }
+  },
+  "datalake/SG_CSV0000000000000114.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the data pertains."
+    },
+    "source": {
+      "__type__": "object",
+      "source": "The origin or provider of the data."
+    },
+    "sector": {
+      "__type__": "object",
+      "sector": "The economic or industrial category of the entity."
+    },
+    "annual_receipts": {
+      "__type__": "object",
+      "annual_receipts": "The total monetary receipts recorded over the course of a year."
+    }
+  },
+  "datalake/SG_CSV0000000000001714__43.csv": {
+    "ban_age_youngest": {
+      "__type__": "object",
+      "ban_age_youngest": "Age of the youngest child in the household."
+    },
+    "q20_q214": {
+      "__type__": "object",
+      "q20_q214": "Response to a survey question about family or household characteristics."
+    },
+    "ban_occupation_status2": {
+      "__type__": "object",
+      "ban_occupation_status2": "Employment status category for a second occupation."
+    },
+    "socialnetwork_4_slice": {
+      "__type__": "object",
+      "socialnetwork_4_slice": "Categorical grouping of social network usage or engagement."
+    },
+    "ban_marital": {
+      "__type__": "object",
+      "ban_marital": "Marital status of the individual."
+    },
+    "ban_occupation_role8": {
+      "__type__": "object",
+      "ban_occupation_role8": "Specific occupational role or job title."
+    },
+    "levelsch": {
+      "__type__": "object",
+      "levelsch": "Highest level of schooling completed."
+    },
+    "ban_q436": {
+      "__type__": "object",
+      "ban_q436": "Response to a survey question about household or personal attributes."
+    },
+    "ban_occupation_status7": {
+      "__type__": "object",
+      "ban_occupation_status7": "Employment status category for a seventh occupation."
+    },
+    "rankmostimptchild_new_3": {
+      "__type__": "int64",
+      "rankmostimptchild_new_3": "Ranking of importance for a third child-related factor."
+    },
+    "ban_occupation_status9": {
+      "__type__": "object",
+      "ban_occupation_status9": "Employment status category for a ninth occupation."
+    },
+    "rankmostimptchild_new_1": {
+      "__type__": "int64",
+      "rankmostimptchild_new_1": "Ranking of importance for a primary child-related factor."
+    },
+    "postgradsch": {
+      "__type__": "object",
+      "postgradsch": "Indicates whether the individual has completed postgraduate education."
+    },
+    "ban_occupation_status6": {
+      "__type__": "object",
+      "ban_occupation_status6": "Employment status category for a sixth occupation."
+    },
+    "children": {
+      "__type__": "object",
+      "children": "Number of children in the household."
+    },
+    "highestlevel": {
+      "__type__": "object",
+      "highestlevel": "Highest educational attainment level."
+    },
+    "noofchildren": {
+      "__type__": "object",
+      "noofchildren": "Total count of children."
+    },
+    "yearbornin_1_slice": {
+      "__type__": "int64",
+      "yearbornin_1_slice": "Birth year grouped into a categorical slice."
+    },
+    "gender": {
+      "__type__": "object",
+      "gender": "Gender of the individual."
+    },
+    "q20_q211": {
+      "__type__": "object",
+      "q20_q211": "Response to a survey question about household or demographic details."
+    },
+    "socialnetwork_dp08": {
+      "__type__": "object",
+      "socialnetwork_dp08": "Social network usage metric or category from a specific data point."
+    },
+    "unisch": {
+      "__type__": "object",
+      "unisch": "Indicates whether the individual has attended university."
+    },
+    "ban_occupation_status4": {
+      "__type__": "object",
+      "ban_occupation_status4": "Employment status category for a fourth occupation."
+    },
+    "ban_q434": {
+      "__type__": "object",
+      "ban_q434": "Response to a survey question about household or personal characteristics."
+    },
+    "occstatus": {
+      "__type__": "object",
+      "occstatus": "General occupational status or employment condition."
+    }
+  },
+  "datalake/SG_CSV0000000000000149.csv": {
+    "shs_year": {
+      "__type__": "int64",
+      "shs_year": "The year in which the survey or data collection for household statistics was conducted."
+    },
+    "flat_type": {
+      "__type__": "object",
+      "flat_type": "The classification or category of the residential flat, such as HDB flat type or private apartment type."
+    },
+    "average_age": {
+      "__type__": "float64",
+      "average_age": "The mean age of residents or households within the specified flat type for the given year."
+    },
+    "median_age": {
+      "__type__": "int64",
+      "median_age": "The median age of residents or households within the specified flat type for the given year, representing the middle value in the age distribution."
+    }
+  },
+  "datalake/SG_CSV0000000000000048__3.csv": {
+    "entity_type_description": {
+      "__type__": "object",
+      "entity_type_description": "Describes the legal or organizational type of the registered entity, such as company, partnership, or sole proprietorship."
+    },
+    "secondary_ssic_code": {
+      "__type__": "float64",
+      "secondary_ssic_code": "A secondary Singapore Standard Industrial Classification code that provides additional categorization of the entity's business activities."
+    },
+    "secondary_ssic_description": {
+      "__type__": "object",
+      "secondary_ssic_description": "A textual description corresponding to the secondary SSIC code, detailing the specific industry or business activity."
+    },
+    "street_name": {
+      "__type__": "object",
+      "street_name": "The name of the street where the entity's registered address is located."
+    },
+    "registration_incorporation_date": {
+      "__type__": "object",
+      "registration_incorporation_date": "The date on which the entity was officially registered or incorporated, typically in YYYY-MM-DD format."
+    }
+  },
+  "datalake/SG_CSV0000000000000202.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year for which the average speed data is recorded."
+    },
+    "ave_speed_expressway": {
+      "__type__": "float64",
+      "ave_speed_expressway": "The average speed of vehicles on expressways during the given year, typically measured in kilometers per hour."
+    },
+    "ave_speed_arterial_roads": {
+      "__type__": "float64",
+      "ave_speed_arterial_roads": "The average speed of vehicles on arterial roads during the given year, typically measured in kilometers per hour."
+    }
+  },
+  "datalake/SG_CSV0000000000000215.csv": {
+    "quarter": {
+      "__type__": "object",
+      "quarter": "The three-month period (e.g., Q1, Q2) to which the data pertains, indicating the timeframe of measurement."
+    },
+    "industry1": {
+      "__type__": "object",
+      "industry1": "A classification or category representing a specific sector or type of business activity."
+    },
+    "overtime_paid_hours": {
+      "__type__": "float64",
+      "overtime_paid_hours": "The total number of hours for which overtime compensation was paid, reflecting extra work beyond standard hours."
+    }
+  },
+  "datalake/SG_CSV0000000000000044__0.csv": {
+    "no_of_charges": {
+      "__type__": "int64",
+      "no_of_charges": "The number of charges or financial encumbrances registered against the entity."
+    },
+    "address_type": {
+      "__type__": "object",
+      "address_type": "The classification of the address, such as registered office, business, or mailing address."
+    },
+    "business_constitution_description": {
+      "__type__": "object",
+      "business_constitution_description": "A textual description of the legal structure or constitution of the business entity."
+    },
+    "registration_incorporation_date": {
+      "__type__": "object",
+      "registration_incorporation_date": "The date when the business was officially registered or incorporated."
+    },
+    "uen": {
+      "__type__": "object",
+      "uen": "The Unique Entity Number, a standard identifier for business entities in Singapore."
+    },
+    "postal_code": {
+      "__type__": "float64",
+      "postal_code": "The postal code corresponding to the entity's address."
+    },
+    "secondary_ssic_code": {
+      "__type__": "float64",
+      "secondary_ssic_code": "An additional Singapore Standard Industrial Classification code that further describes the business activities."
+    }
+  },
+  "datalake/SG_CSV0000000000000136.csv": {
+    "year_of_assessment": {
+      "__type__": "int64",
+      "year_of_assessment": "The fiscal year or period for which the tax assessment is being reported."
+    },
+    "tax_group": {
+      "__type__": "object",
+      "tax_group": "A classification or category grouping taxpayers based on shared characteristics such as income range or tax status."
+    },
+    "no_of_indv_assessed": {
+      "__type__": "int64",
+      "no_of_indv_assessed": "The count of individual taxpayers who were assessed for the given tax group and assessment year."
+    },
+    "total_income": {
+      "__type__": "int64",
+      "total_income": "The sum of all income earned by the assessed individuals before any deductions or exemptions."
+    },
+    "donations": {
+      "__type__": "int64",
+      "donations": "The total amount of charitable contributions or donations made by the assessed individuals, which may be deductible for tax purposes."
+    },
+    "assessable_income": {
+      "__type__": "int64",
+      "assessable_income": "The income amount that is subject to taxation after applying allowable deductions, exemptions, or adjustments."
+    }
+  },
+  "datalake/SG_CSV0000000000000216.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the data pertains."
+    },
+    "industry1": {
+      "__type__": "object",
+      "industry1": "A classification or code representing a specific industry sector."
+    },
+    "overtime_paid_hours": {
+      "__type__": "float64",
+      "overtime_paid_hours": "The total number of hours of overtime work that were compensated."
+    }
+  },
+  "datalake/SG_CSV0000000000000925__5.csv": {
+    "ban_age": {
+      "__type__": "object",
+      "ban_age": "The age of the respondent, likely measured in years."
+    },
+    "socialnetwork_1_slice": {
+      "__type__": "object",
+      "socialnetwork_1_slice": "A categorical or segmented variable related to the respondent's social network characteristics."
+    },
+    "md_segment": {
+      "__type__": "object",
+      "md_segment": "A demographic or market segmentation code for the respondent."
+    },
+    "livinginsg_3_slice": {
+      "__type__": "object",
+      "livinginsg_3_slice": "A segmented variable indicating the respondent's living situation or location in Singapore."
+    },
+    "ban_q434": {
+      "__type__": "object",
+      "ban_q434": "Response to a survey question, possibly about a specific topic or behavior."
+    },
+    "levelsch": {
+      "__type__": "object",
+      "levelsch": "The highest level of schooling or education completed by the respondent."
+    },
+    "ban_occupation_status2": {
+      "__type__": "object",
+      "ban_occupation_status2": "A variable describing the respondent's current occupational status."
+    },
+    "ban_education4": {
+      "__type__": "object",
+      "ban_education4": "An education-related variable, possibly indicating a specific educational attainment or field."
+    },
+    "ban_education1": {
+      "__type__": "object",
+      "ban_education1": "Another education-related variable, likely capturing a different aspect of educational background."
+    },
+    "children": {
+      "__type__": "object",
+      "children": "The number of children the respondent has."
+    },
+    "ban_q28": {
+      "__type__": "object",
+      "ban_q28": "Response to a survey question, possibly regarding opinions or experiences."
+    },
+    "ban_education3": {
+      "__type__": "object",
+      "ban_education3": "An additional education-related variable, possibly indicating a specific qualification or level."
+    },
+    "occupation2": {
+      "__type__": "object",
+      "occupation2": "A variable describing the respondent's occupation or job role."
+    },
+    "livinginsg_2_slice": {
+      "__type__": "object",
+      "livinginsg_2_slice": "Another segmented variable related to the respondent's living situation in Singapore."
+    },
+    "q20_q213": {
+      "__type__": "object",
+      "q20_q213": "Response to a survey question, likely combining two question codes."
+    },
+    "rankmostimptchild_2": {
+      "__type__": "int64",
+      "rankmostimptchild_2": "A ranking variable indicating the importance of a child-related factor, possibly from a list."
+    },
+    "sliderliberty_1_slice": {
+      "__type__": "int64",
+      "sliderliberty_1_slice": "A segmented variable derived from a slider scale, possibly measuring attitudes toward liberty or freedom."
+    },
+    "socialnetwork_2_slice": {
+      "__type__": "object",
+      "socialnetwork_2_slice": "Another segmented variable related to the respondent's social network characteristics."
+    },
+    "ban_q30_2": {
+      "__type__": "object",
+      "ban_q30_2": "Response to a survey question, possibly about a specific topic or behavior."
+    },
+    "rankmostimptchild_1": {
+      "__type__": "int64",
+      "rankmostimptchild_1": "A ranking variable indicating the importance of a child-related factor, likely from the same list as rankmostimptchild_2."
+    },
+    "ban_occupation_role6": {
+      "__type__": "object",
+      "ban_occupation_role6": "A variable describing a specific occupational role or responsibility of the respondent."
+    },
+    "yearbornin_1_slice": {
+      "__type__": "int64",
+      "yearbornin_1_slice": "A segmented variable indicating the respondent's year of birth or birth cohort."
+    },
+    "ban_q30_4": {
+      "__type__": "object",
+      "ban_q30_4": "Response to a survey question, possibly about a specific topic or behavior."
+    },
+    "socialnetwork_dp08": {
+      "__type__": "object",
+      "socialnetwork_dp08": "A variable related to social network data, possibly indicating a specific network metric or characteristic."
+    },
+    "q20_q212": {
+      "__type__": "object",
+      "q20_q212": "Response to a survey question, likely combining two question codes."
+    },
+    "ban_q437": {
+      "__type__": "object",
+      "ban_q437": "Response to a survey question, possibly about a specific topic or behavior."
+    },
+    "ban_occupation_role5": {
+      "__type__": "object",
+      "ban_occupation_role5": "A variable describing a specific occupational role or responsibility of the respondent."
+    },
+    "ban_children1": {
+      "__type__": "object",
+      "ban_children1": "A variable related to the respondent's children, possibly indicating a specific characteristic or status."
+    },
+    "ban_q18_q191": {
+      "__type__": "object",
+      "ban_q18_q191": "Response to a survey question, likely combining two question codes."
+    },
+    "ban_q32": {
+      "__type__": "object",
+      "ban_q32": "Response to a survey question, possibly about a specific topic or behavior."
+    },
+    "respondent_id": {
+      "__type__": "object",
+      "respondent_id": "A unique identifier for each survey respondent."
+    },
+    "whichauthority": {
+      "__type__": "object",
+      "whichauthority": "A variable indicating which authority or entity the respondent considers most important or relevant."
+    },
+    "socialnetwork_dp07": {
+      "__type__": "object",
+      "socialnetwork_dp07": "A variable related to social network data, possibly indicating a specific network metric or characteristic."
+    },
+    "highestlevel": {
+      "__type__": "object",
+      "highestlevel": "The highest level of education or qualification attained by the respondent."
+    },
+    "ban_q433": {
+      "__type__": "object",
+      "ban_q433": "Response to a survey question, possibly about a specific topic or behavior."
+    },
+    "ban_no_ofchildren": {
+      "__type__": "object",
+      "ban_no_ofchildren": "The total number of children the respondent has."
+    },
+    "ban_children4": {
+      "__type__": "object",
+      "ban_children4": "A variable related to the respondent's children, possibly indicating a specific characteristic or status."
+    }
+  },
+  "datalake/SG_CSV0000000000000217.csv": {
+    "quarter": {
+      "__type__": "object",
+      "quarter": "The calendar quarter (e.g., Q1, Q2) to which the data pertains."
+    },
+    "industry1": {
+      "__type__": "object",
+      "industry1": "A broad industry classification or sector grouping."
+    },
+    "industry2": {
+      "__type__": "object",
+      "industry2": "A more specific sub-industry or detailed classification within the broader industry."
+    },
+    "overtime_paid_hours": {
+      "__type__": "float64",
+      "overtime_paid_hours": "The total number of overtime hours that were compensated during the quarter."
+    }
+  },
+  "datalake/SG_CSV0000000000000283.csv": {
+    "school_name": {
+      "__type__": "object",
+      "school_name": "The official name of the educational institution."
+    },
+    "school_section": {
+      "__type__": "object",
+      "school_section": "The division or level within the school, such as primary, secondary, or specific grade ranges."
+    },
+    "cca_grouping_desc": {
+      "__type__": "object",
+      "cca_grouping_desc": "A description of the broader category or grouping to which the co-curricular activity belongs."
+    },
+    "cca_generic_name": {
+      "__type__": "object",
+      "cca_generic_name": "The general or standardized name of the co-curricular activity."
+    }
+  },
+  "datalake/SG_CSV0000000000000190.csv": {
+    "quarter": {
+      "__type__": "object",
+      "quarter": "The time period (quarter) to which the data pertains, typically indicating a three-month interval within a year."
+    },
+    "industry1": {
+      "__type__": "object",
+      "industry1": "A primary classification or category of industry relevant to the data."
+    },
+    "industry2": {
+      "__type__": "object",
+      "industry2": "A secondary or more detailed classification of industry within the broader primary category."
+    },
+    "industry3": {
+      "__type__": "object",
+      "industry3": "A tertiary or further specialized classification of industry, providing additional granularity."
+    },
+    "occupation1": {
+      "__type__": "object",
+      "occupation1": "A primary classification or category of occupation relevant to the data."
+    },
+    "recruitment_rate": {
+      "__type__": "object",
+      "recruitment_rate": "The rate or proportion at which new employees are hired within the specified context."
+    },
+    "resignation_rate": {
+      "__type__": "object",
+      "resignation_rate": "The rate or proportion at which employees voluntarily leave their positions within the specified context."
+    }
+  },
+  "datalake/SG_CSV0000000000000291.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year in which the data was collected or reported."
+    },
+    "age_group": {
+      "__type__": "object",
+      "age_group": "A categorical classification of individuals based on their age range."
+    },
+    "gender": {
+      "__type__": "object",
+      "gender": "The biological sex or gender identity of the individuals in the dataset."
+    },
+    "per_10000_examined": {
+      "__type__": "int64",
+      "per_10000_examined": "A rate or proportion expressed per 10,000 individuals examined, often used to standardize counts across different population sizes."
+    }
+  },
+  "datalake/SG_CSV0000000000000306.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the data pertains."
+    },
+    "employment_size": {
+      "__type__": "object",
+      "employment_size": "The number of employees or the size category of the workforce for the entity being measured."
+    },
+    "computer_usage": {
+      "__type__": "int64",
+      "computer_usage": "A measure or indicator of how computers are utilized, such as the percentage of employees using computers or the extent of computer adoption."
+    }
+  },
+  "datalake/SG_CSV0000000000000437.csv": {
+    "calendar_year": {
+      "__type__": "int64",
+      "calendar_year": "The year in the Gregorian calendar to which the data pertains."
+    },
+    "gender": {
+      "__type__": "object",
+      "gender": "The sex or gender classification of the donees, typically male, female, or other categories."
+    },
+    "number_of_donees": {
+      "__type__": "int64",
+      "number_of_donees": "The count of individuals who received something (e.g., donations, services, or benefits) during the specified period."
+    }
+  },
+  "datalake/SG_CSV0000000000000351.csv": {
+    "month": {
+      "__type__": "object",
+      "month": "The month to which the data pertains, likely in a year-month format."
+    },
+    "cards_main": {
+      "__type__": "int64",
+      "cards_main": "The number of primary credit or debit cards issued or active."
+    },
+    "cards_supplementary": {
+      "__type__": "int64",
+      "cards_supplementary": "The number of supplementary or additional cards linked to primary accounts."
+    },
+    "total_billings": {
+      "__type__": "float64",
+      "total_billings": "The total amount billed to cardholders during the month."
+    },
+    "rollover_balance": {
+      "__type__": "float64",
+      "rollover_balance": "The outstanding balance carried over from previous billing cycles."
+    }
+  },
+  "datalake/SG_CSV0000000000000363.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year in which the data was recorded or the observation took place."
+    },
+    "age": {
+      "__type__": "object",
+      "age": "The age of the individual or subject involved in the activity."
+    },
+    "activity": {
+      "__type__": "object",
+      "activity": "The type of action, task, or behavior being performed or measured."
+    },
+    "sample": {
+      "__type__": "int64",
+      "sample": "A reference to the specific sample, group, or subset of data being analyzed."
+    },
+    "hours": {
+      "__type__": "float64",
+      "hours": "The amount of time, measured in hours, spent on or associated with the activity."
+    }
+  },
+  "datalake/SG_CSV0000000000000031.csv": {
+    "issuance_agency_id": {
+      "__type__": "object",
+      "issuance_agency_id": "Identifier of the agency that issued the UEN."
+    },
+    "uen": {
+      "__type__": "object",
+      "uen": "Unique Entity Number assigned to the business or organization."
+    },
+    "entity_name": {
+      "__type__": "object",
+      "entity_name": "Official name of the registered entity."
+    },
+    "entity_type_description": {
+      "__type__": "object",
+      "entity_type_description": "Description of the type of entity (e.g., company, partnership, sole proprietorship)."
+    },
+    "business_constitution_description": {
+      "__type__": "object",
+      "business_constitution_description": "Description of the legal constitution or structure of the business."
+    },
+    "entity_status_description": {
+      "__type__": "object",
+      "entity_status_description": "Current operational status of the entity (e.g., active, dormant, struck off)."
+    },
+    "registration_incorporation_date": {
+      "__type__": "object",
+      "registration_incorporation_date": "Date when the entity was formally registered or incorporated."
+    },
+    "uen_issue_date": {
+      "__type__": "object",
+      "uen_issue_date": "Date when the Unique Entity Number was issued."
+    },
+    "address_type": {
+      "__type__": "object",
+      "address_type": "Type of address recorded (e.g., registered office, business address)."
+    },
+    "block": {
+      "__type__": "object",
+      "block": "Block number of the address."
+    },
+    "street_name": {
+      "__type__": "object",
+      "street_name": "Name of the street in the address."
+    },
+    "level_no": {
+      "__type__": "object",
+      "level_no": "Floor or level number in a building."
+    },
+    "unit_no": {
+      "__type__": "object",
+      "unit_no": "Unit or suite number within a building."
+    },
+    "building_name": {
+      "__type__": "object",
+      "building_name": "Name of the building where the entity is located."
+    },
+    "postal_code": {
+      "__type__": "float64",
+      "postal_code": "Postal code for the address."
+    },
+    "no_of_charges": {
+      "__type__": "int64",
+      "no_of_charges": "Number of charges or encumbrances registered against the entity."
+    },
+    "primary_ssic_code": {
+      "__type__": "int64",
+      "primary_ssic_code": "Primary Singapore Standard Industrial Classification code for the entity's main activity."
+    },
+    "primary_ssic_description": {
+      "__type__": "object",
+      "primary_ssic_description": "Description of the primary SSIC code."
+    },
+    "secondary_ssic_code": {
+      "__type__": "float64",
+      "secondary_ssic_code": "Secondary Singapore Standard Industrial Classification code for additional activities."
+    },
+    "secondary_ssic_description": {
+      "__type__": "object",
+      "secondary_ssic_description": "Description of the secondary SSIC code."
+    },
+    "no_of_officers": {
+      "__type__": "int64",
+      "no_of_officers": "Number of officers (e.g., directors, partners) associated with the entity."
+    }
+  },
+  "datalake/SG_CSV0000000000000501.csv": {
+    "agency": {
+      "__type__": "object",
+      "agency": "The organization or entity responsible for the content or dataset."
+    },
+    "title": {
+      "__type__": "object",
+      "title": "The name or heading that identifies the subject or topic of the content."
+    },
+    "description": {
+      "__type__": "object",
+      "description": "A summary or detailed explanation providing context or additional information about the content."
+    }
+  },
+  "datalake/SG_CSV0000000000000032.csv": {
+    "issuance_agency_id": {
+      "__type__": "object",
+      "issuance_agency_id": "Identifier of the government agency that issued the UEN."
+    },
+    "uen": {
+      "__type__": "object",
+      "uen": "Unique Entity Number assigned to the registered entity."
+    },
+    "entity_name": {
+      "__type__": "object",
+      "entity_name": "Official name of the registered business or organization."
+    },
+    "entity_type_description": {
+      "__type__": "object",
+      "entity_type_description": "Description of the legal structure or type of the entity."
+    },
+    "business_constitution_description": {
+      "__type__": "object",
+      "business_constitution_description": "Description of the business constitution or formation type."
+    },
+    "entity_status_description": {
+      "__type__": "object",
+      "entity_status_description": "Current operational status of the entity (e.g., active, dormant)."
+    },
+    "registration_incorporation_date": {
+      "__type__": "object",
+      "registration_incorporation_date": "Date when the entity was officially registered or incorporated."
+    },
+    "uen_issue_date": {
+      "__type__": "object",
+      "uen_issue_date": "Date when the Unique Entity Number was issued to the entity."
+    },
+    "address_type": {
+      "__type__": "object",
+      "address_type": "Type of address recorded (e.g., registered office, business address)."
+    },
+    "block": {
+      "__type__": "object",
+      "block": "Block number of the entity's address."
+    },
+    "street_name": {
+      "__type__": "object",
+      "street_name": "Street name of the entity's address."
+    },
+    "level_no": {
+      "__type__": "object",
+      "level_no": "Floor or level number in the building."
+    },
+    "unit_no": {
+      "__type__": "object",
+      "unit_no": "Unit or suite number within the level."
+    },
+    "building_name": {
+      "__type__": "object",
+      "building_name": "Name of the building where the entity is located."
+    },
+    "postal_code": {
+      "__type__": "object",
+      "postal_code": "Postal code of the entity's address."
+    },
+    "no_of_charges": {
+      "__type__": "int64",
+      "no_of_charges": "Number of charges or encumbrances registered against the entity."
+    },
+    "primary_ssic_code": {
+      "__type__": "int64",
+      "primary_ssic_code": "Primary Singapore Standard Industrial Classification code for the entity's main activity."
+    },
+    "primary_ssic_description": {
+      "__type__": "object",
+      "primary_ssic_description": "Description of the primary SSIC code."
+    },
+    "secondary_ssic_code": {
+      "__type__": "float64",
+      "secondary_ssic_code": "Secondary Singapore Standard Industrial Classification code for additional activities."
+    },
+    "secondary_ssic_description": {
+      "__type__": "object",
+      "secondary_ssic_description": "Description of the secondary SSIC code."
+    },
+    "no_of_officers": {
+      "__type__": "int64",
+      "no_of_officers": "Number of officers (e.g., directors, partners) associated with the entity."
+    }
+  },
+  "datalake/SG_CSV0000000000000370.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the mortality data corresponds."
+    },
+    "icd_main_category": {
+      "__type__": "object",
+      "icd_main_category": "The high-level classification code from the International Classification of Diseases (ICD) system, grouping related causes of death."
+    },
+    "icd_detail_category": {
+      "__type__": "object",
+      "icd_detail_category": "A more specific sub‑category code within the ICD system, providing finer granularity for the cause of death."
+    },
+    "death_count": {
+      "__type__": "int64",
+      "death_count": "The absolute number of deaths recorded for the given ICD category in the specified year."
+    },
+    "death_rate": {
+      "__type__": "float64",
+      "death_rate": "The mortality rate, typically expressed as deaths per 100,000 population, for the given ICD category in the specified year."
+    }
+  },
+  "datalake/SG_CSV0000000000000374.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year in which the death occurred or was recorded."
+    },
+    "icd_main_category": {
+      "__type__": "object",
+      "icd_main_category": "The high-level classification code from the International Classification of Diseases (ICD) system indicating the broad cause of death."
+    },
+    "icd_detail_category": {
+      "__type__": "object",
+      "icd_detail_category": "A more specific sub‑classification within the ICD system providing detailed cause-of-death information."
+    },
+    "certified_by": {
+      "__type__": "object",
+      "certified_by": "The authority or entity (e.g., physician, medical examiner, health department) that officially certified the cause of death."
+    },
+    "death_count": {
+      "__type__": "int64",
+      "death_count": "The number of deaths recorded for the given combination of year, ICD categories, and certifying authority."
+    }
+  },
+  "datalake/SG_CSV0000000000000472.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the data point corresponds."
+    },
+    "level_1": {
+      "__type__": "object",
+      "level_1": "A categorical classification or grouping variable that further specifies the data."
+    },
+    "value": {
+      "__type__": "float64",
+      "value": "The numerical measurement or quantity associated with the given year and level_1 category."
+    }
+  },
+  "datalake/SG_CSV0000000000000402.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the data pertains."
+    },
+    "industry1": {
+      "__type__": "object",
+      "industry1": "A classification or category representing a specific industry sector."
+    },
+    "annual_leave_entitlement": {
+      "__type__": "object",
+      "annual_leave_entitlement": "The number of paid leave days an employee is entitled to per year."
+    },
+    "distribution": {
+      "__type__": "float64",
+      "distribution": "The spread or allocation of annual leave entitlements across different groups or categories."
+    }
+  },
+  "datalake/SG_CSV0000000000001714__30.csv": {
+    "ageofrespondent": {
+      "__type__": "int64",
+      "ageofrespondent": "The age of the survey respondent."
+    },
+    "livinginsg_2_slice": {
+      "__type__": "object",
+      "livinginsg_2_slice": "A categorical indicator for the respondent's duration of residence in Singapore."
+    },
+    "respondent_serial": {
+      "__type__": "int64",
+      "respondent_serial": "A unique identifier for each survey respondent."
+    },
+    "ban_no_ofchildren": {
+      "__type__": "object",
+      "ban_no_ofchildren": "The number of children the respondent has."
+    },
+    "ban_occupation_status4": {
+      "__type__": "object",
+      "ban_occupation_status4": "A categorical variable describing the respondent's occupational status."
+    },
+    "ban_children1": {
+      "__type__": "object",
+      "ban_children1": "A binary indicator for whether the respondent has at least one child."
+    },
+    "sliderliberty_1_slice": {
+      "__type__": "int64",
+      "sliderliberty_1_slice": "A scaled response reflecting the respondent's perceived level of personal liberty."
+    },
+    "highestlevel": {
+      "__type__": "object",
+      "highestlevel": "The highest educational level attained by the respondent."
+    },
+    "livinginsg_1_slice": {
+      "__type__": "object",
+      "livinginsg_1_slice": "A categorical indicator for the respondent's current residential status in Singapore."
+    },
+    "ban_children4": {
+      "__type__": "object",
+      "ban_children4": "A binary indicator for whether the respondent has four or more children."
+    },
+    "socialnetwork_5_slice": {
+      "__type__": "object",
+      "socialnetwork_5_slice": "A measure of the respondent's social network size or engagement."
+    },
+    "ban_education1": {
+      "__type__": "object",
+      "ban_education1": "A binary indicator for the respondent's educational attainment."
+    },
+    "ban_q30_2": {
+      "__type__": "object",
+      "ban_q30_2": "A response to a specific survey question, likely related to attitudes or behaviors."
+    },
+    "ban_q437": {
+      "__type__": "object",
+      "ban_q437": "A response to a specific survey question, likely related to family or social matters."
+    },
+    "occstatus": {
+      "__type__": "object",
+      "occstatus": "The occupational status of the respondent."
+    },
+    "unisch": {
+      "__type__": "object",
+      "unisch": "A binary indicator for whether the respondent attended university."
+    },
+    "ban_occupation_status3": {
+      "__type__": "object",
+      "ban_occupation_status3": "A categorical variable describing a specific aspect of the respondent's occupation."
+    },
+    "ban_marital": {
+      "__type__": "object",
+      "ban_marital": "The marital status of the respondent."
+    },
+    "ban_occupation_status9": {
+      "__type__": "object",
+      "ban_occupation_status9": "A categorical variable describing another aspect of the respondent's occupation."
+    },
+    "ban_q30_3": {
+      "__type__": "object",
+      "ban_q30_3": "A response to a specific survey question, likely a follow-up to ban_q30_2."
+    },
+    "socialnetwork_6_slice": {
+      "__type__": "object",
+      "socialnetwork_6_slice": "Another measure of the respondent's social network characteristics."
+    },
+    "rankmostimptchild_new_1": {
+      "__type__": "int64",
+      "rankmostimptchild_new_1": "A ranking of the most important child-related factor for the respondent."
+    },
+    "livinginsg_3_slice": {
+      "__type__": "object",
+      "livinginsg_3_slice": "A categorical indicator for the respondent's residential arrangement in Singapore."
+    },
+    "yearbornin_1_slice": {
+      "__type__": "int64",
+      "yearbornin_1_slice": "The year the respondent was born."
+    },
+    "socialnetwork_dp04": {
+      "__type__": "object",
+      "socialnetwork_dp04": "A derived variable related to the respondent's social network."
+    },
+    "ban_occupation_role1": {
+      "__type__": "object",
+      "ban_occupation_role1": "A description of the respondent's primary occupational role."
+    },
+    "ban_q436": {
+      "__type__": "object",
+      "ban_q436": "A response to a specific survey question, likely related to personal or family values."
+    },
+    "ban_education4": {
+      "__type__": "object",
+      "ban_education4": "A categorical variable for the respondent's highest educational qualification."
+    },
+    "socialnetwork_dp08": {
+      "__type__": "object",
+      "socialnetwork_dp08": "Another derived variable related to the respondent's social network."
+    },
+    "socialnetwork_1_slice": {
+      "__type__": "object",
+      "socialnetwork_1_slice": "A basic measure of the respondent's social network."
+    },
+    "ban_age": {
+      "__type__": "object",
+      "ban_age": "The age of the respondent, possibly in a different format or context."
+    },
+    "socialnetwork_dp05": {
+      "__type__": "object",
+      "socialnetwork_dp05": "A derived variable related to the respondent's social network interactions."
+    },
+    "ban_q431": {
+      "__type__": "object",
+      "ban_q431": "A response to a specific survey question, likely related to social or economic attitudes."
+    },
+    "levelsch": {
+      "__type__": "object",
+      "levelsch": "The level of schooling completed by the respondent."
+    },
+    "yearbornin_1_slice1": {
+      "__type__": "int64",
+      "yearbornin_1_slice1": "A duplicate or alternative representation of the respondent's birth year."
+    },
+    "ban_q432": {
+      "__type__": "object",
+      "ban_q432": "A response to a specific survey question, likely a follow-up to ban_q431."
+    },
+    "ban_age_youngest": {
+      "__type__": "object",
+      "ban_age_youngest": "The age of the respondent's youngest child."
+    },
+    "socialnetwork_4_slice": {
+      "__type__": "object",
+      "socialnetwork_4_slice": "A measure of the respondent's social network diversity or support."
+    },
+    "childage": {
+      "__type__": "object",
+      "childage": "The age of a specific child of the respondent."
+    }
+  },
+  "datalake/SG_CSV0000000000000797.csv": {
+    "cleansvcpr": {
+      "__type__": "object",
+      "cleansvcpr": "A code or identifier for a cleaning service provider, likely representing a specific vendor or contractor."
+    },
+    "email_add": {
+      "__type__": "object",
+      "email_add": "The email address associated with the cleaning service provider or contact person."
+    },
+    "contact": {
+      "__type__": "object",
+      "contact": "A phone number or other contact information for reaching the cleaning service provider."
+    },
+    "zone": {
+      "__type__": "object",
+      "zone": "A geographical or operational area designation where the cleaning service is provided or assigned."
+    },
+    "remark": {
+      "__type__": "object",
+      "remark": "Additional notes or comments related to the cleaning service provider, such as special instructions or status updates."
+    }
+  },
+  "datalake/SG_CSV0000000000000577.csv": {
+    "financial_year": {
+      "__type__": "int64",
+      "financial_year": "The fiscal period for which the financial data is reported, typically spanning 12 months."
+    },
+    "operating_expenditure": {
+      "__type__": "int64",
+      "operating_expenditure": "The total spending on day-to-day operations and routine activities of the government or organization."
+    },
+    "development_expenditure": {
+      "__type__": "int64",
+      "development_expenditure": "The total spending on long-term projects, infrastructure, and capital investments aimed at future growth."
+    },
+    "government_health_expenditure": {
+      "__type__": "float64",
+      "government_health_expenditure": "The total amount of money allocated by the government specifically for health-related services and programs."
+    },
+    "percentage_gdp": {
+      "__type__": "float64",
+      "percentage_gdp": "The proportion of the total government expenditure relative to the Gross Domestic Product, expressed as a percentage."
+    }
+  },
+  "datalake/SG_CSV0000000000000533.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the data point corresponds."
+    },
+    "level_1": {
+      "__type__": "object",
+      "level_1": "A categorical classification or grouping label for the data."
+    },
+    "value": {
+      "__type__": "int64",
+      "value": "The numerical measurement or quantity associated with the given year and category."
+    }
+  },
+  "datalake/SG_CSV0000000000000760.csv": {
+    "quarter": {
+      "__type__": "object",
+      "quarter": "The time period (quarter) to which the data pertains, typically indicating a three-month interval within a year."
+    },
+    "industry1": {
+      "__type__": "object",
+      "industry1": "A primary classification or category of industry relevant to the job vacancy data."
+    },
+    "industry2": {
+      "__type__": "object",
+      "industry2": "A secondary or more detailed classification of industry within the broader industry1 category."
+    },
+    "industry3": {
+      "__type__": "object",
+      "industry3": "A tertiary or further detailed classification of industry, providing additional granularity beyond industry2."
+    },
+    "occupation1": {
+      "__type__": "object",
+      "occupation1": "A primary classification or category of occupation related to the job vacancies."
+    },
+    "job_vacancy_rate": {
+      "__type__": "object",
+      "job_vacancy_rate": "The proportion or percentage of job vacancies relative to total employment or another relevant base measure for the specified quarter and classifications."
+    }
+  },
+  "datalake/SG_CSV0000000000000865.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the data point corresponds."
+    },
+    "level_1": {
+      "__type__": "object",
+      "level_1": "A primary categorical grouping or dimension for the data."
+    },
+    "level_2": {
+      "__type__": "object",
+      "level_2": "A secondary categorical grouping or sub‑dimension within the primary level."
+    },
+    "value": {
+      "__type__": "int64",
+      "value": "The numerical measurement or metric associated with the given year and categorical levels."
+    }
+  },
+  "datalake/SG_CSV0000000000000841.csv": {
+    "month": {
+      "__type__": "object",
+      "month": "The month in which the births occurred, likely indicating the time period of the data."
+    },
+    "mother_occupation": {
+      "__type__": "object",
+      "mother_occupation": "The occupation or employment status of the mother at the time of birth."
+    },
+    "order": {
+      "__type__": "object",
+      "order": "The birth order of the child, indicating whether it is the first, second, third, etc., child born to the mother."
+    },
+    "birth_count": {
+      "__type__": "int64",
+      "birth_count": "The number of births recorded for the given combination of month, mother occupation, and birth order."
+    }
+  },
+  "datalake/SG_CSV0000000000000907.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The calendar year to which the income data pertains."
+    },
+    "med_income_incl_empcpf": {
+      "__type__": "int64",
+      "med_income_incl_empcpf": "Median income including employer CPF contributions, reflecting total compensation before personal CPF deductions."
+    },
+    "med_income_excl_empcpf": {
+      "__type__": "int64",
+      "med_income_excl_empcpf": "Median income excluding employer CPF contributions, representing take‑home pay before personal CPF deductions."
+    }
+  },
+  "datalake/SG_CSV0000000000001063.csv": {
+    "yr": {
+      "__type__": "int64",
+      "yr": "The calendar year to which the data pertains."
+    },
+    "regrossed_bal_grp": {
+      "__type__": "object",
+      "regrossed_bal_grp": "A grouping or category based on regrossed balance amounts."
+    },
+    "no_of_active_mbrs": {
+      "__type__": "int64",
+      "no_of_active_mbrs": "The count of active members within the specified year and balance group."
+    }
+  }
+}

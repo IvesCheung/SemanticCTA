@@ -1,0 +1,202 @@
+{
+  "datalake/SG_CSV0000000000000000.csv": {
+    "month": {
+      "__type__": "object",
+      "month": "The date in YYYY-MM format representing the month and year of the service coverage measurement."
+    },
+    "telco": {
+      "__type__": "object",
+      "telco": "The name of the telecommunications company providing the service."
+    },
+    "service_coverage": {
+      "__type__": "float64",
+      "service_coverage": "The percentage of service coverage provided by the telecommunications company for the specified month and year."
+    }
+  },
+  "datalake/SG_CSV0000000000000002.csv": {
+    "year": {
+      "__type__": "int64",
+      "year": "The year in which the activity or program was conducted."
+    },
+    "category": {
+      "__type__": "object",
+      "category": "The broad subject area or type of educational activity or program."
+    },
+    "topic": {
+      "__type__": "object",
+      "topic": "The specific topic or title of the educational activity or program."
+    },
+    "level": {
+      "__type__": "object",
+      "level": "The educational level or target audience for the activity or program."
+    }
+  },
+  "datalake/SG_CSV0000000000000028.csv": {
+    "issuance_agency_id": {
+      "__type__": "object",
+      "issuance_agency_id": "A placeholder column with no specific meaning."
+    },
+    "uen": {
+      "__type__": "object",
+      "uen": "The Unique Entity Number (UEN) assigned to the business or entity."
+    },
+    "entity_name": {
+      "__type__": "object",
+      "entity_name": "The official name of the business or entity."
+    },
+    "entity_type_description": {
+      "__type__": "object",
+      "entity_type_description": "The type of the business or entity (e.g., Local Company, Business)."
+    },
+    "entity_status_description": {
+      "__type__": "object",
+      "entity_status_description": "A placeholder column with no specific meaning."
+    },
+    "registration_incorporation_date": {
+      "__type__": "object",
+      "registration_incorporation_date": "The date when the business or entity was registered or incorporated."
+    },
+    "uen_issue_date": {
+      "__type__": "object",
+      "uen_issue_date": "The date when the Unique Entity Number (UEN) was issued."
+    },
+    "address_type": {
+      "__type__": "object",
+      "address_type": "A placeholder column with no specific meaning."
+    },
+    "block": {
+      "__type__": "object",
+      "block": "The block number of the business or entity's address."
+    },
+    "street_name": {
+      "__type__": "object",
+      "street_name": "The street name of the business or entity's address."
+    },
+    "level_no": {
+      "__type__": "object",
+      "level_no": "A placeholder column with no specific meaning."
+    },
+    "unit_no": {
+      "__type__": "object",
+      "unit_no": "The unit number of the business or entity's address."
+    },
+    "building_name": {
+      "__type__": "object",
+      "building_name": "A placeholder column with no specific meaning."
+    },
+    "postal_code": {
+      "__type__": "object",
+      "postal_code": "A placeholder column with no specific meaning."
+    },
+    "no_of_charges": {
+      "__type__": "int64",
+      "no_of_charges": "A placeholder column with no specific meaning."
+    },
+    "primary_ssic_code": {
+      "__type__": "int64",
+      "primary_ssic_code": "The primary Standard Singapore Industrial Classification (SSIC) code representing the main industry or activity of the business or entity."
+    },
+    "primary_ssic_description": {
+      "__type__": "object",
+      "primary_ssic_description": "A placeholder column with no specific meaning."
+    },
+    "secondary_ssic_code": {
+      "__type__": "float64",
+      "secondary_ssic_code": "A placeholder column with no specific meaning."
+    },
+    "secondary_ssic_description": {
+      "__type__": "object",
+      "secondary_ssic_description": "A placeholder column with no specific meaning."
+    },
+    "no_of_officers": {
+      "__type__": "int64",
+      "no_of_officers": "The number of officers or key personnel associated with the business or entity."
+    }
+  },
+  "datalake/SG_CSV0000000000000029.csv": {
+    "issuance_agency_id": {
+      "__type__": "object",
+      "issuance_agency_id": "A placeholder or unused column with no specific meaning."
+    },
+    "uen": {
+      "__type__": "object",
+      "uen": "A placeholder or unused column with no specific meaning."
+    },
+    "entity_name": {
+      "__type__": "object",
+      "entity_name": "The name of the business entity."
+    },
+    "entity_type_description": {
+      "__type__": "object",
+      "entity_type_description": "The type of the business entity (e.g., Business, Local Company, LLP)."
+    },
+    "business_constitution_description": {
+      "__type__": "object",
+      "business_constitution_description": "The legal structure or constitution of the business (e.g., Sole Proprietor, Partnership)."
+    },
+    "entity_status_description": {
+      "__type__": "object",
+      "entity_status_description": "A placeholder or unused column with no specific meaning."
+    },
+    "registration_incorporation_date": {
+      "__type__": "object",
+      "registration_incorporation_date": "The date when the business was registered or incorporated."
+    },
+    "uen_issue_date": {
+      "__type__": "object",
+      "uen_issue_date": "A placeholder or unused column with no specific meaning."
+    },
+    "address_type": {
+      "__type__": "object",
+      "address_type": "A placeholder or unused column with no specific meaning."
+    },
+    "block": {
+      "__type__": "object",
+      "block": "The block number of the business's address."
+    },
+    "street_name": {
+      "__type__": "object",
+      "street_name": "A placeholder or unused column with no specific meaning."
+    },
+    "level_no": {
+      "__type__": "object",
+      "level_no": "The level number of the business's address."
+    },
+    "unit_no": {
+      "__type__": "object",
+      "unit_no": "A placeholder or unused column with no specific meaning."
+    },
+    "building_name": {
+      "__type__": "object",
+      "building_name": "A placeholder or unused column with no specific meaning."
+    },
+    "postal_code": {
+      "__type__": "object",
+      "postal_code": "The postal code of the business's address."
+    },
+    "no_of_charges": {
+      "__type__": "int64",
+      "no_of_charges": "A placeholder or unused column with no specific meaning."
+    },
+    "primary_ssic_code": {
+      "__type__": "int64",
+      "primary_ssic_code": "The primary Standard Singapore Industrial Classification (SSIC) code of the business."
+    },
+    "primary_ssic_description": {
+      "__type__": "object",
+      "primary_ssic_description": "A placeholder or unused column with no specific meaning."
+    },
+    "auxiliary_industry_code": {
+      "__type__": "float64",
+      "auxiliary_industry_code": "The auxiliary industry code of the business."
+    },
+    "secondary_ssic_description": {
+      "__type__": "object",
+      "secondary_ssic_description": "The description of the secondary SSIC code of the business."
+    },
+    "no_of_officers": {
+      "__type__": "int64",
+      "no_of_officers": "The number of officers or key personnel associated with the business."
+    }
+  }
+}

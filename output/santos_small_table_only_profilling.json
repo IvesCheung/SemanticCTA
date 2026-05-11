@@ -1,0 +1,1805 @@
+{
+  "santos_small_benchmark_groundtruth.csv": {
+    "__table__": "TAP Sector Group mapping between different TAP recipient tables"
+  },
+  "datalake/311_calls_historic_data_0.csv": {
+    "__table__": "311 service requests for abandoned vehicle reporting and removal"
+  },
+  "datalake/311_calls_historic_data_1.csv": {
+    "__table__": "311 service requests in New Orleans"
+  },
+  "datalake/311_calls_historic_data_2.csv": {
+    "__table__": "Historic 311 service requests"
+  },
+  "datalake/311_calls_historic_data_3.csv": {
+    "__table__": "311 service requests history"
+  },
+  "datalake/311_calls_historic_data_4.csv": {
+    "__table__": "Historic 311 service calls data"
+  },
+  "datalake/311_calls_historic_data_5.csv": {
+    "__table__": "Historic 311 service calls"
+  },
+  "datalake/311_calls_historic_data_6.csv": {
+    "__table__": "311 service requests for trash and garbage pickup"
+  },
+  "datalake/311_calls_historic_data_7.csv": {
+    "__table__": "311 service requests history"
+  },
+  "datalake/311_calls_historic_data_8.csv": {
+    "__table__": "311 service requests history"
+  },
+  "datalake/311_calls_historic_data_9.csv": {
+    "__table__": "Historic 311 calls data"
+  },
+  "datalake/311_calls_historic_data_a.csv": {
+    "__table__": "Historic 311 service requests"
+  },
+  "datalake/HMRC_Officials_meetings_with_tobacco_stakeholders_Apr_2015_to_Jun_2015.csv": {
+    "__table__": "HMRC officials' meetings with tobacco stakeholders from April 2015 to June 2015"
+  },
+  "datalake/HMRC_Officials_meetings_with_tobacco_stakeholders_Apr_2017_to_June_2017.csv": {
+    "__table__": "HMRC officials' meetings with tobacco stakeholders from April to June 2017"
+  },
+  "datalake/HMRC_Officials_meetings_with_tobacco_stakeholders_Apr_2018_to_June_2018.csv": {
+    "__table__": "HMRC officials' meetings with tobacco stakeholders from April 2018 to June 2018"
+  },
+  "datalake/HMRC_Officials_meetings_with_tobacco_stakeholders_Jan_2020_to_Mar_2020.csv": {
+    "__table__": "HMRC officials' meetings with tobacco stakeholders from January 2020 to March 2020"
+  },
+  "datalake/HMRC_Officials_meetings_with_tobacco_stakeholders_Jul_2014_to_Sept_2014.csv": {
+    "__table__": "HMRC officials' meetings with tobacco stakeholders from July to September 2014"
+  },
+  "datalake/HMRC_Officials_meetings_with_tobacco_stakeholders_Jul_2015_to__Sept_2015.csv": {
+    "__table__": "HMRC officials' meetings with tobacco stakeholders from July to September 2015"
+  },
+  "datalake/HMRC_WMI_headcount_and_payroll_data_Mar_2015.csv": {
+    "__table__": "HMRC workforce headcount and payroll data for March 2015"
+  },
+  "datalake/HMRC_WMI_headcount_and_payroll_data_May_2016.csv": {
+    "__table__": "HMRC workforce headcount and payroll data for May 2016"
+  },
+  "datalake/HMRC_WMI_headcount_and_payroll_data_Nov_2014.csv": {
+    "__table__": "HMRC workforce headcount and payroll data for November 2014"
+  },
+  "datalake/HMRC_WMI_headcount_and_payroll_data_Nov_2015.csv": {
+    "__table__": "HMRC workforce headcount and payroll data for November 2015"
+  },
+  "datalake/HMRC_exceptions_to_spending_controls_April_to_June_2018_consultancy.csv": {
+    "__table__": "HMRC exceptions to spending controls for consultancy from April to June 2018"
+  },
+  "datalake/HMRC_exceptions_to_spending_controls_April_to_June_2018_facilities_management.csv": {
+    "__table__": "HMRC exceptions to spending controls for facilities management from April to June 2018"
+  },
+  "datalake/HMRC_exceptions_to_spending_controls_April_to_June_2019_ICT.csv": {
+    "__table__": "HMRC exceptions to spending controls for ICT projects"
+  },
+  "datalake/HMRC_exceptions_to_spending_controls_April_to_June_2019_commercial.csv": {
+    "__table__": "HMRC exceptions to spending controls for commercial cases from April to June 2019"
+  },
+  "datalake/HMRC_exceptions_to_spending_controls_April_to_June_2019_consultancy.csv": {
+    "__table__": "HMRC exceptions to spending controls for consultancy services from April to June 2019"
+  },
+  "datalake/HMRC_exceptions_to_spending_controls_October_to_December_2017_ICT.csv": {
+    "__table__": "HMRC spending exceptions for IT security projects"
+  },
+  "datalake/HMRC_exceptions_to_spending_controls_October_to_December_2017_property.csv": {
+    "__table__": "HMRC exceptions to spending controls for property cases"
+  },
+  "datalake/HMRC_exceptions_to_spending_controls_October_to_December_2017_recruitment.csv": {
+    "__table__": "HMRC recruitment exceptions for October to December 2017"
+  },
+  "datalake/abandoned_wells_0.csv": {
+    "__table__": "Abandoned well information"
+  },
+  "datalake/abandoned_wells_1.csv": {
+    "__table__": "Abandoned well information"
+  },
+  "datalake/abandoned_wells_2.csv": {
+    "__table__": "Abandoned well information"
+  },
+  "datalake/abandoned_wells_3.csv": {
+    "__table__": "Abandoned well information"
+  },
+  "datalake/abandoned_wells_4.csv": {
+    "__table__": "Abandoned well information"
+  },
+  "datalake/abandoned_wells_5.csv": {
+    "__table__": "Abandoned well information"
+  },
+  "datalake/abandoned_wells_6.csv": {
+    "__table__": "Abandoned well information"
+  },
+  "datalake/abandoned_wells_7.csv": {
+    "__table__": "Abandoned well information"
+  },
+  "datalake/abandoned_wells_8.csv": {
+    "__table__": "Abandoned well information"
+  },
+  "datalake/abandoned_wells_9.csv": {
+    "__table__": "Abandoned well information"
+  },
+  "datalake/abandoned_wells_a.csv": {
+    "__table__": "Abandoned well information"
+  },
+  "datalake/admissionssummaryallocatedsecondary2012.csv": {
+    "__table__": "Admissions summary for secondary schools in 2012"
+  },
+  "datalake/admissionssummaryallocatedsecondary2013.csv": {
+    "__table__": "Admissions summary for secondary schools in 2013"
+  },
+  "datalake/admissionssummaryallocatedsecondary2014.csv": {
+    "__table__": "Admissions summary for secondary schools in 2014"
+  },
+  "datalake/admissionssummaryallocatedsecondary2015.csv": {
+    "__table__": "Admissions summary for secondary schools in 2015"
+  },
+  "datalake/admissionssummaryallocatedsecondary2016.csv": {
+    "__table__": "Admissions summary for secondary schools in 2016"
+  },
+  "datalake/admissionssummaryallocatedsecondary2017.csv": {
+    "__table__": "Admissions summary for secondary schools in 2017"
+  },
+  "datalake/admissionssummaryallocatedsecondary2018.csv": {
+    "__table__": "Admissions summary for secondary schools in 2018"
+  },
+  "datalake/admissionssummaryallocatedsecondary2019.csv": {
+    "__table__": "Admissions summary for secondary schools in 2019"
+  },
+  "datalake/admissionssummaryallocatedsecondary2020.csv": {
+    "__table__": "School admissions summary for secondary schools in 2020"
+  },
+  "datalake/admissionssummaryallocatedsecondary2021.csv": {
+    "__table__": "School admissions summary for 2021"
+  },
+  "datalake/advertising-July-Sept-2018.csv": {
+    "__table__": "Advertising expenditure for government initiatives"
+  },
+  "datalake/advertising-July-Sept-2019.csv": {
+    "__table__": "Advertising campaign approvals for government departments"
+  },
+  "datalake/advertising-april-june-2015.csv": {
+    "__table__": "Advertising project approvals"
+  },
+  "datalake/advertising-april-june14.csv": {
+    "__table__": "Advertising expenditure approvals"
+  },
+  "datalake/advertising-jan-march2016.csv": {
+    "__table__": "Advertising and marketing expenses for DFID's Syria conference"
+  },
+  "datalake/advertising-july-sept2015.csv": {
+    "__table__": "Advertising expenditure approval for DfID projects"
+  },
+  "datalake/albums_0.csv": {
+    "__table__": "Album track information"
+  },
+  "datalake/albums_1.csv": {
+    "__table__": "Album information for artists"
+  },
+  "datalake/albums_10.csv": {
+    "__table__": "Album track information"
+  },
+  "datalake/albums_11.csv": {
+    "__table__": "Album track information"
+  },
+  "datalake/albums_12.csv": {
+    "__table__": "Album track information"
+  },
+  "datalake/albums_13.csv": {
+    "__table__": "Album track information"
+  },
+  "datalake/albums_2.csv": {
+    "__table__": "Album information for artists"
+  },
+  "datalake/albums_3.csv": {
+    "__table__": "Album information for artists"
+  },
+  "datalake/albums_4.csv": {
+    "__table__": "Albums and their artists"
+  },
+  "datalake/albums_5.csv": {
+    "__table__": "Album information for artists"
+  },
+  "datalake/albums_6.csv": {
+    "__table__": "Album information for artists"
+  },
+  "datalake/albums_7.csv": {
+    "__table__": "Albums and their artists"
+  },
+  "datalake/albums_8.csv": {
+    "__table__": "Album information for artists"
+  },
+  "datalake/albums_9.csv": {
+    "__table__": "Album information for artists"
+  },
+  "datalake/albums_a.csv": {
+    "__table__": "Album track information"
+  },
+  "datalake/albums_b.csv": {
+    "__table__": "Album information for artists"
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20180801-20180831.csv": {
+    "__table__": "Search term statistics for August 2018"
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20180901-20180930.csv": {
+    "__table__": "Search term statistics for September 2018"
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20181001-20181031.csv": {
+    "__table__": "Search term performance metrics"
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20190401-20190430.csv": {
+    "__table__": "Search term statistics for April 2019"
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20191001-20191031.csv": {
+    "__table__": "Search statistics for media events"
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20191101-20191130.csv": {
+    "__table__": "Search statistics for book terms"
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20191201-20191231.csv": {
+    "__table__": "Search statistics for Italian films"
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20200201-20200229.csv": {
+    "__table__": "Search statistics for media events"
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20200801-20200831.csv": {
+    "__table__": "Search statistics for terms across categories"
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20200901-20200930.csv": {
+    "__table__": "Search statistics for photography category"
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20201001-20201031.csv": {
+    "__table__": "Search statistics for Nora Roberts"
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20201101-20201130.csv": {
+    "__table__": "Event occurrences and unique events for November 2020"
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20201201-20201231.csv": {
+    "__table__": "Search statistics for Sony Music"
+  },
+  "datalake/analytics-inmedia-complet-principaux-evenements-20210301-20210331-.csv": {
+    "__table__": "Search term statistics for March 2021"
+  },
+  "datalake/analytics-iris-complet-termes-de-recherche-20160701-20160731.csv": {
+    "__table__": "Search term analytics for July 2016"
+  },
+  "datalake/analytics-iris-complet-termes-de-recherche-20160801-20160831.csv": {
+    "__table__": "Search term analytics for 'the blacklist'"
+  },
+  "datalake/analytics-iris-complet-termes-de-recherche-20161001-20161031.csv": {
+    "__table__": "Search term analytics for 'shawn mendes'"
+  },
+  "datalake/analytics-iris-complet-termes-de-recherche-20170101-20170131.csv": {
+    "__table__": "Search term analytics for 'The Wire'"
+  },
+  "datalake/analytics-iris-complet-termes-de-recherche-20170201-20170228.csv": {
+    "__table__": "Search term analytics for 'the knick'"
+  },
+  "datalake/analytics-iris-complet-termes-de-recherche-20170401-20170430.csv": {
+    "__table__": "Search term analytics for 'fairy tail'"
+  },
+  "datalake/analytics-iris-complet-termes-de-recherche-20170501-20170531.csv": {
+    "__table__": "Search term analytics for 'sully'"
+  },
+  "datalake/analytics-iris-complet-termes-de-recherche-20170601-20170630.csv": {
+    "__table__": "Search term analytics for 'Le plongeur'"
+  },
+  "datalake/analytics-iris-complet-termes-de-recherche-20170701-20170731.csv": {
+    "__table__": "Search term analytics for 'the librarians'"
+  },
+  "datalake/analytics-iris-complet-termes-de-recherche-20171101-20171130.csv": {
+    "__table__": "Search term analytics for 'broadchurch'"
+  },
+  "datalake/analytics-iris-complet-termes-de-recherche-20171201-20171231.csv": {
+    "__table__": "Search term performance metrics"
+  },
+  "datalake/analytics-iris-complet-termes-de-recherche-20180201-20180228.csv": {
+    "__table__": "Search term performance metrics"
+  },
+  "datalake/analytics-iris-complet-termes-de-recherche-20180301-20180331.csv": {
+    "__table__": "Search term analytics for 'handmaid's tale'"
+  },
+  "datalake/analytics-iris-externe-termes-de-recherche-20170901-20170930.csv": {
+    "__table__": "Search term performance metrics"
+  },
+  "datalake/analytics-numerique-complet-principaux-evenements-20210201-20210228.csv": {
+    "__table__": "Search term frequency and uniqueness"
+  },
+  "datalake/analytics-numerique-complet-principaux-evenements-20210601-20210630.csv": {
+    "__table__": "Search term frequency and uniqueness"
+  },
+  "datalake/animal_tag_data_0.csv": {
+    "__table__": "Animal tag registration details"
+  },
+  "datalake/animal_tag_data_1.csv": {
+    "__table__": "Animal tag registration details"
+  },
+  "datalake/animal_tag_data_2.csv": {
+    "__table__": "Animal tag data including ID, type, colors, breed group, identity, age, and vaccination status"
+  },
+  "datalake/animal_tag_data_3.csv": {
+    "__table__": "Animal tag registration data"
+  },
+  "datalake/animal_tag_data_4.csv": {
+    "__table__": "Animal tag registration details"
+  },
+  "datalake/animal_tag_data_5.csv": {
+    "__table__": "Animal tag information for dogs"
+  },
+  "datalake/animal_tag_data_6.csv": {
+    "__table__": "Animal tag data for sheltered cats"
+  },
+  "datalake/animal_tag_data_7.csv": {
+    "__table__": "Animal tag and identification data"
+  },
+  "datalake/animal_tag_data_8.csv": {
+    "__table__": "Animal tag and identification data"
+  },
+  "datalake/animal_tag_data_9.csv": {
+    "__table__": "Animal tag data for dogs including breed and color information"
+  },
+  "datalake/animal_tag_data_a.csv": {
+    "__table__": "Animal tag and vaccination information"
+  },
+  "datalake/animal_tag_data_b.csv": {
+    "__table__": "Animal tag registration details"
+  },
+  "datalake/biodiversity_0.csv": {
+    "__table__": "Biodiversity species information"
+  },
+  "datalake/biodiversity_1.csv": {
+    "__table__": "Biodiversity species information"
+  },
+  "datalake/biodiversity_2.csv": {
+    "__table__": "Biodiversity species information"
+  },
+  "datalake/biodiversity_3.csv": {
+    "__table__": "Biodiversity infection records"
+  },
+  "datalake/biodiversity_4.csv": {
+    "__table__": "Biodiversity species information"
+  },
+  "datalake/biodiversity_5.csv": {
+    "__table__": "Sky condition descriptions"
+  },
+  "datalake/biodiversity_6.csv": {
+    "__table__": "Biodiversity conservation status by county and taxonomic group"
+  },
+  "datalake/biodiversity_7.csv": {
+    "__table__": "Biodiversity conservation status of species in Putnam County"
+  },
+  "datalake/biodiversity_8.csv": {
+    "__table__": "Bird detection data in Alpine ecoregion parks"
+  },
+  "datalake/biodiversity_9.csv": {
+    "__table__": "Bird detection data in various ecoregions"
+  },
+  "datalake/biodiversity_a.csv": {
+    "__table__": "Biodiversity records for protected species in New York"
+  },
+  "datalake/business_rates_0.csv": {
+    "__table__": "Business rates and property details"
+  },
+  "datalake/business_rates_1.csv": {
+    "__table__": "Business rates and property details"
+  },
+  "datalake/business_rates_10.csv": {
+    "__table__": "Business rates and property details"
+  },
+  "datalake/business_rates_2.csv": {
+    "__table__": "Business rates and property details"
+  },
+  "datalake/business_rates_3.csv": {
+    "__table__": "Business rates and property details"
+  },
+  "datalake/business_rates_4.csv": {
+    "__table__": "Business rates and property details"
+  },
+  "datalake/business_rates_5.csv": {
+    "__table__": "Business rates and property details"
+  },
+  "datalake/business_rates_6.csv": {
+    "__table__": "Business rates and property details"
+  },
+  "datalake/business_rates_7.csv": {
+    "__table__": "Business rates and property details"
+  },
+  "datalake/business_rates_8.csv": {
+    "__table__": "Business rates and property details"
+  },
+  "datalake/business_rates_9.csv": {
+    "__table__": "Business rates and property details"
+  },
+  "datalake/business_rates_a.csv": {
+    "__table__": "Business property rates and liabilities"
+  },
+  "datalake/cdc_nutrition_physical_activity_and_obesity_legislation_0.csv": {
+    "__table__": "Nutrition and obesity policy legislation"
+  },
+  "datalake/cdc_nutrition_physical_activity_and_obesity_legislation_1.csv": {
+    "__table__": "Nutrition and physical activity policies in Tennessee communities"
+  },
+  "datalake/cdc_nutrition_physical_activity_and_obesity_legislation_2.csv": {
+    "__table__": "Nutrition, physical activity, and obesity legislation in Tennessee"
+  },
+  "datalake/cdc_nutrition_physical_activity_and_obesity_legislation_3.csv": {
+    "__table__": "Nutrition and physical activity policies in New York communities"
+  },
+  "datalake/cdc_nutrition_physical_activity_and_obesity_legislation_4.csv": {
+    "__table__": "Nutrition, physical activity, and obesity legislation details"
+  },
+  "datalake/cdc_nutrition_physical_activity_and_obesity_legislation_5.csv": {
+    "__table__": "Nutrition and obesity policy legislation details"
+  },
+  "datalake/cdc_nutrition_physical_activity_and_obesity_legislation_6.csv": {
+    "__table__": "Nutrition and physical activity policies by location and topic"
+  },
+  "datalake/cdc_nutrition_physical_activity_and_obesity_legislation_7.csv": {
+    "__table__": "Nutrition, physical activity, and obesity legislation in Florida"
+  },
+  "datalake/cdc_nutrition_physical_activity_and_obesity_legislation_8.csv": {
+    "__table__": "Nutrition and obesity policy legislation"
+  },
+  "datalake/cdc_nutrition_physical_activity_and_obesity_legislation_9.csv": {
+    "__table__": "Nutrition and physical activity policies in Illinois"
+  },
+  "datalake/cdc_nutrition_physical_activity_and_obesity_legislation_a.csv": {
+    "__table__": "Nutrition and physical activity policy status in Minnesota"
+  },
+  "datalake/cihr_co-applicant_0.csv": {
+    "__table__": "Co-applicant information for research projects"
+  },
+  "datalake/cihr_co-applicant_1.csv": {
+    "__table__": "Co-applicant information for research projects"
+  },
+  "datalake/cihr_co-applicant_2.csv": {
+    "__table__": "Co-applicant information for research projects"
+  },
+  "datalake/cihr_co-applicant_3.csv": {
+    "__table__": "Co-applicant information for research projects"
+  },
+  "datalake/cihr_co-applicant_4.csv": {
+    "__table__": "Co-applicant information for research projects"
+  },
+  "datalake/cihr_co-applicant_5.csv": {
+    "__table__": "Co-applicant information for research projects"
+  },
+  "datalake/cihr_co-applicant_6.csv": {
+    "__table__": "Co-applicant information for research projects"
+  },
+  "datalake/cihr_co-applicant_7.csv": {
+    "__table__": "Co-applicant details for CIHR grants"
+  },
+  "datalake/cihr_co-applicant_8.csv": {
+    "__table__": "Co-applicant information for CIHR grants"
+  },
+  "datalake/cihr_co-applicant_9.csv": {
+    "__table__": "Co-applicant information for CIHR research projects"
+  },
+  "datalake/cihr_co-applicant_a.csv": {
+    "__table__": "Co-applicant information for research projects"
+  },
+  "datalake/cihr_co-applicant_b.csv": {
+    "__table__": "Co-applicant information for CIHR grants"
+  },
+  "datalake/civic_building_locations_0.csv": {
+    "__table__": "Civic building locations with details"
+  },
+  "datalake/civic_building_locations_1.csv": {
+    "__table__": "Civic building locations with contact information"
+  },
+  "datalake/civic_building_locations_10.csv": {
+    "__table__": "Civic building locations with geographic and administrative details"
+  },
+  "datalake/civic_building_locations_2.csv": {
+    "__table__": "Civic building locations with runtime"
+  },
+  "datalake/civic_building_locations_3.csv": {
+    "__table__": "Civic building locations with geographic and administrative details"
+  },
+  "datalake/civic_building_locations_4.csv": {
+    "__table__": "Civic building locations with geographic and administrative details"
+  },
+  "datalake/civic_building_locations_5.csv": {
+    "__table__": "Civic building locations with geographic coordinates"
+  },
+  "datalake/civic_building_locations_6.csv": {
+    "__table__": "Civic building locations with geographic and administrative details"
+  },
+  "datalake/civic_building_locations_7.csv": {
+    "__table__": "Civic building locations with geographic and administrative details"
+  },
+  "datalake/civic_building_locations_8.csv": {
+    "__table__": "Civic building locations with geographic coordinates and administrative details"
+  },
+  "datalake/civic_building_locations_9.csv": {
+    "__table__": "Civic building locations with geographic and administrative details"
+  },
+  "datalake/civic_building_locations_a.csv": {
+    "__table__": "Civic building locations with geographic and administrative details"
+  },
+  "datalake/complaint_by_practice_0.csv": {
+    "__table__": "Complaints by practice and business details"
+  },
+  "datalake/complaint_by_practice_1.csv": {
+    "__table__": "Complaints by practice with details including year opened, status, practice code, name, NAICS, business address, and unique identifiers"
+  },
+  "datalake/complaint_by_practice_10.csv": {
+    "__table__": "Complaints by practice with details including year opened, status, practice code, name, NAICS, business location, and IDs"
+  },
+  "datalake/complaint_by_practice_2.csv": {
+    "__table__": "Complaints by practice and business details"
+  },
+  "datalake/complaint_by_practice_3.csv": {
+    "__table__": "Complaints by practice with business details"
+  },
+  "datalake/complaint_by_practice_4.csv": {
+    "__table__": "Complaints by practice and business details"
+  },
+  "datalake/complaint_by_practice_5.csv": {
+    "__table__": "Complaints by practice opened in 2019"
+  },
+  "datalake/complaint_by_practice_6.csv": {
+    "__table__": "Complaints by practice opened in 2014"
+  },
+  "datalake/complaint_by_practice_7.csv": {
+    "__table__": "Complaints by practice opened in 2021"
+  },
+  "datalake/complaint_by_practice_8.csv": {
+    "__table__": "Complaints by practice opened in 2017"
+  },
+  "datalake/complaint_by_practice_9.csv": {
+    "__table__": "Complaints by practice opened in 2019"
+  },
+  "datalake/complaint_by_practice_a.csv": {
+    "__table__": "Complaints by retail practice"
+  },
+  "datalake/complaint_by_practice_b.csv": {
+    "__table__": "Complaints by practice with details including year opened, status, practice code, name, NAICS, business address, and IDs"
+  },
+  "datalake/contributors_parties_0.csv": {
+    "__table__": "Political contributions by party"
+  },
+  "datalake/contributors_parties_1.csv": {
+    "__table__": "Contributions to political parties"
+  },
+  "datalake/contributors_parties_10.csv": {
+    "__table__": "Monetary contributions to political parties"
+  },
+  "datalake/contributors_parties_11.csv": {
+    "__table__": "Monetary contributions to political parties"
+  },
+  "datalake/contributors_parties_12.csv": {
+    "__table__": "Contributions to political parties by entities"
+  },
+  "datalake/contributors_parties_13.csv": {
+    "__table__": "Contributions to political parties by recipients and contributors"
+  },
+  "datalake/contributors_parties_14.csv": {
+    "__table__": "Contributions to political parties by entities"
+  },
+  "datalake/contributors_parties_15.csv": {
+    "__table__": "Contributions to political parties by recipients and contributors"
+  },
+  "datalake/contributors_parties_16.csv": {
+    "__table__": "Political contributions by entity and recipient"
+  },
+  "datalake/contributors_parties_17.csv": {
+    "__table__": "Political contributions by entity and recipient"
+  },
+  "datalake/contributors_parties_18.csv": {
+    "__table__": "Political contributions to parties"
+  },
+  "datalake/contributors_parties_2.csv": {
+    "__table__": "Political contributions by registered parties"
+  },
+  "datalake/contributors_parties_3.csv": {
+    "__table__": "Political contributions by fiscal year"
+  },
+  "datalake/contributors_parties_4.csv": {
+    "__table__": "Contributions to political parties by recipients and contributors"
+  },
+  "datalake/contributors_parties_5.csv": {
+    "__table__": "Contributions to political parties by recipients and contributors"
+  },
+  "datalake/contributors_parties_6.csv": {
+    "__table__": "Contributions to political parties by recipients and contributors"
+  },
+  "datalake/contributors_parties_7.csv": {
+    "__table__": "Contributions to political parties by recipients and contributors"
+  },
+  "datalake/contributors_parties_8.csv": {
+    "__table__": "Monetary contributions to political parties"
+  },
+  "datalake/contributors_parties_9.csv": {
+    "__table__": "Monetary contributions to political entities"
+  },
+  "datalake/contributors_parties_a.csv": {
+    "__table__": "Monetary contributions to political parties by individuals"
+  },
+  "datalake/contributors_parties_b.csv": {
+    "__table__": "Political contributions by individuals to registered parties"
+  },
+  "datalake/data_mill_0.csv": {
+    "__table__": "Business rates and property details"
+  },
+  "datalake/data_mill_1.csv": {
+    "__table__": "Property tax and relief information"
+  },
+  "datalake/data_mill_10.csv": {
+    "__table__": "Property tax relief and status details"
+  },
+  "datalake/data_mill_11.csv": {
+    "__table__": "Property tax relief and occupancy details"
+  },
+  "datalake/data_mill_2.csv": {
+    "__table__": "Property tax relief and status details"
+  },
+  "datalake/data_mill_3.csv": {
+    "__table__": "Property tax and relief information"
+  },
+  "datalake/data_mill_4.csv": {
+    "__table__": "Property tax and relief details"
+  },
+  "datalake/data_mill_5.csv": {
+    "__table__": "Property tax and relief details"
+  },
+  "datalake/data_mill_6.csv": {
+    "__table__": "Property tax and relief details"
+  },
+  "datalake/data_mill_7.csv": {
+    "__table__": "Property tax and relief information"
+  },
+  "datalake/data_mill_8.csv": {
+    "__table__": "Property tax and relief information"
+  },
+  "datalake/data_mill_9.csv": {
+    "__table__": "Property tax and relief details for ratepayers"
+  },
+  "datalake/data_mill_a.csv": {
+    "__table__": "Property tax and relief details for ratepayers"
+  },
+  "datalake/data_mill_b.csv": {
+    "__table__": "Property tax and relief details"
+  },
+  "datalake/deaths_2012_2018_0.csv": {
+    "__table__": "Fatal incidents with location and cause details"
+  },
+  "datalake/deaths_2012_2018_1.csv": {
+    "__table__": "Fatal incidents with injury details and locations"
+  },
+  "datalake/deaths_2012_2018_2.csv": {
+    "__table__": "Fatal incidents with detailed injury and location information"
+  },
+  "datalake/deaths_2012_2018_3.csv": {
+    "__table__": "Fatal incidents with substance abuse involvement from 2012 to 2018"
+  },
+  "datalake/deaths_2012_2018_4.csv": {
+    "__table__": "Fatal incidents with details including location, injury, and cause of death"
+  },
+  "datalake/deaths_2012_2018_5.csv": {
+    "__table__": "Fatal incidents with demographic and injury details"
+  },
+  "datalake/deaths_2012_2018_6.csv": {
+    "__table__": "Fatal incidents with demographic and injury details"
+  },
+  "datalake/deaths_2012_2018_7.csv": {
+    "__table__": "Fatal incidents with demographic and injury details"
+  },
+  "datalake/deaths_2012_2018_8.csv": {
+    "__table__": "Fatal incidents with opiate toxicity from 2012 to 2018"
+  },
+  "datalake/deaths_2012_2018_9.csv": {
+    "__table__": "Fatal incidents with multidrug toxicity from 2012 to 2018"
+  },
+  "datalake/deaths_2012_2018_a.csv": {
+    "__table__": "Fatal incidents with demographic and injury details"
+  },
+  "datalake/field-operations-staff-hours-june-2019-to-may-2020.csv": {
+    "__table__": "Field operations staff hours from April 2020"
+  },
+  "datalake/field-operations-staff-hours-march-2016-to-february-2017.csv": {
+    "__table__": "Field operations staff hours from March 2016 to February 2017"
+  },
+  "datalake/field-operations-staff-hours-march-2017-to-february-2018.csv": {
+    "__table__": "Field operations staff hours from March 2017 to February 2018"
+  },
+  "datalake/field-operations-staff-hours-march-2018-to-february-2019.csv": {
+    "__table__": "Field operations staff hours from March 2018 to February 2019"
+  },
+  "datalake/field-operations-staff-hours-march-2020-to-february-2021.csv": {
+    "__table__": "Field operations staff hours from March 2020 to February 2021"
+  },
+  "datalake/figure-1.csv": {
+    "__table__": "Staff at higher education providers by employment mode and academic contract marker"
+  },
+  "datalake/figure-2.csv": {
+    "__table__": "Staff distribution by academic contract, occupation, atypical status, nationality, employment mode, gender, and academic year"
+  },
+  "datalake/figure-3.csv": {
+    "__table__": "Academic staff by employment details and gender"
+  },
+  "datalake/figure-4.csv": {
+    "__table__": "Staff employment details by contract type and sex"
+  },
+  "datalake/figure-5.csv": {
+    "__table__": "Staff distribution by employment mode, academic contract, and sex in the UK"
+  },
+  "datalake/figure-6.csv": {
+    "__table__": "Staff demographics by ethnicity and occupation"
+  },
+  "datalake/film_locations_in_san_francisco_0.csv": {
+    "__table__": "Film locations in San Francisco"
+  },
+  "datalake/film_locations_in_san_francisco_1.csv": {
+    "__table__": "Film locations in San Francisco"
+  },
+  "datalake/film_locations_in_san_francisco_10.csv": {
+    "__table__": "Film locations in San Francisco with production details"
+  },
+  "datalake/film_locations_in_san_francisco_11.csv": {
+    "__table__": "Film locations in San Francisco with production details"
+  },
+  "datalake/film_locations_in_san_francisco_2.csv": {
+    "__table__": "Film locations and production details in San Francisco"
+  },
+  "datalake/film_locations_in_san_francisco_3.csv": {
+    "__table__": "Film locations in San Francisco"
+  },
+  "datalake/film_locations_in_san_francisco_4.csv": {
+    "__table__": "Film locations and production details in San Francisco"
+  },
+  "datalake/film_locations_in_san_francisco_5.csv": {
+    "__table__": "Film locations in San Francisco"
+  },
+  "datalake/film_locations_in_san_francisco_6.csv": {
+    "__table__": "Film locations and details in San Francisco"
+  },
+  "datalake/film_locations_in_san_francisco_7.csv": {
+    "__table__": "Film locations in San Francisco"
+  },
+  "datalake/film_locations_in_san_francisco_8.csv": {
+    "__table__": "Film locations in San Francisco with production details"
+  },
+  "datalake/film_locations_in_san_francisco_9.csv": {
+    "__table__": "Film locations in San Francisco with production details"
+  },
+  "datalake/film_locations_in_san_francisco_a.csv": {
+    "__table__": "Film locations in San Francisco with production details"
+  },
+  "datalake/greener-homes-program-eligible-ground-source-heat-pumps-english.csv": {
+    "__table__": "Eligible ground source heat pumps for the Greener Homes Program"
+  },
+  "datalake/greener-homes-program-eligible-oil-boilers-english.csv": {
+    "__table__": "Eligible oil boilers for the Greener Homes Program"
+  },
+  "datalake/immigration_records_0.csv": {
+    "__table__": "Immigration records with personal details"
+  },
+  "datalake/immigration_records_1.csv": {
+    "__table__": "Immigration records with personal details"
+  },
+  "datalake/immigration_records_10.csv": {
+    "__table__": "Immigration records with origin and destination details"
+  },
+  "datalake/immigration_records_11.csv": {
+    "__table__": "Immigration records with origin and destination details"
+  },
+  "datalake/immigration_records_12.csv": {
+    "__table__": "Immigration records with demographic and travel details"
+  },
+  "datalake/immigration_records_13.csv": {
+    "__table__": "Immigration records with nationality and family information"
+  },
+  "datalake/immigration_records_14.csv": {
+    "__table__": "Immigration records with demographic and location details"
+  },
+  "datalake/immigration_records_2.csv": {
+    "__table__": "Immigration records with passenger details"
+  },
+  "datalake/immigration_records_3.csv": {
+    "__table__": "Immigration records of passengers"
+  },
+  "datalake/immigration_records_4.csv": {
+    "__table__": "Immigration records of individuals"
+  },
+  "datalake/immigration_records_5.csv": {
+    "__table__": "Immigration records with nationality and source URL"
+  },
+  "datalake/immigration_records_6.csv": {
+    "__table__": "Immigration records with personal details and links"
+  },
+  "datalake/immigration_records_7.csv": {
+    "__table__": "Immigration records with personal details and links"
+  },
+  "datalake/immigration_records_8.csv": {
+    "__table__": "Immigration records with passenger details"
+  },
+  "datalake/immigration_records_9.csv": {
+    "__table__": "Immigration records with nationality and link"
+  },
+  "datalake/immigration_records_a.csv": {
+    "__table__": "Immigration records with personal and demographic details"
+  },
+  "datalake/ipopayments_0.csv": {
+    "__table__": "Government department expense records"
+  },
+  "datalake/ipopayments_1.csv": {
+    "__table__": "Payment transactions for the Department for Business Innovation and Skills"
+  },
+  "datalake/ipopayments_10.csv": {
+    "__table__": "Payment transactions for the Intellectual Property Office"
+  },
+  "datalake/ipopayments_11.csv": {
+    "__table__": "Payment transactions for the Department for Business, Innovation and Skills"
+  },
+  "datalake/ipopayments_12.csv": {
+    "__table__": "Payment transactions for the Department for Business, Innovation and Skills"
+  },
+  "datalake/ipopayments_2.csv": {
+    "__table__": "Payment transactions for business expenses"
+  },
+  "datalake/ipopayments_3.csv": {
+    "__table__": "Government department expense transactions"
+  },
+  "datalake/ipopayments_4.csv": {
+    "__table__": "Payment transactions by government department"
+  },
+  "datalake/ipopayments_5.csv": {
+    "__table__": "Payment transactions for the Department for Business, Innovation and Skills"
+  },
+  "datalake/ipopayments_6.csv": {
+    "__table__": "Payment transactions for IT contractors"
+  },
+  "datalake/ipopayments_7.csv": {
+    "__table__": "Payment transactions for the Department for Business, Innovation and Skills"
+  },
+  "datalake/ipopayments_8.csv": {
+    "__table__": "Payment transactions for business expenses"
+  },
+  "datalake/ipopayments_9.csv": {
+    "__table__": "Payment transactions for travel and subsistence expenses"
+  },
+  "datalake/ipopayments_a.csv": {
+    "__table__": "Payment transactions by department"
+  },
+  "datalake/ipopayments_b.csv": {
+    "__table__": "Government department expenses"
+  },
+  "datalake/job_pay_scales_0.csv": {
+    "__table__": "Job pay scales for the Department for Transport"
+  },
+  "datalake/job_pay_scales_1.csv": {
+    "__table__": "Job pay scales for the Department for Transport"
+  },
+  "datalake/job_pay_scales_10.csv": {
+    "__table__": "Job pay scales for HMRC"
+  },
+  "datalake/job_pay_scales_11.csv": {
+    "__table__": "Job pay scales and details for HMRC positions"
+  },
+  "datalake/job_pay_scales_12.csv": {
+    "__table__": "Job pay scales for HMRC tax professionals"
+  },
+  "datalake/job_pay_scales_13.csv": {
+    "__table__": "Job pay scales and roles within Her Majesty's Revenue and Customs"
+  },
+  "datalake/job_pay_scales_2.csv": {
+    "__table__": "Job pay scales and details for Trinity House employees"
+  },
+  "datalake/job_pay_scales_3.csv": {
+    "__table__": "Job pay scales for the Department for Transport"
+  },
+  "datalake/job_pay_scales_4.csv": {
+    "__table__": "Job pay scales for the Department for Transport"
+  },
+  "datalake/job_pay_scales_5.csv": {
+    "__table__": "Job pay scales and details for Trinity House positions"
+  },
+  "datalake/job_pay_scales_6.csv": {
+    "__table__": "Job pay scales for the Department for Transport"
+  },
+  "datalake/job_pay_scales_7.csv": {
+    "__table__": "Job pay scales and details for Trinity House employees"
+  },
+  "datalake/job_pay_scales_8.csv": {
+    "__table__": "Job pay scales for the Department for Transport"
+  },
+  "datalake/job_pay_scales_9.csv": {
+    "__table__": "Job pay scales for the Department for Transport"
+  },
+  "datalake/job_pay_scales_a.csv": {
+    "__table__": "Job pay scales for the Department for Transport"
+  },
+  "datalake/lane_description_0.csv": {
+    "__table__": "Lane traffic volume and direction details"
+  },
+  "datalake/lane_description_1.csv": {
+    "__table__": "Lane traffic volume and direction details"
+  },
+  "datalake/lane_description_10.csv": {
+    "__table__": "Lane traffic volume and bin distribution"
+  },
+  "datalake/lane_description_11.csv": {
+    "__table__": "Lane traffic volume and direction details"
+  },
+  "datalake/lane_description_12.csv": {
+    "__table__": "Lane traffic volume and direction details"
+  },
+  "datalake/lane_description_13.csv": {
+    "__table__": "Lane traffic volume and direction details"
+  },
+  "datalake/lane_description_2.csv": {
+    "__table__": "Lane traffic volume and direction details"
+  },
+  "datalake/lane_description_3.csv": {
+    "__table__": "Lane traffic volume and direction details"
+  },
+  "datalake/lane_description_4.csv": {
+    "__table__": "Lane traffic volume and direction details"
+  },
+  "datalake/lane_description_5.csv": {
+    "__table__": "Lane traffic volume and direction details"
+  },
+  "datalake/lane_description_6.csv": {
+    "__table__": "Lane traffic volume and direction details"
+  },
+  "datalake/lane_description_7.csv": {
+    "__table__": "Lane traffic volume and direction details"
+  },
+  "datalake/lane_description_8.csv": {
+    "__table__": "Lane traffic volume and setup details"
+  },
+  "datalake/lane_description_9.csv": {
+    "__table__": "Lane traffic volume and direction details"
+  },
+  "datalake/lane_description_a.csv": {
+    "__table__": "Lane traffic volume and direction details"
+  },
+  "datalake/lane_description_b.csv": {
+    "__table__": "Lane traffic volume and direction details"
+  },
+  "datalake/mines_0.csv": {
+    "__table__": "Fiscal year payments for industry department"
+  },
+  "datalake/mines_1.csv": {
+    "__table__": "Fiscal year payments for departmental objects"
+  },
+  "datalake/mines_10.csv": {
+    "__table__": "Fiscal year payments to individuals by department"
+  },
+  "datalake/mines_11.csv": {
+    "__table__": "Payment details for National Defence"
+  },
+  "datalake/mines_2.csv": {
+    "__table__": "Fiscal year payments for mine departments"
+  },
+  "datalake/mines_3.csv": {
+    "__table__": "Fiscal year payments for departmental objects"
+  },
+  "datalake/mines_4.csv": {
+    "__table__": "Fiscal year payments for departmental objectives"
+  },
+  "datalake/mines_5.csv": {
+    "__table__": "Financial payments for mine operations by department and object category"
+  },
+  "datalake/mines_6.csv": {
+    "__table__": "Fiscal year payments for special industry machinery by department"
+  },
+  "datalake/mines_7.csv": {
+    "__table__": "Fiscal year payments for plumbing equipment by department"
+  },
+  "datalake/mines_8.csv": {
+    "__table__": "Fiscal year payments for departmental computer equipment and operations environment"
+  },
+  "datalake/mines_9.csv": {
+    "__table__": "Payment details for chemical agent testing compensation"
+  },
+  "datalake/mines_a.csv": {
+    "__table__": "Fiscal year payments for government departments"
+  },
+  "datalake/mines_b.csv": {
+    "__table__": "Payment details for damages to personal vehicles by government departments"
+  },
+  "datalake/minister_meetings_0.csv": {
+    "__table__": "Ministerial hospitality records"
+  },
+  "datalake/minister_meetings_1.csv": {
+    "__table__": "Ministerial travel expenses and details"
+  },
+  "datalake/minister_meetings_2.csv": {
+    "__table__": "Ministerial meetings with organizations and individuals"
+  },
+  "datalake/minister_meetings_3.csv": {
+    "__table__": "Ministerial meetings with external parties"
+  },
+  "datalake/minister_meetings_4.csv": {
+    "__table__": "Ministerial meetings with organizations and individuals"
+  },
+  "datalake/minister_meetings_5.csv": {
+    "__table__": "Ministerial meetings with automotive industry representatives"
+  },
+  "datalake/minister_meetings_6.csv": {
+    "__table__": "Ministerial meetings with organizations and individuals"
+  },
+  "datalake/minister_meetings_8.csv": {
+    "__table__": "Ministerial meetings with hospitality details"
+  },
+  "datalake/minister_meetings_9.csv": {
+    "__table__": "Ministerial meetings with hospitality details"
+  },
+  "datalake/minister_meetings_a.csv": {
+    "__table__": "Ministerial meetings with hospitality details"
+  },
+  "datalake/monthly_data_feed_0.csv": {
+    "__table__": "Daily traffic counts at site locations"
+  },
+  "datalake/monthly_data_feed_1.csv": {
+    "__table__": "Monthly traffic counts by location and time"
+  },
+  "datalake/monthly_data_feed_10.csv": {
+    "__table__": "Monthly data feed with hourly counts of people entering and exiting various locations"
+  },
+  "datalake/monthly_data_feed_2.csv": {
+    "__table__": "Monthly data feed with hourly counts of people entering and exiting various locations, including business and factored counts"
+  },
+  "datalake/monthly_data_feed_3.csv": {
+    "__table__": "Daily traffic counts at specific locations"
+  },
+  "datalake/monthly_data_feed_4.csv": {
+    "__table__": "Monthly data feed for site traffic counts"
+  },
+  "datalake/monthly_data_feed_5.csv": {
+    "__table__": "Hourly foot traffic counts at locations"
+  },
+  "datalake/monthly_data_feed_6.csv": {
+    "__table__": "Monthly data feed for site traffic counts"
+  },
+  "datalake/monthly_data_feed_7.csv": {
+    "__table__": "Monthly data feed for site traffic counts"
+  },
+  "datalake/monthly_data_feed_8.csv": {
+    "__table__": "Monthly data feed for site traffic counts"
+  },
+  "datalake/monthly_data_feed_9.csv": {
+    "__table__": "Monthly pedestrian counts by location and time"
+  },
+  "datalake/monthly_data_feed_a.csv": {
+    "__table__": "Monthly foot traffic and business counts by location and time"
+  },
+  "datalake/monthly_data_feed_b.csv": {
+    "__table__": "Monthly pedestrian counts by location and time"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_0.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_1.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_10.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_11.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_12.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_13.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_14.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_15.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_16.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_17.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_18.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_19.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_2.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_20.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_21.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_22.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_23.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_24.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_25.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_26.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_27.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_28.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_29.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_3.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_4.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_5.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_6.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_7.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_8.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_9.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/new_york_city_restaurant_inspection_results_a.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "datalake/oil_and_gas_summary_production_data_1967_1999_0.csv": {
+    "__table__": "Oil and gas production data summary from 1967 to 1999"
+  },
+  "datalake/oil_and_gas_summary_production_data_1967_1999_1.csv": {
+    "__table__": "Oil and gas production data summary from 1967 to 1999"
+  },
+  "datalake/oil_and_gas_summary_production_data_1967_1999_2.csv": {
+    "__table__": "Oil and gas production data from 1967 to 1999"
+  },
+  "datalake/oil_and_gas_summary_production_data_1967_1999_3.csv": {
+    "__table__": "Oil and gas production data summary from 1967 to 1999"
+  },
+  "datalake/oil_and_gas_summary_production_data_1967_1999_4.csv": {
+    "__table__": "Oil and gas production data summary from 1967 to 1999"
+  },
+  "datalake/oil_and_gas_summary_production_data_1967_1999_5.csv": {
+    "__table__": "Oil and gas production data summary from 1967 to 1999"
+  },
+  "datalake/oil_and_gas_summary_production_data_1967_1999_6.csv": {
+    "__table__": "Annual gas well production summary"
+  },
+  "datalake/oil_and_gas_summary_production_data_1967_1999_7.csv": {
+    "__table__": "Annual gas well production summary"
+  },
+  "datalake/oil_and_gas_summary_production_data_1967_1999_8.csv": {
+    "__table__": "Annual gas well production summary in Erie County, New York"
+  },
+  "datalake/oil_and_gas_summary_production_data_1967_1999_9.csv": {
+    "__table__": "Oil and gas production data by year, operator, county, town, and formation"
+  },
+  "datalake/oil_and_gas_summary_production_data_1967_1999_a.csv": {
+    "__table__": "Oil and gas production data from 1967 to 1999"
+  },
+  "datalake/practice_reference_0.csv": {
+    "__table__": "Practice reference with patient count"
+  },
+  "datalake/practice_reference_1.csv": {
+    "__table__": "Practice reference with patient count"
+  },
+  "datalake/practice_reference_10.csv": {
+    "__table__": "Practice reference with patient registration details"
+  },
+  "datalake/practice_reference_11.csv": {
+    "__table__": "Practice reference with patient count"
+  },
+  "datalake/practice_reference_12.csv": {
+    "__table__": "Practice reference with patient count"
+  },
+  "datalake/practice_reference_2.csv": {
+    "__table__": "Practice reference with patient registration details"
+  },
+  "datalake/practice_reference_3.csv": {
+    "__table__": "Practice information with registered patients"
+  },
+  "datalake/practice_reference_4.csv": {
+    "__table__": "Practice reference with patient registration details"
+  },
+  "datalake/practice_reference_5.csv": {
+    "__table__": "Practice reference with patient count"
+  },
+  "datalake/practice_reference_6.csv": {
+    "__table__": "Practice reference with patient count"
+  },
+  "datalake/practice_reference_7.csv": {
+    "__table__": "Practice information with registered patients"
+  },
+  "datalake/practice_reference_8.csv": {
+    "__table__": "Practice information with registered patients"
+  },
+  "datalake/practice_reference_9.csv": {
+    "__table__": "Medical practice details with patient count"
+  },
+  "datalake/practice_reference_a.csv": {
+    "__table__": "Practice reference with patient count"
+  },
+  "datalake/practice_reference_b.csv": {
+    "__table__": "Medical practice details including location and patient count"
+  },
+  "datalake/prescribing_0.csv": {
+    "__table__": "Prescription details for medical practices"
+  },
+  "datalake/prescribing_1.csv": {
+    "__table__": "Prescription details for a specific practice"
+  },
+  "datalake/prescribing_10.csv": {
+    "__table__": "Prescription details for a medical practice"
+  },
+  "datalake/prescribing_11.csv": {
+    "__table__": "Prescription details for medical practices"
+  },
+  "datalake/prescribing_12.csv": {
+    "__table__": "Prescription details for medical practices"
+  },
+  "datalake/prescribing_2.csv": {
+    "__table__": "Prescription details for a specific practice"
+  },
+  "datalake/prescribing_3.csv": {
+    "__table__": "Prescription details for medical practices"
+  },
+  "datalake/prescribing_4.csv": {
+    "__table__": "Prescription details for a specific practice"
+  },
+  "datalake/prescribing_5.csv": {
+    "__table__": "Prescription details for Pyridoxine tablets"
+  },
+  "datalake/prescribing_6.csv": {
+    "__table__": "Prescription details for a specific practice"
+  },
+  "datalake/prescribing_7.csv": {
+    "__table__": "Prescription details for a specific practice"
+  },
+  "datalake/prescribing_8.csv": {
+    "__table__": "Prescription details for a specific practice"
+  },
+  "datalake/prescribing_9.csv": {
+    "__table__": "Prescription details for a specific practice"
+  },
+  "datalake/prescribing_a.csv": {
+    "__table__": "Prescription details for medical practices"
+  },
+  "datalake/prescribing_b.csv": {
+    "__table__": "Prescription details for medical practices"
+  },
+  "datalake/psyckes_antipsychotic_polypharmacy_quality_indicators_beginning_2012_0.csv": {
+    "__table__": "Antipsychotic polypharmacy quality indicators for adults in Warren County"
+  },
+  "datalake/psyckes_antipsychotic_polypharmacy_quality_indicators_beginning_2012_1.csv": {
+    "__table__": "Antipsychotic polypharmacy quality indicators for adults in Rensselaer County"
+  },
+  "datalake/psyckes_antipsychotic_polypharmacy_quality_indicators_beginning_2012_2.csv": {
+    "__table__": "Antipsychotic polypharmacy quality indicators for youth in Brooklyn"
+  },
+  "datalake/psyckes_antipsychotic_polypharmacy_quality_indicators_beginning_2012_3.csv": {
+    "__table__": "Antipsychotic polypharmacy quality indicators for youth in Manhattan"
+  },
+  "datalake/psyckes_antipsychotic_polypharmacy_quality_indicators_beginning_2012_4.csv": {
+    "__table__": "Antipsychotic polypharmacy quality indicators for adults aged 18+ in Allegany County"
+  },
+  "datalake/psyckes_antipsychotic_polypharmacy_quality_indicators_beginning_2012_5.csv": {
+    "__table__": "Antipsychotic polypharmacy quality indicators for adults in Nassau County"
+  },
+  "datalake/psyckes_antipsychotic_polypharmacy_quality_indicators_beginning_2012_6.csv": {
+    "__table__": "Antipsychotic polypharmacy quality indicators for adults in Schoharie County"
+  },
+  "datalake/psyckes_antipsychotic_polypharmacy_quality_indicators_beginning_2012_7.csv": {
+    "__table__": "Antipsychotic polypharmacy quality indicators for adults in Warren County"
+  },
+  "datalake/psyckes_antipsychotic_polypharmacy_quality_indicators_beginning_2012_8.csv": {
+    "__table__": "Antipsychotic polypharmacy quality indicators for adults in Manhattan"
+  },
+  "datalake/psyckes_antipsychotic_polypharmacy_quality_indicators_beginning_2012_9.csv": {
+    "__table__": "Antipsychotic polypharmacy quality indicators for youth in Schenectady County"
+  },
+  "datalake/psyckes_antipsychotic_polypharmacy_quality_indicators_beginning_2012_a.csv": {
+    "__table__": "Antipsychotic polypharmacy quality indicators for providers in the Hudson River region"
+  },
+  "datalake/purchasing_card_0.csv": {
+    "__table__": "Purchasing card transactions for Stockport MBC"
+  },
+  "datalake/purchasing_card_1.csv": {
+    "__table__": "Purchasing card transactions for Stockport MBC"
+  },
+  "datalake/purchasing_card_10.csv": {
+    "__table__": "Purchasing card transactions for Stockport MBC"
+  },
+  "datalake/purchasing_card_11.csv": {
+    "__table__": "Purchasing card transactions for Stockport MBC"
+  },
+  "datalake/purchasing_card_2.csv": {
+    "__table__": "Purchasing card transactions for Stockport MBC"
+  },
+  "datalake/purchasing_card_3.csv": {
+    "__table__": "Purchasing card transactions for Stockport MBC"
+  },
+  "datalake/purchasing_card_4.csv": {
+    "__table__": "Purchasing card transactions for Stockport MBC"
+  },
+  "datalake/purchasing_card_5.csv": {
+    "__table__": "Purchasing card transactions for Stockport MBC"
+  },
+  "datalake/purchasing_card_6.csv": {
+    "__table__": "Purchasing card transactions for Stockport MBC"
+  },
+  "datalake/purchasing_card_7.csv": {
+    "__table__": "Purchasing card transactions for Stockport MBC"
+  },
+  "datalake/purchasing_card_8.csv": {
+    "__table__": "Purchasing card transactions for Stockport MBC"
+  },
+  "datalake/purchasing_card_9.csv": {
+    "__table__": "Purchasing card transactions for Stockport MBC"
+  },
+  "datalake/purchasing_card_a.csv": {
+    "__table__": "Purchasing card transactions for local government services"
+  },
+  "datalake/report_card_discipline_for_2015_16_0.csv": {
+    "__table__": "Discipline rates for male students at Pine Lake Middle School"
+  },
+  "datalake/report_card_discipline_for_2015_16_1.csv": {
+    "__table__": "Discipline rates for students without disabilities at Housel Middle School in Benton County for the 2015-16 school year"
+  },
+  "datalake/report_card_discipline_for_2015_16_2.csv": {
+    "__table__": "Disciplinary actions for special education male students in Cowlitz County, 2015-16"
+  },
+  "datalake/report_card_discipline_for_2015_16_3.csv": {
+    "__table__": "Discipline rates for male students at White River High School"
+  },
+  "datalake/report_card_discipline_for_2015_16_4.csv": {
+    "__table__": "Disciplinary actions for student groups in schools"
+  },
+  "datalake/report_card_discipline_for_2015_16_5.csv": {
+    "__table__": "Disciplinary actions for student groups in schools"
+  },
+  "datalake/report_card_discipline_for_2015_16_6.csv": {
+    "__table__": "Disciplinary actions for students with Section 504 accommodations in Clark County schools for the 2015-16 school year"
+  },
+  "datalake/report_card_discipline_for_2015_16_7.csv": {
+    "__table__": "Discipline rates for male students at Forks Intermediate School in Clallam County for the 2015-16 school year"
+  },
+  "datalake/report_card_discipline_for_2015_16_8.csv": {
+    "__table__": "Discipline rates for non-foster care students in Pierce County"
+  },
+  "datalake/report_card_discipline_for_2015_16_9.csv": {
+    "__table__": "Discipline rates for students with disabilities at Mountain View Middle School in Kitsap County for the 2015-16 school year"
+  },
+  "datalake/report_card_discipline_for_2015_16_a.csv": {
+    "__table__": "Disciplinary actions for non-English language learners at Phoenix High School in Kennewick School District, Benton County, for the 2015-16 school year"
+  },
+  "datalake/senior_officials_expenses_0.csv": {
+    "__table__": "Senior officials' travel expenses"
+  },
+  "datalake/senior_officials_expenses_1.csv": {
+    "__table__": "Senior officials' expenses for trips"
+  },
+  "datalake/senior_officials_expenses_2.csv": {
+    "__table__": "Senior officials' travel expenses"
+  },
+  "datalake/senior_officials_expenses_3.csv": {
+    "__table__": "Senior officials' travel expenses"
+  },
+  "datalake/senior_officials_expenses_4.csv": {
+    "__table__": "Senior officials' travel expenses"
+  },
+  "datalake/senior_officials_expenses_5.csv": {
+    "__table__": "Senior officials' travel expenses"
+  },
+  "datalake/senior_officials_expenses_6.csv": {
+    "__table__": "Senior officials' travel expenses"
+  },
+  "datalake/senior_officials_expenses_7.csv": {
+    "__table__": "Senior officials' hospitality expenses"
+  },
+  "datalake/senior_officials_expenses_8.csv": {
+    "__table__": "Senior officials' travel and expense records"
+  },
+  "datalake/senior_officials_expenses_9.csv": {
+    "__table__": "Senior officials' travel expenses"
+  },
+  "datalake/senior_officials_expenses_a.csv": {
+    "__table__": "Senior officials' travel expenses"
+  },
+  "datalake/stockport_contracts_0.csv": {
+    "__table__": "Council contracts for social community care services"
+  },
+  "datalake/stockport_contracts_1.csv": {
+    "__table__": "Stockport Council transport contracts details"
+  },
+  "datalake/stockport_contracts_10.csv": {
+    "__table__": "Stockport Council contracts with suppliers"
+  },
+  "datalake/stockport_contracts_11.csv": {
+    "__table__": "Stockport Council contracts for social community care services"
+  },
+  "datalake/stockport_contracts_2.csv": {
+    "__table__": "Stockport Council contracts details"
+  },
+  "datalake/stockport_contracts_3.csv": {
+    "__table__": "Stockport Council electricity contract details"
+  },
+  "datalake/stockport_contracts_5.csv": {
+    "__table__": "Stockport Council's ongoing consultancy contracts"
+  },
+  "datalake/stockport_contracts_6.csv": {
+    "__table__": "Stockport Council contracts for training services"
+  },
+  "datalake/stockport_contracts_7.csv": {
+    "__table__": "Stockport Council contracts for social community care services"
+  },
+  "datalake/stockport_contracts_8.csv": {
+    "__table__": "Stockport Council contracts with suppliers"
+  },
+  "datalake/stockport_contracts_9.csv": {
+    "__table__": "Stockport Council contracts with suppliers"
+  },
+  "datalake/stockport_contracts_a.csv": {
+    "__table__": "Stockport Council contract details"
+  },
+  "datalake/stockport_contracts_b.csv": {
+    "__table__": "Contract details for Stockport Council's IT and office equipment services"
+  },
+  "datalake/time_spent_watching_vcr_movies_0.csv": {
+    "__table__": "Time spent watching VCR movies by age group"
+  },
+  "datalake/time_spent_watching_vcr_movies_1.csv": {
+    "__table__": "Time spent on activities by age group"
+  },
+  "datalake/time_spent_watching_vcr_movies_2.csv": {
+    "__table__": "Time spent on activities by age group"
+  },
+  "datalake/time_spent_watching_vcr_movies_3.csv": {
+    "__table__": "Time spent playing computer games"
+  },
+  "datalake/time_spent_watching_vcr_movies_4.csv": {
+    "__table__": "Time spent watching VCR movies"
+  },
+  "datalake/time_spent_watching_vcr_movies_5.csv": {
+    "__table__": "Time spent watching VCR movies by males aged 15 in Russia"
+  },
+  "datalake/time_spent_watching_vcr_movies_6.csv": {
+    "__table__": "Time spent watching VCR movies by females aged 15 years"
+  },
+  "datalake/time_spent_watching_vcr_movies_7.csv": {
+    "__table__": "Time spent watching VCR movies by males aged 13 years"
+  },
+  "datalake/time_spent_watching_vcr_movies_8.csv": {
+    "__table__": "Time spent playing computer games by males aged 15"
+  },
+  "datalake/time_spent_watching_vcr_movies_9.csv": {
+    "__table__": "Time spent playing computer games"
+  },
+  "datalake/time_spent_watching_vcr_movies_a.csv": {
+    "__table__": "Time spent playing computer games in Greece"
+  },
+  "datalake/tuition_assistance_program_tap_recipients_0.csv": {
+    "__table__": "TAP recipient financial assistance details"
+  },
+  "datalake/tuition_assistance_program_tap_recipients_1.csv": {
+    "__table__": "TAP recipient financial details by academic year, level, and demographic characteristics"
+  },
+  "datalake/tuition_assistance_program_tap_recipients_2.csv": {
+    "__table__": "TAP recipient financial assistance details"
+  },
+  "datalake/tuition_assistance_program_tap_recipients_3.csv": {
+    "__table__": "TAP recipient financial details by academic year, level, and demographic"
+  },
+  "datalake/tuition_assistance_program_tap_recipients_4.csv": {
+    "__table__": "TAP recipient financial details by academic year, level, sector, age, and financial status"
+  },
+  "datalake/tuition_assistance_program_tap_recipients_5.csv": {
+    "__table__": "TAP recipient financial status and demographics"
+  },
+  "datalake/tuition_assistance_program_tap_recipients_6.csv": {
+    "__table__": "TAP recipient financial assistance details"
+  },
+  "datalake/tuition_assistance_program_tap_recipients_7.csv": {
+    "__table__": "TAP recipient financial details by academic year, level, sector, age, and financial status"
+  },
+  "datalake/tuition_assistance_program_tap_recipients_8.csv": {
+    "__table__": "TAP recipient financial details by academic year, level, study type, sector, age, and financial status"
+  },
+  "datalake/tuition_assistance_program_tap_recipients_9.csv": {
+    "__table__": "TAP recipient financial status and demographics"
+  },
+  "datalake/tuition_assistance_program_tap_recipients_a.csv": {
+    "__table__": "TAP recipients' demographic and financial details"
+  },
+  "datalake/wholesale_markets_0.csv": {
+    "__table__": "Wholesale market applications"
+  },
+  "datalake/wholesale_markets_1.csv": {
+    "__table__": "Wholesale market applications"
+  },
+  "datalake/wholesale_markets_2.csv": {
+    "__table__": "Wholesale market applications"
+  },
+  "datalake/wholesale_markets_3.csv": {
+    "__table__": "Wholesale market applications"
+  },
+  "datalake/wholesale_markets_4.csv": {
+    "__table__": "Wholesale market applications"
+  },
+  "datalake/wholesale_markets_5.csv": {
+    "__table__": "Wholesale market applications"
+  },
+  "datalake/wholesale_markets_6.csv": {
+    "__table__": "Wholesale market applications"
+  },
+  "datalake/wholesale_markets_7.csv": {
+    "__table__": "Wholesale market applications"
+  },
+  "datalake/wholesale_markets_8.csv": {
+    "__table__": "Wholesale market applications"
+  },
+  "datalake/wholesale_markets_9.csv": {
+    "__table__": "Wholesale market applications"
+  },
+  "datalake/wholesale_markets_a.csv": {
+    "__table__": "Wholesale market applications"
+  },
+  "datalake/workforce_management_information_0.csv": {
+    "__table__": "Workforce management information including headcount, full-time equivalents, and costs for various staff categories across organizations"
+  },
+  "datalake/workforce_management_information_1.csv": {
+    "__table__": "Workforce management information including headcount, full-time equivalents, and costs for payroll and non-payroll staff across various grades and types of organizations"
+  },
+  "datalake/workforce_management_information_10.csv": {
+    "__table__": "Workforce management information including headcount, full-time equivalents, and costs for various staff grades and types within organizations"
+  },
+  "datalake/workforce_management_information_11.csv": {
+    "__table__": "Workforce management and cost details for British Transport Police Authority"
+  },
+  "datalake/workforce_management_information_12.csv": {
+    "__table__": "Workforce management and cost details for British Transport Police Authority"
+  },
+  "datalake/workforce_management_information_13.csv": {
+    "__table__": "Workforce management and cost details for British Transport Police Authority"
+  },
+  "datalake/workforce_management_information_14.csv": {
+    "__table__": "Workforce management and cost details for British Transport Police Authority"
+  },
+  "datalake/workforce_management_information_15.csv": {
+    "__table__": "Workforce management and cost details for British Transport Police Authority"
+  },
+  "datalake/workforce_management_information_2.csv": {
+    "__table__": "Workforce management information including headcount, full-time equivalents, and costs for payroll and non-payroll staff across various grades and types of organizations"
+  },
+  "datalake/workforce_management_information_3.csv": {
+    "__table__": "Workforce management information including headcount, full-time equivalents, and costs for payroll and non-payroll staff across various grades and types of organizations"
+  },
+  "datalake/workforce_management_information_4.csv": {
+    "__table__": "Workforce management information including headcount, full-time equivalents, and costs for payroll and non-payroll staff across various grades and types of organizations"
+  },
+  "datalake/workforce_management_information_5.csv": {
+    "__table__": "Workforce management information including headcount, full-time equivalents, and costs for payroll and non-payroll staff across various grades and types of organizations"
+  },
+  "datalake/workforce_management_information_6.csv": {
+    "__table__": "Workforce management information including headcount, full-time equivalents, and costs for various staff categories"
+  },
+  "datalake/workforce_management_information_7.csv": {
+    "__table__": "Workforce management information including headcount, full-time equivalents, and costs for payroll and non-payroll staff across various grades and types of organizations"
+  },
+  "datalake/workforce_management_information_8.csv": {
+    "__table__": "Workforce management information including headcount, full-time equivalents, and costs for payroll and non-payroll staff across various grades and types of organizations"
+  },
+  "datalake/workforce_management_information_9.csv": {
+    "__table__": "Workforce management information including headcount, full-time equivalents, and costs for various staff categories across organizations"
+  },
+  "datalake/workforce_management_information_a.csv": {
+    "__table__": "Workforce management information including headcount, full-time equivalents, and costs for payroll and non-payroll staff across various grades and types of organizations"
+  },
+  "datalake/workforce_management_information_b.csv": {
+    "__table__": "Workforce management information including headcount, full-time equivalents, and costs for various staff categories"
+  },
+  "datalake/ydn_spending_data_0.csv": {
+    "__table__": "Spending transactions of Yorkshire Dales National Park Authority"
+  },
+  "datalake/ydn_spending_data_1.csv": {
+    "__table__": "Spending transactions of Yorkshire Dales National Park Authority"
+  },
+  "datalake/ydn_spending_data_2.csv": {
+    "__table__": "Spending transactions of Yorkshire Dales National Park Authority"
+  },
+  "datalake/ydn_spending_data_3.csv": {
+    "__table__": "Spending transactions of Yorkshire Dales National Park Authority"
+  },
+  "datalake/ydn_spending_data_4.csv": {
+    "__table__": "Spending transactions of Yorkshire Dales National Park Authority"
+  },
+  "datalake/ydn_spending_data_5.csv": {
+    "__table__": "Spending transactions of Yorkshire Dales National Park Authority"
+  },
+  "datalake/ydn_spending_data_6.csv": {
+    "__table__": "Spending transactions of Yorkshire Dales National Park Authority"
+  },
+  "datalake/ydn_spending_data_7.csv": {
+    "__table__": "Spending transactions of Yorkshire Dales National Park Authority"
+  },
+  "datalake/ydn_spending_data_8.csv": {
+    "__table__": "Spending transactions of Yorkshire Dales National Park Authority"
+  },
+  "datalake/ydn_spending_data_9.csv": {
+    "__table__": "Spending transactions of Yorkshire Dales National Park Authority"
+  },
+  "datalake/ydn_spending_data_a.csv": {
+    "__table__": "Spending transactions of Yorkshire Dales National Park Authority"
+  },
+  "datalake/ydn_spending_data_b.csv": {
+    "__table__": "Grant transactions for sustainable development projects"
+  },
+  "query/311_calls_historic_data_a.csv": {
+    "__table__": "Historic 311 service requests"
+  },
+  "query/abandoned_wells_a.csv": {
+    "__table__": "Abandoned well information"
+  },
+  "query/albums_a.csv": {
+    "__table__": "Album track information"
+  },
+  "query/albums_b.csv": {
+    "__table__": "Album information for artists"
+  },
+  "query/animal_tag_data_a.csv": {
+    "__table__": "Animal tag and vaccination information"
+  },
+  "query/animal_tag_data_b.csv": {
+    "__table__": "Animal tag registration details"
+  },
+  "query/biodiversity_a.csv": {
+    "__table__": "Biodiversity records for protected species in New York"
+  },
+  "query/business_rates_a.csv": {
+    "__table__": "Business rates assessment details"
+  },
+  "query/cdc_nutrition_physical_activity_and_obesity_legislation_a.csv": {
+    "__table__": "Nutrition and physical activity policy status in Minnesota"
+  },
+  "query/cihr_co-applicant_a.csv": {
+    "__table__": "Co-applicant information for research projects"
+  },
+  "query/cihr_co-applicant_b.csv": {
+    "__table__": "Co-applicant information for research projects"
+  },
+  "query/civic_building_locations_a.csv": {
+    "__table__": "Civic building locations with geographic and administrative details"
+  },
+  "query/complaint_by_practice_a.csv": {
+    "__table__": "Complaints by retail practice"
+  },
+  "query/complaint_by_practice_b.csv": {
+    "__table__": "Complaints by practice with details including year opened, status, practice code, name, NAICS, business address, and IDs"
+  },
+  "query/contributors_parties_a.csv": {
+    "__table__": "Political contributions by individuals"
+  },
+  "query/contributors_parties_b.csv": {
+    "__table__": "Political contributions by individuals to registered parties"
+  },
+  "query/data_mill_a.csv": {
+    "__table__": "Property tax and relief details for ratepayers"
+  },
+  "query/data_mill_b.csv": {
+    "__table__": "Property tax and relief details"
+  },
+  "query/deaths_2012_2018_a.csv": {
+    "__table__": "Fatal incidents with demographic and injury details"
+  },
+  "query/film_locations_in_san_francisco_a.csv": {
+    "__table__": "Film locations in San Francisco"
+  },
+  "query/immigration_records_a.csv": {
+    "__table__": "Immigration records with personal details and links"
+  },
+  "query/ipopayments_a.csv": {
+    "__table__": "Payment transactions by department"
+  },
+  "query/ipopayments_b.csv": {
+    "__table__": "Government department expenses"
+  },
+  "query/job_pay_scales_a.csv": {
+    "__table__": "Job pay scales for the Department for Transport"
+  },
+  "query/lane_description_a.csv": {
+    "__table__": "Lane traffic volume and direction details"
+  },
+  "query/lane_description_b.csv": {
+    "__table__": "Lane traffic volume and direction details"
+  },
+  "query/mines_a.csv": {
+    "__table__": "Fiscal year payments for government departments"
+  },
+  "query/mines_b.csv": {
+    "__table__": "Payment details for damages to personal vehicles by government departments"
+  },
+  "query/minister_meetings_a.csv": {
+    "__table__": "Ministerial meetings with hospitality details"
+  },
+  "query/monthly_data_feed_a.csv": {
+    "__table__": "Monthly data feed for site traffic counts"
+  },
+  "query/monthly_data_feed_b.csv": {
+    "__table__": "Monthly pedestrian counts by site and day"
+  },
+  "query/new_york_city_restaurant_inspection_results_a.csv": {
+    "__table__": "New York City restaurant inspection results"
+  },
+  "query/oil_and_gas_summary_production_data_1967_1999_a.csv": {
+    "__table__": "Oil and gas production data from 1967 to 1999"
+  },
+  "query/practice_reference_a.csv": {
+    "__table__": "Practice reference with patient count"
+  },
+  "query/practice_reference_b.csv": {
+    "__table__": "Medical practice details including location and patient count"
+  },
+  "query/prescribing_a.csv": {
+    "__table__": "Prescription details for medical practices"
+  },
+  "query/prescribing_b.csv": {
+    "__table__": "Prescription details for medical practices"
+  },
+  "query/psyckes_antipsychotic_polypharmacy_quality_indicators_beginning_2012_a.csv": {
+    "__table__": "Antipsychotic polypharmacy quality indicators for providers in the Hudson River region"
+  },
+  "query/purchasing_card_a.csv": {
+    "__table__": "Purchasing card transactions for local government services"
+  },
+  "query/report_card_discipline_for_2015_16_a.csv": {
+    "__table__": "Disciplinary actions for non-English language learners at Phoenix High School in Kennewick School District, Benton County, for the 2015-16 school year"
+  },
+  "query/senior_officials_expenses_a.csv": {
+    "__table__": "Senior officials' travel expenses"
+  },
+  "query/stockport_contracts_a.csv": {
+    "__table__": "Stockport Council contract details"
+  },
+  "query/stockport_contracts_b.csv": {
+    "__table__": "Contract details for Stockport Council's IT and office equipment services"
+  },
+  "query/time_spent_watching_vcr_movies_a.csv": {
+    "__table__": "Time spent playing computer games in Greece"
+  },
+  "query/tuition_assistance_program_tap_recipients_a.csv": {
+    "__table__": "TAP recipients' demographic and financial details"
+  },
+  "query/wholesale_markets_a.csv": {
+    "__table__": "Wholesale market applications"
+  },
+  "query/workforce_management_information_a.csv": {
+    "__table__": "Workforce management information including headcount, full-time equivalents, and costs for various staff categories across organizations"
+  },
+  "query/workforce_management_information_b.csv": {
+    "__table__": "Workforce management information including headcount, full-time equivalents, and costs for various staff categories"
+  },
+  "query/ydn_spending_data_a.csv": {
+    "__table__": "Spending transactions of Yorkshire Dales National Park Authority"
+  },
+  "query/ydn_spending_data_b.csv": {
+    "__table__": "Grant expenditures by the Yorkshire Dales National Park Authority"
+  }
+}

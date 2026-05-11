@@ -1,0 +1,2125 @@
+{
+  "cohort.csv": {
+    "cohort_definition_id": {
+      "__type__": "object",
+      "cohort_definition_id": "Type: Integer; Meaning: Unique identifier for cohort definitions",
+      "cohort_definition_id, subject_id": "Composite key: cohort_definition_id + subject_id uniquely identifies rows"
+    },
+    "subject_id": {
+      "__type__": "object",
+      "subject_id": "Type: Integer; Meaning: Unique identifier for subjects",
+      "cohort_definition_id, subject_id": "Composite key: cohort_definition_id + subject_id uniquely identifies rows"
+    },
+    "cohort_start_date": {
+      "__type__": "object",
+      "cohort_start_date": "Type: Date; Meaning: Start date of the cohort period",
+      "cohort_start_date, cohort_end_date": "Hierarchy: cohort_start_date precedes or is equal to cohort_end_date"
+    },
+    "cohort_end_date": {
+      "__type__": "object",
+      "cohort_end_date": "Type: Date; Meaning: End date of the cohort period",
+      "cohort_start_date, cohort_end_date": "Hierarchy: cohort_start_date precedes or is equal to cohort_end_date"
+    }
+  },
+  "immunizations.csv": {
+    "date": {
+      "__type__": "object",
+      "date": "Type: Date; Meaning: Date of the immunization",
+      "date, patient, encounter": "Composite key: date + patient + encounter uniquely identifies rows"
+    },
+    "patient": {
+      "__type__": "object",
+      "patient": "Type: String; Meaning: Identifier for the patient",
+      "date, patient, encounter": "Composite key: date + patient + encounter uniquely identifies rows",
+      "patient, encounter": "Hierarchy: encounter belongs to patient"
+    },
+    "encounter": {
+      "__type__": "object",
+      "encounter": "Type: String; Meaning: Identifier for the encounter or visit",
+      "date, patient, encounter": "Composite key: date + patient + encounter uniquely identifies rows",
+      "patient, encounter": "Hierarchy: encounter belongs to patient"
+    },
+    "code": {
+      "__type__": "object",
+      "code": "Type: String; Meaning: Code for the immunization",
+      "code, description": "Functional dependency: code determines description"
+    },
+    "description": {
+      "__type__": "object",
+      "description": "Type: String; Meaning: Description of the immunization",
+      "code, description": "Functional dependency: code determines description"
+    },
+    "cost": {
+      "__type__": "object",
+      "cost": "Type: Numeric; Meaning: Cost of the immunization"
+    }
+  },
+  "conditions.csv": {
+    "start": {
+      "__type__": "object",
+      "start": "Type: DateTime; Meaning: Start date and time of the condition",
+      "start, stop": "Hierarchy: stop follows start"
+    },
+    "stop": {
+      "__type__": "object",
+      "stop": "Type: DateTime; Meaning: End date and time of the condition",
+      "start, stop": "Hierarchy: stop follows start"
+    },
+    "patient": {
+      "__type__": "object",
+      "patient": "Type: Integer; Meaning: Unique identifier for the patient",
+      "patient, encounter": "Functional dependency: encounter determines patient"
+    },
+    "encounter": {
+      "__type__": "object",
+      "encounter": "Type: Integer; Meaning: Unique identifier for the encounter",
+      "patient, encounter": "Functional dependency: encounter determines patient"
+    },
+    "code": {
+      "__type__": "object",
+      "code": "Type: String; Meaning: Code representing the condition",
+      "code, description": "Functional dependency: code determines description"
+    },
+    "description": {
+      "__type__": "object",
+      "description": "Type: String; Meaning: Description of the condition",
+      "code, description": "Functional dependency: code determines description"
+    }
+  },
+  "allergies.csv": {
+    "start": {
+      "__type__": "object",
+      "start": "Type: DateTime; Meaning: Start date and time of the allergy record",
+      "start, stop": "Hierarchy: start is always before or equal to stop"
+    },
+    "stop": {
+      "__type__": "object",
+      "stop": "Type: DateTime; Meaning: End date and time of the allergy record",
+      "start, stop": "Hierarchy: start is always before or equal to stop"
+    },
+    "patient": {
+      "__type__": "object",
+      "patient": "Type: String; Meaning: Unique identifier for the patient",
+      "patient, encounter": "Composite key: patient + encounter uniquely identifies rows"
+    },
+    "encounter": {
+      "__type__": "object",
+      "encounter": "Type: String; Meaning: Unique identifier for the encounter or visit",
+      "patient, encounter": "Composite key: patient + encounter uniquely identifies rows"
+    },
+    "code": {
+      "__type__": "object",
+      "code": "Type: String; Meaning: Code representing the specific allergy",
+      "code, description": "Functional dependency: code determines description"
+    },
+    "description": {
+      "__type__": "object",
+      "description": "Type: String; Meaning: Description of the allergy",
+      "code, description": "Functional dependency: code determines description"
+    }
+  },
+  "care_site.csv": {
+    "care_site_id": {
+      "__type__": "object",
+      "care_site_id": "Type: Integer; Meaning: Unique identifier for care sites",
+      "care_site_id, care_site_name": "Functional dependency: care_site_id determines care_site_name",
+      "care_site_id, location_id": "Functional dependency: care_site_id determines location_id",
+      "care_site_id, care_site_source_value": "Functional dependency: care_site_id determines care_site_source_value"
+    },
+    "care_site_name": {
+      "__type__": "object",
+      "care_site_name": "Type: String; Meaning: Name of the care site",
+      "care_site_id, care_site_name": "Functional dependency: care_site_id determines care_site_name"
+    },
+    "place_of_service_concept_id": {
+      "__type__": "object",
+      "place_of_service_concept_id": "Type: Integer; Meaning: Standard concept ID for the type of place of service",
+      "place_of_service_concept_id, place_of_service_source_value": "Functional dependency: place_of_service_concept_id determines place_of_service_source_value"
+    },
+    "location_id": {
+      "__type__": "object",
+      "location_id": "Type: Integer; Meaning: Identifier for the physical location of the care site",
+      "care_site_id, location_id": "Functional dependency: care_site_id determines location_id"
+    },
+    "care_site_source_value": {
+      "__type__": "object",
+      "care_site_source_value": "Type: String; Meaning: Source value for the care site identifier",
+      "care_site_id, care_site_source_value": "Functional dependency: care_site_id determines care_site_source_value"
+    },
+    "place_of_service_source_value": {
+      "__type__": "object",
+      "place_of_service_source_value": "Type: String; Meaning: Source value for the place of service",
+      "place_of_service_concept_id, place_of_service_source_value": "Functional dependency: place_of_service_concept_id determines place_of_service_source_value"
+    }
+  },
+  "careplans.csv": {
+    "id": {
+      "__type__": "object",
+      "id": "Type: Integer; Meaning: Unique identifier for care plans",
+      "id, start, stop, patient, encounter, code, description, reasoncode, reasondescription": "Composite key: All columns together uniquely identify rows"
+    },
+    "start": {
+      "__type__": "object",
+      "start": "Type: Date; Meaning: Start date of the care plan",
+      "id, start, stop, patient, encounter, code, description, reasoncode, reasondescription": "Composite key: All columns together uniquely identify rows",
+      "start, stop": "Hierarchy: stop date is after start date"
+    },
+    "stop": {
+      "__type__": "object",
+      "stop": "Type: Date; Meaning: End date of the care plan",
+      "id, start, stop, patient, encounter, code, description, reasoncode, reasondescription": "Composite key: All columns together uniquely identify rows",
+      "start, stop": "Hierarchy: stop date is after start date"
+    },
+    "patient": {
+      "__type__": "object",
+      "patient": "Type: Integer; Meaning: Identifier for the patient associated with the care plan",
+      "id, start, stop, patient, encounter, code, description, reasoncode, reasondescription": "Composite key: All columns together uniquely identify rows",
+      "patient, encounter": "Functional dependency: encounter is associated with a specific patient"
+    },
+    "encounter": {
+      "__type__": "object",
+      "encounter": "Type: Integer; Meaning: Identifier for the encounter associated with the care plan",
+      "id, start, stop, patient, encounter, code, description, reasoncode, reasondescription": "Composite key: All columns together uniquely identify rows",
+      "patient, encounter": "Functional dependency: encounter is associated with a specific patient"
+    },
+    "code": {
+      "__type__": "object",
+      "code": "Type: String; Meaning: Code representing the type of care plan",
+      "id, start, stop, patient, encounter, code, description, reasoncode, reasondescription": "Composite key: All columns together uniquely identify rows",
+      "code, description": "Functional dependency: code determines description"
+    },
+    "description": {
+      "__type__": "object",
+      "description": "Type: String; Meaning: Description of the care plan",
+      "id, start, stop, patient, encounter, code, description, reasoncode, reasondescription": "Composite key: All columns together uniquely identify rows",
+      "code, description": "Functional dependency: code determines description"
+    },
+    "reasoncode": {
+      "__type__": "object",
+      "reasoncode": "Type: String; Meaning: Code representing the reason for the care plan",
+      "id, start, stop, patient, encounter, code, description, reasoncode, reasondescription": "Composite key: All columns together uniquely identify rows",
+      "reasoncode, reasondescription": "Functional dependency: reasoncode determines reasondescription"
+    },
+    "reasondescription": {
+      "__type__": "object",
+      "reasondescription": "Type: String; Meaning: Description of the reason for the care plan",
+      "id, start, stop, patient, encounter, code, description, reasoncode, reasondescription": "Composite key: All columns together uniquely identify rows",
+      "reasoncode, reasondescription": "Functional dependency: reasoncode determines reasondescription"
+    }
+  },
+  "location.csv": {
+    "location_id": {
+      "__type__": "object",
+      "location_id": "Type: Integer; Meaning: Unique identifier for locations",
+      "location_id, address_1, address_2, city, state, zip, county": "Composite key: location_id + address_1 + address_2 + city + state + zip + county uniquely identifies rows"
+    },
+    "address_1": {
+      "__type__": "object",
+      "address_1": "Type: String; Meaning: Primary address line",
+      "location_id, address_1, address_2, city, state, zip, county": "Composite key: location_id + address_1 + address_2 + city + state + zip + county uniquely identifies rows"
+    },
+    "address_2": {
+      "__type__": "object",
+      "address_2": "Type: String; Meaning: Secondary address line (optional)",
+      "location_id, address_1, address_2, city, state, zip, county": "Composite key: location_id + address_1 + address_2 + city + state + zip + county uniquely identifies rows"
+    },
+    "city": {
+      "__type__": "object",
+      "city": "Type: String; Meaning: City name",
+      "location_id, address_1, address_2, city, state, zip, county": "Composite key: location_id + address_1 + address_2 + city + state + zip + county uniquely identifies rows",
+      "zip, city": "Functional dependency: zip determines city",
+      "city, county": "Hierarchy: city belongs to county"
+    },
+    "state": {
+      "__type__": "object",
+      "state": "Type: String; Meaning: State or province name",
+      "location_id, address_1, address_2, city, state, zip, county": "Composite key: location_id + address_1 + address_2 + city + state + zip + county uniquely identifies rows",
+      "county, state": "Hierarchy: county belongs to state"
+    },
+    "zip": {
+      "__type__": "object",
+      "zip": "Type: String; Meaning: Zip or postal code",
+      "location_id, address_1, address_2, city, state, zip, county": "Composite key: location_id + address_1 + address_2 + city + state + zip + county uniquely identifies rows",
+      "zip, city": "Functional dependency: zip determines city",
+      "zip, county": "Functional dependency: zip determines county"
+    },
+    "county": {
+      "__type__": "object",
+      "county": "Type: String; Meaning: County name",
+      "location_id, address_1, address_2, city, state, zip, county": "Composite key: location_id + address_1 + address_2 + city + state + zip + county uniquely identifies rows",
+      "zip, county": "Functional dependency: zip determines county",
+      "city, county": "Hierarchy: city belongs to county",
+      "county, state": "Hierarchy: county belongs to state"
+    },
+    "location_source_value": {
+      "__type__": "object",
+      "location_source_value": "Type: String; Meaning: Source value for the location (e.g., external ID or reference)"
+    }
+  },
+  "death.csv": {
+    "person_id": {
+      "__type__": "object",
+      "person_id": "Type: Integer; Meaning: Unique identifier for a person",
+      "person_id, death_date, death_datetime": "Composite key: person_id + death_date + death_datetime uniquely identifies rows"
+    },
+    "death_date": {
+      "__type__": "object",
+      "death_date": "Type: Date; Meaning: Date of death",
+      "person_id, death_date, death_datetime": "Composite key: person_id + death_date + death_datetime uniquely identifies rows"
+    },
+    "death_datetime": {
+      "__type__": "object",
+      "death_datetime": "Type: DateTime; Meaning: Date and time of death",
+      "person_id, death_date, death_datetime": "Composite key: person_id + death_date + death_datetime uniquely identifies rows"
+    },
+    "death_type_concept_id": {
+      "__type__": "object",
+      "death_type_concept_id": "Type: Integer; Meaning: Identifier for the type of death (e.g., natural, accidental)",
+      "death_type_concept_id, cause_concept_id": "Functional dependency: death_type_concept_id may determine cause_concept_id"
+    },
+    "cause_concept_id": {
+      "__type__": "object",
+      "cause_concept_id": "Type: Integer; Meaning: Identifier for the cause of death",
+      "death_type_concept_id, cause_concept_id": "Functional dependency: death_type_concept_id may determine cause_concept_id",
+      "cause_concept_id, cause_source_value": "Functional dependency: cause_concept_id may determine cause_source_value",
+      "cause_concept_id, cause_source_concept_id": "Functional dependency: cause_concept_id may determine cause_source_concept_id"
+    },
+    "cause_source_value": {
+      "__type__": "object",
+      "cause_source_value": "Type: String; Meaning: Source value for the cause of death",
+      "cause_concept_id, cause_source_value": "Functional dependency: cause_concept_id may determine cause_source_value"
+    },
+    "cause_source_concept_id": {
+      "__type__": "object",
+      "cause_source_concept_id": "Type: Integer; Meaning: Identifier for the source concept of the cause of death",
+      "cause_concept_id, cause_source_concept_id": "Functional dependency: cause_concept_id may determine cause_source_concept_id"
+    }
+  },
+  "fact_relationship.csv": {
+    "domain_concept_id_1": {
+      "__type__": "object",
+      "domain_concept_id_1": "Type: Integer; Meaning: Identifier for the domain concept of the first entity",
+      "domain_concept_id_1, fact_id_1": "Composite key: domain_concept_id_1 + fact_id_1 uniquely identifies the first entity",
+      "domain_concept_id_1, domain_concept_id_2": "Functional dependency: domain_concept_id_1 and domain_concept_id_2 together determine the relationship between two domain concepts"
+    },
+    "fact_id_1": {
+      "__type__": "object",
+      "fact_id_1": "Type: Integer; Meaning: Identifier for the fact of the first entity",
+      "domain_concept_id_1, fact_id_1": "Composite key: domain_concept_id_1 + fact_id_1 uniquely identifies the first entity",
+      "fact_id_1, fact_id_2": "Functional dependency: fact_id_1 and fact_id_2 together determine the specific facts being related"
+    },
+    "domain_concept_id_2": {
+      "__type__": "object",
+      "domain_concept_id_2": "Type: Integer; Meaning: Identifier for the domain concept of the second entity",
+      "domain_concept_id_2, fact_id_2": "Composite key: domain_concept_id_2 + fact_id_2 uniquely identifies the second entity",
+      "domain_concept_id_1, domain_concept_id_2": "Functional dependency: domain_concept_id_1 and domain_concept_id_2 together determine the relationship between two domain concepts"
+    },
+    "fact_id_2": {
+      "__type__": "object",
+      "fact_id_2": "Type: Integer; Meaning: Identifier for the fact of the second entity",
+      "domain_concept_id_2, fact_id_2": "Composite key: domain_concept_id_2 + fact_id_2 uniquely identifies the second entity",
+      "fact_id_1, fact_id_2": "Functional dependency: fact_id_1 and fact_id_2 together determine the specific facts being related"
+    },
+    "relationship_concept_id": {
+      "__type__": "object",
+      "relationship_concept_id": "Type: Integer; Meaning: Identifier for the relationship concept between the two entities"
+    }
+  },
+  "cohort_definition.csv": {
+    "cohort_definition_id": {
+      "__type__": "object",
+      "cohort_definition_id": "Type: Integer; Meaning: Unique identifier for cohort definitions",
+      "cohort_definition_id, cohort_definition_name": "Functional dependency: cohort_definition_id determines cohort_definition_name",
+      "cohort_definition_id, cohort_definition_description": "Functional dependency: cohort_definition_id determines cohort_definition_description",
+      "cohort_definition_id, definition_type_concept_id": "Functional dependency: cohort_definition_id determines definition_type_concept_id",
+      "cohort_definition_id, cohort_definition_syntax": "Functional dependency: cohort_definition_id determines cohort_definition_syntax",
+      "cohort_definition_id, subject_concept_id": "Functional dependency: cohort_definition_id determines subject_concept_id",
+      "cohort_definition_id, cohort_initiation_date": "Functional dependency: cohort_definition_id determines cohort_initiation_date"
+    },
+    "cohort_definition_name": {
+      "__type__": "object",
+      "cohort_definition_name": "Type: String; Meaning: Name of the cohort definition",
+      "cohort_definition_id, cohort_definition_name": "Functional dependency: cohort_definition_id determines cohort_definition_name"
+    },
+    "cohort_definition_description": {
+      "__type__": "object",
+      "cohort_definition_description": "Type: String; Meaning: Detailed description of the cohort definition",
+      "cohort_definition_id, cohort_definition_description": "Functional dependency: cohort_definition_id determines cohort_definition_description"
+    },
+    "definition_type_concept_id": {
+      "__type__": "object",
+      "definition_type_concept_id": "Type: Integer; Meaning: Identifier for the type of cohort definition",
+      "cohort_definition_id, definition_type_concept_id": "Functional dependency: cohort_definition_id determines definition_type_concept_id"
+    },
+    "cohort_definition_syntax": {
+      "__type__": "object",
+      "cohort_definition_syntax": "Type: String; Meaning: Syntax or rules defining the cohort",
+      "cohort_definition_id, cohort_definition_syntax": "Functional dependency: cohort_definition_id determines cohort_definition_syntax"
+    },
+    "subject_concept_id": {
+      "__type__": "object",
+      "subject_concept_id": "Type: Integer; Meaning: Identifier for the subject concept of the cohort",
+      "cohort_definition_id, subject_concept_id": "Functional dependency: cohort_definition_id determines subject_concept_id"
+    },
+    "cohort_initiation_date": {
+      "__type__": "object",
+      "cohort_initiation_date": "Type: Date; Meaning: Date when the cohort was initiated",
+      "cohort_definition_id, cohort_initiation_date": "Functional dependency: cohort_definition_id determines cohort_initiation_date"
+    }
+  },
+  "cdm_source.csv": {
+    "cdm_source_name": {
+      "__type__": "object",
+      "cdm_source_name": "Type: String; Meaning: Full name of the CDM source",
+      "cdm_source_name, cdm_source_abbreviation": "Functional dependency: cdm_source_name determines cdm_source_abbreviation"
+    },
+    "cdm_source_abbreviation": {
+      "__type__": "object",
+      "cdm_source_abbreviation": "Type: String; Meaning: Abbreviated name of the CDM source",
+      "cdm_source_name, cdm_source_abbreviation": "Functional dependency: cdm_source_name determines cdm_source_abbreviation"
+    },
+    "cdm_holder": {
+      "__type__": "object",
+      "cdm_holder": "Type: String; Meaning: Entity or organization holding the CDM"
+    },
+    "source_description": {
+      "__type__": "object",
+      "source_description": "Type: String; Meaning: Description of the source data"
+    },
+    "source_documentation_reference": {
+      "__type__": "object",
+      "source_documentation_reference": "Type: String; Meaning: Reference to the source documentation"
+    },
+    "cdm_etl_reference": {
+      "__type__": "object",
+      "cdm_etl_reference": "Type: String; Meaning: Reference to the ETL process used for the CDM"
+    },
+    "source_release_date": {
+      "__type__": "object",
+      "source_release_date": "Type: Date; Meaning: Date of the source data release",
+      "source_release_date, cdm_release_date": "Correlation: source_release_date and cdm_release_date are likely to be close in time"
+    },
+    "cdm_release_date": {
+      "__type__": "object",
+      "cdm_release_date": "Type: Date; Meaning: Date of the CDM release",
+      "source_release_date, cdm_release_date": "Correlation: source_release_date and cdm_release_date are likely to be close in time"
+    },
+    "cdm_version": {
+      "__type__": "object",
+      "cdm_version": "Type: String; Meaning: Version of the CDM"
+    },
+    "vocabulary_version": {
+      "__type__": "object",
+      "vocabulary_version": "Type: String; Meaning: Version of the vocabulary used in the CDM"
+    }
+  },
+  "imaging_studies.csv": {
+    "id": {
+      "__type__": "object",
+      "id": "Type: Integer; Meaning: Unique identifier for imaging studies",
+      "id, date, patient, encounter, body site code, modality code, sop code": "Composite key: id + date + patient + encounter + body site code + modality code + sop code uniquely identifies rows"
+    },
+    "date": {
+      "__type__": "object",
+      "date": "Type: Date; Meaning: Date when the imaging study was performed",
+      "id, date, patient, encounter, body site code, modality code, sop code": "Composite key: id + date + patient + encounter + body site code + modality code + sop code uniquely identifies rows"
+    },
+    "patient": {
+      "__type__": "object",
+      "patient": "Type: Integer; Meaning: Unique identifier for the patient",
+      "id, date, patient, encounter, body site code, modality code, sop code": "Composite key: id + date + patient + encounter + body site code + modality code + sop code uniquely identifies rows"
+    },
+    "encounter": {
+      "__type__": "object",
+      "encounter": "Type: Integer; Meaning: Unique identifier for the encounter or visit",
+      "id, date, patient, encounter, body site code, modality code, sop code": "Composite key: id + date + patient + encounter + body site code + modality code + sop code uniquely identifies rows"
+    },
+    "body site code": {
+      "__type__": "object",
+      "body site code": "Type: String; Meaning: Code representing the body site of the imaging study",
+      "id, date, patient, encounter, body site code, modality code, sop code": "Composite key: id + date + patient + encounter + body site code + modality code + sop code uniquely identifies rows",
+      "body site code, body site description": "Functional dependency: body site code determines body site description"
+    },
+    "body site description": {
+      "__type__": "object",
+      "body site description": "Type: String; Meaning: Description of the body site of the imaging study",
+      "body site code, body site description": "Functional dependency: body site code determines body site description"
+    },
+    "modality code": {
+      "__type__": "object",
+      "modality code": "Type: String; Meaning: Code representing the imaging modality used",
+      "id, date, patient, encounter, body site code, modality code, sop code": "Composite key: id + date + patient + encounter + body site code + modality code + sop code uniquely identifies rows",
+      "modality code, modality description": "Functional dependency: modality code determines modality description"
+    },
+    "modality description": {
+      "__type__": "object",
+      "modality description": "Type: String; Meaning: Description of the imaging modality used",
+      "modality code, modality description": "Functional dependency: modality code determines modality description"
+    },
+    "sop code": {
+      "__type__": "object",
+      "sop code": "Type: String; Meaning: Code representing the standard operating procedure (SOP) used",
+      "id, date, patient, encounter, body site code, modality code, sop code": "Composite key: id + date + patient + encounter + body site code + modality code + sop code uniquely identifies rows",
+      "sop code, sop description": "Functional dependency: sop code determines sop description"
+    },
+    "sop description": {
+      "__type__": "object",
+      "sop description": "Type: String; Meaning: Description of the standard operating procedure (SOP) used",
+      "sop code, sop description": "Functional dependency: sop code determines sop description"
+    }
+  },
+  "encounters.csv": {
+    "id": {
+      "__type__": "object",
+      "id": "Type: Integer; Meaning: Unique identifier for each encounter",
+      "id, start, stop, patient, provider, encounterclass, code, description, cost, reasoncode, reasondescription": "Composite key: All columns together uniquely identify rows"
+    },
+    "start": {
+      "__type__": "object",
+      "start": "Type: DateTime; Meaning: Start time of the encounter",
+      "id, start, stop, patient, provider, encounterclass, code, description, cost, reasoncode, reasondescription": "Composite key: All columns together uniquely identify rows"
+    },
+    "stop": {
+      "__type__": "object",
+      "stop": "Type: DateTime; Meaning: End time of the encounter",
+      "id, start, stop, patient, provider, encounterclass, code, description, cost, reasoncode, reasondescription": "Composite key: All columns together uniquely identify rows"
+    },
+    "patient": {
+      "__type__": "object",
+      "patient": "Type: Integer; Meaning: Identifier for the patient involved in the encounter",
+      "id, start, stop, patient, provider, encounterclass, code, description, cost, reasoncode, reasondescription": "Composite key: All columns together uniquely identify rows",
+      "patient, provider": "Functional dependency: patient determines provider"
+    },
+    "provider": {
+      "__type__": "object",
+      "provider": "Type: Integer; Meaning: Identifier for the provider who conducted the encounter",
+      "id, start, stop, patient, provider, encounterclass, code, description, cost, reasoncode, reasondescription": "Composite key: All columns together uniquely identify rows",
+      "patient, provider": "Functional dependency: patient determines provider"
+    },
+    "encounterclass": {
+      "__type__": "object",
+      "encounterclass": "Type: String; Meaning: Classification of the encounter (e.g., inpatient, outpatient)",
+      "id, start, stop, patient, provider, encounterclass, code, description, cost, reasoncode, reasondescription": "Composite key: All columns together uniquely identify rows"
+    },
+    "code": {
+      "__type__": "object",
+      "code": "Type: String; Meaning: Code representing the type of encounter",
+      "id, start, stop, patient, provider, encounterclass, code, description, cost, reasoncode, reasondescription": "Composite key: All columns together uniquely identify rows",
+      "code, description": "Functional dependency: code determines description"
+    },
+    "description": {
+      "__type__": "object",
+      "description": "Type: String; Meaning: Description of the encounter",
+      "id, start, stop, patient, provider, encounterclass, code, description, cost, reasoncode, reasondescription": "Composite key: All columns together uniquely identify rows",
+      "code, description": "Functional dependency: code determines description"
+    },
+    "cost": {
+      "__type__": "object",
+      "cost": "Type: Numeric; Meaning: Cost associated with the encounter",
+      "id, start, stop, patient, provider, encounterclass, code, description, cost, reasoncode, reasondescription": "Composite key: All columns together uniquely identify rows"
+    },
+    "reasoncode": {
+      "__type__": "object",
+      "reasoncode": "Type: String; Meaning: Code representing the reason for the encounter",
+      "id, start, stop, patient, provider, encounterclass, code, description, cost, reasoncode, reasondescription": "Composite key: All columns together uniquely identify rows",
+      "reasoncode, reasondescription": "Functional dependency: reasoncode determines reasondescription"
+    },
+    "reasondescription": {
+      "__type__": "object",
+      "reasondescription": "Type: String; Meaning: Description of the reason for the encounter",
+      "id, start, stop, patient, provider, encounterclass, code, description, cost, reasoncode, reasondescription": "Composite key: All columns together uniquely identify rows",
+      "reasoncode, reasondescription": "Functional dependency: reasoncode determines reasondescription"
+    }
+  },
+  "medications.csv": {
+    "start": {
+      "__type__": "object",
+      "start": "Type: DateTime; Meaning: Start date and time of the medication administration"
+    },
+    "stop": {
+      "__type__": "object",
+      "stop": "Type: DateTime; Meaning: Stop date and time of the medication administration"
+    },
+    "patient": {
+      "__type__": "object",
+      "patient": "Type: String; Meaning: Unique identifier for the patient",
+      "patient, encounter": "Composite key: patient + encounter uniquely identifies rows"
+    },
+    "encounter": {
+      "__type__": "object",
+      "encounter": "Type: String; Meaning: Unique identifier for the encounter or visit",
+      "patient, encounter": "Composite key: patient + encounter uniquely identifies rows"
+    },
+    "code": {
+      "__type__": "object",
+      "code": "Type: String; Meaning: Unique code for the medication",
+      "code, description": "Functional dependency: code determines description"
+    },
+    "description": {
+      "__type__": "object",
+      "description": "Type: String; Meaning: Description of the medication",
+      "code, description": "Functional dependency: code determines description"
+    },
+    "cost": {
+      "__type__": "object",
+      "cost": "Type: Numeric; Meaning: Cost of the medication"
+    },
+    "reasoncode": {
+      "__type__": "object",
+      "reasoncode": "Type: String; Meaning: Code for the reason the medication was prescribed",
+      "reasoncode, reasondescription": "Functional dependency: reasoncode determines reasondescription"
+    },
+    "reasondescription": {
+      "__type__": "object",
+      "reasondescription": "Type: String; Meaning: Description of the reason the medication was prescribed",
+      "reasoncode, reasondescription": "Functional dependency: reasoncode determines reasondescription"
+    }
+  },
+  "condition_occurrence.csv": {
+    "condition_occurrence_id": {
+      "__type__": "object",
+      "condition_occurrence_id": "Type: Integer; Meaning: Unique identifier for condition occurrences",
+      "condition_occurrence_id, person_id": "Functional dependency: condition_occurrence_id determines person_id"
+    },
+    "person_id": {
+      "__type__": "object",
+      "person_id": "Type: Integer; Meaning: Identifier for the person associated with the condition",
+      "condition_occurrence_id, person_id": "Functional dependency: condition_occurrence_id determines person_id"
+    },
+    "condition_concept_id": {
+      "__type__": "object",
+      "condition_concept_id": "Type: Integer; Meaning: Standard concept identifier for the condition"
+    },
+    "condition_start_date": {
+      "__type__": "object",
+      "condition_start_date": "Type: Date; Meaning: Start date of the condition",
+      "condition_start_date, condition_start_datetime": "Hierarchy: condition_start_datetime is a more precise version of condition_start_date"
+    },
+    "condition_start_datetime": {
+      "__type__": "object",
+      "condition_start_datetime": "Type: DateTime; Meaning: Start datetime of the condition",
+      "condition_start_date, condition_start_datetime": "Hierarchy: condition_start_datetime is a more precise version of condition_start_date"
+    },
+    "condition_end_date": {
+      "__type__": "object",
+      "condition_end_date": "Type: Date; Meaning: End date of the condition",
+      "condition_end_date, condition_end_datetime": "Hierarchy: condition_end_datetime is a more precise version of condition_end_date"
+    },
+    "condition_end_datetime": {
+      "__type__": "object",
+      "condition_end_datetime": "Type: DateTime; Meaning: End datetime of the condition",
+      "condition_end_date, condition_end_datetime": "Hierarchy: condition_end_datetime is a more precise version of condition_end_date"
+    },
+    "condition_type_concept_id": {
+      "__type__": "object",
+      "condition_type_concept_id": "Type: Integer; Meaning: Standard concept identifier for the type of condition"
+    },
+    "condition_status_concept_id": {
+      "__type__": "object",
+      "condition_status_concept_id": "Type: Integer; Meaning: Standard concept identifier for the status of the condition"
+    },
+    "stop_reason": {
+      "__type__": "object",
+      "stop_reason": "Type: String; Meaning: Reason for stopping the condition"
+    },
+    "provider_id": {
+      "__type__": "object",
+      "provider_id": "Type: Integer; Meaning: Identifier for the provider who recorded the condition"
+    },
+    "visit_occurrence_id": {
+      "__type__": "object",
+      "visit_occurrence_id": "Type: Integer; Meaning: Identifier for the visit during which the condition was recorded",
+      "visit_occurrence_id, visit_detail_id": "Hierarchy: visit_detail_id belongs to visit_occurrence_id"
+    },
+    "visit_detail_id": {
+      "__type__": "object",
+      "visit_detail_id": "Type: Integer; Meaning: Identifier for the detailed visit during which the condition was recorded",
+      "visit_occurrence_id, visit_detail_id": "Hierarchy: visit_detail_id belongs to visit_occurrence_id"
+    },
+    "condition_source_value": {
+      "__type__": "object",
+      "condition_source_value": "Type: String; Meaning: Source value for the condition"
+    },
+    "condition_source_concept_id": {
+      "__type__": "object",
+      "condition_source_concept_id": "Type: Integer; Meaning: Source concept identifier for the condition"
+    },
+    "condition_status_source_value": {
+      "__type__": "object",
+      "condition_status_source_value": "Type: String; Meaning: Source value for the status of the condition"
+    }
+  },
+  "observation_period.csv": {
+    "observation_period_id": {
+      "__type__": "object",
+      "observation_period_id": "Type: Integer; Meaning: Unique identifier for each observation period",
+      "observation_period_id, person_id": "Composite key: observation_period_id + person_id uniquely identifies rows"
+    },
+    "person_id": {
+      "__type__": "object",
+      "person_id": "Type: Integer; Meaning: Identifier for the person associated with the observation period",
+      "observation_period_id, person_id": "Composite key: observation_period_id + person_id uniquely identifies rows",
+      "person_id, observation_period_start_date, observation_period_end_date": "Functional dependency: person_id + observation_period_start_date determines observation_period_end_date"
+    },
+    "observation_period_start_date": {
+      "__type__": "object",
+      "observation_period_start_date": "Type: Date; Meaning: Start date of the observation period",
+      "observation_period_start_date, observation_period_end_date": "Hierarchy: observation_period_start_date is always before or equal to observation_period_end_date",
+      "person_id, observation_period_start_date, observation_period_end_date": "Functional dependency: person_id + observation_period_start_date determines observation_period_end_date"
+    },
+    "observation_period_end_date": {
+      "__type__": "object",
+      "observation_period_end_date": "Type: Date; Meaning: End date of the observation period",
+      "observation_period_start_date, observation_period_end_date": "Hierarchy: observation_period_start_date is always before or equal to observation_period_end_date",
+      "person_id, observation_period_start_date, observation_period_end_date": "Functional dependency: person_id + observation_period_start_date determines observation_period_end_date"
+    },
+    "period_type_concept_id": {
+      "__type__": "object",
+      "period_type_concept_id": "Type: Integer; Meaning: Identifier for the type of observation period"
+    }
+  },
+  "observations.csv": {
+    "date": {
+      "__type__": "object",
+      "date": "Type: Date; Meaning: Date of the observation",
+      "date, patient, encounter, code": "Composite key: date + patient + encounter + code uniquely identifies rows"
+    },
+    "patient": {
+      "__type__": "object",
+      "patient": "Type: String; Meaning: Identifier for the patient",
+      "date, patient, encounter, code": "Composite key: date + patient + encounter + code uniquely identifies rows",
+      "patient, encounter": "Hierarchy: encounter belongs to patient"
+    },
+    "encounter": {
+      "__type__": "object",
+      "encounter": "Type: String; Meaning: Identifier for the encounter or visit",
+      "date, patient, encounter, code": "Composite key: date + patient + encounter + code uniquely identifies rows",
+      "patient, encounter": "Hierarchy: encounter belongs to patient"
+    },
+    "code": {
+      "__type__": "object",
+      "code": "Type: String; Meaning: Code representing the type of observation",
+      "date, patient, encounter, code": "Composite key: date + patient + encounter + code uniquely identifies rows",
+      "code, description": "Functional dependency: code determines description"
+    },
+    "description": {
+      "__type__": "object",
+      "description": "Type: String; Meaning: Description of the observation",
+      "code, description": "Functional dependency: code determines description"
+    },
+    "value": {
+      "__type__": "object",
+      "value": "Type: Numeric; Meaning: Value of the observation",
+      "value, units": "Functional dependency: units often determine the type of value"
+    },
+    "units": {
+      "__type__": "object",
+      "units": "Type: String; Meaning: Units of the observation value",
+      "value, units": "Functional dependency: units often determine the type of value"
+    },
+    "type": {
+      "__type__": "object",
+      "type": "Type: String; Meaning: Type of the observation (e.g., lab result, vital sign)"
+    }
+  },
+  "procedures.csv": {
+    "date": {
+      "__type__": "object",
+      "date": "Type: Date; Meaning: Date when the procedure was performed",
+      "date, patient, encounter": "Composite key: date + patient + encounter uniquely identifies rows"
+    },
+    "patient": {
+      "__type__": "object",
+      "patient": "Type: String; Meaning: Unique identifier or name of the patient",
+      "date, patient, encounter": "Composite key: date + patient + encounter uniquely identifies rows"
+    },
+    "encounter": {
+      "__type__": "object",
+      "encounter": "Type: String; Meaning: Unique identifier for the encounter or visit",
+      "date, patient, encounter": "Composite key: date + patient + encounter uniquely identifies rows"
+    },
+    "code": {
+      "__type__": "object",
+      "code": "Type: String; Meaning: Code representing the procedure performed",
+      "code, description": "Functional dependency: code determines description"
+    },
+    "description": {
+      "__type__": "object",
+      "description": "Type: String; Meaning: Description of the procedure",
+      "code, description": "Functional dependency: code determines description"
+    },
+    "cost": {
+      "__type__": "object",
+      "cost": "Type: Numeric; Meaning: Cost of the procedure"
+    },
+    "reasoncode": {
+      "__type__": "object",
+      "reasoncode": "Type: String; Meaning: Code representing the reason for the procedure",
+      "reasoncode, reasondescription": "Functional dependency: reasoncode determines reasondescription"
+    },
+    "reasondescription": {
+      "__type__": "object",
+      "reasondescription": "Type: String; Meaning: Description of the reason for the procedure",
+      "reasoncode, reasondescription": "Functional dependency: reasoncode determines reasondescription"
+    }
+  },
+  "organizations.csv": {
+    "id": {
+      "__type__": "object",
+      "id": "Type: Integer; Meaning: Unique identifier for organizations",
+      "id, name": "Functional dependency: id determines name"
+    },
+    "name": {
+      "__type__": "object",
+      "name": "Type: String; Meaning: Name of the organization",
+      "id, name": "Functional dependency: id determines name"
+    },
+    "address": {
+      "__type__": "object",
+      "address": "Type: String; Meaning: Street address of the organization",
+      "address, city, state, zip": "Hierarchy: address, city, state, and zip form a location hierarchy"
+    },
+    "city": {
+      "__type__": "object",
+      "city": "Type: String; Meaning: City where the organization is located",
+      "address, city, state, zip": "Hierarchy: address, city, state, and zip form a location hierarchy",
+      "zip, city": "Functional dependency: zip determines city"
+    },
+    "state": {
+      "__type__": "object",
+      "state": "Type: String; Meaning: State where the organization is located",
+      "address, city, state, zip": "Hierarchy: address, city, state, and zip form a location hierarchy",
+      "zip, state": "Functional dependency: zip determines state"
+    },
+    "zip": {
+      "__type__": "object",
+      "zip": "Type: String; Meaning: Zip code of the organization's location",
+      "address, city, state, zip": "Hierarchy: address, city, state, and zip form a location hierarchy",
+      "zip, city": "Functional dependency: zip determines city",
+      "zip, state": "Functional dependency: zip determines state"
+    },
+    "phone": {
+      "__type__": "object",
+      "phone": "Type: String; Meaning: Contact phone number of the organization"
+    },
+    "utilization": {
+      "__type__": "object",
+      "utilization": "Type: Numeric; Meaning: Measure of how much the organization's resources are being used"
+    }
+  },
+  "payer_plan_period.csv": {
+    "payer_plan_period_id": {
+      "__type__": "object",
+      "payer_plan_period_id": "Type: Integer; Meaning: Unique identifier for payer plan periods",
+      "payer_plan_period_id, person_id": "Composite key: payer_plan_period_id + person_id uniquely identifies rows"
+    },
+    "person_id": {
+      "__type__": "object",
+      "person_id": "Type: Integer; Meaning: Identifier for the person associated with the plan period",
+      "payer_plan_period_id, person_id": "Composite key: payer_plan_period_id + person_id uniquely identifies rows"
+    },
+    "payer_plan_period_start_date": {
+      "__type__": "object",
+      "payer_plan_period_start_date": "Type: Date; Meaning: Start date of the payer plan period",
+      "payer_plan_period_start_date, payer_plan_period_end_date": "Hierarchy: payer_plan_period_start_date precedes payer_plan_period_end_date"
+    },
+    "payer_plan_period_end_date": {
+      "__type__": "object",
+      "payer_plan_period_end_date": "Type: Date; Meaning: End date of the payer plan period",
+      "payer_plan_period_start_date, payer_plan_period_end_date": "Hierarchy: payer_plan_period_start_date precedes payer_plan_period_end_date"
+    },
+    "payer_source_value": {
+      "__type__": "object",
+      "payer_source_value": "Type: String; Meaning: Source value for the payer",
+      "payer_source_value, plan_source_value": "Functional dependency: payer_source_value and plan_source_value are often used together to identify a specific plan",
+      "payer_source_value, family_source_value": "Functional dependency: payer_source_value and family_source_value are often used together to identify a specific family plan"
+    },
+    "plan_source_value": {
+      "__type__": "object",
+      "plan_source_value": "Type: String; Meaning: Source value for the plan",
+      "payer_source_value, plan_source_value": "Functional dependency: payer_source_value and plan_source_value are often used together to identify a specific plan"
+    },
+    "family_source_value": {
+      "__type__": "object",
+      "family_source_value": "Type: String; Meaning: Source value for the family plan",
+      "payer_source_value, family_source_value": "Functional dependency: payer_source_value and family_source_value are often used together to identify a specific family plan"
+    }
+  },
+  "providers.csv": {
+    "id": {
+      "__type__": "object",
+      "id": "Type: Integer; Meaning: Unique identifier for providers",
+      "id, organization": "Functional dependency: id determines organization",
+      "id, name": "Functional dependency: id determines name",
+      "id, gender": "Functional dependency: id determines gender",
+      "id, speciality": "Functional dependency: id determines speciality",
+      "id, address": "Functional dependency: id determines address",
+      "id, city": "Functional dependency: id determines city",
+      "id, state": "Functional dependency: id determines state",
+      "id, zip": "Functional dependency: id determines zip",
+      "id, utilization": "Functional dependency: id determines utilization"
+    },
+    "organization": {
+      "__type__": "object",
+      "organization": "Type: String; Meaning: Name of the organization the provider is associated with",
+      "id, organization": "Functional dependency: id determines organization"
+    },
+    "name": {
+      "__type__": "object",
+      "name": "Type: String; Meaning: Full name of the provider",
+      "id, name": "Functional dependency: id determines name"
+    },
+    "gender": {
+      "__type__": "object",
+      "gender": "Type: String; Meaning: Gender of the provider",
+      "id, gender": "Functional dependency: id determines gender"
+    },
+    "speciality": {
+      "__type__": "object",
+      "speciality": "Type: String; Meaning: Medical speciality of the provider",
+      "id, speciality": "Functional dependency: id determines speciality"
+    },
+    "address": {
+      "__type__": "object",
+      "address": "Type: String; Meaning: Street address of the provider",
+      "id, address": "Functional dependency: id determines address",
+      "address, city, state, zip": "Composite key: address, city, state, zip uniquely identifies the location of the provider"
+    },
+    "city": {
+      "__type__": "object",
+      "city": "Type: String; Meaning: City where the provider is located",
+      "id, city": "Functional dependency: id determines city",
+      "city, state": "Hierarchy: city belongs to state",
+      "address, city, state, zip": "Composite key: address, city, state, zip uniquely identifies the location of the provider"
+    },
+    "state": {
+      "__type__": "object",
+      "state": "Type: String; Meaning: State where the provider is located",
+      "id, state": "Functional dependency: id determines state",
+      "city, state": "Hierarchy: city belongs to state",
+      "state, zip": "Hierarchy: zip belongs to state",
+      "address, city, state, zip": "Composite key: address, city, state, zip uniquely identifies the location of the provider"
+    },
+    "zip": {
+      "__type__": "object",
+      "zip": "Type: String; Meaning: ZIP code where the provider is located",
+      "id, zip": "Functional dependency: id determines zip",
+      "state, zip": "Hierarchy: zip belongs to state",
+      "address, city, state, zip": "Composite key: address, city, state, zip uniquely identifies the location of the provider"
+    },
+    "utilization": {
+      "__type__": "object",
+      "utilization": "Type: Integer; Meaning: Number of times the provider's services were utilized",
+      "id, utilization": "Functional dependency: id determines utilization"
+    }
+  },
+  "observation.csv": {
+    "observation_id": {
+      "__type__": "object",
+      "observation_id": "Type: Integer; Meaning: Unique identifier for each observation",
+      "observation_id, person_id": "Composite key: observation_id + person_id uniquely identifies rows"
+    },
+    "person_id": {
+      "__type__": "object",
+      "person_id": "Type: Integer; Meaning: Identifier for the person being observed",
+      "observation_id, person_id": "Composite key: observation_id + person_id uniquely identifies rows"
+    },
+    "observation_concept_id": {
+      "__type__": "object",
+      "observation_concept_id": "Type: Integer; Meaning: Concept identifier for the type of observation",
+      "observation_concept_id, observation_source_concept_id": "Functional dependency: observation_source_concept_id determines observation_concept_id"
+    },
+    "observation_date": {
+      "__type__": "object",
+      "observation_date": "Type: Date; Meaning: Date when the observation was recorded",
+      "observation_date, observation_datetime": "Hierarchy: observation_datetime is a more precise version of observation_date"
+    },
+    "observation_datetime": {
+      "__type__": "object",
+      "observation_datetime": "Type: DateTime; Meaning: Date and time when the observation was recorded",
+      "observation_date, observation_datetime": "Hierarchy: observation_datetime is a more precise version of observation_date"
+    },
+    "observation_type_concept_id": {
+      "__type__": "object",
+      "observation_type_concept_id": "Type: Integer; Meaning: Concept identifier for the type of observation (e.g., lab result, physical exam)"
+    },
+    "value_as_number": {
+      "__type__": "object",
+      "value_as_number": "Type: Float; Meaning: Numeric value of the observation"
+    },
+    "value_as_string": {
+      "__type__": "object",
+      "value_as_string": "Type: String; Meaning: String value of the observation"
+    },
+    "value_as_concept_id": {
+      "__type__": "object",
+      "value_as_concept_id": "Type: Integer; Meaning: Concept identifier for the value of the observation"
+    },
+    "qualifier_concept_id": {
+      "__type__": "object",
+      "qualifier_concept_id": "Type: Integer; Meaning: Concept identifier for the qualifier of the observation",
+      "qualifier_concept_id, qualifier_source_value": "Functional dependency: qualifier_source_value determines qualifier_concept_id"
+    },
+    "unit_concept_id": {
+      "__type__": "object",
+      "unit_concept_id": "Type: Integer; Meaning: Concept identifier for the unit of measurement",
+      "unit_concept_id, unit_source_value": "Functional dependency: unit_source_value determines unit_concept_id"
+    },
+    "provider_id": {
+      "__type__": "object",
+      "provider_id": "Type: Integer; Meaning: Identifier for the provider who recorded the observation"
+    },
+    "visit_occurrence_id": {
+      "__type__": "object",
+      "visit_occurrence_id": "Type: Integer; Meaning: Identifier for the visit during which the observation was recorded"
+    },
+    "visit_detail_id": {
+      "__type__": "object",
+      "visit_detail_id": "Type: Integer; Meaning: Identifier for the detailed visit during which the observation was recorded"
+    },
+    "observation_source_value": {
+      "__type__": "object",
+      "observation_source_value": "Type: String; Meaning: Source value of the observation"
+    },
+    "observation_source_concept_id": {
+      "__type__": "object",
+      "observation_source_concept_id": "Type: Integer; Meaning: Concept identifier for the source of the observation",
+      "observation_concept_id, observation_source_concept_id": "Functional dependency: observation_source_concept_id determines observation_concept_id"
+    },
+    "unit_source_value": {
+      "__type__": "object",
+      "unit_source_value": "Type: String; Meaning: Source value for the unit of measurement",
+      "unit_concept_id, unit_source_value": "Functional dependency: unit_source_value determines unit_concept_id"
+    },
+    "qualifier_source_value": {
+      "__type__": "object",
+      "qualifier_source_value": "Type: String; Meaning: Source value for the qualifier",
+      "qualifier_concept_id, qualifier_source_value": "Functional dependency: qualifier_source_value determines qualifier_concept_id"
+    },
+    "observation_event_id": {
+      "__type__": "object",
+      "observation_event_id": "Type: Integer; Meaning: Identifier for the event related to the observation"
+    },
+    "obs_event_field_concept_id": {
+      "__type__": "object",
+      "obs_event_field_concept_id": "Type: Integer; Meaning: Concept identifier for the field of the observation event"
+    },
+    "value_as_datetime": {
+      "__type__": "object",
+      "value_as_datetime": "Type: DateTime; Meaning: Date and time value of the observation"
+    }
+  },
+  "device_exposure.csv": {
+    "device_exposure_id": {
+      "__type__": "object",
+      "device_exposure_id": "Type: Integer; Meaning: Unique identifier for device exposure records",
+      "device_exposure_id, person_id": "Functional dependency: device_exposure_id determines person_id",
+      "device_exposure_id, device_concept_id": "Functional dependency: device_exposure_id determines device_concept_id",
+      "device_exposure_id, device_exposure_start_date": "Functional dependency: device_exposure_id determines device_exposure_start_date",
+      "device_exposure_id, device_exposure_start_datetime": "Functional dependency: device_exposure_id determines device_exposure_start_datetime",
+      "device_exposure_id, device_exposure_end_date": "Functional dependency: device_exposure_id determines device_exposure_end_date",
+      "device_exposure_id, device_exposure_end_datetime": "Functional dependency: device_exposure_id determines device_exposure_end_datetime",
+      "device_exposure_id, device_type_concept_id": "Functional dependency: device_exposure_id determines device_type_concept_id",
+      "device_exposure_id, unique_device_id": "Functional dependency: device_exposure_id determines unique_device_id",
+      "device_exposure_id, quantity": "Functional dependency: device_exposure_id determines quantity",
+      "device_exposure_id, provider_id": "Functional dependency: device_exposure_id determines provider_id",
+      "device_exposure_id, visit_occurrence_id": "Functional dependency: device_exposure_id determines visit_occurrence_id",
+      "device_exposure_id, visit_detail_id": "Functional dependency: device_exposure_id determines visit_detail_id",
+      "device_exposure_id, device_source_value": "Functional dependency: device_exposure_id determines device_source_value",
+      "device_exposure_id, device_source_concept_id": "Functional dependency: device_exposure_id determines device_source_concept_id"
+    },
+    "person_id": {
+      "__type__": "object",
+      "person_id": "Type: Integer; Meaning: Identifier for the person exposed to the device",
+      "device_exposure_id, person_id": "Functional dependency: device_exposure_id determines person_id"
+    },
+    "device_concept_id": {
+      "__type__": "object",
+      "device_concept_id": "Type: Integer; Meaning: Identifier for the type of device",
+      "device_exposure_id, device_concept_id": "Functional dependency: device_exposure_id determines device_concept_id"
+    },
+    "device_exposure_start_date": {
+      "__type__": "object",
+      "device_exposure_start_date": "Type: Date; Meaning: Date when the device exposure started",
+      "device_exposure_id, device_exposure_start_date": "Functional dependency: device_exposure_id determines device_exposure_start_date",
+      "device_exposure_start_date, device_exposure_start_datetime": "Correlation: device_exposure_start_datetime is a more precise version of device_exposure_start_date"
+    },
+    "device_exposure_start_datetime": {
+      "__type__": "object",
+      "device_exposure_start_datetime": "Type: DateTime; Meaning: DateTime when the device exposure started",
+      "device_exposure_id, device_exposure_start_datetime": "Functional dependency: device_exposure_id determines device_exposure_start_datetime",
+      "device_exposure_start_date, device_exposure_start_datetime": "Correlation: device_exposure_start_datetime is a more precise version of device_exposure_start_date"
+    },
+    "device_exposure_end_date": {
+      "__type__": "object",
+      "device_exposure_end_date": "Type: Date; Meaning: Date when the device exposure ended",
+      "device_exposure_id, device_exposure_end_date": "Functional dependency: device_exposure_id determines device_exposure_end_date",
+      "device_exposure_end_date, device_exposure_end_datetime": "Correlation: device_exposure_end_datetime is a more precise version of device_exposure_end_date"
+    },
+    "device_exposure_end_datetime": {
+      "__type__": "object",
+      "device_exposure_end_datetime": "Type: DateTime; Meaning: DateTime when the device exposure ended",
+      "device_exposure_id, device_exposure_end_datetime": "Functional dependency: device_exposure_id determines device_exposure_end_datetime",
+      "device_exposure_end_date, device_exposure_end_datetime": "Correlation: device_exposure_end_datetime is a more precise version of device_exposure_end_date"
+    },
+    "device_type_concept_id": {
+      "__type__": "object",
+      "device_type_concept_id": "Type: Integer; Meaning: Identifier for the type of device exposure",
+      "device_exposure_id, device_type_concept_id": "Functional dependency: device_exposure_id determines device_type_concept_id"
+    },
+    "unique_device_id": {
+      "__type__": "object",
+      "unique_device_id": "Type: String; Meaning: Unique identifier for the specific device",
+      "device_exposure_id, unique_device_id": "Functional dependency: device_exposure_id determines unique_device_id"
+    },
+    "quantity": {
+      "__type__": "object",
+      "quantity": "Type: Integer; Meaning: Quantity of the device used",
+      "device_exposure_id, quantity": "Functional dependency: device_exposure_id determines quantity"
+    },
+    "provider_id": {
+      "__type__": "object",
+      "provider_id": "Type: Integer; Meaning: Identifier for the provider who administered the device",
+      "device_exposure_id, provider_id": "Functional dependency: device_exposure_id determines provider_id"
+    },
+    "visit_occurrence_id": {
+      "__type__": "object",
+      "visit_occurrence_id": "Type: Integer; Meaning: Identifier for the visit during which the device was used",
+      "device_exposure_id, visit_occurrence_id": "Functional dependency: device_exposure_id determines visit_occurrence_id",
+      "visit_occurrence_id, visit_detail_id": "Hierarchy: visit_detail_id is a more detailed identifier within visit_occurrence_id"
+    },
+    "visit_detail_id": {
+      "__type__": "object",
+      "visit_detail_id": "Type: Integer; Meaning: Identifier for the detailed visit during which the device was used",
+      "device_exposure_id, visit_detail_id": "Functional dependency: device_exposure_id determines visit_detail_id",
+      "visit_occurrence_id, visit_detail_id": "Hierarchy: visit_detail_id is a more detailed identifier within visit_occurrence_id"
+    },
+    "device_source_value": {
+      "__type__": "object",
+      "device_source_value": "Type: String; Meaning: Source value for the device",
+      "device_exposure_id, device_source_value": "Functional dependency: device_exposure_id determines device_source_value"
+    },
+    "device_source_concept_id": {
+      "__type__": "object",
+      "device_source_concept_id": "Type: Integer; Meaning: Identifier for the source concept of the device",
+      "device_exposure_id, device_source_concept_id": "Functional dependency: device_exposure_id determines device_source_concept_id"
+    }
+  },
+  "patients.csv": {
+    "id": {
+      "__type__": "object",
+      "id": "Type: Integer; Meaning: Unique identifier for patients",
+      "id, birthdate, deathdate, ssn, drivers, passport, prefix, first, last, suffix, maiden, marital, race, ethnicity, gender, birthplace, address, city, state, zip": "Composite key: All columns together uniquely identify a patient"
+    },
+    "birthdate": {
+      "__type__": "object",
+      "birthdate": "Type: Date; Meaning: Date of birth of the patient",
+      "id, birthdate, deathdate, ssn, drivers, passport, prefix, first, last, suffix, maiden, marital, race, ethnicity, gender, birthplace, address, city, state, zip": "Composite key: All columns together uniquely identify a patient"
+    },
+    "deathdate": {
+      "__type__": "object",
+      "deathdate": "Type: Date; Meaning: Date of death of the patient",
+      "id, birthdate, deathdate, ssn, drivers, passport, prefix, first, last, suffix, maiden, marital, race, ethnicity, gender, birthplace, address, city, state, zip": "Composite key: All columns together uniquely identify a patient"
+    },
+    "ssn": {
+      "__type__": "object",
+      "ssn": "Type: String; Meaning: Social Security Number of the patient",
+      "id, birthdate, deathdate, ssn, drivers, passport, prefix, first, last, suffix, maiden, marital, race, ethnicity, gender, birthplace, address, city, state, zip": "Composite key: All columns together uniquely identify a patient"
+    },
+    "drivers": {
+      "__type__": "object",
+      "drivers": "Type: String; Meaning: Driver's license number of the patient",
+      "id, birthdate, deathdate, ssn, drivers, passport, prefix, first, last, suffix, maiden, marital, race, ethnicity, gender, birthplace, address, city, state, zip": "Composite key: All columns together uniquely identify a patient"
+    },
+    "passport": {
+      "__type__": "object",
+      "passport": "Type: String; Meaning: Passport number of the patient",
+      "id, birthdate, deathdate, ssn, drivers, passport, prefix, first, last, suffix, maiden, marital, race, ethnicity, gender, birthplace, address, city, state, zip": "Composite key: All columns together uniquely identify a patient"
+    },
+    "prefix": {
+      "__type__": "object",
+      "prefix": "Type: String; Meaning: Prefix of the patient's name (e.g., Mr., Mrs.)",
+      "id, birthdate, deathdate, ssn, drivers, passport, prefix, first, last, suffix, maiden, marital, race, ethnicity, gender, birthplace, address, city, state, zip": "Composite key: All columns together uniquely identify a patient"
+    },
+    "first": {
+      "__type__": "object",
+      "first": "Type: String; Meaning: First name of the patient",
+      "id, birthdate, deathdate, ssn, drivers, passport, prefix, first, last, suffix, maiden, marital, race, ethnicity, gender, birthplace, address, city, state, zip": "Composite key: All columns together uniquely identify a patient",
+      "first, last": "Functional dependency: first and last names together uniquely identify a patient"
+    },
+    "last": {
+      "__type__": "object",
+      "last": "Type: String; Meaning: Last name of the patient",
+      "id, birthdate, deathdate, ssn, drivers, passport, prefix, first, last, suffix, maiden, marital, race, ethnicity, gender, birthplace, address, city, state, zip": "Composite key: All columns together uniquely identify a patient",
+      "first, last": "Functional dependency: first and last names together uniquely identify a patient"
+    },
+    "suffix": {
+      "__type__": "object",
+      "suffix": "Type: String; Meaning: Suffix of the patient's name (e.g., Jr., Sr.)",
+      "id, birthdate, deathdate, ssn, drivers, passport, prefix, first, last, suffix, maiden, marital, race, ethnicity, gender, birthplace, address, city, state, zip": "Composite key: All columns together uniquely identify a patient"
+    },
+    "maiden": {
+      "__type__": "object",
+      "maiden": "Type: String; Meaning: Maiden name of the patient",
+      "id, birthdate, deathdate, ssn, drivers, passport, prefix, first, last, suffix, maiden, marital, race, ethnicity, gender, birthplace, address, city, state, zip": "Composite key: All columns together uniquely identify a patient"
+    },
+    "marital": {
+      "__type__": "object",
+      "marital": "Type: String; Meaning: Marital status of the patient",
+      "id, birthdate, deathdate, ssn, drivers, passport, prefix, first, last, suffix, maiden, marital, race, ethnicity, gender, birthplace, address, city, state, zip": "Composite key: All columns together uniquely identify a patient"
+    },
+    "race": {
+      "__type__": "object",
+      "race": "Type: String; Meaning: Race of the patient",
+      "id, birthdate, deathdate, ssn, drivers, passport, prefix, first, last, suffix, maiden, marital, race, ethnicity, gender, birthplace, address, city, state, zip": "Composite key: All columns together uniquely identify a patient"
+    },
+    "ethnicity": {
+      "__type__": "object",
+      "ethnicity": "Type: String; Meaning: Ethnicity of the patient",
+      "id, birthdate, deathdate, ssn, drivers, passport, prefix, first, last, suffix, maiden, marital, race, ethnicity, gender, birthplace, address, city, state, zip": "Composite key: All columns together uniquely identify a patient"
+    },
+    "gender": {
+      "__type__": "object",
+      "gender": "Type: String; Meaning: Gender of the patient",
+      "id, birthdate, deathdate, ssn, drivers, passport, prefix, first, last, suffix, maiden, marital, race, ethnicity, gender, birthplace, address, city, state, zip": "Composite key: All columns together uniquely identify a patient"
+    },
+    "birthplace": {
+      "__type__": "object",
+      "birthplace": "Type: String; Meaning: Place of birth of the patient",
+      "id, birthdate, deathdate, ssn, drivers, passport, prefix, first, last, suffix, maiden, marital, race, ethnicity, gender, birthplace, address, city, state, zip": "Composite key: All columns together uniquely identify a patient"
+    },
+    "address": {
+      "__type__": "object",
+      "address": "Type: String; Meaning: Street address of the patient",
+      "id, birthdate, deathdate, ssn, drivers, passport, prefix, first, last, suffix, maiden, marital, race, ethnicity, gender, birthplace, address, city, state, zip": "Composite key: All columns together uniquely identify a patient",
+      "address, city, state, zip": "Functional dependency: address, city, state, and zip together uniquely identify a patient's residence"
+    },
+    "city": {
+      "__type__": "object",
+      "city": "Type: String; Meaning: City of residence of the patient",
+      "id, birthdate, deathdate, ssn, drivers, passport, prefix, first, last, suffix, maiden, marital, race, ethnicity, gender, birthplace, address, city, state, zip": "Composite key: All columns together uniquely identify a patient",
+      "city, state, zip": "Hierarchy: zip belongs to city, city belongs to state",
+      "address, city, state, zip": "Functional dependency: address, city, state, and zip together uniquely identify a patient's residence"
+    },
+    "state": {
+      "__type__": "object",
+      "state": "Type: String; Meaning: State of residence of the patient",
+      "id, birthdate, deathdate, ssn, drivers, passport, prefix, first, last, suffix, maiden, marital, race, ethnicity, gender, birthplace, address, city, state, zip": "Composite key: All columns together uniquely identify a patient",
+      "city, state, zip": "Hierarchy: zip belongs to city, city belongs to state",
+      "address, city, state, zip": "Functional dependency: address, city, state, and zip together uniquely identify a patient's residence"
+    },
+    "zip": {
+      "__type__": "object",
+      "zip": "Type: String; Meaning: ZIP code of the patient's residence",
+      "id, birthdate, deathdate, ssn, drivers, passport, prefix, first, last, suffix, maiden, marital, race, ethnicity, gender, birthplace, address, city, state, zip": "Composite key: All columns together uniquely identify a patient",
+      "city, state, zip": "Hierarchy: zip belongs to city, city belongs to state",
+      "address, city, state, zip": "Functional dependency: address, city, state, and zip together uniquely identify a patient's residence"
+    }
+  },
+  "note.csv": {
+    "note_id": {
+      "__type__": "object",
+      "note_id": "Type: Integer; Meaning: Unique identifier for each note",
+      "note_id, person_id": "Functional dependency: note_id determines person_id",
+      "note_id, note_event_id": "Functional dependency: note_id determines note_event_id",
+      "note_id, note_date": "Functional dependency: note_id determines note_date",
+      "note_id, note_datetime": "Functional dependency: note_id determines note_datetime",
+      "note_id, note_type_concept_id": "Functional dependency: note_id determines note_type_concept_id",
+      "note_id, note_class_concept_id": "Functional dependency: note_id determines note_class_concept_id",
+      "note_id, note_title": "Functional dependency: note_id determines note_title",
+      "note_id, note_text": "Functional dependency: note_id determines note_text",
+      "note_id, encoding_concept_id": "Functional dependency: note_id determines encoding_concept_id",
+      "note_id, language_concept_id": "Functional dependency: note_id determines language_concept_id",
+      "note_id, provider_id": "Functional dependency: note_id determines provider_id",
+      "note_id, visit_occurrence_id": "Functional dependency: note_id determines visit_occurrence_id",
+      "note_id, visit_detail_id": "Functional dependency: note_id determines visit_detail_id",
+      "note_id, note_source_value": "Functional dependency: note_id determines note_source_value"
+    },
+    "person_id": {
+      "__type__": "object",
+      "person_id": "Type: Integer; Meaning: Identifier for the person to whom the note pertains",
+      "note_id, person_id": "Functional dependency: note_id determines person_id"
+    },
+    "note_event_id": {
+      "__type__": "object",
+      "note_event_id": "Type: Integer; Meaning: Identifier for the event associated with the note",
+      "note_id, note_event_id": "Functional dependency: note_id determines note_event_id"
+    },
+    "note_event_field_concept_id": {
+      "__type__": "object",
+      "note_event_field_concept_id": "Type: Integer; Meaning: Concept ID for the field of the event associated with the note"
+    },
+    "note_date": {
+      "__type__": "object",
+      "note_date": "Type: Date; Meaning: Date when the note was created",
+      "note_id, note_date": "Functional dependency: note_id determines note_date",
+      "note_date, note_datetime": "Hierarchy: note_datetime is a more precise version of note_date"
+    },
+    "note_datetime": {
+      "__type__": "object",
+      "note_datetime": "Type: DateTime; Meaning: Date and time when the note was created",
+      "note_id, note_datetime": "Functional dependency: note_id determines note_datetime",
+      "note_date, note_datetime": "Hierarchy: note_datetime is a more precise version of note_date"
+    },
+    "note_type_concept_id": {
+      "__type__": "object",
+      "note_type_concept_id": "Type: Integer; Meaning: Concept ID for the type of the note",
+      "note_id, note_type_concept_id": "Functional dependency: note_id determines note_type_concept_id"
+    },
+    "note_class_concept_id": {
+      "__type__": "object",
+      "note_class_concept_id": "Type: Integer; Meaning: Concept ID for the class of the note",
+      "note_id, note_class_concept_id": "Functional dependency: note_id determines note_class_concept_id"
+    },
+    "note_title": {
+      "__type__": "object",
+      "note_title": "Type: String; Meaning: Title of the note",
+      "note_id, note_title": "Functional dependency: note_id determines note_title"
+    },
+    "note_text": {
+      "__type__": "object",
+      "note_text": "Type: String; Meaning: Text content of the note",
+      "note_id, note_text": "Functional dependency: note_id determines note_text"
+    },
+    "encoding_concept_id": {
+      "__type__": "object",
+      "encoding_concept_id": "Type: Integer; Meaning: Concept ID for the encoding of the note",
+      "note_id, encoding_concept_id": "Functional dependency: note_id determines encoding_concept_id"
+    },
+    "language_concept_id": {
+      "__type__": "object",
+      "language_concept_id": "Type: Integer; Meaning: Concept ID for the language of the note",
+      "note_id, language_concept_id": "Functional dependency: note_id determines language_concept_id"
+    },
+    "provider_id": {
+      "__type__": "object",
+      "provider_id": "Type: Integer; Meaning: Identifier for the provider who created the note",
+      "note_id, provider_id": "Functional dependency: note_id determines provider_id"
+    },
+    "visit_occurrence_id": {
+      "__type__": "object",
+      "visit_occurrence_id": "Type: Integer; Meaning: Identifier for the visit occurrence associated with the note",
+      "note_id, visit_occurrence_id": "Functional dependency: note_id determines visit_occurrence_id",
+      "visit_occurrence_id, visit_detail_id": "Hierarchy: visit_detail_id is a more detailed version of visit_occurrence_id"
+    },
+    "visit_detail_id": {
+      "__type__": "object",
+      "visit_detail_id": "Type: Integer; Meaning: Identifier for the visit detail associated with the note",
+      "note_id, visit_detail_id": "Functional dependency: note_id determines visit_detail_id",
+      "visit_occurrence_id, visit_detail_id": "Hierarchy: visit_detail_id is a more detailed version of visit_occurrence_id"
+    },
+    "note_source_value": {
+      "__type__": "object",
+      "note_source_value": "Type: String; Meaning: Source value of the note",
+      "note_id, note_source_value": "Functional dependency: note_id determines note_source_value"
+    }
+  },
+  "specimen.csv": {
+    "specimen_id": {
+      "__type__": "object",
+      "specimen_id": "Type: Integer; Meaning: Unique identifier for each specimen record",
+      "specimen_id, person_id": "Composite key: specimen_id + person_id uniquely identifies rows"
+    },
+    "person_id": {
+      "__type__": "object",
+      "person_id": "Type: Integer; Meaning: Identifier for the person from whom the specimen was collected",
+      "specimen_id, person_id": "Composite key: specimen_id + person_id uniquely identifies rows"
+    },
+    "specimen_concept_id": {
+      "__type__": "object",
+      "specimen_concept_id": "Type: Integer; Meaning: Concept identifier for the type of specimen",
+      "specimen_concept_id, specimen_type_concept_id": "Functional dependency: specimen_concept_id determines specimen_type_concept_id"
+    },
+    "specimen_type_concept_id": {
+      "__type__": "object",
+      "specimen_type_concept_id": "Type: Integer; Meaning: Concept identifier for the type of specimen collection",
+      "specimen_concept_id, specimen_type_concept_id": "Functional dependency: specimen_concept_id determines specimen_type_concept_id"
+    },
+    "specimen_date": {
+      "__type__": "object",
+      "specimen_date": "Type: Date; Meaning: Date when the specimen was collected"
+    },
+    "specimen_datetime": {
+      "__type__": "object",
+      "specimen_datetime": "Type: DateTime; Meaning: Date and time when the specimen was collected"
+    },
+    "quantity": {
+      "__type__": "object",
+      "quantity": "Type: Float; Meaning: Quantity of the specimen collected"
+    },
+    "unit_concept_id": {
+      "__type__": "object",
+      "unit_concept_id": "Type: Integer; Meaning: Concept identifier for the unit of measurement",
+      "unit_concept_id, unit_source_value": "Functional dependency: unit_concept_id determines unit_source_value"
+    },
+    "anatomic_site_concept_id": {
+      "__type__": "object",
+      "anatomic_site_concept_id": "Type: Integer; Meaning: Concept identifier for the anatomic site from which the specimen was collected",
+      "anatomic_site_concept_id, anatomic_site_source_value": "Functional dependency: anatomic_site_concept_id determines anatomic_site_source_value"
+    },
+    "disease_status_concept_id": {
+      "__type__": "object",
+      "disease_status_concept_id": "Type: Integer; Meaning: Concept identifier for the disease status of the specimen",
+      "disease_status_concept_id, disease_status_source_value": "Functional dependency: disease_status_concept_id determines disease_status_source_value"
+    },
+    "specimen_source_id": {
+      "__type__": "object",
+      "specimen_source_id": "Type: String; Meaning: Source identifier for the specimen"
+    },
+    "specimen_source_value": {
+      "__type__": "object",
+      "specimen_source_value": "Type: String; Meaning: Source value for the specimen"
+    },
+    "unit_source_value": {
+      "__type__": "object",
+      "unit_source_value": "Type: String; Meaning: Source value for the unit of measurement",
+      "unit_concept_id, unit_source_value": "Functional dependency: unit_concept_id determines unit_source_value"
+    },
+    "anatomic_site_source_value": {
+      "__type__": "object",
+      "anatomic_site_source_value": "Type: String; Meaning: Source value for the anatomic site",
+      "anatomic_site_concept_id, anatomic_site_source_value": "Functional dependency: anatomic_site_concept_id determines anatomic_site_source_value"
+    },
+    "disease_status_source_value": {
+      "__type__": "object",
+      "disease_status_source_value": "Type: String; Meaning: Source value for the disease status",
+      "disease_status_concept_id, disease_status_source_value": "Functional dependency: disease_status_concept_id determines disease_status_source_value"
+    }
+  },
+  "measurement.csv": {
+    "measurement_id": {
+      "__type__": "object",
+      "measurement_id": "Type: Integer; Meaning: Unique identifier for each measurement record",
+      "measurement_id, person_id": "Functional dependency: measurement_id determines person_id",
+      "measurement_id, measurement_concept_id": "Functional dependency: measurement_id determines measurement_concept_id",
+      "measurement_id, measurement_date": "Functional dependency: measurement_id determines measurement_date",
+      "measurement_id, measurement_datetime": "Functional dependency: measurement_id determines measurement_datetime",
+      "measurement_id, measurement_time": "Functional dependency: measurement_id determines measurement_time",
+      "measurement_id, measurement_type_concept_id": "Functional dependency: measurement_id determines measurement_type_concept_id",
+      "measurement_id, operator_concept_id": "Functional dependency: measurement_id determines operator_concept_id",
+      "measurement_id, value_as_number": "Functional dependency: measurement_id determines value_as_number",
+      "measurement_id, value_as_concept_id": "Functional dependency: measurement_id determines value_as_concept_id",
+      "measurement_id, unit_concept_id": "Functional dependency: measurement_id determines unit_concept_id",
+      "measurement_id, range_low": "Functional dependency: measurement_id determines range_low",
+      "measurement_id, range_high": "Functional dependency: measurement_id determines range_high",
+      "measurement_id, provider_id": "Functional dependency: measurement_id determines provider_id",
+      "measurement_id, visit_occurrence_id": "Functional dependency: measurement_id determines visit_occurrence_id",
+      "measurement_id, visit_detail_id": "Functional dependency: measurement_id determines visit_detail_id",
+      "measurement_id, measurement_source_value": "Functional dependency: measurement_id determines measurement_source_value",
+      "measurement_id, measurement_source_concept_id": "Functional dependency: measurement_id determines measurement_source_concept_id",
+      "measurement_id, unit_source_value": "Functional dependency: measurement_id determines unit_source_value",
+      "measurement_id, value_source_value": "Functional dependency: measurement_id determines value_source_value"
+    },
+    "person_id": {
+      "__type__": "object",
+      "person_id": "Type: Integer; Meaning: Identifier for the person to whom the measurement belongs",
+      "measurement_id, person_id": "Functional dependency: measurement_id determines person_id",
+      "person_id, visit_occurrence_id": "Hierarchy: visit_occurrence_id belongs to person_id"
+    },
+    "measurement_concept_id": {
+      "__type__": "object",
+      "measurement_concept_id": "Type: Integer; Meaning: Concept identifier for the type of measurement",
+      "measurement_id, measurement_concept_id": "Functional dependency: measurement_id determines measurement_concept_id"
+    },
+    "measurement_date": {
+      "__type__": "object",
+      "measurement_date": "Type: Date; Meaning: Date when the measurement was taken",
+      "measurement_id, measurement_date": "Functional dependency: measurement_id determines measurement_date"
+    },
+    "measurement_datetime": {
+      "__type__": "object",
+      "measurement_datetime": "Type: DateTime; Meaning: Date and time when the measurement was taken",
+      "measurement_id, measurement_datetime": "Functional dependency: measurement_id determines measurement_datetime"
+    },
+    "measurement_time": {
+      "__type__": "object",
+      "measurement_time": "Type: Time; Meaning: Time when the measurement was taken",
+      "measurement_id, measurement_time": "Functional dependency: measurement_id determines measurement_time"
+    },
+    "measurement_type_concept_id": {
+      "__type__": "object",
+      "measurement_type_concept_id": "Type: Integer; Meaning: Concept identifier for the type of measurement (e.g., lab result, vital sign)",
+      "measurement_id, measurement_type_concept_id": "Functional dependency: measurement_id determines measurement_type_concept_id"
+    },
+    "operator_concept_id": {
+      "__type__": "object",
+      "operator_concept_id": "Type: Integer; Meaning: Concept identifier for the operator used in the measurement (e.g., less than, greater than)",
+      "measurement_id, operator_concept_id": "Functional dependency: measurement_id determines operator_concept_id"
+    },
+    "value_as_number": {
+      "__type__": "object",
+      "value_as_number": "Type: Float; Meaning: Numeric value of the measurement",
+      "measurement_id, value_as_number": "Functional dependency: measurement_id determines value_as_number",
+      "value_as_number, range_low, range_high": "Aggregation constraint: value_as_number should be within the range defined by range_low and range_high"
+    },
+    "value_as_concept_id": {
+      "__type__": "object",
+      "value_as_concept_id": "Type: Integer; Meaning: Concept identifier for the value of the measurement (e.g., positive, negative)",
+      "measurement_id, value_as_concept_id": "Functional dependency: measurement_id determines value_as_concept_id"
+    },
+    "unit_concept_id": {
+      "__type__": "object",
+      "unit_concept_id": "Type: Integer; Meaning: Concept identifier for the unit of measurement",
+      "measurement_id, unit_concept_id": "Functional dependency: measurement_id determines unit_concept_id"
+    },
+    "range_low": {
+      "__type__": "object",
+      "range_low": "Type: Float; Meaning: Lower bound of the normal range for the measurement",
+      "measurement_id, range_low": "Functional dependency: measurement_id determines range_low",
+      "value_as_number, range_low, range_high": "Aggregation constraint: value_as_number should be within the range defined by range_low and range_high"
+    },
+    "range_high": {
+      "__type__": "object",
+      "range_high": "Type: Float; Meaning: Upper bound of the normal range for the measurement",
+      "measurement_id, range_high": "Functional dependency: measurement_id determines range_high",
+      "value_as_number, range_low, range_high": "Aggregation constraint: value_as_number should be within the range defined by range_low and range_high"
+    },
+    "provider_id": {
+      "__type__": "object",
+      "provider_id": "Type: Integer; Meaning: Identifier for the provider who took the measurement",
+      "measurement_id, provider_id": "Functional dependency: measurement_id determines provider_id"
+    },
+    "visit_occurrence_id": {
+      "__type__": "object",
+      "visit_occurrence_id": "Type: Integer; Meaning: Identifier for the visit during which the measurement was taken",
+      "measurement_id, visit_occurrence_id": "Functional dependency: measurement_id determines visit_occurrence_id",
+      "person_id, visit_occurrence_id": "Hierarchy: visit_occurrence_id belongs to person_id",
+      "visit_occurrence_id, visit_detail_id": "Hierarchy: visit_detail_id belongs to visit_occurrence_id"
+    },
+    "visit_detail_id": {
+      "__type__": "object",
+      "visit_detail_id": "Type: Integer; Meaning: Identifier for the detailed visit during which the measurement was taken",
+      "measurement_id, visit_detail_id": "Functional dependency: measurement_id determines visit_detail_id",
+      "visit_occurrence_id, visit_detail_id": "Hierarchy: visit_detail_id belongs to visit_occurrence_id"
+    },
+    "measurement_source_value": {
+      "__type__": "object",
+      "measurement_source_value": "Type: String; Meaning: Source value of the measurement (e.g., lab test code)",
+      "measurement_id, measurement_source_value": "Functional dependency: measurement_id determines measurement_source_value"
+    },
+    "measurement_source_concept_id": {
+      "__type__": "object",
+      "measurement_source_concept_id": "Type: Integer; Meaning: Concept identifier for the source of the measurement",
+      "measurement_id, measurement_source_concept_id": "Functional dependency: measurement_id determines measurement_source_concept_id"
+    },
+    "unit_source_value": {
+      "__type__": "object",
+      "unit_source_value": "Type: String; Meaning: Source value for the unit of measurement",
+      "measurement_id, unit_source_value": "Functional dependency: measurement_id determines unit_source_value"
+    },
+    "value_source_value": {
+      "__type__": "object",
+      "value_source_value": "Type: String; Meaning: Source value for the value of the measurement",
+      "measurement_id, value_source_value": "Functional dependency: measurement_id determines value_source_value"
+    }
+  },
+  "procedure_occurrence.csv": {
+    "procedure_occurrence_id": {
+      "__type__": "object",
+      "procedure_occurrence_id": "Type: Integer; Meaning: Unique identifier for each procedure occurrence",
+      "procedure_occurrence_id, person_id": "Functional dependency: procedure_occurrence_id determines person_id",
+      "procedure_occurrence_id, procedure_concept_id": "Functional dependency: procedure_occurrence_id determines procedure_concept_id",
+      "procedure_occurrence_id, procedure_date": "Functional dependency: procedure_occurrence_id determines procedure_date",
+      "procedure_occurrence_id, procedure_datetime": "Functional dependency: procedure_occurrence_id determines procedure_datetime",
+      "procedure_occurrence_id, procedure_type_concept_id": "Functional dependency: procedure_occurrence_id determines procedure_type_concept_id",
+      "procedure_occurrence_id, modifier_concept_id": "Functional dependency: procedure_occurrence_id determines modifier_concept_id",
+      "procedure_occurrence_id, quantity": "Functional dependency: procedure_occurrence_id determines quantity",
+      "procedure_occurrence_id, provider_id": "Functional dependency: procedure_occurrence_id determines provider_id",
+      "procedure_occurrence_id, visit_occurrence_id": "Functional dependency: procedure_occurrence_id determines visit_occurrence_id",
+      "procedure_occurrence_id, visit_detail_id": "Functional dependency: procedure_occurrence_id determines visit_detail_id",
+      "procedure_occurrence_id, procedure_source_value": "Functional dependency: procedure_occurrence_id determines procedure_source_value",
+      "procedure_occurrence_id, procedure_source_concept_id": "Functional dependency: procedure_occurrence_id determines procedure_source_concept_id",
+      "procedure_occurrence_id, modifier_source_value": "Functional dependency: procedure_occurrence_id determines modifier_source_value"
+    },
+    "person_id": {
+      "__type__": "object",
+      "person_id": "Type: Integer; Meaning: Identifier for the person who underwent the procedure",
+      "procedure_occurrence_id, person_id": "Functional dependency: procedure_occurrence_id determines person_id"
+    },
+    "procedure_concept_id": {
+      "__type__": "object",
+      "procedure_concept_id": "Type: Integer; Meaning: Standard concept identifier for the procedure",
+      "procedure_occurrence_id, procedure_concept_id": "Functional dependency: procedure_occurrence_id determines procedure_concept_id"
+    },
+    "procedure_date": {
+      "__type__": "object",
+      "procedure_date": "Type: Date; Meaning: Date when the procedure was performed",
+      "procedure_occurrence_id, procedure_date": "Functional dependency: procedure_occurrence_id determines procedure_date"
+    },
+    "procedure_datetime": {
+      "__type__": "object",
+      "procedure_datetime": "Type: DateTime; Meaning: Date and time when the procedure was performed",
+      "procedure_occurrence_id, procedure_datetime": "Functional dependency: procedure_occurrence_id determines procedure_datetime"
+    },
+    "procedure_type_concept_id": {
+      "__type__": "object",
+      "procedure_type_concept_id": "Type: Integer; Meaning: Standard concept identifier for the type of procedure",
+      "procedure_occurrence_id, procedure_type_concept_id": "Functional dependency: procedure_occurrence_id determines procedure_type_concept_id"
+    },
+    "modifier_concept_id": {
+      "__type__": "object",
+      "modifier_concept_id": "Type: Integer; Meaning: Standard concept identifier for any modifiers applied to the procedure",
+      "procedure_occurrence_id, modifier_concept_id": "Functional dependency: procedure_occurrence_id determines modifier_concept_id"
+    },
+    "quantity": {
+      "__type__": "object",
+      "quantity": "Type: Integer; Meaning: Quantity of the procedure performed",
+      "procedure_occurrence_id, quantity": "Functional dependency: procedure_occurrence_id determines quantity"
+    },
+    "provider_id": {
+      "__type__": "object",
+      "provider_id": "Type: Integer; Meaning: Identifier for the provider who performed the procedure",
+      "procedure_occurrence_id, provider_id": "Functional dependency: procedure_occurrence_id determines provider_id"
+    },
+    "visit_occurrence_id": {
+      "__type__": "object",
+      "visit_occurrence_id": "Type: Integer; Meaning: Identifier for the visit during which the procedure was performed",
+      "procedure_occurrence_id, visit_occurrence_id": "Functional dependency: procedure_occurrence_id determines visit_occurrence_id",
+      "visit_occurrence_id, visit_detail_id": "Hierarchy: visit_detail_id belongs to visit_occurrence_id"
+    },
+    "visit_detail_id": {
+      "__type__": "object",
+      "visit_detail_id": "Type: Integer; Meaning: Identifier for the detailed visit during which the procedure was performed",
+      "procedure_occurrence_id, visit_detail_id": "Functional dependency: procedure_occurrence_id determines visit_detail_id",
+      "visit_occurrence_id, visit_detail_id": "Hierarchy: visit_detail_id belongs to visit_occurrence_id"
+    },
+    "procedure_source_value": {
+      "__type__": "object",
+      "procedure_source_value": "Type: String; Meaning: Source value for the procedure",
+      "procedure_occurrence_id, procedure_source_value": "Functional dependency: procedure_occurrence_id determines procedure_source_value"
+    },
+    "procedure_source_concept_id": {
+      "__type__": "object",
+      "procedure_source_concept_id": "Type: Integer; Meaning: Source concept identifier for the procedure",
+      "procedure_occurrence_id, procedure_source_concept_id": "Functional dependency: procedure_occurrence_id determines procedure_source_concept_id"
+    },
+    "modifier_source_value": {
+      "__type__": "object",
+      "modifier_source_value": "Type: String; Meaning: Source value for the modifier",
+      "procedure_occurrence_id, modifier_source_value": "Functional dependency: procedure_occurrence_id determines modifier_source_value"
+    }
+  },
+  "provider.csv": {
+    "provider_id": {
+      "__type__": "object",
+      "provider_id": "Type: Integer; Meaning: Unique identifier for providers",
+      "provider_id, provider_name": "Functional dependency: provider_id determines provider_name",
+      "provider_id, npi": "Functional dependency: provider_id determines npi",
+      "provider_id, dea": "Functional dependency: provider_id determines dea",
+      "provider_id, specialty_concept_id": "Functional dependency: provider_id determines specialty_concept_id",
+      "provider_id, care_site_id": "Functional dependency: provider_id determines care_site_id",
+      "provider_id, year_of_birth": "Functional dependency: provider_id determines year_of_birth",
+      "provider_id, gender_concept_id": "Functional dependency: provider_id determines gender_concept_id",
+      "provider_id, provider_source_value": "Functional dependency: provider_id determines provider_source_value",
+      "provider_id, specialty_source_value": "Functional dependency: provider_id determines specialty_source_value",
+      "provider_id, specialty_source_concept_id": "Functional dependency: provider_id determines specialty_source_concept_id",
+      "provider_id, gender_source_value": "Functional dependency: provider_id determines gender_source_value",
+      "provider_id, gender_source_concept_id": "Functional dependency: provider_id determines gender_source_concept_id"
+    },
+    "provider_name": {
+      "__type__": "object",
+      "provider_name": "Type: String; Meaning: Name of the provider",
+      "provider_id, provider_name": "Functional dependency: provider_id determines provider_name"
+    },
+    "npi": {
+      "__type__": "object",
+      "npi": "Type: String; Meaning: National Provider Identifier",
+      "provider_id, npi": "Functional dependency: provider_id determines npi"
+    },
+    "dea": {
+      "__type__": "object",
+      "dea": "Type: String; Meaning: Drug Enforcement Administration number",
+      "provider_id, dea": "Functional dependency: provider_id determines dea"
+    },
+    "specialty_concept_id": {
+      "__type__": "object",
+      "specialty_concept_id": "Type: Integer; Meaning: Standard concept ID for the provider's specialty",
+      "provider_id, specialty_concept_id": "Functional dependency: provider_id determines specialty_concept_id",
+      "specialty_concept_id, specialty_source_value": "Functional dependency: specialty_concept_id determines specialty_source_value",
+      "specialty_concept_id, specialty_source_concept_id": "Functional dependency: specialty_concept_id determines specialty_source_concept_id"
+    },
+    "care_site_id": {
+      "__type__": "object",
+      "care_site_id": "Type: Integer; Meaning: Identifier for the care site where the provider works",
+      "provider_id, care_site_id": "Functional dependency: provider_id determines care_site_id"
+    },
+    "year_of_birth": {
+      "__type__": "object",
+      "year_of_birth": "Type: Integer; Meaning: Year of birth of the provider",
+      "provider_id, year_of_birth": "Functional dependency: provider_id determines year_of_birth"
+    },
+    "gender_concept_id": {
+      "__type__": "object",
+      "gender_concept_id": "Type: Integer; Meaning: Standard concept ID for the provider's gender",
+      "provider_id, gender_concept_id": "Functional dependency: provider_id determines gender_concept_id",
+      "gender_concept_id, gender_source_value": "Functional dependency: gender_concept_id determines gender_source_value",
+      "gender_concept_id, gender_source_concept_id": "Functional dependency: gender_concept_id determines gender_source_concept_id"
+    },
+    "provider_source_value": {
+      "__type__": "object",
+      "provider_source_value": "Type: String; Meaning: Source value for the provider identifier",
+      "provider_id, provider_source_value": "Functional dependency: provider_id determines provider_source_value"
+    },
+    "specialty_source_value": {
+      "__type__": "object",
+      "specialty_source_value": "Type: String; Meaning: Source value for the provider's specialty",
+      "provider_id, specialty_source_value": "Functional dependency: provider_id determines specialty_source_value",
+      "specialty_concept_id, specialty_source_value": "Functional dependency: specialty_concept_id determines specialty_source_value"
+    },
+    "specialty_source_concept_id": {
+      "__type__": "object",
+      "specialty_source_concept_id": "Type: Integer; Meaning: Source concept ID for the provider's specialty",
+      "provider_id, specialty_source_concept_id": "Functional dependency: provider_id determines specialty_source_concept_id",
+      "specialty_concept_id, specialty_source_concept_id": "Functional dependency: specialty_concept_id determines specialty_source_concept_id"
+    },
+    "gender_source_value": {
+      "__type__": "object",
+      "gender_source_value": "Type: String; Meaning: Source value for the provider's gender",
+      "provider_id, gender_source_value": "Functional dependency: provider_id determines gender_source_value",
+      "gender_concept_id, gender_source_value": "Functional dependency: gender_concept_id determines gender_source_value"
+    },
+    "gender_source_concept_id": {
+      "__type__": "object",
+      "gender_source_concept_id": "Type: Integer; Meaning: Source concept ID for the provider's gender",
+      "provider_id, gender_source_concept_id": "Functional dependency: provider_id determines gender_source_concept_id",
+      "gender_concept_id, gender_source_concept_id": "Functional dependency: gender_concept_id determines gender_source_concept_id"
+    }
+  },
+  "drug_exposure.csv": {
+    "drug_exposure_id": {
+      "__type__": "object",
+      "drug_exposure_id": "Type: Integer; Meaning: Unique identifier for drug exposure records",
+      "drug_exposure_id, person_id": "Composite key: drug_exposure_id + person_id uniquely identifies rows"
+    },
+    "person_id": {
+      "__type__": "object",
+      "person_id": "Type: Integer; Meaning: Identifier for the person receiving the drug",
+      "drug_exposure_id, person_id": "Composite key: drug_exposure_id + person_id uniquely identifies rows"
+    },
+    "drug_concept_id": {
+      "__type__": "object",
+      "drug_concept_id": "Type: Integer; Meaning: Standard concept identifier for the drug",
+      "drug_concept_id, drug_source_value": "Functional dependency: drug_source_value determines drug_concept_id"
+    },
+    "drug_exposure_start_date": {
+      "__type__": "object",
+      "drug_exposure_start_date": "Type: Date; Meaning: Date when the drug exposure started",
+      "drug_exposure_start_date, drug_exposure_start_datetime": "Functional dependency: drug_exposure_start_datetime determines drug_exposure_start_date"
+    },
+    "drug_exposure_start_datetime": {
+      "__type__": "object",
+      "drug_exposure_start_datetime": "Type: DateTime; Meaning: Exact datetime when the drug exposure started",
+      "drug_exposure_start_date, drug_exposure_start_datetime": "Functional dependency: drug_exposure_start_datetime determines drug_exposure_start_date"
+    },
+    "drug_exposure_end_date": {
+      "__type__": "object",
+      "drug_exposure_end_date": "Type: Date; Meaning: Date when the drug exposure ended",
+      "drug_exposure_end_date, drug_exposure_end_datetime": "Functional dependency: drug_exposure_end_datetime determines drug_exposure_end_date"
+    },
+    "drug_exposure_end_datetime": {
+      "__type__": "object",
+      "drug_exposure_end_datetime": "Type: DateTime; Meaning: Exact datetime when the drug exposure ended",
+      "drug_exposure_end_date, drug_exposure_end_datetime": "Functional dependency: drug_exposure_end_datetime determines drug_exposure_end_date"
+    },
+    "verbatim_end_date": {
+      "__type__": "object",
+      "verbatim_end_date": "Type: Date; Meaning: Verbatim end date of the drug exposure"
+    },
+    "drug_type_concept_id": {
+      "__type__": "object",
+      "drug_type_concept_id": "Type: Integer; Meaning: Standard concept identifier for the type of drug exposure"
+    },
+    "stop_reason": {
+      "__type__": "object",
+      "stop_reason": "Type: String; Meaning: Reason for stopping the drug exposure"
+    },
+    "refills": {
+      "__type__": "object",
+      "refills": "Type: Integer; Meaning: Number of refills authorized"
+    },
+    "quantity": {
+      "__type__": "object",
+      "quantity": "Type: Float; Meaning: Quantity of the drug dispensed"
+    },
+    "days_supply": {
+      "__type__": "object",
+      "days_supply": "Type: Integer; Meaning: Number of days the dispensed quantity is expected to last"
+    },
+    "sig": {
+      "__type__": "object",
+      "sig": "Type: String; Meaning: Instructions for drug administration"
+    },
+    "route_concept_id": {
+      "__type__": "object",
+      "route_concept_id": "Type: Integer; Meaning: Standard concept identifier for the route of administration",
+      "route_concept_id, route_source_value": "Functional dependency: route_source_value determines route_concept_id"
+    },
+    "lot_number": {
+      "__type__": "object",
+      "lot_number": "Type: String; Meaning: Lot number of the drug"
+    },
+    "provider_id": {
+      "__type__": "object",
+      "provider_id": "Type: Integer; Meaning: Identifier for the provider who prescribed the drug"
+    },
+    "visit_occurrence_id": {
+      "__type__": "object",
+      "visit_occurrence_id": "Type: Integer; Meaning: Identifier for the visit during which the drug was prescribed",
+      "visit_occurrence_id, visit_detail_id": "Hierarchy: visit_detail_id belongs to visit_occurrence_id"
+    },
+    "visit_detail_id": {
+      "__type__": "object",
+      "visit_detail_id": "Type: Integer; Meaning: Identifier for the detailed visit during which the drug was prescribed",
+      "visit_occurrence_id, visit_detail_id": "Hierarchy: visit_detail_id belongs to visit_occurrence_id"
+    },
+    "drug_source_value": {
+      "__type__": "object",
+      "drug_source_value": "Type: String; Meaning: Source value for the drug",
+      "drug_concept_id, drug_source_value": "Functional dependency: drug_source_value determines drug_concept_id",
+      "drug_source_concept_id, drug_source_value": "Functional dependency: drug_source_value determines drug_source_concept_id"
+    },
+    "drug_source_concept_id": {
+      "__type__": "object",
+      "drug_source_concept_id": "Type: Integer; Meaning: Source concept identifier for the drug",
+      "drug_source_concept_id, drug_source_value": "Functional dependency: drug_source_value determines drug_source_concept_id"
+    },
+    "route_source_value": {
+      "__type__": "object",
+      "route_source_value": "Type: String; Meaning: Source value for the route of administration",
+      "route_concept_id, route_source_value": "Functional dependency: route_source_value determines route_concept_id"
+    },
+    "dose_unit_source_value": {
+      "__type__": "object",
+      "dose_unit_source_value": "Type: String; Meaning: Source value for the dose unit"
+    }
+  },
+  "visit_occurrence.csv": {
+    "visit_occurrence_id": {
+      "__type__": "object",
+      "visit_occurrence_id": "Type: Integer; Meaning: Unique identifier for each visit occurrence",
+      "visit_occurrence_id, person_id": "Composite key: visit_occurrence_id + person_id uniquely identifies rows"
+    },
+    "person_id": {
+      "__type__": "object",
+      "person_id": "Type: Integer; Meaning: Identifier for the person who had the visit",
+      "visit_occurrence_id, person_id": "Composite key: visit_occurrence_id + person_id uniquely identifies rows",
+      "preceding_visit_occurrence_id, person_id": "Hierarchy: preceding_visit_occurrence_id belongs to the same person_id"
+    },
+    "visit_concept_id": {
+      "__type__": "object",
+      "visit_concept_id": "Type: Integer; Meaning: Standard concept identifier for the type of visit",
+      "visit_concept_id, visit_type_concept_id": "Correlation: visit_concept_id and visit_type_concept_id are related to the type of visit"
+    },
+    "visit_start_date": {
+      "__type__": "object",
+      "visit_start_date": "Type: Date; Meaning: Date when the visit started",
+      "visit_start_date, visit_start_datetime": "Functional dependency: visit_start_datetime determines visit_start_date"
+    },
+    "visit_start_datetime": {
+      "__type__": "object",
+      "visit_start_datetime": "Type: DateTime; Meaning: Exact datetime when the visit started",
+      "visit_start_date, visit_start_datetime": "Functional dependency: visit_start_datetime determines visit_start_date"
+    },
+    "visit_end_date": {
+      "__type__": "object",
+      "visit_end_date": "Type: Date; Meaning: Date when the visit ended",
+      "visit_end_date, visit_end_datetime": "Functional dependency: visit_end_datetime determines visit_end_date"
+    },
+    "visit_end_datetime": {
+      "__type__": "object",
+      "visit_end_datetime": "Type: DateTime; Meaning: Exact datetime when the visit ended",
+      "visit_end_date, visit_end_datetime": "Functional dependency: visit_end_datetime determines visit_end_date"
+    },
+    "visit_type_concept_id": {
+      "__type__": "object",
+      "visit_type_concept_id": "Type: Integer; Meaning: Standard concept identifier for the type of visit (e.g., inpatient, outpatient)",
+      "visit_concept_id, visit_type_concept_id": "Correlation: visit_concept_id and visit_type_concept_id are related to the type of visit"
+    },
+    "provider_id": {
+      "__type__": "object",
+      "provider_id": "Type: Integer; Meaning: Identifier for the provider who was responsible for the visit"
+    },
+    "care_site_id": {
+      "__type__": "object",
+      "care_site_id": "Type: Integer; Meaning: Identifier for the care site where the visit occurred"
+    },
+    "visit_source_value": {
+      "__type__": "object",
+      "visit_source_value": "Type: String; Meaning: Source value for the visit (e.g., hospital name)"
+    },
+    "visit_source_concept_id": {
+      "__type__": "object",
+      "visit_source_concept_id": "Type: Integer; Meaning: Standard concept identifier for the source of the visit"
+    },
+    "admitted_from_concept_id": {
+      "__type__": "object",
+      "admitted_from_concept_id": "Type: Integer; Meaning: Standard concept identifier for the location from which the patient was admitted",
+      "admitted_from_concept_id, admitted_from_source_value": "Functional dependency: admitted_from_concept_id determines admitted_from_source_value"
+    },
+    "admitted_from_source_value": {
+      "__type__": "object",
+      "admitted_from_source_value": "Type: String; Meaning: Source value for the location from which the patient was admitted",
+      "admitted_from_concept_id, admitted_from_source_value": "Functional dependency: admitted_from_concept_id determines admitted_from_source_value"
+    },
+    "discharge_to_concept_id": {
+      "__type__": "object",
+      "discharge_to_concept_id": "Type: Integer; Meaning: Standard concept identifier for the location to which the patient was discharged",
+      "discharge_to_concept_id, discharge_to_source_value": "Functional dependency: discharge_to_concept_id determines discharge_to_source_value"
+    },
+    "discharge_to_source_value": {
+      "__type__": "object",
+      "discharge_to_source_value": "Type: String; Meaning: Source value for the location to which the patient was discharged",
+      "discharge_to_concept_id, discharge_to_source_value": "Functional dependency: discharge_to_concept_id determines discharge_to_source_value"
+    },
+    "preceding_visit_occurrence_id": {
+      "__type__": "object",
+      "preceding_visit_occurrence_id": "Type: Integer; Meaning: Identifier for the previous visit occurrence of the same person",
+      "preceding_visit_occurrence_id, person_id": "Hierarchy: preceding_visit_occurrence_id belongs to the same person_id"
+    }
+  },
+  "visit_detail.csv": {
+    "visit_detail_id": {
+      "__type__": "object",
+      "visit_detail_id": "Type: Integer; Meaning: Unique identifier for each visit detail record",
+      "visit_detail_id, person_id": "Functional dependency: visit_detail_id determines person_id",
+      "visit_detail_id, visit_detail_concept_id": "Functional dependency: visit_detail_id determines visit_detail_concept_id",
+      "visit_detail_id, visit_detail_start_date": "Functional dependency: visit_detail_id determines visit_detail_start_date",
+      "visit_detail_id, visit_detail_start_datetime": "Functional dependency: visit_detail_id determines visit_detail_start_datetime",
+      "visit_detail_id, visit_detail_end_date": "Functional dependency: visit_detail_id determines visit_detail_end_date",
+      "visit_detail_id, visit_detail_end_datetime": "Functional dependency: visit_detail_id determines visit_detail_end_datetime",
+      "visit_detail_id, visit_detail_type_concept_id": "Functional dependency: visit_detail_id determines visit_detail_type_concept_id",
+      "visit_detail_id, provider_id": "Functional dependency: visit_detail_id determines provider_id",
+      "visit_detail_id, care_site_id": "Functional dependency: visit_detail_id determines care_site_id",
+      "visit_detail_id, visit_detail_source_value": "Functional dependency: visit_detail_id determines visit_detail_source_value",
+      "visit_detail_id, visit_detail_source_concept_id": "Functional dependency: visit_detail_id determines visit_detail_source_concept_id",
+      "visit_detail_id, admitted_from_source_value": "Functional dependency: visit_detail_id determines admitted_from_source_value",
+      "visit_detail_id, admitted_from_concept_id": "Functional dependency: visit_detail_id determines admitted_from_concept_id",
+      "visit_detail_id, discharge_to_source_value": "Functional dependency: visit_detail_id determines discharge_to_source_value",
+      "visit_detail_id, discharge_to_concept_id": "Functional dependency: visit_detail_id determines discharge_to_concept_id",
+      "visit_detail_id, preceding_visit_detail_id": "Functional dependency: visit_detail_id determines preceding_visit_detail_id",
+      "visit_detail_id, visit_detail_parent_id": "Functional dependency: visit_detail_id determines visit_detail_parent_id",
+      "visit_detail_id, visit_occurrence_id": "Functional dependency: visit_detail_id determines visit_occurrence_id",
+      "preceding_visit_detail_id, visit_detail_id": "Hierarchy: preceding_visit_detail_id can be a parent of visit_detail_id",
+      "visit_detail_parent_id, visit_detail_id": "Hierarchy: visit_detail_parent_id can be a parent of visit_detail_id"
+    },
+    "person_id": {
+      "__type__": "object",
+      "person_id": "Type: Integer; Meaning: Identifier for the person associated with the visit",
+      "visit_detail_id, person_id": "Functional dependency: visit_detail_id determines person_id"
+    },
+    "visit_detail_concept_id": {
+      "__type__": "object",
+      "visit_detail_concept_id": "Type: Integer; Meaning: Concept identifier for the type of visit detail",
+      "visit_detail_id, visit_detail_concept_id": "Functional dependency: visit_detail_id determines visit_detail_concept_id"
+    },
+    "visit_detail_start_date": {
+      "__type__": "object",
+      "visit_detail_start_date": "Type: Date; Meaning: Start date of the visit detail",
+      "visit_detail_id, visit_detail_start_date": "Functional dependency: visit_detail_id determines visit_detail_start_date",
+      "visit_detail_start_date, visit_detail_start_datetime": "Correlation: visit_detail_start_date is the date part of visit_detail_start_datetime"
+    },
+    "visit_detail_start_datetime": {
+      "__type__": "object",
+      "visit_detail_start_datetime": "Type: DateTime; Meaning: Start datetime of the visit detail",
+      "visit_detail_id, visit_detail_start_datetime": "Functional dependency: visit_detail_id determines visit_detail_start_datetime",
+      "visit_detail_start_date, visit_detail_start_datetime": "Correlation: visit_detail_start_date is the date part of visit_detail_start_datetime"
+    },
+    "visit_detail_end_date": {
+      "__type__": "object",
+      "visit_detail_end_date": "Type: Date; Meaning: End date of the visit detail",
+      "visit_detail_id, visit_detail_end_date": "Functional dependency: visit_detail_id determines visit_detail_end_date",
+      "visit_detail_end_date, visit_detail_end_datetime": "Correlation: visit_detail_end_date is the date part of visit_detail_end_datetime"
+    },
+    "visit_detail_end_datetime": {
+      "__type__": "object",
+      "visit_detail_end_datetime": "Type: DateTime; Meaning: End datetime of the visit detail",
+      "visit_detail_id, visit_detail_end_datetime": "Functional dependency: visit_detail_id determines visit_detail_end_datetime",
+      "visit_detail_end_date, visit_detail_end_datetime": "Correlation: visit_detail_end_date is the date part of visit_detail_end_datetime"
+    },
+    "visit_detail_type_concept_id": {
+      "__type__": "object",
+      "visit_detail_type_concept_id": "Type: Integer; Meaning: Concept identifier for the type of visit detail",
+      "visit_detail_id, visit_detail_type_concept_id": "Functional dependency: visit_detail_id determines visit_detail_type_concept_id"
+    },
+    "provider_id": {
+      "__type__": "object",
+      "provider_id": "Type: Integer; Meaning: Identifier for the provider who conducted the visit",
+      "visit_detail_id, provider_id": "Functional dependency: visit_detail_id determines provider_id"
+    },
+    "care_site_id": {
+      "__type__": "object",
+      "care_site_id": "Type: Integer; Meaning: Identifier for the care site where the visit took place",
+      "visit_detail_id, care_site_id": "Functional dependency: visit_detail_id determines care_site_id"
+    },
+    "visit_detail_source_value": {
+      "__type__": "object",
+      "visit_detail_source_value": "Type: String; Meaning: Source value for the visit detail",
+      "visit_detail_id, visit_detail_source_value": "Functional dependency: visit_detail_id determines visit_detail_source_value"
+    },
+    "visit_detail_source_concept_id": {
+      "__type__": "object",
+      "visit_detail_source_concept_id": "Type: Integer; Meaning: Concept identifier for the source value of the visit detail",
+      "visit_detail_id, visit_detail_source_concept_id": "Functional dependency: visit_detail_id determines visit_detail_source_concept_id"
+    },
+    "admitted_from_source_value": {
+      "__type__": "object",
+      "admitted_from_source_value": "Type: String; Meaning: Source value for the admission source",
+      "visit_detail_id, admitted_from_source_value": "Functional dependency: visit_detail_id determines admitted_from_source_value"
+    },
+    "admitted_from_concept_id": {
+      "__type__": "object",
+      "admitted_from_concept_id": "Type: Integer; Meaning: Concept identifier for the admission source",
+      "visit_detail_id, admitted_from_concept_id": "Functional dependency: visit_detail_id determines admitted_from_concept_id"
+    },
+    "discharge_to_source_value": {
+      "__type__": "object",
+      "discharge_to_source_value": "Type: String; Meaning: Source value for the discharge destination",
+      "visit_detail_id, discharge_to_source_value": "Functional dependency: visit_detail_id determines discharge_to_source_value"
+    },
+    "discharge_to_concept_id": {
+      "__type__": "object",
+      "discharge_to_concept_id": "Type: Integer; Meaning: Concept identifier for the discharge destination",
+      "visit_detail_id, discharge_to_concept_id": "Functional dependency: visit_detail_id determines discharge_to_concept_id"
+    },
+    "preceding_visit_detail_id": {
+      "__type__": "object",
+      "preceding_visit_detail_id": "Type: Integer; Meaning: Identifier for the preceding visit detail",
+      "visit_detail_id, preceding_visit_detail_id": "Functional dependency: visit_detail_id determines preceding_visit_detail_id",
+      "preceding_visit_detail_id, visit_detail_id": "Hierarchy: preceding_visit_detail_id can be a parent of visit_detail_id"
+    },
+    "visit_detail_parent_id": {
+      "__type__": "object",
+      "visit_detail_parent_id": "Type: Integer; Meaning: Identifier for the parent visit detail",
+      "visit_detail_id, visit_detail_parent_id": "Functional dependency: visit_detail_id determines visit_detail_parent_id",
+      "visit_detail_parent_id, visit_detail_id": "Hierarchy: visit_detail_parent_id can be a parent of visit_detail_id"
+    },
+    "visit_occurrence_id": {
+      "__type__": "object",
+      "visit_occurrence_id": "Type: Integer; Meaning: Identifier for the visit occurrence",
+      "visit_detail_id, visit_occurrence_id": "Functional dependency: visit_detail_id determines visit_occurrence_id"
+    }
+  },
+  "person.csv": {
+    "person_id": {
+      "__type__": "object",
+      "person_id": "Type: Integer; Meaning: Unique identifier for a person",
+      "person_id, gender_concept_id": "Functional dependency: person_id determines gender_concept_id",
+      "person_id, year_of_birth": "Functional dependency: person_id determines year_of_birth",
+      "person_id, month_of_birth": "Functional dependency: person_id determines month_of_birth",
+      "person_id, day_of_birth": "Functional dependency: person_id determines day_of_birth",
+      "person_id, birth_datetime": "Functional dependency: person_id determines birth_datetime",
+      "person_id, death_datetime": "Functional dependency: person_id determines death_datetime",
+      "person_id, race_concept_id": "Functional dependency: person_id determines race_concept_id",
+      "person_id, ethnicity_concept_id": "Functional dependency: person_id determines ethnicity_concept_id",
+      "person_id, location_id": "Functional dependency: person_id determines location_id",
+      "person_id, provider_id": "Functional dependency: person_id determines provider_id",
+      "person_id, care_site_id": "Functional dependency: person_id determines care_site_id",
+      "person_id, person_source_value": "Functional dependency: person_id determines person_source_value",
+      "person_id, gender_source_value": "Functional dependency: person_id determines gender_source_value",
+      "person_id, gender_source_concept_id": "Functional dependency: person_id determines gender_source_concept_id",
+      "person_id, race_source_value": "Functional dependency: person_id determines race_source_value",
+      "person_id, race_source_concept_id": "Functional dependency: person_id determines race_source_concept_id",
+      "person_id, ethnicity_source_value": "Functional dependency: person_id determines ethnicity_source_value",
+      "person_id, ethnicity_source_concept_id": "Functional dependency: person_id determines ethnicity_source_concept_id"
+    },
+    "gender_concept_id": {
+      "__type__": "object",
+      "gender_concept_id": "Type: Integer; Meaning: Standardized concept ID for gender",
+      "person_id, gender_concept_id": "Functional dependency: person_id determines gender_concept_id",
+      "gender_concept_id, gender_source_value": "Functional dependency: gender_concept_id determines gender_source_value"
+    },
+    "year_of_birth": {
+      "__type__": "object",
+      "year_of_birth": "Type: Integer; Meaning: Year of birth of the person",
+      "person_id, year_of_birth": "Functional dependency: person_id determines year_of_birth",
+      "year_of_birth, month_of_birth, day_of_birth": "Hierarchy: year_of_birth, month_of_birth, day_of_birth form a date hierarchy"
+    },
+    "month_of_birth": {
+      "__type__": "object",
+      "month_of_birth": "Type: Integer; Meaning: Month of birth of the person",
+      "person_id, month_of_birth": "Functional dependency: person_id determines month_of_birth",
+      "year_of_birth, month_of_birth, day_of_birth": "Hierarchy: year_of_birth, month_of_birth, day_of_birth form a date hierarchy"
+    },
+    "day_of_birth": {
+      "__type__": "object",
+      "day_of_birth": "Type: Integer; Meaning: Day of birth of the person",
+      "person_id, day_of_birth": "Functional dependency: person_id determines day_of_birth",
+      "year_of_birth, month_of_birth, day_of_birth": "Hierarchy: year_of_birth, month_of_birth, day_of_birth form a date hierarchy"
+    },
+    "birth_datetime": {
+      "__type__": "object",
+      "birth_datetime": "Type: DateTime; Meaning: Full date and time of birth of the person",
+      "person_id, birth_datetime": "Functional dependency: person_id determines birth_datetime"
+    },
+    "death_datetime": {
+      "__type__": "object",
+      "death_datetime": "Type: DateTime; Meaning: Full date and time of death of the person",
+      "person_id, death_datetime": "Functional dependency: person_id determines death_datetime"
+    },
+    "race_concept_id": {
+      "__type__": "object",
+      "race_concept_id": "Type: Integer; Meaning: Standardized concept ID for race",
+      "person_id, race_concept_id": "Functional dependency: person_id determines race_concept_id",
+      "race_concept_id, race_source_value": "Functional dependency: race_concept_id determines race_source_value"
+    },
+    "ethnicity_concept_id": {
+      "__type__": "object",
+      "ethnicity_concept_id": "Type: Integer; Meaning: Standardized concept ID for ethnicity",
+      "person_id, ethnicity_concept_id": "Functional dependency: person_id determines ethnicity_concept_id",
+      "ethnicity_concept_id, ethnicity_source_value": "Functional dependency: ethnicity_concept_id determines ethnicity_source_value"
+    },
+    "location_id": {
+      "__type__": "object",
+      "location_id": "Type: Integer; Meaning: Identifier for the person's location",
+      "person_id, location_id": "Functional dependency: person_id determines location_id"
+    },
+    "provider_id": {
+      "__type__": "object",
+      "provider_id": "Type: Integer; Meaning: Identifier for the person's provider",
+      "person_id, provider_id": "Functional dependency: person_id determines provider_id"
+    },
+    "care_site_id": {
+      "__type__": "object",
+      "care_site_id": "Type: Integer; Meaning: Identifier for the person's care site",
+      "person_id, care_site_id": "Functional dependency: person_id determines care_site_id"
+    },
+    "person_source_value": {
+      "__type__": "object",
+      "person_source_value": "Type: String; Meaning: Source value for the person identifier",
+      "person_id, person_source_value": "Functional dependency: person_id determines person_source_value"
+    },
+    "gender_source_value": {
+      "__type__": "object",
+      "gender_source_value": "Type: String; Meaning: Source value for the gender",
+      "person_id, gender_source_value": "Functional dependency: person_id determines gender_source_value",
+      "gender_concept_id, gender_source_value": "Functional dependency: gender_concept_id determines gender_source_value"
+    },
+    "gender_source_concept_id": {
+      "__type__": "object",
+      "gender_source_concept_id": "Type: Integer; Meaning: Standardized concept ID for the source gender value",
+      "person_id, gender_source_concept_id": "Functional dependency: person_id determines gender_source_concept_id"
+    },
+    "race_source_value": {
+      "__type__": "object",
+      "race_source_value": "Type: String; Meaning: Source value for the race",
+      "person_id, race_source_value": "Functional dependency: person_id determines race_source_value",
+      "race_concept_id, race_source_value": "Functional dependency: race_concept_id determines race_source_value"
+    },
+    "race_source_concept_id": {
+      "__type__": "object",
+      "race_source_concept_id": "Type: Integer; Meaning: Standardized concept ID for the source race value",
+      "person_id, race_source_concept_id": "Functional dependency: person_id determines race_source_concept_id"
+    },
+    "ethnicity_source_value": {
+      "__type__": "object",
+      "ethnicity_source_value": "Type: String; Meaning: Source value for the ethnicity",
+      "person_id, ethnicity_source_value": "Functional dependency: person_id determines ethnicity_source_value",
+      "ethnicity_concept_id, ethnicity_source_value": "Functional dependency: ethnicity_concept_id determines ethnicity_source_value"
+    },
+    "ethnicity_source_concept_id": {
+      "__type__": "object",
+      "ethnicity_source_concept_id": "Type: Integer; Meaning: Standardized concept ID for the source ethnicity value",
+      "person_id, ethnicity_source_concept_id": "Functional dependency: person_id determines ethnicity_source_concept_id"
+    }
+  }
+}

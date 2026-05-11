@@ -1,0 +1,101 @@
+{
+  "cdm_source.csv": {
+    "__table__": "CDM source metadata"
+  },
+  "condition_occurrence.csv": {
+    "__table__": "Condition occurrence records for individuals"
+  },
+  "conditions.csv": {
+    "__table__": "Patient medical conditions"
+  },
+  "device_exposure.csv": {
+    "__table__": "Device exposure records for individuals"
+  },
+  "fact_relationship.csv": {
+    "__table__": "Relationships between facts in different domains"
+  },
+  "death.csv": {
+    "__table__": "Death records with cause and type details"
+  },
+  "cohort_definition.csv": {
+    "__table__": "Cohort definitions with associated metadata"
+  },
+  "encounters.csv": {
+    "__table__": "Patient encounter details"
+  },
+  "allergies.csv": {
+    "__table__": "Patient allergy records"
+  },
+  "care_site.csv": {
+    "__table__": "Care site information with service and location details"
+  },
+  "careplans.csv": {
+    "__table__": "Patient care plan details"
+  },
+  "cohort.csv": {
+    "__table__": "Cohort membership details"
+  },
+  "drug_exposure.csv": {
+    "__table__": "Drug exposure records for individuals"
+  },
+  "immunizations.csv": {
+    "__table__": "Immunization records with associated costs"
+  },
+  "imaging_studies.csv": {
+    "__table__": "Imaging studies with patient and encounter details"
+  },
+  "procedure_occurrence.csv": {
+    "__table__": "Procedure occurrences for patients"
+  },
+  "location.csv": {
+    "__table__": "Location details including address, city, state, zip, county, and source value"
+  },
+  "person.csv": {
+    "__table__": "Person demographic and health information"
+  },
+  "note.csv": {
+    "__table__": "Clinical notes and their metadata"
+  },
+  "observation.csv": {
+    "__table__": "Clinical observations and measurements for patients"
+  },
+  "organizations.csv": {
+    "__table__": "Organization contact and utilization information"
+  },
+  "observation_period.csv": {
+    "__table__": "Observation periods for individuals"
+  },
+  "measurement.csv": {
+    "__table__": "Medical measurements and their details"
+  },
+  "procedures.csv": {
+    "__table__": "Medical procedures with associated costs and reasons"
+  },
+  "specimen.csv": {
+    "__table__": "Specimen collection details"
+  },
+  "medications.csv": {
+    "__table__": "Medication records with associated costs and reasons"
+  },
+  "observations.csv": {
+    "__table__": "Patient observation data"
+  },
+  "patients.csv": {
+    "__table__": "Patient demographic and identification information"
+  },
+  "providers.csv": {
+    "__table__": "Provider information and utilization"
+  },
+  "payer_plan_period.csv": {
+    "__table__": "Payer plan periods for individuals"
+  },
+  "visit_detail.csv": {
+    "__table__": "Visit details for patient encounters"
+  },
+  "visit_occurrence.csv": {
+    "__table__": "Visit occurrences with detailed information including dates, types, and related entities"
+  },
+  "provider.csv": {
+    "__table__": "Provider information including ID, name, NPI, DEA, specialty, care site, birth year, gender, and source values"
+  }
+}

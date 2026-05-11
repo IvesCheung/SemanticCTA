@@ -1,0 +1,4295 @@
+{
+  "SG_CSV0000000000000000.csv": {
+    "__table__": "Monthly service coverage by telecom provider"
+  },
+  "SG_CSV0000000000000001.csv": {
+    "__table__": "Monthly drop call rates for telecom providers"
+  },
+  "SG_CSV0000000000000002.csv": {
+    "__table__": "Educational activities by year, category, topic, and level"
+  },
+  "SG_CSV0000000000000003.csv": {
+    "__table__": "Security courses offered in 2020 with descriptions and references"
+  },
+  "SG_CSV0000000000000004.csv": {
+    "__table__": "Security courses and their descriptions for the year 2021"
+  },
+  "SG_CSV0000000000000005.csv": {
+    "__table__": "Security and data protection courses offered in 2022"
+  },
+  "SG_CSV0000000000000006.csv": {
+    "__table__": "Inmate academic performance by year and program"
+  },
+  "SG_CSV0000000000000007.csv": {
+    "__table__": "Diploma courses offered by Temasek Polytechnic"
+  },
+  "SG_CSV0000000000000008.csv": {
+    "__table__": "Course enrollment by year, school, course type, course name, and gender"
+  },
+  "SG_CSV0000000000000009.csv": {
+    "__table__": "Diploma courses offered at Temasek Polytechnic in 2018"
+  },
+  "SG_CSV0000000000000010.csv": {
+    "__table__": "Course enrollment by gender and year"
+  },
+  "SG_CSV0000000000000011.csv": {
+    "__table__": "Educational programs and courses offered in 2018 by various schools"
+  },
+  "SG_CSV0000000000000012.csv": {
+    "__table__": "Part-time course enrollment by gender and year"
+  },
+  "SG_CSV0000000000000013.csv": {
+    "__table__": "Diploma courses offered at Temasek Polytechnic in 2019"
+  },
+  "SG_CSV0000000000000014.csv": {
+    "__table__": "Course enrollment by gender and year"
+  },
+  "SG_CSV0000000000000015.csv": {
+    "__table__": "Course enrollment by gender and year"
+  },
+  "SG_CSV0000000000000016.csv": {
+    "__table__": "Diploma courses offered at Temasek Polytechnic in 2020"
+  },
+  "SG_CSV0000000000000017.csv": {
+    "__table__": "Course enrollment by gender and year"
+  },
+  "SG_CSV0000000000000018.csv": {
+    "__table__": "Post-secondary education courses and programs offered in 2020 and 2021"
+  },
+  "SG_CSV0000000000000019.csv": {
+    "__table__": "Part-time course enrollments by year, school, course type, course name, and gender"
+  },
+  "SG_CSV0000000000000020.csv": {
+    "__table__": "Diploma courses offered at Temasek Polytechnic in 2021, including course details and references"
+  },
+  "SG_CSV0000000000000021.csv": {
+    "__table__": "Course enrollment by gender"
+  },
+  "SG_CSV0000000000000022.csv": {
+    "__table__": "Post-diploma and specialist diploma courses offered in 2021 by various schools and institutes"
+  },
+  "SG_CSV0000000000000023.csv": {
+    "__table__": "Part-time course enrollment by gender and school"
+  },
+  "SG_CSV0000000000000024.csv": {
+    "__table__": "Diploma courses offered at Temasek Polytechnic in 2022"
+  },
+  "SG_CSV0000000000000025.csv": {
+    "__table__": "Course enrollment by gender and school"
+  },
+  "SG_CSV0000000000000026.csv": {
+    "__table__": "Post-secondary education courses and programs offered in 2022"
+  },
+  "SG_CSV0000000000000027.csv": {
+    "__table__": "Part-time course enrollment by gender and school"
+  },
+  "SG_CSV0000000000000028.csv": {
+    "__table__": "Company registration and business details"
+  },
+  "SG_CSV0000000000000028__0.csv": {
+    "__table__": "Business registration details"
+  },
+  "SG_CSV0000000000000028__1.csv": {
+    "__table__": "Business registration details"
+  },
+  "SG_CSV0000000000000028__2.csv": {
+    "__table__": "Company registration details"
+  },
+  "SG_CSV0000000000000028__3.csv": {
+    "__table__": "Company registration statuses by block"
+  },
+  "SG_CSV0000000000000028__4.csv": {
+    "__table__": "Company status by block and issuance agency"
+  },
+  "SG_CSV0000000000000028__5.csv": {
+    "__table__": "Company status by block and issuance agency"
+  },
+  "SG_CSV0000000000000028__6.csv": {
+    "__table__": "Business entity registration details"
+  },
+  "SG_CSV0000000000000028__7.csv": {
+    "__table__": "Company registration details"
+  },
+  "SG_CSV0000000000000028__8.csv": {
+    "__table__": "Company registration details"
+  },
+  "SG_CSV0000000000000029.csv": {
+    "__table__": "Business entities and their details"
+  },
+  "SG_CSV0000000000000030.csv": {
+    "__table__": "Business entities and their details"
+  },
+  "SG_CSV0000000000000030__0.csv": {
+    "__table__": "Business units with registration details and industry classifications"
+  },
+  "SG_CSV0000000000000030__1.csv": {
+    "__table__": "Business unit details including secondary and primary SSIC codes"
+  },
+  "SG_CSV0000000000000030__2.csv": {
+    "__table__": "Business unit details including secondary and primary SSIC codes"
+  },
+  "SG_CSV0000000000000030__3.csv": {
+    "__table__": "Local address registration details"
+  },
+  "SG_CSV0000000000000030__4.csv": {
+    "__table__": "Local address registration details"
+  },
+  "SG_CSV0000000000000030__5.csv": {
+    "__table__": "Registration details for local addresses"
+  },
+  "SG_CSV0000000000000030__6.csv": {
+    "__table__": "Company registration details"
+  },
+  "SG_CSV0000000000000030__7.csv": {
+    "__table__": "Company registration details with incorporation date, secondary SSIC code, and address type"
+  },
+  "SG_CSV0000000000000030__8.csv": {
+    "__table__": "Company registration details with incorporation date, secondary SSIC code, and address type"
+  },
+  "SG_CSV0000000000000031.csv": {
+    "__table__": "Company registration and business details"
+  },
+  "SG_CSV0000000000000031__7.csv": {
+    "__table__": "Survey responses on moral foundations and demographic characteristics"
+  },
+  "SG_CSV0000000000000032.csv": {
+    "__table__": "Business entities and their details"
+  },
+  "SG_CSV0000000000000033.csv": {
+    "__table__": "Business entities and their details"
+  },
+  "SG_CSV0000000000000034.csv": {
+    "__table__": "Company registration and business details"
+  },
+  "SG_CSV0000000000000035.csv": {
+    "__table__": "Business entities and their details"
+  },
+  "SG_CSV0000000000000035__0.csv": {
+    "__table__": "Street names with associated issuance agency and unique entity number"
+  },
+  "SG_CSV0000000000000035__1.csv": {
+    "__table__": "Street names with corresponding issuance agency ID and UEN"
+  },
+  "SG_CSV0000000000000035__2.csv": {
+    "__table__": "Business registration details by street"
+  },
+  "SG_CSV0000000000000035__3.csv": {
+    "__table__": "Entity registration details with status and SSIC codes"
+  },
+  "SG_CSV0000000000000035__4.csv": {
+    "__table__": "Entity registration details with status and SSIC codes"
+  },
+  "SG_CSV0000000000000035__5.csv": {
+    "__table__": "Entity registration details with status and SSIC codes"
+  },
+  "SG_CSV0000000000000035__6.csv": {
+    "__table__": "Business and local company records by block"
+  },
+  "SG_CSV0000000000000035__7.csv": {
+    "__table__": "Business entities by block and type"
+  },
+  "SG_CSV0000000000000035__8.csv": {
+    "__table__": "Business entities by block and type"
+  },
+  "SG_CSV0000000000000036.csv": {
+    "__table__": "Company registration and business details"
+  },
+  "SG_CSV0000000000000037.csv": {
+    "__table__": "Business entities and their details"
+  },
+  "SG_CSV0000000000000038.csv": {
+    "__table__": "Business entity details including registration, status, and primary activities"
+  },
+  "SG_CSV0000000000000039.csv": {
+    "__table__": "Company registration and business details"
+  },
+  "SG_CSV0000000000000040.csv": {
+    "__table__": "Business entities and their details"
+  },
+  "SG_CSV0000000000000040__0.csv": {
+    "__table__": "Business registration and classification details"
+  },
+  "SG_CSV0000000000000040__1.csv": {
+    "__table__": "Business registration details including SSIC codes and charges"
+  },
+  "SG_CSV0000000000000040__2.csv": {
+    "__table__": "Business registration details with SSIC codes"
+  },
+  "SG_CSV0000000000000040__3.csv": {
+    "__table__": "Entity registration details with status and location"
+  },
+  "SG_CSV0000000000000040__4.csv": {
+    "__table__": "Entity registration details with ACRA"
+  },
+  "SG_CSV0000000000000040__5.csv": {
+    "__table__": "Company registration details with ACRA"
+  },
+  "SG_CSV0000000000000040__6.csv": {
+    "__table__": "Unit issuance details by ACRA"
+  },
+  "SG_CSV0000000000000040__7.csv": {
+    "__table__": "Unit issuance details by ACRA"
+  },
+  "SG_CSV0000000000000040__8.csv": {
+    "__table__": "Unit issuance details by ACRA"
+  },
+  "SG_CSV0000000000000041.csv": {
+    "__table__": "Business entity details including registration, status, and industry classification"
+  },
+  "SG_CSV0000000000000042.csv": {
+    "__table__": "Company registration and business details"
+  },
+  "SG_CSV0000000000000043.csv": {
+    "__table__": "Business entities and their details"
+  },
+  "SG_CSV0000000000000044.csv": {
+    "__table__": "Business entities and their details"
+  },
+  "SG_CSV0000000000000044__0.csv": {
+    "__table__": "Business registration details"
+  },
+  "SG_CSV0000000000000044__1.csv": {
+    "__table__": "Business registration details"
+  },
+  "SG_CSV0000000000000044__2.csv": {
+    "__table__": "Business registration details"
+  },
+  "SG_CSV0000000000000044__3.csv": {
+    "__table__": "Company details including block, name, secondary SSIC description, status, and street name"
+  },
+  "SG_CSV0000000000000044__4.csv": {
+    "__table__": "Business entities with their block, name, secondary SSIC description, status, and street name"
+  },
+  "SG_CSV0000000000000044__5.csv": {
+    "__table__": "Company details including block, entity name, secondary SSIC description, entity status, and street name"
+  },
+  "SG_CSV0000000000000044__6.csv": {
+    "__table__": "Business entities with UEN, SSIC codes, and descriptions"
+  },
+  "SG_CSV0000000000000044__7.csv": {
+    "__table__": "Business entities with their UEN, SSIC codes, and descriptions"
+  },
+  "SG_CSV0000000000000044__8.csv": {
+    "__table__": "Business entities with UEN and associated details"
+  },
+  "SG_CSV0000000000000045.csv": {
+    "__table__": "Company registration and business details"
+  },
+  "SG_CSV0000000000000046.csv": {
+    "__table__": "Business entities registered with ACRA including their details such as entity type, status, address, and primary and secondary SSIC codes"
+  },
+  "SG_CSV0000000000000047.csv": {
+    "__table__": "Company registration and business details"
+  },
+  "SG_CSV0000000000000047__0.csv": {
+    "__table__": "Building registration and business activity details"
+  },
+  "SG_CSV0000000000000047__1.csv": {
+    "__table__": "Building registration and business activity details"
+  },
+  "SG_CSV0000000000000047__2.csv": {
+    "__table__": "Building registration and business classification details"
+  },
+  "SG_CSV0000000000000047__3.csv": {
+    "__table__": "Business entities with UEN, constitution, number of officers, and address type"
+  },
+  "SG_CSV0000000000000047__4.csv": {
+    "__table__": "Business entities with UEN, constitution, number of officers, and address type"
+  },
+  "SG_CSV0000000000000047__5.csv": {
+    "__table__": "Business entities with UEN, constitution, number of officers, and address type"
+  },
+  "SG_CSV0000000000000047__6.csv": {
+    "__table__": "Business entities with their status, constitution, and SSIC codes"
+  },
+  "SG_CSV0000000000000047__7.csv": {
+    "__table__": "Company registration details"
+  },
+  "SG_CSV0000000000000047__8.csv": {
+    "__table__": "Company registration details"
+  },
+  "SG_CSV0000000000000048.csv": {
+    "__table__": "Business entities and their details"
+  },
+  "SG_CSV0000000000000048__0.csv": {
+    "__table__": "Building and entity information"
+  },
+  "SG_CSV0000000000000048__1.csv": {
+    "__table__": "Building information with entity type and UEN"
+  },
+  "SG_CSV0000000000000048__2.csv": {
+    "__table__": "Building and business entity information"
+  },
+  "SG_CSV0000000000000048__3.csv": {
+    "__table__": "Entity registration details with business type, secondary SSIC code, description, street name, and registration date"
+  },
+  "SG_CSV0000000000000048__4.csv": {
+    "__table__": "Company registration details including type, secondary industry code, description, street name, and date"
+  },
+  "SG_CSV0000000000000048__5.csv": {
+    "__table__": "Entity registration details including type, secondary SSIC code, description, street name, and date"
+  },
+  "SG_CSV0000000000000048__6.csv": {
+    "__table__": "Business registration details"
+  },
+  "SG_CSV0000000000000048__7.csv": {
+    "__table__": "Business registration details"
+  },
+  "SG_CSV0000000000000048__8.csv": {
+    "__table__": "Business registration details"
+  },
+  "SG_CSV0000000000000049.csv": {
+    "__table__": "Company registration and business details"
+  },
+  "SG_CSV0000000000000050.csv": {
+    "__table__": "Company registration and business details"
+  },
+  "SG_CSV0000000000000051.csv": {
+    "__table__": "Business entities and their details"
+  },
+  "SG_CSV0000000000000052.csv": {
+    "__table__": "Business entities and their details"
+  },
+  "SG_CSV0000000000000053.csv": {
+    "__table__": "Business entities and their details"
+  },
+  "SG_CSV0000000000000054.csv": {
+    "__table__": "Business entity details including registration, status, and industry classification"
+  },
+  "SG_CSV0000000000000060.csv": {
+    "__table__": "APS investigations by age group and year"
+  },
+  "SG_CSV0000000000000061.csv": {
+    "__table__": "APS investigations by year and type of abuse"
+  },
+  "SG_CSV0000000000000063.csv": {
+    "__table__": "AED locations and operating hours"
+  },
+  "SG_CSV0000000000000064.csv": {
+    "__table__": "Vehicle registration counts by month, type, and age"
+  },
+  "SG_CSV0000000000000065.csv": {
+    "__table__": "Population distribution by year, ethnic group, and age group"
+  },
+  "SG_CSV0000000000000066.csv": {
+    "__table__": "Housing type distribution by age group and year"
+  },
+  "SG_CSV0000000000000067.csv": {
+    "__table__": "Age group distribution by town and year"
+  },
+  "SG_CSV0000000000000068.csv": {
+    "__table__": "Age distribution over years"
+  },
+  "SG_CSV0000000000000070.csv": {
+    "__table__": "Total fertility rate by age group and year"
+  },
+  "SG_CSV0000000000000071.csv": {
+    "__table__": "Annual incidence and prevalence rates for kidney transplant and definitive dialysis patients"
+  },
+  "SG_CSV0000000000000072.csv": {
+    "__table__": "Annual ASIR by gender"
+  },
+  "SG_CSV0000000000000073.csv": {
+    "__table__": "Annual ASIR by gender"
+  },
+  "SG_CSV0000000000000074.csv": {
+    "__table__": "Age-standardized incidence rates of cancer by site, gender, and time period"
+  },
+  "SG_CSV0000000000000078.csv": {
+    "__table__": "Aviation incidents and accidents with details including date, type of aircraft, description, and report URL"
+  },
+  "SG_CSV0000000000000079.csv": {
+    "__table__": "Monthly total values over time"
+  },
+  "SG_CSV0000000000000087.csv": {
+    "__table__": "Motorcycle sales by year and make"
+  },
+  "SG_CSV0000000000000089.csv": {
+    "__table__": "Insurance claims by year and type of grounds"
+  },
+  "SG_CSV0000000000000091.csv": {
+    "__table__": "Number of individuals by year and age group"
+  },
+  "SG_CSV0000000000000092.csv": {
+    "__table__": "Population count by year and age group"
+  },
+  "SG_CSV0000000000000093.csv": {
+    "__table__": "Number of individuals by year and age group"
+  },
+  "SG_CSV0000000000000094.csv": {
+    "__table__": "Number of individuals by year and age group"
+  },
+  "SG_CSV0000000000000095.csv": {
+    "__table__": "Annual capacity utilization by range"
+  },
+  "SG_CSV0000000000000096.csv": {
+    "__table__": "Vehicle registration counts by year and engine size"
+  },
+  "SG_CSV0000000000000096__0.csv": {
+    "__table__": "User demographic and occupational data"
+  },
+  "SG_CSV0000000000000097.csv": {
+    "__table__": "Vehicle sales by year and make"
+  },
+  "SG_CSV0000000000000098.csv": {
+    "__table__": "Proportion of charities by income size over years"
+  },
+  "SG_CSV0000000000000099.csv": {
+    "__table__": "Energy cost components per kWh over years"
+  },
+  "SG_CSV0000000000000100.csv": {
+    "__table__": "Energy product usage by year"
+  },
+  "SG_CSV0000000000000102.csv": {
+    "__table__": "Vehicle counts by year and make"
+  },
+  "SG_CSV0000000000000103.csv": {
+    "__table__": "ARV count by period, region, country, and gender"
+  },
+  "SG_CSV0000000000000104.csv": {
+    "__table__": "Tourist departures by period, region, country, and length of stay"
+  },
+  "SG_CSV0000000000000105.csv": {
+    "__table__": "Arrival counts by period, region, country, and mode of arrival"
+  },
+  "SG_CSV0000000000000106.csv": {
+    "__table__": "Vehicle inspection results by year, type, and age"
+  },
+  "SG_CSV0000000000000107.csv": {
+    "__table__": "Vehicle counts by year, type, and engine"
+  },
+  "SG_CSV0000000000000108.csv": {
+    "__table__": "Vehicle counts by year and category"
+  },
+  "SG_CSV0000000000000109.csv": {
+    "__table__": "Vehicle registration counts by year, category, and type"
+  },
+  "SG_CSV0000000000000110.csv": {
+    "__table__": "Motorcycle registrations by year and engine size"
+  },
+  "SG_CSV0000000000000111.csv": {
+    "__table__": "Funding sources and categories by year"
+  },
+  "SG_CSV0000000000000112.csv": {
+    "__table__": "Annual receipts by sector and year"
+  },
+  "SG_CSV0000000000000113.csv": {
+    "__table__": "Proportion of annual receipts by income size over years"
+  },
+  "SG_CSV0000000000000114.csv": {
+    "__table__": "Annual receipts by source and sector"
+  },
+  "SG_CSV0000000000000115.csv": {
+    "__table__": "Annual counts by type and category"
+  },
+  "SG_CSV0000000000000116.csv": {
+    "__table__": "ARV count by period, region, country, and age group"
+  },
+  "SG_CSV0000000000000117.csv": {
+    "__table__": "Tourism expenditure by category over years"
+  },
+  "SG_CSV0000000000000118.csv": {
+    "__table__": "Vehicle registration counts by year and type"
+  },
+  "SG_CSV0000000000000119.csv": {
+    "__table__": "Property tax collection and statistics by type and financial year"
+  },
+  "SG_CSV0000000000000122.csv": {
+    "__table__": "Ethnic group counts by year"
+  },
+  "SG_CSV0000000000000124.csv": {
+    "__table__": "Ethnic group events by month and year"
+  },
+  "SG_CSV0000000000000127.csv": {
+    "__table__": "Number of applications by financial year and application type"
+  },
+  "SG_CSV0000000000000128.csv": {
+    "__table__": "Housing applications by financial year and type"
+  },
+  "SG_CSV0000000000000131.csv": {
+    "__table__": "Building permits and completions by year"
+  },
+  "SG_CSV0000000000000132.csv": {
+    "__table__": "Building permits and completions by quarter"
+  },
+  "SG_CSV0000000000000134.csv": {
+    "__table__": "Cultural events and performances in Singapore"
+  },
+  "SG_CSV0000000000000136.csv": {
+    "__table__": "Tax assessment data by year and group"
+  },
+  "SG_CSV0000000000000137.csv": {
+    "__table__": "Tax assessment data over years"
+  },
+  "SG_CSV0000000000000140.csv": {
+    "__table__": "Commercial space availability and vacancy by year, sector, and type"
+  },
+  "SG_CSV0000000000000141.csv": {
+    "__table__": "Commercial space availability and vacancy by quarter, sector, and type"
+  },
+  "SG_CSV0000000000000142.csv": {
+    "__table__": "Housing units by year and availability status"
+  },
+  "SG_CSV0000000000000143.csv": {
+    "__table__": "Quarterly housing unit availability"
+  },
+  "SG_CSV0000000000000144.csv": {
+    "__table__": "Private residential property availability by year and type"
+  },
+  "SG_CSV0000000000000145.csv": {
+    "__table__": "Quarterly private residential property availability and vacancy counts"
+  },
+  "SG_CSV0000000000000146.csv": {
+    "__table__": "Average monthly earnings by year and gender"
+  },
+  "SG_CSV0000000000000147.csv": {
+    "__table__": "Quarterly average monthly earnings by gender"
+  },
+  "SG_CSV0000000000000147__1.csv": {
+    "__table__": "Survey responses on authority figures and personal characteristics"
+  },
+  "SG_CSV0000000000000148.csv": {
+    "__table__": "Average and median age by ethnic group over years"
+  },
+  "SG_CSV0000000000000149.csv": {
+    "__table__": "Average and median age of residents by flat type and year"
+  },
+  "SG_CSV0000000000000150.csv": {
+    "__table__": "Household size by ethnic group and year"
+  },
+  "SG_CSV0000000000000151.csv": {
+    "__table__": "Housing statistics by year and flat type"
+  },
+  "SG_CSV0000000000000152.csv": {
+    "__table__": "Average annual mileage by vehicle type and year"
+  },
+  "SG_CSV0000000000000153.csv": {
+    "__table__": "Epidemiological week counts by status"
+  },
+  "SG_CSV0000000000000154.csv": {
+    "__table__": "Epidemiological data on hospitalization and ICU admissions by age group and week"
+  },
+  "SG_CSV0000000000000155.csv": {
+    "__table__": "Epidemiological week disease case counts"
+  },
+  "SG_CSV0000000000000157.csv": {
+    "__table__": "Sick leave statistics by year, industry, and type"
+  },
+  "SG_CSV0000000000000158.csv": {
+    "__table__": "Sick leave statistics by year, industry, and leave type"
+  },
+  "SG_CSV0000000000000159.csv": {
+    "__table__": "Sick leave statistics by industry and year"
+  },
+  "SG_CSV0000000000000160.csv": {
+    "__table__": "Sick leave statistics by year and type"
+  },
+  "SG_CSV0000000000000161.csv": {
+    "__table__": "Sick leave statistics by employee type and year"
+  },
+  "SG_CSV0000000000000186.csv": {
+    "__table__": "Average monthly household electricity consumption by year, month, housing type, and dwelling type"
+  },
+  "SG_CSV0000000000000187.csv": {
+    "__table__": "Recruitment and resignation rates by year, industry, and occupation"
+  },
+  "SG_CSV0000000000000188.csv": {
+    "__table__": "Recruitment and resignation rates by quarter, industry, and occupation"
+  },
+  "SG_CSV0000000000000189.csv": {
+    "__table__": "Recruitment and resignation rates by year, industry, and occupation"
+  },
+  "SG_CSV0000000000000190.csv": {
+    "__table__": "Recruitment and resignation rates by quarter, industry, and occupation"
+  },
+  "SG_CSV0000000000000191.csv": {
+    "__table__": "Recruitment and resignation rates by year, industry, and occupation"
+  },
+  "SG_CSV0000000000000192.csv": {
+    "__table__": "Recruitment and resignation rates by quarter, industry, and occupation"
+  },
+  "SG_CSV0000000000000193.csv": {
+    "__table__": "Quarterly recruitment and resignation rates"
+  },
+  "SG_CSV0000000000000194.csv": {
+    "__table__": "Annual recruitment and resignation rates"
+  },
+  "SG_CSV0000000000000198.csv": {
+    "__table__": "Average household size by ethnic group and year"
+  },
+  "SG_CSV0000000000000199.csv": {
+    "__table__": "Housing statistics by year and flat type"
+  },
+  "SG_CSV0000000000000202.csv": {
+    "__table__": "Average speed on expressways and arterial roads by year"
+  },
+  "SG_CSV0000000000000203.csv": {
+    "__table__": "Quarterly paid hours by industry"
+  },
+  "SG_CSV0000000000000204.csv": {
+    "__table__": "Total paid hours by year and industry"
+  },
+  "SG_CSV0000000000000205.csv": {
+    "__table__": "Quarterly paid hours by industry sector"
+  },
+  "SG_CSV0000000000000206.csv": {
+    "__table__": "Annual paid hours by industry sector"
+  },
+  "SG_CSV0000000000000207.csv": {
+    "__table__": "Quarterly paid hours by industry sectors"
+  },
+  "SG_CSV0000000000000208.csv": {
+    "__table__": "Annual paid hours by industry sectors"
+  },
+  "SG_CSV0000000000000209.csv": {
+    "__table__": "Employment hours and overtime by year, industry, and employment type"
+  },
+  "SG_CSV0000000000000210.csv": {
+    "__table__": "Employment hours and overtime by year, industry, and employment type"
+  },
+  "SG_CSV0000000000000211.csv": {
+    "__table__": "Employment hours and overtime by year, industry, and employment type"
+  },
+  "SG_CSV0000000000000212.csv": {
+    "__table__": "Employment hours and overtime statistics by year and employment type"
+  },
+  "SG_CSV0000000000000215.csv": {
+    "__table__": "Overtime paid hours by quarter and industry"
+  },
+  "SG_CSV0000000000000216.csv": {
+    "__table__": "Overtime paid hours by year and industry"
+  },
+  "SG_CSV0000000000000217.csv": {
+    "__table__": "Overtime paid hours by quarter and industry"
+  },
+  "SG_CSV0000000000000218.csv": {
+    "__table__": "Overtime paid hours by year, industry sector, and sub-sector"
+  },
+  "SG_CSV0000000000000219.csv": {
+    "__table__": "Overtime paid hours by quarter and industry"
+  },
+  "SG_CSV0000000000000220.csv": {
+    "__table__": "Overtime paid hours by year and industry sectors"
+  },
+  "SG_CSV0000000000000223.csv": {
+    "__table__": "Institution details including type, location, and contact information"
+  },
+  "SG_CSV0000000000000228.csv": {
+    "__table__": "Industry-specific bandwidth consumption over years"
+  },
+  "SG_CSV0000000000000230.csv": {
+    "__table__": "Age distribution of individuals over years"
+  },
+  "SG_CSV0000000000000231.csv": {
+    "__table__": "Annual gender distribution of a population"
+  },
+  "SG_CSV0000000000000232.csv": {
+    "__table__": "Annual gender distribution of a population"
+  },
+  "SG_CSV0000000000000233.csv": {
+    "__table__": "Annual average value added by industry sector"
+  },
+  "SG_CSV0000000000000236.csv": {
+    "__table__": "Estimated Gross Floor Area by Financial Quarter and Usage"
+  },
+  "SG_CSV0000000000000237.csv": {
+    "__table__": "Annual receipts by sector and source"
+  },
+  "SG_CSV0000000000000238.csv": {
+    "__table__": "Broadband usage by employment size over years"
+  },
+  "SG_CSV0000000000000239.csv": {
+    "__table__": "Bunker fuel sales by year and type"
+  },
+  "SG_CSV0000000000000240.csv": {
+    "__table__": "Bunker fuel sales by type and month"
+  },
+  "SG_CSV0000000000000241__0.csv": {
+    "__table__": "Survey responses on education, occupation, and social values"
+  },
+  "SG_CSV0000000000000243.csv": {
+    "__table__": "Manufacturing sector forecasts by quarter and category"
+  },
+  "SG_CSV0000000000000244.csv": {
+    "__table__": "Manufacturing industry forecasts by quarter"
+  },
+  "SG_CSV0000000000000245.csv": {
+    "__table__": "Economic forecasts by quarter and category"
+  },
+  "SG_CSV0000000000000250.csv": {
+    "__table__": "Mobile operator call success rates by period"
+  },
+  "SG_CSV0000000000000251.csv": {
+    "__table__": "Call success rates by year and operator"
+  },
+  "SG_CSV0000000000000252.csv": {
+    "__table__": "Monthly success rates for telecommunications companies"
+  },
+  "SG_CSV0000000000000255.csv": {
+    "__table__": "Cargo throughput by year and type"
+  },
+  "SG_CSV0000000000000256.csv": {
+    "__table__": "Monthly cargo throughput by type"
+  },
+  "SG_CSV0000000000000259.csv": {
+    "__table__": "Parking rates for various car parks in Singapore"
+  },
+  "SG_CSV0000000000000260.csv": {
+    "__table__": "Crime statistics by year and type"
+  },
+  "SG_CSV0000000000000261.csv": {
+    "__table__": "Mortality data by year, ICD category, gender, age group, and count"
+  },
+  "SG_CSV0000000000000262.csv": {
+    "__table__": "Real estate salesperson registrations"
+  },
+  "SG_CSV0000000000000263.csv": {
+    "__table__": "Service utilization counts by year and type"
+  },
+  "SG_CSV0000000000000270.csv": {
+    "__table__": "Tax assessment details for companies"
+  },
+  "SG_CSV0000000000000271.csv": {
+    "__table__": "Tax assessment details for companies"
+  },
+  "SG_CSV0000000000000272.csv": {
+    "__table__": "Child dependency ratio by ethnic group and year"
+  },
+  "SG_CSV0000000000000273.csv": {
+    "__table__": "Child dependency ratio by flat type and year"
+  },
+  "SG_CSV0000000000000275.csv": {
+    "__table__": "Abuse cases by year and type"
+  },
+  "SG_CSV0000000000000277.csv": {
+    "__table__": "Residential care counts by year and type"
+  },
+  "SG_CSV0000000000000280.csv": {
+    "__table__": "Monthly passenger and aircraft movement statistics"
+  },
+  "SG_CSV0000000000000281.csv": {
+    "__table__": "Medical device import records"
+  },
+  "SG_CSV0000000000000283.csv": {
+    "__table__": "Schools and their co-curricular activities"
+  },
+  "SG_CSV0000000000000286.csv": {
+    "__table__": "Number of certified organizations by year and type"
+  },
+  "SG_CSV0000000000000287.csv": {
+    "__table__": "Certification counts by worker type and year"
+  },
+  "SG_CSV0000000000000288.csv": {
+    "__table__": "Gross enrolment ratio by year, category, education level, and sex"
+  },
+  "SG_CSV0000000000000289.csv": {
+    "__table__": "Property type index by quarter"
+  },
+  "SG_CSV0000000000000290.csv": {
+    "__table__": "Property type index by quarter"
+  },
+  "SG_CSV0000000000000291.csv": {
+    "__table__": "Dental examination rates by year, age group, and gender"
+  },
+  "SG_CSV0000000000000292.csv": {
+    "__table__": "Transportation facilities count by year"
+  },
+  "SG_CSV0000000000000294.csv": {
+    "__table__": "Completed cases by type and financial year"
+  },
+  "SG_CSV0000000000000296.csv": {
+    "__table__": "Quarterly completed private residential units"
+  },
+  "SG_CSV0000000000000297.csv": {
+    "__table__": "CBP completion rates for different types of inmates over the years"
+  },
+  "SG_CSV0000000000000298.csv": {
+    "__table__": "Construction projects by type, status, and financial year"
+  },
+  "SG_CSV0000000000000299.csv": {
+    "__table__": "HDB and DBSS units by financial year, type, and status"
+  },
+  "SG_CSV0000000000000300.csv": {
+    "__table__": "HDB and DBSS units by financial year, town or estate, and construction status"
+  },
+  "SG_CSV0000000000000302.csv": {
+    "__table__": "Computer access at home by year and housing type"
+  },
+  "SG_CSV0000000000000303.csv": {
+    "__table__": "Computer access and ownership by year"
+  },
+  "SG_CSV0000000000000305.csv": {
+    "__table__": "Computer access at home by year and housing type"
+  },
+  "SG_CSV0000000000000306.csv": {
+    "__table__": "Computer usage by employment size over years"
+  },
+  "SG_CSV0000000000000307.csv": {
+    "__table__": "Tender details for property development sites"
+  },
+  "SG_CSV0000000000000308.csv": {
+    "__table__": "Building material prices over time"
+  },
+  "SG_CSV0000000000000310__2.csv": {
+    "__table__": "Participant demographic and opinion survey data"
+  },
+  "SG_CSV0000000000000322.csv": {
+    "__table__": "Consumer Price Index by Year and Category"
+  },
+  "SG_CSV0000000000000323.csv": {
+    "__table__": "Consumer Price Index for Health and General Categories Over Years"
+  },
+  "SG_CSV0000000000000324.csv": {
+    "__table__": "Completed cases by case type and financial year"
+  },
+  "SG_CSV0000000000000331.csv": {
+    "__table__": "Annual contribution amounts by type"
+  },
+  "SG_CSV0000000000000332.csv": {
+    "__table__": "Population by age group over years"
+  },
+  "SG_CSV0000000000000333.csv": {
+    "__table__": "Population by age group and year"
+  },
+  "SG_CSV0000000000000334.csv": {
+    "__table__": "Population by age group and main offence group over years"
+  },
+  "SG_CSV0000000000000335.csv": {
+    "__table__": "Population by age group and main offence group"
+  },
+  "SG_CSV0000000000000336.csv": {
+    "__table__": "Population by education level over years"
+  },
+  "SG_CSV0000000000000337.csv": {
+    "__table__": "Population by gender and main offence group over years"
+  },
+  "SG_CSV0000000000000338.csv": {
+    "__table__": "Population by gender over years"
+  },
+  "SG_CSV0000000000000339.csv": {
+    "__table__": "Population by main offence group over years"
+  },
+  "SG_CSV0000000000000341.csv": {
+    "__table__": "Releases by gender over the years"
+  },
+  "SG_CSV0000000000000344.csv": {
+    "__table__": "COVID-19 cases in Singapore"
+  },
+  "SG_CSV0000000000000345.csv": {
+    "__table__": "Daily COVID-19 statistics including total confirmed cases, new cases, discharges, and hospitalization details"
+  },
+  "SG_CSV0000000000000346.csv": {
+    "__table__": "Allocation rates for different age groups and account types over time"
+  },
+  "SG_CSV0000000000000347.csv": {
+    "__table__": "Contribution rates by age group and contributing party over time"
+  },
+  "SG_CSV0000000000000349.csv": {
+    "__table__": "Housing grant distribution by financial year and grant type"
+  },
+  "SG_CSV0000000000000350.csv": {
+    "__table__": "Credit card metrics over time"
+  },
+  "SG_CSV0000000000000351.csv": {
+    "__table__": "Monthly credit card billing and balance data"
+  },
+  "SG_CSV0000000000000352.csv": {
+    "__table__": "Crude Birth Rate over years"
+  },
+  "SG_CSV0000000000000353.csv": {
+    "__table__": "Demographic statistics by ethnic group over time"
+  },
+  "SG_CSV0000000000000354.csv": {
+    "__table__": "Land reclamation projects by financial year and location"
+  },
+  "SG_CSV0000000000000355.csv": {
+    "__table__": "Cumulative consumer and organization account growth with numbers checked over time"
+  },
+  "SG_CSV0000000000000356.csv": {
+    "__table__": "Number of units by financial year and dwelling type"
+  },
+  "SG_CSV0000000000000357.csv": {
+    "__table__": "Number of units by category and financial year"
+  },
+  "SG_CSV0000000000000358.csv": {
+    "__table__": "Number of units by financial year and category"
+  },
+  "SG_CSV0000000000000359.csv": {
+    "__table__": "Number of units by financial year and category"
+  },
+  "SG_CSV0000000000000360.csv": {
+    "__table__": "Site status by financial year"
+  },
+  "SG_CSV0000000000000361.csv": {
+    "__table__": "Number of units by category and financial year"
+  },
+  "SG_CSV0000000000000363.csv": {
+    "__table__": "Time spent on various activities by age group and year"
+  },
+  "SG_CSV0000000000000364.csv": {
+    "__table__": "Inhalant abusers arrested by year, status, and age group"
+  },
+  "SG_CSV0000000000000365.csv": {
+    "__table__": "Inhalant abusers arrested by year, status, and race"
+  },
+  "SG_CSV0000000000000366.csv": {
+    "__table__": "Inhalant abusers arrested by year, status, and gender"
+  },
+  "SG_CSV0000000000000367.csv": {
+    "__table__": "Inhalant abusers arrested by year and status"
+  },
+  "SG_CSV0000000000000368.csv": {
+    "__table__": "Hawker centre cleaning schedules and details"
+  },
+  "SG_CSV0000000000000370.csv": {
+    "__table__": "Mortality data by year, ICD category, and cause of death"
+  },
+  "SG_CSV0000000000000371.csv": {
+    "__table__": "Death counts by year, marital status, age group, and gender"
+  },
+  "SG_CSV0000000000000372.csv": {
+    "__table__": "Mortality data by year, sex, age group, and occupation"
+  },
+  "SG_CSV0000000000000373.csv": {
+    "__table__": "Death counts by year, ethnic group, gender, age, and infant status"
+  },
+  "SG_CSV0000000000000374.csv": {
+    "__table__": "Death counts by year, cause category, and certifier"
+  },
+  "SG_CSV0000000000000375.csv": {
+    "__table__": "Death counts by year, race, place of occurrence, and infant status"
+  },
+  "SG_CSV0000000000000377.csv": {
+    "__table__": "Flat demand by type and period"
+  },
+  "SG_CSV0000000000000379.csv": {
+    "__table__": "Dental index by year and age"
+  },
+  "SG_CSV0000000000000382.csv": {
+    "__table__": "Dependency ratios for different age groups over time"
+  },
+  "SG_CSV0000000000000383.csv": {
+    "__table__": "Dependency ratios for different age groups over time"
+  },
+  "SG_CSV0000000000000384.csv": {
+    "__table__": "Deputies by age group over years"
+  },
+  "SG_CSV0000000000000385.csv": {
+    "__table__": "Gender distribution of deputies over years"
+  },
+  "SG_CSV0000000000000387.csv": {
+    "__table__": "Annual total, foreign, and local counts"
+  },
+  "SG_CSV0000000000000387__70.csv": {
+    "__table__": "Sociodemographic and occupational data of participants"
+  },
+  "SG_CSV0000000000000388.csv": {
+    "__table__": "Design filings by year and class"
+  },
+  "SG_CSV0000000000000389.csv": {
+    "__table__": "Design filings by country and year"
+  },
+  "SG_CSV0000000000000390.csv": {
+    "__table__": "Operating expenditure details by year and category"
+  },
+  "SG_CSV0000000000000391.csv": {
+    "__table__": "Operating expenditure details by year and category"
+  },
+  "SG_CSV0000000000000392.csv": {
+    "__table__": "Operating expenditure details by year and category"
+  },
+  "SG_CSV0000000000000393.csv": {
+    "__table__": "Operating expenditure details by year and category"
+  },
+  "SG_CSV0000000000000394.csv": {
+    "__table__": "Operating expenditure by category and year"
+  },
+  "SG_CSV0000000000000395.csv": {
+    "__table__": "Annual operating expenditure details"
+  },
+  "SG_CSV0000000000000396.csv": {
+    "__table__": "Proportion of charities by income size over years"
+  },
+  "SG_CSV0000000000000397.csv": {
+    "__table__": "Proportion of charities by income size over years"
+  },
+  "SG_CSV0000000000000398.csv": {
+    "__table__": "Number of registered charities and newly registered charities by sector and year"
+  },
+  "SG_CSV0000000000000399.csv": {
+    "__table__": "Cause of death percentages by year"
+  },
+  "SG_CSV0000000000000400.csv": {
+    "__table__": "Cause of death percentages by year"
+  },
+  "SG_CSV0000000000000401.csv": {
+    "__table__": "Annual leave entitlement distribution by employee type and year"
+  },
+  "SG_CSV0000000000000402.csv": {
+    "__table__": "Annual leave entitlement distribution by year and industry"
+  },
+  "SG_CSV0000000000000403.csv": {
+    "__table__": "Annual leave entitlement distribution by year, industry, and leave duration"
+  },
+  "SG_CSV0000000000000404.csv": {
+    "__table__": "Annual leave entitlement distribution by year, industry, and leave duration"
+  },
+  "SG_CSV0000000000000405.csv": {
+    "__table__": "Annual leave entitlement distribution over years"
+  },
+  "SG_CSV0000000000000417.csv": {
+    "__table__": "Annual ethnic group statistics"
+  },
+  "SG_CSV0000000000000419.csv": {
+    "__table__": "Divorce statistics by gender and age group over years"
+  },
+  "SG_CSV0000000000000420.csv": {
+    "__table__": "Divorce statistics by year and demographic group"
+  },
+  "SG_CSV0000000000000421.csv": {
+    "__table__": "Divorcee counts by gender over years"
+  },
+  "SG_CSV0000000000000422.csv": {
+    "__table__": "Divorcee statistics by year, ethnicity, gender, and age group"
+  },
+  "SG_CSV0000000000000428.csv": {
+    "__table__": "Marriage statistics by ethnicity and year"
+  },
+  "SG_CSV0000000000000431.csv": {
+    "__table__": "Domestic revenue by year and market segment"
+  },
+  "SG_CSV0000000000000432.csv": {
+    "__table__": "Domestic Supply Price Index for various categories over time"
+  },
+  "SG_CSV0000000000000433.csv": {
+    "__table__": "Monthly Domestic Supply Price Index values"
+  },
+  "SG_CSV0000000000000435.csv": {
+    "__table__": "Wholesale trade values by quarter and category"
+  },
+  "SG_CSV0000000000000436.csv": {
+    "__table__": "Number of donees by calendar year and age group"
+  },
+  "SG_CSV0000000000000437.csv": {
+    "__table__": "Number of donees by gender and calendar year"
+  },
+  "SG_CSV0000000000000438.csv": {
+    "__table__": "Donor-donee relationships by calendar year"
+  },
+  "SG_CSV0000000000000439.csv": {
+    "__table__": "Number of donors by calendar year and age group"
+  },
+  "SG_CSV0000000000000440.csv": {
+    "__table__": "Number of donors by gender and year"
+  },
+  "SG_CSV0000000000000441.csv": {
+    "__table__": "Water quality parameters and their average values over years"
+  },
+  "SG_CSV0000000000000442.csv": {
+    "__table__": "Duty rates for conveyance of equity interest in property-holding entities"
+  },
+  "SG_CSV0000000000000443.csv": {
+    "__table__": "Stamp duty rates for property transactions"
+  },
+  "SG_CSV0000000000000444.csv": {
+    "__table__": "Duty levied on different types of documents over various periods"
+  },
+  "SG_CSV0000000000000445.csv": {
+    "__table__": "Stamp duty rates for property transactions"
+  },
+  "SG_CSV0000000000000446.csv": {
+    "__table__": "Dwelling units sold or rented by financial year, town or estate, and flat type"
+  },
+  "SG_CSV0000000000000447.csv": {
+    "__table__": "Government agency e-services and applications"
+  },
+  "SG_CSV0000000000000448.csv": {
+    "__table__": "Economic values by year, region, and country"
+  },
+  "SG_CSV0000000000000450.csv": {
+    "__table__": "Trade values by region and year"
+  },
+  "SG_CSV0000000000000451.csv": {
+    "__table__": "Annual total values"
+  },
+  "SG_CSV0000000000000452.csv": {
+    "__table__": "Economic activity status by ethnic group over years"
+  },
+  "SG_CSV0000000000000453.csv": {
+    "__table__": "Housing and employment status by year"
+  },
+  "SG_CSV0000000000000454.csv": {
+    "__table__": "Monthly car sales by make"
+  },
+  "SG_CSV0000000000000455.csv": {
+    "__table__": "Annual carbon dioxide and methane emission factors for electricity generation"
+  },
+  "SG_CSV0000000000000457.csv": {
+    "__table__": "Inmate counts by type and year"
+  },
+  "SG_CSV0000000000000458.csv": {
+    "__table__": "Occupational distribution by age group and year"
+  },
+  "SG_CSV0000000000000459.csv": {
+    "__table__": "Occupational distribution by gender and year"
+  },
+  "SG_CSV0000000000000460.csv": {
+    "__table__": "Manpower growth over years"
+  },
+  "SG_CSV0000000000000461.csv": {
+    "__table__": "Employment by year, sex, age, and industry"
+  },
+  "SG_CSV0000000000000462.csv": {
+    "__table__": "Employment by year, sex, age, and industry"
+  },
+  "SG_CSV0000000000000463.csv": {
+    "__table__": "Employment by year, gender, industry, and highest qualification"
+  },
+  "SG_CSV0000000000000465.csv": {
+    "__table__": "Employer registration and inmate assistance outcomes"
+  },
+  "SG_CSV0000000000000466.csv": {
+    "__table__": "Annual employment change by industry sectors"
+  },
+  "SG_CSV0000000000000467.csv": {
+    "__table__": "Employment change by year, residency status, and industry"
+  },
+  "SG_CSV0000000000000468.csv": {
+    "__table__": "Quarterly employment change by industry sectors"
+  },
+  "SG_CSV0000000000000469.csv": {
+    "__table__": "Employment in Recorded Music and Live Performing Arts by Year"
+  },
+  "SG_CSV0000000000000470.csv": {
+    "__table__": "Employment in photography and fine art crafts over years"
+  },
+  "SG_CSV0000000000000471.csv": {
+    "__table__": "Employment in various art forms by year"
+  },
+  "SG_CSV0000000000000472.csv": {
+    "__table__": "Employment of enterprises total by year"
+  },
+  "SG_CSV0000000000000473.csv": {
+    "__table__": "Employment of enterprises by year and type"
+  },
+  "SG_CSV0000000000000475.csv": {
+    "__table__": "Employment rates by gender over time"
+  },
+  "SG_CSV0000000000000476.csv": {
+    "__table__": "Employment rates by gender over time"
+  },
+  "SG_CSV0000000000000478.csv": {
+    "__table__": "Cigarette offenses and seizures by year"
+  },
+  "SG_CSV0000000000000479.csv": {
+    "__table__": "Annual prosecution counts for fuel gauge offences"
+  },
+  "SG_CSV0000000000000480.csv": {
+    "__table__": "Liquor offences statistics by year and type"
+  },
+  "SG_CSV0000000000000482.csv": {
+    "__table__": "Enrollment numbers for pre-university and junior college courses by year, level, course, and sex"
+  },
+  "SG_CSV0000000000000483.csv": {
+    "__table__": "Primary school enrollment by year, stream, and sex"
+  },
+  "SG_CSV0000000000000484.csv": {
+    "__table__": "Primary school enrollment by year, stream, and sex"
+  },
+  "SG_CSV0000000000000485.csv": {
+    "__table__": "Primary school enrollment by year and gender"
+  },
+  "SG_CSV0000000000000486.csv": {
+    "__table__": "Primary school enrollment by year and gender"
+  },
+  "SG_CSV0000000000000487.csv": {
+    "__table__": "Primary school enrollment by year, stream, and sex"
+  },
+  "SG_CSV0000000000000488.csv": {
+    "__table__": "Primary school enrollment by year, stream, and sex"
+  },
+  "SG_CSV0000000000000489.csv": {
+    "__table__": "Primary school enrollment by year and gender"
+  },
+  "SG_CSV0000000000000490.csv": {
+    "__table__": "Primary school enrollment by year and gender"
+  },
+  "SG_CSV0000000000000491.csv": {
+    "__table__": "Secondary school enrollment by year, level, course, and sex"
+  },
+  "SG_CSV0000000000000492.csv": {
+    "__table__": "Enrollment and teaching staff statistics for various educational institutions over time"
+  },
+  "SG_CSV0000000000000493.csv": {
+    "__table__": "Educational institution enrollments by year and gender"
+  },
+  "SG_CSV0000000000000494.csv": {
+    "__table__": "Student enrollment in various art forms by year"
+  },
+  "SG_CSV0000000000000495.csv": {
+    "__table__": "Enterprise count by type over years"
+  },
+  "SG_CSV0000000000000496.csv": {
+    "__table__": "Enterprises count over years"
+  },
+  "SG_CSV0000000000000497.csv": {
+    "__table__": "Business registration details"
+  },
+  "SG_CSV0000000000000498.csv": {
+    "__table__": "Business registration details"
+  },
+  "SG_CSV0000000000000501.csv": {
+    "__table__": "Government agency e-services and applications"
+  },
+  "SG_CSV0000000000000502.csv": {
+    "__table__": "Government agency e-services and applications"
+  },
+  "SG_CSV0000000000000503.csv": {
+    "__table__": "Government e-Services and Online Applications"
+  },
+  "SG_CSV0000000000000504.csv": {
+    "__table__": "Annual counts of establishments and workers"
+  },
+  "SG_CSV0000000000000507.csv": {
+    "__table__": "Quarterly EC sales by status and type"
+  },
+  "SG_CSV0000000000000513.csv": {
+    "__table__": "Export revenue by year and region"
+  },
+  "SG_CSV0000000000000518.csv": {
+    "__table__": "Fare rates for different passenger types based on travel distance"
+  },
+  "SG_CSV0000000000000520.csv": {
+    "__table__": "Fare details for different card types and travel distances"
+  },
+  "SG_CSV0000000000000521.csv": {
+    "__table__": "Fare structure for different passenger types based on travel distance"
+  },
+  "SG_CSV0000000000000522.csv": {
+    "__table__": "Goods and Services Tax returns statistics by financial year"
+  },
+  "SG_CSV0000000000000523.csv": {
+    "__table__": "Tax returns by year, type, and filing method"
+  },
+  "SG_CSV0000000000000524.csv": {
+    "__table__": "Film ratings and content advisories"
+  },
+  "SG_CSV0000000000000527.csv": {
+    "__table__": "Marriage counts by age groups"
+  },
+  "SG_CSV0000000000000528.csv": {
+    "__table__": "Bride age distribution over years"
+  },
+  "SG_CSV0000000000000532.csv": {
+    "__table__": "Marriage counts by age groups"
+  },
+  "SG_CSV0000000000000533.csv": {
+    "__table__": "Marriage statistics by bride age groups over years"
+  },
+  "SG_CSV0000000000000535.csv": {
+    "__table__": "Police division crime statistics by year"
+  },
+  "SG_CSV0000000000000536.csv": {
+    "__table__": "Internet service plans with details"
+  },
+  "SG_CSV0000000000000537.csv": {
+    "__table__": "Quarterly fixed line subscriptions by type"
+  },
+  "SG_CSV0000000000000541.csv": {
+    "__table__": "Food service sector performance by category over time"
+  },
+  "SG_CSV0000000000000542.csv": {
+    "__table__": "Monthly food service sector performance by category"
+  },
+  "SG_CSV0000000000000543.csv": {
+    "__table__": "Annual total values over time"
+  },
+  "SG_CSV0000000000000544.csv": {
+    "__table__": "Monthly total values over time"
+  },
+  "SG_CSV0000000000000545.csv": {
+    "__table__": "Monthly food service sales by category"
+  },
+  "SG_CSV0000000000000546.csv": {
+    "__table__": "Monthly total values over time"
+  },
+  "SG_CSV0000000000000552.csv": {
+    "__table__": "Wholesale trade values by quarter and category"
+  },
+  "SG_CSV0000000000000553.csv": {
+    "__table__": "Wholesale trade values by quarter and category"
+  },
+  "SG_CSV0000000000000558.csv": {
+    "__table__": "Annual course enrollment numbers"
+  },
+  "SG_CSV0000000000000559.csv": {
+    "__table__": "Annual course enrollment"
+  },
+  "SG_CSV0000000000000560.csv": {
+    "__table__": "Enrollment by year and qualification"
+  },
+  "SG_CSV0000000000000561.csv": {
+    "__table__": "Annual course enrollment numbers"
+  },
+  "SG_CSV0000000000000562.csv": {
+    "__table__": "Secondary school completion rates by year, ethnicity, and gender"
+  },
+  "SG_CSV0000000000000563.csv": {
+    "__table__": "Housing survey percentages by year, flat type, and gender"
+  },
+  "SG_CSV0000000000000564.csv": {
+    "__table__": "Secondary school completion rates by year, ethnicity, and gender"
+  },
+  "SG_CSV0000000000000565.csv": {
+    "__table__": "Housing type and gender distribution over years"
+  },
+  "SG_CSV0000000000000566.csv": {
+    "__table__": "Annual gender distribution of a population"
+  },
+  "SG_CSV0000000000000567.csv": {
+    "__table__": "Gender parity index in education levels over years"
+  },
+  "SG_CSV0000000000000568.csv": {
+    "__table__": "Quarterly values for the Total Services Sector"
+  },
+  "SG_CSV0000000000000569.csv": {
+    "__table__": "School information including contact details, location, transportation, leadership, and educational characteristics"
+  },
+  "SG_CSV0000000000000570.csv": {
+    "__table__": "Development expenditure by type of educational institutions over years"
+  },
+  "SG_CSV0000000000000571.csv": {
+    "__table__": "Financial expenditures by year, type, and category"
+  },
+  "SG_CSV0000000000000572.csv": {
+    "__table__": "Financial expenditures by year, type, and category"
+  },
+  "SG_CSV0000000000000574.csv": {
+    "__table__": "Financial data for government expenditures, revenues, and balances over multiple years"
+  },
+  "SG_CSV0000000000000575.csv": {
+    "__table__": "Funding amounts by year and type"
+  },
+  "SG_CSV0000000000000576.csv": {
+    "__table__": "Government ministry expenditures by financial year and type"
+  },
+  "SG_CSV0000000000000577.csv": {
+    "__table__": "Government health expenditure and its components over financial years"
+  },
+  "SG_CSV0000000000000578.csv": {
+    "__table__": "Government ministry expenditures by financial year"
+  },
+  "SG_CSV0000000000000579.csv": {
+    "__table__": "Financial allocations by year, ministry, and status"
+  },
+  "SG_CSV0000000000000580.csv": {
+    "__table__": "Financial data for various tax and fee categories over multiple years"
+  },
+  "SG_CSV0000000000000581.csv": {
+    "__table__": "Financial data by year, type, and classification"
+  },
+  "SG_CSV0000000000000582.csv": {
+    "__table__": "Financial data for government expenditures, revenues, and balances over multiple years"
+  },
+  "SG_CSV0000000000000583.csv": {
+    "__table__": "Government tenders and their award details"
+  },
+  "SG_CSV0000000000000585.csv": {
+    "__table__": "Recurrent expenditure by type of educational institutions over years"
+  },
+  "SG_CSV0000000000000586.csv": {
+    "__table__": "Expenditure per student by educational institution type over years"
+  },
+  "SG_CSV0000000000000587.csv": {
+    "__table__": "Government expenditure by financial year, sector, ministry, and type"
+  },
+  "SG_CSV0000000000000588.csv": {
+    "__table__": "Government expenditure by financial year, sector, ministry, and type"
+  },
+  "SG_CSV0000000000000589.csv": {
+    "__table__": "Graduate employment and salary statistics by university, school, and degree"
+  },
+  "SG_CSV0000000000000590.csv": {
+    "__table__": "Enrollment numbers by gender and institution over years"
+  },
+  "SG_CSV0000000000000591.csv": {
+    "__table__": "Graduate counts by year, gender, and course type"
+  },
+  "SG_CSV0000000000000592.csv": {
+    "__table__": "Grant calls with closing dates and total awards"
+  },
+  "SG_CSV0000000000000593.csv": {
+    "__table__": "Grant awards for research projects"
+  },
+  "SG_CSV0000000000000594.csv": {
+    "__table__": "Number of grassroots leaders by organization type and year"
+  },
+  "SG_CSV0000000000000595.csv": {
+    "__table__": "Number of grassroots organizations by type and year"
+  },
+  "SG_CSV0000000000000596.csv": {
+    "__table__": "Quarterly industry allocations and returns"
+  },
+  "SG_CSV0000000000000597.csv": {
+    "__table__": "Gross allocation and returns by quarter and product segment"
+  },
+  "SG_CSV0000000000000598.csv": {
+    "__table__": "Quarterly industry allocations and returns"
+  },
+  "SG_CSV0000000000000599.csv": {
+    "__table__": "Gross allocation and returns by quarter and product segment"
+  },
+  "SG_CSV0000000000000600.csv": {
+    "__table__": "Gross allocation by quarter and allocation mode"
+  },
+  "SG_CSV0000000000000610.csv": {
+    "__table__": "Quarterly GDP in Chained (2015) Dollars"
+  },
+  "SG_CSV0000000000000616.csv": {
+    "__table__": "Number of businesses by financial year and entity type"
+  },
+  "SG_CSV0000000000000617.csv": {
+    "__table__": "GST contribution and business statistics by sector and year"
+  },
+  "SG_CSV0000000000000619.csv": {
+    "__table__": "New cases by age group and year"
+  },
+  "SG_CSV0000000000000620.csv": {
+    "__table__": "Cancer cases by gender and year"
+  },
+  "SG_CSV0000000000000622.csv": {
+    "__table__": "Car park details including location, type, and parking facilities"
+  },
+  "SG_CSV0000000000000623.csv": {
+    "__table__": "Elderly population distribution by year, sex, and age group"
+  },
+  "SG_CSV0000000000000624.csv": {
+    "__table__": "Elderly population mobility status over years"
+  },
+  "SG_CSV0000000000000625.csv": {
+    "__table__": "Elderly population distribution by year, age group, and ethnicity"
+  },
+  "SG_CSV0000000000000626.csv": {
+    "__table__": "Housing distribution by age group and flat type over years"
+  },
+  "SG_CSV0000000000000627.csv": {
+    "__table__": "Elderly population estimates by year and town estate"
+  },
+  "SG_CSV0000000000000628.csv": {
+    "__table__": "Elderly population marital status by year and gender"
+  },
+  "SG_CSV0000000000000629.csv": {
+    "__table__": "Housing tenure by age group over years"
+  },
+  "SG_CSV0000000000000630.csv": {
+    "__table__": "Bond issuance details"
+  },
+  "SG_CSV0000000000000631.csv": {
+    "__table__": "Number of households by ethnic group and year"
+  },
+  "SG_CSV0000000000000632.csv": {
+    "__table__": "Household distribution by flat type and year"
+  },
+  "SG_CSV0000000000000633.csv": {
+    "__table__": "Housing development details including block number, street, floor level, year completed, building types, contract town, total dwelling units, and sales and rental information"
+  },
+  "SG_CSV0000000000000634.csv": {
+    "__table__": "Population by ethnic group over years"
+  },
+  "SG_CSV0000000000000635.csv": {
+    "__table__": "Housing statistics by year and flat type"
+  },
+  "SG_CSV0000000000000637.csv": {
+    "__table__": "Population by town and year"
+  },
+  "SG_CSV0000000000000639.csv": {
+    "__table__": "Healthy life expectancy by gender and year"
+  },
+  "SG_CSV0000000000000640.csv": {
+    "__table__": "Health behaviors among secondary school students"
+  },
+  "SG_CSV0000000000000641.csv": {
+    "__table__": "Health behavior statistics by gender and year"
+  },
+  "SG_CSV0000000000000642.csv": {
+    "__table__": "Healthcare facilities by type, sector, and year"
+  },
+  "SG_CSV0000000000000643.csv": {
+    "__table__": "Healthcare facilities by type and sector over years"
+  },
+  "SG_CSV0000000000000644.csv": {
+    "__table__": "Healthcare facilities and beds by year, type, and ownership"
+  },
+  "SG_CSV0000000000000645.csv": {
+    "__table__": "Healthcare facilities and beds by year, institution type, and facility type"
+  },
+  "SG_CSV0000000000000646.csv": {
+    "__table__": "Healthcare professionals per 1000 population by year"
+  },
+  "SG_CSV0000000000000647.csv": {
+    "__table__": "Hourly PM2.5 concentration levels across different regions"
+  },
+  "SG_CSV0000000000000648.csv": {
+    "__table__": "24-hour PSI readings by region"
+  },
+  "SG_CSV0000000000000649.csv": {
+    "__table__": "Daily weather observations at Admiralty station"
+  },
+  "SG_CSV0000000000000650.csv": {
+    "__table__": "Daily weather observations at Admiralty station"
+  },
+  "SG_CSV0000000000000651.csv": {
+    "__table__": "Hospitalization rates by year, facility type, sex, and age group"
+  },
+  "SG_CSV0000000000000652.csv": {
+    "__table__": "Hospitalization rates by year, facility type, and sex"
+  },
+  "SG_CSV0000000000000653.csv": {
+    "__table__": "Healthcare facility usage statistics over years"
+  },
+  "SG_CSV0000000000000654.csv": {
+    "__table__": "Hospital admissions by type and ownership over years"
+  },
+  "SG_CSV0000000000000655.csv": {
+    "__table__": "Healthcare expenditure as a percentage of income by quintile over time"
+  },
+  "SG_CSV0000000000000657.csv": {
+    "__table__": "Household size distribution by year and ethnic group"
+  },
+  "SG_CSV0000000000000658.csv": {
+    "__table__": "Household size distribution by flat type and year"
+  },
+  "SG_CSV0000000000000673.csv": {
+    "__table__": "Quarterly Gross Domestic Product at 2010 Market Prices"
+  },
+  "SG_CSV0000000000000675.csv": {
+    "__table__": "Immunisation coverage by year and type"
+  },
+  "SG_CSV0000000000000676.csv": {
+    "__table__": "Import price index for various categories over years"
+  },
+  "SG_CSV0000000000000678.csv": {
+    "__table__": "Import price index values over years for overall items and non-oil imports"
+  },
+  "SG_CSV0000000000000679.csv": {
+    "__table__": "Energy product consumption by year"
+  },
+  "SG_CSV0000000000000684.csv": {
+    "__table__": "Incidence of retrenchment by year and occupation"
+  },
+  "SG_CSV0000000000000685.csv": {
+    "__table__": "Incidence of retrenchment by year and industry"
+  },
+  "SG_CSV0000000000000686.csv": {
+    "__table__": "Incidence of retrenchment by year, industry sector, and sub-sector"
+  },
+  "SG_CSV0000000000000687.csv": {
+    "__table__": "Incidence of retrenchment by year and industry sectors"
+  },
+  "SG_CSV0000000000000689.csv": {
+    "__table__": "Income amounts by type and year of assessment"
+  },
+  "SG_CSV0000000000000690.csv": {
+    "__table__": "Tax assessment data by year, group, and income type"
+  },
+  "SG_CSV0000000000000691.csv": {
+    "__table__": "Tax assessment data by year, group, and income type"
+  },
+  "SG_CSV0000000000000692.csv": {
+    "__table__": "Tax assessment data by year and income type"
+  },
+  "SG_CSV0000000000000693.csv": {
+    "__table__": "Manufacturing cluster performance over time"
+  },
+  "SG_CSV0000000000000694.csv": {
+    "__table__": "Manufacturing output by sector and subsector over time"
+  },
+  "SG_CSV0000000000000695.csv": {
+    "__table__": "Manufacturing industry production values by month"
+  },
+  "SG_CSV0000000000000696.csv": {
+    "__table__": "Monthly total values over time"
+  },
+  "SG_CSV0000000000000697.csv": {
+    "__table__": "Manufacturing index values over time"
+  },
+  "SG_CSV0000000000000700.csv": {
+    "__table__": "Computer usage by age group over years"
+  },
+  "SG_CSV0000000000000702.csv": {
+    "__table__": "Internet usage by age group over years"
+  },
+  "SG_CSV0000000000000704.csv": {
+    "__table__": "Trade disputes and awards by year"
+  },
+  "SG_CSV0000000000000707.csv": {
+    "__table__": "Infant mortality rates and deaths by ethnic group over time"
+  },
+  "SG_CSV0000000000000709.csv": {
+    "__table__": "Number of students by discipline of study over years"
+  },
+  "SG_CSV0000000000000710.csv": {
+    "__table__": "Annual gender-based population counts"
+  },
+  "SG_CSV0000000000000711.csv": {
+    "__table__": "Educational qualifications distribution over years"
+  },
+  "SG_CSV0000000000000712.csv": {
+    "__table__": "Residential status distribution over years"
+  },
+  "SG_CSV0000000000000714.csv": {
+    "__table__": "Blood donation center operating hours"
+  },
+  "SG_CSV0000000000000715.csv": {
+    "__table__": "Drug seizures by year and type"
+  },
+  "SG_CSV0000000000000719.csv": {
+    "__table__": "Admissions by education level over years"
+  },
+  "SG_CSV0000000000000720.csv": {
+    "__table__": "Admissions by gender over the years"
+  },
+  "SG_CSV0000000000000721.csv": {
+    "__table__": "Admissions by gender over the years"
+  },
+  "SG_CSV0000000000000723.csv": {
+    "__table__": "Inmate engagement in work programs over years"
+  },
+  "SG_CSV0000000000000724.csv": {
+    "__table__": "Releases by gender over the years"
+  },
+  "SG_CSV0000000000000726.csv": {
+    "__table__": "Inmate training statistics over years"
+  },
+  "SG_CSV0000000000000728.csv": {
+    "__table__": "Installed solar capacity by year, residential status, and user type"
+  },
+  "SG_CSV0000000000000729.csv": {
+    "__table__": "Enrollment numbers by gender for various educational institutions in Singapore"
+  },
+  "SG_CSV0000000000000733__20.csv": {
+    "__table__": "Free expression attitudes by demographic segments"
+  },
+  "SG_CSV0000000000000735.csv": {
+    "__table__": "Marriage statistics by education level"
+  },
+  "SG_CSV0000000000000736.csv": {
+    "__table__": "Bride counts by education level over years"
+  },
+  "SG_CSV0000000000000738.csv": {
+    "__table__": "ARV count by period, region, and country"
+  },
+  "SG_CSV0000000000000739.csv": {
+    "__table__": "Internet access by year and connection type"
+  },
+  "SG_CSV0000000000000740.csv": {
+    "__table__": "Internet usage by employment size over years"
+  },
+  "SG_CSV0000000000000744.csv": {
+    "__table__": "Tax collection by financial year and tax type"
+  },
+  "SG_CSV0000000000000746.csv": {
+    "__table__": "Annual course statistics by gender"
+  },
+  "SG_CSV0000000000000747.csv": {
+    "__table__": "ARV count by period, region, country, and age group"
+  },
+  "SG_CSV0000000000000748.csv": {
+    "__table__": "Job retention rates over years"
+  },
+  "SG_CSV0000000000000751.csv": {
+    "__table__": "Job vacancy counts by quarter, industry, and occupation"
+  },
+  "SG_CSV0000000000000752.csv": {
+    "__table__": "Job vacancy statistics by year, industry, and occupation"
+  },
+  "SG_CSV0000000000000753.csv": {
+    "__table__": "Job vacancy statistics by quarter, industry, and occupation"
+  },
+  "SG_CSV0000000000000754.csv": {
+    "__table__": "Job vacancy counts by quarter, industry, and occupation"
+  },
+  "SG_CSV0000000000000755.csv": {
+    "__table__": "Job vacancy statistics by year, industry, and occupation"
+  },
+  "SG_CSV0000000000000756.csv": {
+    "__table__": "Job vacancy statistics by year, industry, and occupation"
+  },
+  "SG_CSV0000000000000758.csv": {
+    "__table__": "Job vacancy rates by quarter, industry, and occupation"
+  },
+  "SG_CSV0000000000000759.csv": {
+    "__table__": "Job vacancy rates by quarter, industry, and occupation"
+  },
+  "SG_CSV0000000000000760.csv": {
+    "__table__": "Job vacancy rates by quarter, industry, and occupation"
+  },
+  "SG_CSV0000000000000763.csv": {
+    "__table__": "Judicial executions by year and type"
+  },
+  "SG_CSV0000000000000766.csv": {
+    "__table__": "Health services financial metrics by year and service type"
+  },
+  "SG_CSV0000000000000767.csv": {
+    "__table__": "Health services financial metrics by year and category"
+  },
+  "SG_CSV0000000000000769.csv": {
+    "__table__": "Retail trade financial metrics by category and year"
+  },
+  "SG_CSV0000000000000770.csv": {
+    "__table__": "Health services financial metrics by year and service type"
+  },
+  "SG_CSV0000000000000771.csv": {
+    "__table__": "Financial metrics for transport and storage services by year and category"
+  },
+  "SG_CSV0000000000000777.csv": {
+    "__table__": "Financial metrics for total retail trade over years"
+  },
+  "SG_CSV0000000000000778.csv": {
+    "__table__": "Health services financial metrics over years"
+  },
+  "SG_CSV0000000000000779.csv": {
+    "__table__": "Financial metrics for health services by year"
+  },
+  "SG_CSV0000000000000780.csv": {
+    "__table__": "Financial metrics for food and beverage services"
+  },
+  "SG_CSV0000000000000781.csv": {
+    "__table__": "Financial metrics for transport and storage services over years"
+  },
+  "SG_CSV0000000000000782.csv": {
+    "__table__": "Labor force participation rates by year, ethnic group, and gender"
+  },
+  "SG_CSV0000000000000783.csv": {
+    "__table__": "Labor force participation rates by year, flat type, and gender"
+  },
+  "SG_CSV0000000000000784.csv": {
+    "__table__": "Annual course statistics by gender and degree course"
+  },
+  "SG_CSV0000000000000785.csv": {
+    "__table__": "Diploma course statistics by year, gender, and course type"
+  },
+  "SG_CSV0000000000000786.csv": {
+    "__table__": "Road length by type and year"
+  },
+  "SG_CSV0000000000000787.csv": {
+    "__table__": "Road length by type and year"
+  },
+  "SG_CSV0000000000000788.csv": {
+    "__table__": "Total licensed food establishments by year"
+  },
+  "SG_CSV0000000000000789.csv": {
+    "__table__": "Number of food establishments by year and grade"
+  },
+  "SG_CSV0000000000000797.csv": {
+    "__table__": "Contact information for public cleaning service providers by zone"
+  },
+  "SG_CSV0000000000000798.csv": {
+    "__table__": "Market and food centre details"
+  },
+  "SG_CSV0000000000000799.csv": {
+    "__table__": "Food licensees and their grades"
+  },
+  "SG_CSV0000000000000800.csv": {
+    "__table__": "Medical clinics and their vaccine offerings"
+  },
+  "SG_CSV0000000000000804.csv": {
+    "__table__": "Service provider details and offerings in Woodlands"
+  },
+  "SG_CSV0000000000000805.csv": {
+    "__table__": "Community and social support services in Sembawang"
+  },
+  "SG_CSV0000000000000806.csv": {
+    "__table__": "Service provider information for various social and health support services"
+  },
+  "SG_CSV0000000000000807.csv": {
+    "__table__": "Retailer license information with location details"
+  },
+  "SG_CSV0000000000000808.csv": {
+    "__table__": "Building information and energy performance"
+  },
+  "SG_CSV0000000000000809.csv": {
+    "__table__": "Building energy use and characteristics"
+  },
+  "SG_CSV0000000000000810.csv": {
+    "__table__": "Preschool and childcare center services and fees"
+  },
+  "SG_CSV0000000000000811.csv": {
+    "__table__": "Preschool incidental charges and deposits"
+  },
+  "SG_CSV0000000000000812.csv": {
+    "__table__": "Preschool and childcare center licensing details"
+  },
+  "SG_CSV0000000000000813.csv": {
+    "__table__": "Childcare center details including vacancies, services, and operating hours"
+  },
+  "SG_CSV0000000000000814.csv": {
+    "__table__": "Company medical licenses with expiry dates"
+  },
+  "SG_CSV0000000000000815.csv": {
+    "__table__": "Company details including name, address, contact numbers, and license class"
+  },
+  "SG_CSV0000000000000816.csv": {
+    "__table__": "Pharmaceutical product details including name, form, color, shape, marking, adulterants, manufacturer, and country"
+  },
+  "SG_CSV0000000000000817.csv": {
+    "__table__": "Construction company details including classification, address, and contact information"
+  },
+  "SG_CSV0000000000000818.csv": {
+    "__table__": "Pharmacy information including name, pharmacist in charge, and address"
+  },
+  "SG_CSV0000000000000819.csv": {
+    "__table__": "Tobacco license details for companies"
+  },
+  "SG_CSV0000000000000820.csv": {
+    "__table__": "Licensed retail outlets with their validity periods and addresses"
+  },
+  "SG_CSV0000000000000821.csv": {
+    "__table__": "Cosmetic product notifications with brand, product, shade, notification number, company, effective date, and country of manufacture"
+  },
+  "SG_CSV0000000000000822.csv": {
+    "__table__": "Poison control licenses for companies and individuals"
+  },
+  "SG_CSV0000000000000823.csv": {
+    "__table__": "Company listings for engineering and architectural services"
+  },
+  "SG_CSV0000000000000824.csv": {
+    "__table__": "Company registration and grading information"
+  },
+  "SG_CSV0000000000000825.csv": {
+    "__table__": "Medical device registration details"
+  },
+  "SG_CSV0000000000000826.csv": {
+    "__table__": "Retail business licenses and addresses"
+  },
+  "SG_CSV0000000000000827.csv": {
+    "__table__": "Building permits and projects in Singapore"
+  },
+  "SG_CSV0000000000000828.csv": {
+    "__table__": "Building permits and projects in Singapore"
+  },
+  "SG_CSV0000000000000829.csv": {
+    "__table__": "Literacy rate over time for individuals aged 15 years and over"
+  },
+  "SG_CSV0000000000000830.csv": {
+    "__table__": "Labor force participation, employment, education, and literacy rates by gender over time"
+  },
+  "SG_CSV0000000000000831.csv": {
+    "__table__": "Birth statistics by year, gestation period, weight, gender, and type of birth"
+  },
+  "SG_CSV0000000000000832.csv": {
+    "__table__": "Birth records by month, weight, mother's age, gender, and count"
+  },
+  "SG_CSV0000000000000833.csv": {
+    "__table__": "Birth records by month, mother's race, education level, and birth order"
+  },
+  "SG_CSV0000000000000834.csv": {
+    "__table__": "Monthly birth counts by father's race and child's gender"
+  },
+  "SG_CSV0000000000000835.csv": {
+    "__table__": "Births by month, mother's race, and birth attendant"
+  },
+  "SG_CSV0000000000000836.csv": {
+    "__table__": "Birth counts by month, mother's race, and place of birth"
+  },
+  "SG_CSV0000000000000837.csv": {
+    "__table__": "Birth counts by parent races over years"
+  },
+  "SG_CSV0000000000000838.csv": {
+    "__table__": "Birth counts by month, order, mother's race, and age group"
+  },
+  "SG_CSV0000000000000839.csv": {
+    "__table__": "Birth counts by month, maternal age, child gender, and maternal race"
+  },
+  "SG_CSV0000000000000840.csv": {
+    "__table__": "Birth counts by parent nationalities"
+  },
+  "SG_CSV0000000000000841.csv": {
+    "__table__": "Birth counts by month, mother's occupation, and birth order"
+  },
+  "SG_CSV0000000000000842.csv": {
+    "__table__": "Live births, deaths, and natural increase by year and ethnic group"
+  },
+  "SG_CSV0000000000000843.csv": {
+    "__table__": "Live-births by year and type"
+  },
+  "SG_CSV0000000000000844.csv": {
+    "__table__": "Livestock slaughtered by type and year"
+  },
+  "SG_CSV0000000000000846.csv": {
+    "__table__": "Living arrangements by year"
+  },
+  "SG_CSV0000000000000847.csv": {
+    "__table__": "Speed camera locations and types in Singapore"
+  },
+  "SG_CSV0000000000000848.csv": {
+    "__table__": "Shelter locations and types in Singapore"
+  },
+  "SG_CSV0000000000000851.csv": {
+    "__table__": "Marine casualties and incidents with details"
+  },
+  "SG_CSV0000000000000861__45.csv": {
+    "__table__": "Survey responses on freedom of expression conditions and influences"
+  },
+  "SG_CSV0000000000000863.csv": {
+    "__table__": "Marriage statistics by education level"
+  },
+  "SG_CSV0000000000000864.csv": {
+    "__table__": "Bride statistics by education level over years"
+  },
+  "SG_CSV0000000000000865.csv": {
+    "__table__": "Marriage statistics by ethnicity, gender, age group, and year"
+  },
+  "SG_CSV0000000000000867.csv": {
+    "__table__": "Marriage statistics by ethnicity and gender"
+  },
+  "SG_CSV0000000000000877.csv": {
+    "__table__": "Educational attainment and age at first marriage by gender over time"
+  },
+  "SG_CSV0000000000000879.csv": {
+    "__table__": "Median age at divorce by gender over the years"
+  },
+  "SG_CSV0000000000000880.csv": {
+    "__table__": "Median age at divorce by gender over the years"
+  },
+  "SG_CSV0000000000000901.csv": {
+    "__table__": "Median age by gender over years"
+  },
+  "SG_CSV0000000000000902.csv": {
+    "__table__": "Median age of resident and citizen population over time"
+  },
+  "SG_CSV0000000000000903.csv": {
+    "__table__": "HDB property tax collection and statistics by financial year and type"
+  },
+  "SG_CSV0000000000000904.csv": {
+    "__table__": "Private residential property statistics by financial year"
+  },
+  "SG_CSV0000000000000905.csv": {
+    "__table__": "Median duration of unemployment by year"
+  },
+  "SG_CSV0000000000000907.csv": {
+    "__table__": "Median income with and without employee CPF contributions over the years"
+  },
+  "SG_CSV0000000000000908.csv": {
+    "__table__": "Median income with and without employee CPF contributions over the years"
+  },
+  "SG_CSV0000000000000909.csv": {
+    "__table__": "Median income by gender and year, including and excluding employee CPF contributions"
+  },
+  "SG_CSV0000000000000910.csv": {
+    "__table__": "Median income by gender and year, including and excluding employee CPF contributions"
+  },
+  "SG_CSV0000000000000911.csv": {
+    "__table__": "Median rent for flats by quarter, town, and flat type"
+  },
+  "SG_CSV0000000000000912.csv": {
+    "__table__": "Office rental statistics by quarter and category"
+  },
+  "SG_CSV0000000000000913.csv": {
+    "__table__": "Quarterly retail rental and vacancy rates by locality"
+  },
+  "SG_CSV0000000000000914.csv": {
+    "__table__": "HDB flat sales by quarter, town, and flat type"
+  },
+  "SG_CSV0000000000000915.csv": {
+    "__table__": "Number of students examined by year, age group, and educational level"
+  },
+  "SG_CSV0000000000000917.csv": {
+    "__table__": "Healthcare professionals per 10,000 population over time"
+  },
+  "SG_CSV0000000000000918.csv": {
+    "__table__": "Annual financial data on applications approved and grants disbursed"
+  },
+  "SG_CSV0000000000000919.csv": {
+    "__table__": "Annual account statistics"
+  },
+  "SG_CSV0000000000000920.csv": {
+    "__table__": "Number of members by industry and year"
+  },
+  "SG_CSV0000000000000921.csv": {
+    "__table__": "Trade union membership by size and year"
+  },
+  "SG_CSV0000000000000922__00.csv": {
+    "__table__": "Household income and demographic data for Singapore residents"
+  },
+  "SG_CSV0000000000000925.csv": {
+    "__table__": "Survey responses on demographics, opinions, and social characteristics of Singapore residents"
+  },
+  "SG_CSV0000000000000925__0.csv": {
+    "__table__": "Survey responses on social values and demographics"
+  },
+  "SG_CSV0000000000000925__1.csv": {
+    "__table__": "Survey responses on moral foundations, demographics, and social attitudes"
+  },
+  "SG_CSV0000000000000925__10.csv": {
+    "__table__": "Demographic and socioeconomic survey responses"
+  },
+  "SG_CSV0000000000000925__11.csv": {
+    "__table__": "Demographic and socioeconomic survey responses"
+  },
+  "SG_CSV0000000000000925__12.csv": {
+    "__table__": "Demographic and socioeconomic survey responses"
+  },
+  "SG_CSV0000000000000925__13.csv": {
+    "__table__": "Demographic and socioeconomic survey responses"
+  },
+  "SG_CSV0000000000000925__14.csv": {
+    "__table__": "Survey responses on personal and demographic characteristics"
+  },
+  "SG_CSV0000000000000925__15.csv": {
+    "__table__": "Survey responses on opinion expression and demographic details"
+  },
+  "SG_CSV0000000000000925__16.csv": {
+    "__table__": "Survey responses on personal and demographic characteristics"
+  },
+  "SG_CSV0000000000000925__17.csv": {
+    "__table__": "Survey responses on opinion expression and demographic details"
+  },
+  "SG_CSV0000000000000925__18.csv": {
+    "__table__": "Survey responses on personal and demographic information"
+  },
+  "SG_CSV0000000000000925__19.csv": {
+    "__table__": "Survey responses on marital status, opinions, and socio-economic factors"
+  },
+  "SG_CSV0000000000000925__2.csv": {
+    "__table__": "Demographic and social characteristics of respondents"
+  },
+  "SG_CSV0000000000000925__20.csv": {
+    "__table__": "Survey responses on opinion expression and demographic details"
+  },
+  "SG_CSV0000000000000925__21.csv": {
+    "__table__": "Social network usage by gender and respondent"
+  },
+  "SG_CSV0000000000000925__22.csv": {
+    "__table__": "Social network usage by gender and respondent"
+  },
+  "SG_CSV0000000000000925__23.csv": {
+    "__table__": "Social network usage by gender and respondent"
+  },
+  "SG_CSV0000000000000925__24.csv": {
+    "__table__": "Social network usage by gender and respondent"
+  },
+  "SG_CSV0000000000000925__25.csv": {
+    "__table__": "Social network usage by gender and respondent"
+  },
+  "SG_CSV0000000000000925__26.csv": {
+    "__table__": "Social network usage by gender and respondent"
+  },
+  "SG_CSV0000000000000925__27.csv": {
+    "__table__": "Social network usage by gender and respondent"
+  },
+  "SG_CSV0000000000000925__28.csv": {
+    "__table__": "Personal income and age group with social network usage"
+  },
+  "SG_CSV0000000000000925__29.csv": {
+    "__table__": "Personal income and age group with social network usage"
+  },
+  "SG_CSV0000000000000925__3.csv": {
+    "__table__": "Demographic and social characteristics of participants"
+  },
+  "SG_CSV0000000000000925__30.csv": {
+    "__table__": "Personal income and age group with social network usage"
+  },
+  "SG_CSV0000000000000925__31.csv": {
+    "__table__": "Personal income and age group with social network usage"
+  },
+  "SG_CSV0000000000000925__32.csv": {
+    "__table__": "Personal income and age group with social network usage"
+  },
+  "SG_CSV0000000000000925__33.csv": {
+    "__table__": "Personal income, age range, and social network usage"
+  },
+  "SG_CSV0000000000000925__34.csv": {
+    "__table__": "Personal income, age group, and social network usage"
+  },
+  "SG_CSV0000000000000925__35.csv": {
+    "__table__": "Business relationship and social network survey responses"
+  },
+  "SG_CSV0000000000000925__36.csv": {
+    "__table__": "Social network usage and business type survey"
+  },
+  "SG_CSV0000000000000925__37.csv": {
+    "__table__": "Social network usage and education level"
+  },
+  "SG_CSV0000000000000925__38.csv": {
+    "__table__": "Survey responses on business types and social network usage"
+  },
+  "SG_CSV0000000000000925__39.csv": {
+    "__table__": "Business relationship and social network preferences"
+  },
+  "SG_CSV0000000000000925__4.csv": {
+    "__table__": "Demographic and social characteristics of respondents"
+  },
+  "SG_CSV0000000000000925__40.csv": {
+    "__table__": "Social network usage and business relationships"
+  },
+  "SG_CSV0000000000000925__41.csv": {
+    "__table__": "Social network usage and education level"
+  },
+  "SG_CSV0000000000000925__42.csv": {
+    "__table__": "Survey responses on opinion expression and social norms"
+  },
+  "SG_CSV0000000000000925__43.csv": {
+    "__table__": "Survey responses on opinion expression and social values"
+  },
+  "SG_CSV0000000000000925__44.csv": {
+    "__table__": "Survey responses on freedom of expression and social norms"
+  },
+  "SG_CSV0000000000000925__45.csv": {
+    "__table__": "Survey responses on opinion expression and social values"
+  },
+  "SG_CSV0000000000000925__46.csv": {
+    "__table__": "Survey responses on opinion expression and social norms"
+  },
+  "SG_CSV0000000000000925__47.csv": {
+    "__table__": "Survey responses on freedom of expression and social values"
+  },
+  "SG_CSV0000000000000925__48.csv": {
+    "__table__": "Survey responses on opinion expression and social norms"
+  },
+  "SG_CSV0000000000000925__5.csv": {
+    "__table__": "Survey responses on social values and demographics"
+  },
+  "SG_CSV0000000000000925__6.csv": {
+    "__table__": "Survey responses on social values, demographics, and personal characteristics"
+  },
+  "SG_CSV0000000000000925__7.csv": {
+    "__table__": "Demographic and socioeconomic survey responses"
+  },
+  "SG_CSV0000000000000925__8.csv": {
+    "__table__": "Demographic and socioeconomic survey responses"
+  },
+  "SG_CSV0000000000000925__9.csv": {
+    "__table__": "Demographic and socioeconomic survey responses"
+  },
+  "SG_CSV0000000000000928.csv": {
+    "__table__": "Subscription counts by month, network technology, and plan type"
+  },
+  "SG_CSV0000000000000931.csv": {
+    "__table__": "Transportation prices for different cardholder types"
+  },
+  "SG_CSV0000000000000932.csv": {
+    "__table__": "Monthly consumer and organizational account activity with checks performed"
+  },
+  "SG_CSV0000000000000934.csv": {
+    "__table__": "Hotel performance metrics by period and tier"
+  },
+  "SG_CSV0000000000000934__10.csv": {
+    "__table__": "Demographic and socioeconomic survey responses"
+  },
+  "SG_CSV0000000000000935.csv": {
+    "__table__": "Hotel performance metrics by period"
+  },
+  "SG_CSV0000000000000936.csv": {
+    "__table__": "Vehicle registration counts by month and type"
+  },
+  "SG_CSV0000000000000937.csv": {
+    "__table__": "Monthly counts of categories by type"
+  },
+  "SG_CSV0000000000000938.csv": {
+    "__table__": "Monthly duty paid releases and duties collection for various products"
+  },
+  "SG_CSV0000000000000939.csv": {
+    "__table__": "Vehicle counts by month and type"
+  },
+  "SG_CSV0000000000000940.csv": {
+    "__table__": "Factors limiting export orders in manufacturing industries by quarter"
+  },
+  "SG_CSV0000000000000941.csv": {
+    "__table__": "Factors limiting export orders in manufacturing by quarter, industry, and sub-industry"
+  },
+  "SG_CSV0000000000000942.csv": {
+    "__table__": "Factors limiting export orders in manufacturing over quarters"
+  },
+  "SG_CSV0000000000000943.csv": {
+    "__table__": "Birth statistics by month, type, and mother's age group"
+  },
+  "SG_CSV0000000000000945.csv": {
+    "__table__": "Vehicle counts by category and year"
+  },
+  "SG_CSV0000000000000946.csv": {
+    "__table__": "Vehicle registration counts by month, category, and fuel type"
+  },
+  "SG_CSV0000000000000947.csv": {
+    "__table__": "Vehicle category counts by month"
+  },
+  "SG_CSV0000000000000948.csv": {
+    "__table__": "Vehicle counts by category and month"
+  },
+  "SG_CSV0000000000000949.csv": {
+    "__table__": "New admissions by age group and year"
+  },
+  "SG_CSV0000000000000950.csv": {
+    "__table__": "New admissions to youth homes by year, home, and case type"
+  },
+  "SG_CSV0000000000000954.csv": {
+    "__table__": "Course enrollment by gender and academic year"
+  },
+  "SG_CSV0000000000000955.csv": {
+    "__table__": "Diploma course enrollments by academic year, semester, school, course, gender, and intake"
+  },
+  "SG_CSV0000000000000956.csv": {
+    "__table__": "Diploma courses with cut-off points by academic year and cluster"
+  },
+  "SG_CSV0000000000000957.csv": {
+    "__table__": "Planned intake numbers for diploma courses by academic year, school, and cluster"
+  },
+  "SG_CSV0000000000000958.csv": {
+    "__table__": "HIV/AIDS knowledge proportions over years"
+  },
+  "SG_CSV0000000000000959.csv": {
+    "__table__": "Breastfeeding rates over time intervals"
+  },
+  "SG_CSV0000000000000960.csv": {
+    "__table__": "Singapore Infopedia Articles"
+  },
+  "SG_CSV0000000000000961.csv": {
+    "__table__": "Malay e-books metadata"
+  },
+  "SG_CSV0000000000000962.csv": {
+    "__table__": "Epub books metadata from National Library Board Singapore"
+  },
+  "SG_CSV0000000000000963.csv": {
+    "__table__": "Web archives of Singapore organizations and institutions"
+  },
+  "SG_CSV0000000000000964.csv": {
+    "__table__": "Digitized publications and periodicals from the National Library Board of Singapore"
+  },
+  "SG_CSV0000000000000965.csv": {
+    "__table__": "Archival documents and manuscripts from the National Library Board Singapore collections"
+  },
+  "SG_CSV0000000000000966.csv": {
+    "__table__": "Archival records of Singapore's cultural and historical ephemera"
+  },
+  "SG_CSV0000000000000967.csv": {
+    "__table__": "Photographic records of Singapore's historical sites and events"
+  },
+  "SG_CSV0000000000000968.csv": {
+    "__table__": "Historical maps and charts of Southeast Asia and surrounding regions"
+  },
+  "SG_CSV0000000000000969.csv": {
+    "__table__": "Music scores and lyrics from various collections"
+  },
+  "SG_CSV0000000000000970.csv": {
+    "__table__": "Music recordings metadata"
+  },
+  "SG_CSV0000000000000971.csv": {
+    "__table__": "National Library Board Singapore Infopedia Articles"
+  },
+  "SG_CSV0000000000000972.csv": {
+    "__table__": "Natural gas consumption by sector and sub-sector over years"
+  },
+  "SG_CSV0000000000000973.csv": {
+    "__table__": "Mortality rates over time"
+  },
+  "SG_CSV0000000000000974.csv": {
+    "__table__": "Quarterly net amounts by account type"
+  },
+  "SG_CSV0000000000000976.csv": {
+    "__table__": "Net withdrawal amounts for CPF investment schemes by year and account type"
+  },
+  "SG_CSV0000000000000977.csv": {
+    "__table__": "Net withdrawal amounts for housing schemes by quarter"
+  },
+  "SG_CSV0000000000000978.csv": {
+    "__table__": "Net withdrawal amounts for housing schemes over years"
+  },
+  "SG_CSV0000000000000979.csv": {
+    "__table__": "Net balance amount by year, age group, and gender"
+  },
+  "SG_CSV0000000000000980.csv": {
+    "__table__": "Net balance amount by year, age group, and gender"
+  },
+  "SG_CSV0000000000000985.csv": {
+    "__table__": "Vehicle sales by month, make, fuel type, and vehicle type"
+  },
+  "SG_CSV0000000000000986.csv": {
+    "__table__": "Vehicle registrations by month, make, fuel type, and vehicle type"
+  },
+  "SG_CSV0000000000000987.csv": {
+    "__table__": "Monthly motorcycle sales by brand"
+  },
+  "SG_CSV0000000000000988.csv": {
+    "__table__": "Vehicle category counts by month"
+  },
+  "SG_CSV0000000000000990.csv": {
+    "__table__": "Newborn counts by year and gender"
+  },
+  "SG_CSV0000000000000991.csv": {
+    "__table__": "Articles and advertisements from the Bintang Pranakan newspaper"
+  },
+  "SG_CSV0000000000000992.csv": {
+    "__table__": "Newspaper articles and advertisements from Bintang Timor in 1894"
+  },
+  "SG_CSV0000000000000993.csv": {
+    "__table__": "Newspaper articles and advertisements from Comrade, 1946"
+  },
+  "SG_CSV0000000000000994.csv": {
+    "__table__": "Newspaper articles and advertisements from the Daily Advertiser between 1890 and 1894"
+  },
+  "SG_CSV0000000000000995.csv": {
+    "__table__": "Newspaper articles and advertisements from Eastern Daily Mail and Straits Morning Advertiser"
+  },
+  "SG_CSV0000000000000996.csv": {
+    "__table__": "Newspaper articles from Indian Daily Mail"
+  },
+  "SG_CSV0000000000000997.csv": {
+    "__table__": "Newspaper articles from Indian Daily Mail"
+  },
+  "SG_CSV0000000000000998.csv": {
+    "__table__": "Newspaper articles and advertisements from the Indo-Chinese Patriot, August 1, 1900"
+  },
+  "SG_CSV0000000000000998__0.csv": {
+    "__table__": "Survey responses on trust and influence of authority figures"
+  },
+  "SG_CSV0000000000000999.csv": {
+    "__table__": "Newspaper articles and advertisements from Kabar Slalu in 1924"
+  },
+  "SG_CSV0000000000001000.csv": {
+    "__table__": "Newspaper articles and advertisements from Kabar Uchapan Baru"
+  },
+  "SG_CSV0000000000001001.csv": {
+    "__table__": "Newspaper articles and advertisements from the Malaya Tribune"
+  },
+  "SG_CSV0000000000001002.csv": {
+    "__table__": "Newspaper articles and advertisements from Malaya Tribune"
+  },
+  "SG_CSV0000000000001003.csv": {
+    "__table__": "Newspaper articles and advertisements from the Malaya Tribune"
+  },
+  "SG_CSV0000000000001004.csv": {
+    "__table__": "Newspaper articles and advertisements from the Malaya Tribune"
+  },
+  "SG_CSV0000000000001005.csv": {
+    "__table__": "Newspaper articles and advertisements from the Malaya Tribune"
+  },
+  "SG_CSV0000000000001006.csv": {
+    "__table__": "Malaya Tribune newspaper articles and advertisements"
+  },
+  "SG_CSV0000000000001007.csv": {
+    "__table__": "Newspaper articles and advertisements from the Malaya Tribune"
+  },
+  "SG_CSV0000000000001008.csv": {
+    "__table__": "Newspaper articles from Malaya Tribune in 1950"
+  },
+  "SG_CSV0000000000001009.csv": {
+    "__table__": "Newspaper articles and advertisements from the Malayan Saturday Post"
+  },
+  "SG_CSV0000000000001010.csv": {
+    "__table__": "Articles and advertisements from the Malayan Saturday Post"
+  },
+  "SG_CSV0000000000001011.csv": {
+    "__table__": "Newspaper articles and advertisements from Mid-day Herald"
+  },
+  "SG_CSV0000000000001012.csv": {
+    "__table__": "Newspaper articles and advertisements from the Morning Tribune on 4 October 1927"
+  },
+  "SG_CSV0000000000001013.csv": {
+    "__table__": "Newspaper articles and advertisements from the Morning Tribune"
+  },
+  "SG_CSV0000000000001014.csv": {
+    "__table__": "Newspaper articles metadata and content"
+  },
+  "SG_CSV0000000000001015.csv": {
+    "__table__": "Articles from the Shonan Times (Syonan Shimbun) newspaper"
+  },
+  "SG_CSV0000000000001016.csv": {
+    "__table__": "Newspaper articles from the Singapore Chronicle and Commercial Register"
+  },
+  "SG_CSV0000000000001017.csv": {
+    "__table__": "Newspaper articles and advertisements from the Singapore Chronicle and Commercial Register"
+  },
+  "SG_CSV0000000000001018.csv": {
+    "__table__": "Newspaper articles metadata and content"
+  },
+  "SG_CSV0000000000001019.csv": {
+    "__table__": "Newspaper articles and advertisements from the Singapore Weekly Herald"
+  },
+  "SG_CSV0000000000001020.csv": {
+    "__table__": "Newspaper articles and advertisements from the Straits Advocate in 1889"
+  },
+  "SG_CSV0000000000001021.csv": {
+    "__table__": "Newspaper articles and advertisements from the Straits Chinese Herald"
+  },
+  "SG_CSV0000000000001022.csv": {
+    "__table__": "Advertisements and articles from the Straits Daily Advertiser newspaper"
+  },
+  "SG_CSV0000000000001023.csv": {
+    "__table__": "Newspaper articles and advertisements from the Straits Echo"
+  },
+  "SG_CSV0000000000001024.csv": {
+    "__table__": "Newspaper articles and advertisements from the Straits Echo"
+  },
+  "SG_CSV0000000000001025.csv": {
+    "__table__": "Newspaper articles and advertisements from the Straits Eurasian Advocate in 1888"
+  },
+  "SG_CSV0000000000001026.csv": {
+    "__table__": "Straits Mail newspaper articles and advertisements from 1894-1895"
+  },
+  "SG_CSV0000000000001027.csv": {
+    "__table__": "Newspaper articles and advertisements from the Straits Observer (Singapore) in the 1870s"
+  },
+  "SG_CSV0000000000001028.csv": {
+    "__table__": "Newspaper articles and advertisements from the Straits Observer (Singapore) in 1897"
+  },
+  "SG_CSV0000000000001029.csv": {
+    "__table__": "Newspaper articles and advertisements from the Straits Telegraph and Daily Advertiser"
+  },
+  "SG_CSV0000000000001030.csv": {
+    "__table__": "Newspaper articles and advertisements from Sunday Standard issues"
+  },
+  "SG_CSV0000000000001031.csv": {
+    "__table__": "Historical newspaper articles from Sunday Tribune (Singapore)"
+  },
+  "SG_CSV0000000000001032.csv": {
+    "__table__": "Newspaper articles and advertisements from Sunday Tribune (Singapore) between 1938 and 1941"
+  },
+  "SG_CSV0000000000001033.csv": {
+    "__table__": "Newspaper articles and advertisements from Sunday Tribune (Singapore) between 1946 and 1950"
+  },
+  "SG_CSV0000000000001034.csv": {
+    "__table__": "Newspaper articles and advertisements from Syonan Shimbun Fortnightly"
+  },
+  "SG_CSV0000000000001035.csv": {
+    "__table__": "Articles and advertisements from The Malacca Weekly Chronicle and Mercantile Advertiser"
+  },
+  "SG_CSV0000000000001036.csv": {
+    "__table__": "Articles from The Penang Patriot newspaper"
+  },
+  "SG_CSV0000000000001037.csv": {
+    "__table__": "Newspaper articles and advertisements from The Straits Independent and Penang Chronicle"
+  },
+  "SG_CSV0000000000001038.csv": {
+    "__table__": "Newspaper articles and advertisements from The Straits Independent and Penang Chronicle"
+  },
+  "SG_CSV0000000000001039.csv": {
+    "__table__": "Newspaper articles and advertisements from The Straits Maritime Journal and General News"
+  },
+  "SG_CSV0000000000001040.csv": {
+    "__table__": "Newspaper articles and advertisements from the Weekly Sun"
+  },
+  "SG_CSV0000000000001041.csv": {
+    "__table__": "Entities and their descriptions in Singapore"
+  },
+  "SG_CSV0000000000001042.csv": {
+    "__table__": "Entities and their descriptions in Singapore"
+  },
+  "SG_CSV0000000000001043.csv": {
+    "__table__": "Entity relationships in Singapore's geographic, organizational, and people data"
+  },
+  "SG_CSV0000000000001044.csv": {
+    "__table__": "Entity relationships in Singapore's geography, organizations, and people"
+  },
+  "SG_CSV0000000000001045.csv": {
+    "__table__": "Completed units by year range and type"
+  },
+  "SG_CSV0000000000001046.csv": {
+    "__table__": "Number of PSC scholarships awarded per year by course of study"
+  },
+  "SG_CSV0000000000001047.csv": {
+    "__table__": "Number of PSC scholarships awarded by year and scheme"
+  },
+  "SG_CSV0000000000001048.csv": {
+    "__table__": "Nominal Value Added Of Enterprises, Total by Year"
+  },
+  "SG_CSV0000000000001049.csv": {
+    "__table__": "Nominal Value Added Of Enterprises by Year and Ownership Type"
+  },
+  "SG_CSV0000000000001050.csv": {
+    "__table__": "Value added by year and type in the performing arts and recorded music industries"
+  },
+  "SG_CSV0000000000001051.csv": {
+    "__table__": "Value added by year and type"
+  },
+  "SG_CSV0000000000001052.csv": {
+    "__table__": "Value added by artform over years"
+  },
+  "SG_CSV0000000000001053.csv": {
+    "__table__": "Event attendance by year and type"
+  },
+  "SG_CSV0000000000001058.csv": {
+    "__table__": "Number of active members by year and age group"
+  },
+  "SG_CSV0000000000001059.csv": {
+    "__table__": "Number of active members by year and age group"
+  },
+  "SG_CSV0000000000001060.csv": {
+    "__table__": "Number of active members by year, regrossed balance group, and age group"
+  },
+  "SG_CSV0000000000001061.csv": {
+    "__table__": "Number of active members by year, regrossed balance group, and age group"
+  },
+  "SG_CSV0000000000001062.csv": {
+    "__table__": "Number of active members by regrossed balance group and year"
+  },
+  "SG_CSV0000000000001063.csv": {
+    "__table__": "Number of active members by regrossed balance group and year"
+  },
+  "SG_CSV0000000000001066.csv": {
+    "__table__": "Annual sector counts for active and non-active practice"
+  },
+  "SG_CSV0000000000001067.csv": {
+    "__table__": "Sector distribution by year"
+  },
+  "SG_CSV0000000000001071.csv": {
+    "__table__": "Number of arts companies by year and artform"
+  },
+  "SG_CSV0000000000001072.csv": {
+    "__table__": "Number of societies by artform and year"
+  },
+  "SG_CSV0000000000001074.csv": {
+    "__table__": "Museum visitor counts by year"
+  },
+  "SG_CSV0000000000001075.csv": {
+    "__table__": "Annual values for various sectors"
+  },
+  "SG_CSV0000000000001076.csv": {
+    "__table__": "Immunisation statistics by year, type, and sector"
+  },
+  "SG_CSV0000000000001077.csv": {
+    "__table__": "Number of claims by year and type of grounds"
+  },
+  "SG_CSV0000000000001079.csv": {
+    "__table__": "Class size statistics by year, education level, and grade"
+  },
+  "SG_CSV0000000000001080.csv": {
+    "__table__": "Child welfare cases by type over years"
+  },
+  "SG_CSV0000000000001083.csv": {
+    "__table__": "Age group distribution by month"
+  },
+  "SG_CSV0000000000001084.csv": {
+    "__table__": "Estimated counts by epidemiological week and year"
+  },
+  "SG_CSV0000000000001086.csv": {
+    "__table__": "Population distribution by year, age group, and gender"
+  },
+  "SG_CSV0000000000001087.csv": {
+    "__table__": "Population distribution by year, age group, and gender"
+  },
+  "SG_CSV0000000000001088.csv": {
+    "__table__": "Number of schools offering specializations over years"
+  },
+  "SG_CSV0000000000001089.csv": {
+    "__table__": "Dental practitioners by year, type, and sector"
+  },
+  "SG_CSV0000000000001091.csv": {
+    "__table__": "Healthcare professionals by year, sector, and specialization status"
+  },
+  "SG_CSV0000000000001092.csv": {
+    "__table__": "Trade union size distribution by year"
+  },
+  "SG_CSV0000000000001094.csv": {
+    "__table__": "Enforcement actions by type and year"
+  },
+  "SG_CSV0000000000001095.csv": {
+    "__table__": "Food and beverage service establishments by category and year"
+  },
+  "SG_CSV0000000000001096.csv": {
+    "__table__": "Health service establishments by type and year"
+  },
+  "SG_CSV0000000000001097.csv": {
+    "__table__": "Retail trade establishments by category and year"
+  },
+  "SG_CSV0000000000001098.csv": {
+    "__table__": "Health service establishments by type and year"
+  },
+  "SG_CSV0000000000001099.csv": {
+    "__table__": "Transport and storage services establishments by year and category"
+  },
+  "SG_CSV0000000000001100.csv": {
+    "__table__": "Retail trade establishments over time"
+  },
+  "SG_CSV0000000000001101.csv": {
+    "__table__": "Health service establishments over time"
+  },
+  "SG_CSV0000000000001104.csv": {
+    "__table__": "Number of transport and storage service establishments by year"
+  },
+  "SG_CSV0000000000001105.csv": {
+    "__table__": "Work pass counts by type and month"
+  },
+  "SG_CSV0000000000001107.csv": {
+    "__table__": "Number of graduates by year and type"
+  },
+  "SG_CSV0000000000001108.csv": {
+    "__table__": "Solar PV installations by year, residential status, and user type"
+  },
+  "SG_CSV0000000000001111.csv": {
+    "__table__": "Home healthcare service counts by year and type"
+  },
+  "SG_CSV0000000000001114.csv": {
+    "__table__": "Income earners by year, ethnic group, and number of persons"
+  },
+  "SG_CSV0000000000001115.csv": {
+    "__table__": "Housing statistics by flat type, number of income earners, and year"
+  },
+  "SG_CSV0000000000001117.csv": {
+    "__table__": "Interest group membership by year"
+  },
+  "SG_CSV0000000000001118.csv": {
+    "__table__": "Interest group membership by year and type"
+  },
+  "SG_CSV0000000000001123.csv": {
+    "__table__": "Number of licenses issued for different types of goods over the years"
+  },
+  "SG_CSV0000000000001127.csv": {
+    "__table__": "Long-term unemployed residents by year"
+  },
+  "SG_CSV0000000000001128.csv": {
+    "__table__": "Number of registered LPAs by calendar year"
+  },
+  "SG_CSV0000000000001129.csv": {
+    "__table__": "Annual membership counts by category"
+  },
+  "SG_CSV0000000000001130.csv": {
+    "__table__": "Quarterly CPF investment scheme membership counts"
+  },
+  "SG_CSV0000000000001131.csv": {
+    "__table__": "Quarterly housing scheme membership counts"
+  },
+  "SG_CSV0000000000001132.csv": {
+    "__table__": "Number of members in housing schemes over years"
+  },
+  "SG_CSV0000000000001133.csv": {
+    "__table__": "Number of mixed-level schools by year and type"
+  },
+  "SG_CSV0000000000001138.csv": {
+    "__table__": "Annual MRT and LRT ridership"
+  },
+  "SG_CSV0000000000001139.csv": {
+    "__table__": "Number of museums by category and year"
+  },
+  "SG_CSV0000000000001140.csv": {
+    "__table__": "Number of citizens held by year and type"
+  },
+  "SG_CSV0000000000001142.csv": {
+    "__table__": "Annual new applications and variations"
+  },
+  "SG_CSV0000000000001143.csv": {
+    "__table__": "Weekly hospital admissions by type in 2023"
+  },
+  "SG_CSV0000000000001144.csv": {
+    "__table__": "Number of providers by service type and year"
+  },
+  "SG_CSV0000000000001145.csv": {
+    "__table__": "Healthcare professionals by year, type, and sector"
+  },
+  "SG_CSV0000000000001146.csv": {
+    "__table__": "Sector distribution by year"
+  },
+  "SG_CSV0000000000001147.csv": {
+    "__table__": "Sector distribution by year"
+  },
+  "SG_CSV0000000000001148.csv": {
+    "__table__": "Sector distribution by year"
+  },
+  "SG_CSV0000000000001150.csv": {
+    "__table__": "Palliative care service counts by year and type"
+  },
+  "SG_CSV0000000000001152.csv": {
+    "__table__": "Annual participation in various music and performance categories"
+  },
+  "SG_CSV0000000000001153.csv": {
+    "__table__": "Annual passenger counts for arrivals and departures"
+  },
+  "SG_CSV0000000000001155.csv": {
+    "__table__": "Event attendance by year and type"
+  },
+  "SG_CSV0000000000001156.csv": {
+    "__table__": "Course enrollment by year and category"
+  },
+  "SG_CSV0000000000001157.csv": {
+    "__table__": "Interest group participation by year and category"
+  },
+  "SG_CSV0000000000001161.csv": {
+    "__table__": "Sector distribution by year"
+  },
+  "SG_CSV0000000000001162.csv": {
+    "__table__": "Sector distribution by year"
+  },
+  "SG_CSV0000000000001164.csv": {
+    "__table__": "Policyholder counts with and without supplements over years"
+  },
+  "SG_CSV0000000000001165.csv": {
+    "__table__": "Policyholder statistics over years"
+  },
+  "SG_CSV0000000000001166.csv": {
+    "__table__": "Number of pre-university schools by year, level, and type"
+  },
+  "SG_CSV0000000000001167.csv": {
+    "__table__": "Number of primary schools by type over years"
+  },
+  "SG_CSV0000000000001168.csv": {
+    "__table__": "Number of licences issued per year by type"
+  },
+  "SG_CSV0000000000001170.csv": {
+    "__table__": "Resale flat applications by quarter and type"
+  },
+  "SG_CSV0000000000001171.csv": {
+    "__table__": "Healthcare facility counts by year, type, and sector"
+  },
+  "SG_CSV0000000000001172.csv": {
+    "__table__": "Healthcare facility counts by year and type"
+  },
+  "SG_CSV0000000000001173.csv": {
+    "__table__": "Annual claims for various wage-related items"
+  },
+  "SG_CSV0000000000001174.csv": {
+    "__table__": "Number of secondary schools by type and year"
+  },
+  "SG_CSV0000000000001175.csv": {
+    "__table__": "Property transactions by financial year, type, and category"
+  },
+  "SG_CSV0000000000001176.csv": {
+    "__table__": "Property transactions by financial year and type"
+  },
+  "SG_CSV0000000000001177.csv": {
+    "__table__": "HDB and DBSS property units by financial year, property type, category, and flat type"
+  },
+  "SG_CSV0000000000001178.csv": {
+    "__table__": "Facility transactions by financial year and type"
+  },
+  "SG_CSV0000000000001179.csv": {
+    "__table__": "Sector distribution by year"
+  },
+  "SG_CSV0000000000001182.csv": {
+    "__table__": "Student participation in extracurricular activities by year and type"
+  },
+  "SG_CSV0000000000001183.csv": {
+    "__table__": "Student enrollment in Calligraphy and Art & Craft courses over years"
+  },
+  "SG_CSV0000000000001184.csv": {
+    "__table__": "Student enrollment in various art forms by year"
+  },
+  "SG_CSV0000000000001185.csv": {
+    "__table__": "Professional practice status by year"
+  },
+  "SG_CSV0000000000001186.csv": {
+    "__table__": "Tax cases by financial year, type, and status"
+  },
+  "SG_CSV0000000000001195.csv": {
+    "__table__": "Number of educational institutions by type and year"
+  },
+  "SG_CSV0000000000001196.csv": {
+    "__table__": "Occupancy rates by quarter and product segment"
+  },
+  "SG_CSV0000000000001201.csv": {
+    "__table__": "Old age dependency ratio by ethnic group and year"
+  },
+  "SG_CSV0000000000001202.csv": {
+    "__table__": "Old age dependency ratio by flat type and year"
+  },
+  "SG_CSV0000000000001203.csv": {
+    "__table__": "Percentage of population by age group over years"
+  },
+  "SG_CSV0000000000001204.csv": {
+    "__table__": "Annual purchase value distribution"
+  },
+  "SG_CSV0000000000001213.csv": {
+    "__table__": "Operating receipts by year and type"
+  },
+  "SG_CSV0000000000001214.csv": {
+    "__table__": "Operating receipts by year and type"
+  },
+  "SG_CSV0000000000001215.csv": {
+    "__table__": "Annual operating receipts by artform"
+  },
+  "SG_CSV0000000000001218.csv": {
+    "__table__": "Annual order statistics"
+  },
+  "SG_CSV0000000000001219.csv": {
+    "__table__": "Healthcare service utilization by year and type"
+  },
+  "SG_CSV0000000000001222.csv": {
+    "__table__": "Quarterly credit limits and utilization with non-performing percentage"
+  },
+  "SG_CSV0000000000001223.csv": {
+    "__table__": "Annual crime cases recorded"
+  },
+  "SG_CSV0000000000001224.csv": {
+    "__table__": "Annual overall crime rate per 100,000 population"
+  },
+  "SG_CSV0000000000001225.csv": {
+    "__table__": "Staff strength by executive level and sector over years"
+  },
+  "SG_CSV0000000000001226.csv": {
+    "__table__": "Travel motivations by region and country"
+  },
+  "SG_CSV0000000000001227.csv": {
+    "__table__": "Travel statistics by region and country"
+  },
+  "SG_CSV0000000000001228.csv": {
+    "__table__": "Travel purpose statistics by region and country"
+  },
+  "SG_CSV0000000000001229.csv": {
+    "__table__": "Course participation by category and year"
+  },
+  "SG_CSV0000000000001230.csv": {
+    "__table__": "Number of participants in various course categories over the years"
+  },
+  "SG_CSV0000000000001231.csv": {
+    "__table__": "Number of classes by year and course category"
+  },
+  "SG_CSV0000000000001232.csv": {
+    "__table__": "Number of classes by year and course category"
+  },
+  "SG_CSV0000000000001233.csv": {
+    "__table__": "Number of interest groups by year and type"
+  },
+  "SG_CSV0000000000001234.csv": {
+    "__table__": "Number of interest groups by type and year"
+  },
+  "SG_CSV0000000000001235.csv": {
+    "__table__": "Election statistics by constituency and year"
+  },
+  "SG_CSV0000000000001236.csv": {
+    "__table__": "Election dates including nomination and polling days"
+  },
+  "SG_CSV0000000000001237.csv": {
+    "__table__": "Election results by constituency and year"
+  },
+  "SG_CSV0000000000001239.csv": {
+    "__table__": "Annual visitor counts by origin"
+  },
+  "SG_CSV0000000000001240.csv": {
+    "__table__": "Patent grants by field of invention and year"
+  },
+  "SG_CSV0000000000001241.csv": {
+    "__table__": "Patent filings by country and year"
+  },
+  "SG_CSV0000000000001242.csv": {
+    "__table__": "Annual monthly peak system demand in megawatts"
+  },
+  "SG_CSV0000000000001243.csv": {
+    "__table__": "Pedestrian infrastructure counts by year and type"
+  },
+  "SG_CSV0000000000001265.csv": {
+    "__table__": "GPKI pass rates by race over years"
+  },
+  "SG_CSV0000000000001266.csv": {
+    "__table__": "Pass rates by race over years"
+  },
+  "SG_CSV0000000000001267.csv": {
+    "__table__": "Annual revenue distribution by category"
+  },
+  "SG_CSV0000000000001268.csv": {
+    "__table__": "Vaccination coverage by disease and year"
+  },
+  "SG_CSV0000000000001269.csv": {
+    "__table__": "English pass rates by race over years"
+  },
+  "SG_CSV0000000000001270.csv": {
+    "__table__": "Math pass rates by year and race"
+  },
+  "SG_CSV0000000000001271.csv": {
+    "__table__": "Pass rates by race over years"
+  },
+  "SG_CSV0000000000001272.csv": {
+    "__table__": "Housing distribution by year, ethnicity, and flat type"
+  },
+  "SG_CSV0000000000001273.csv": {
+    "__table__": "Postsecondary education progression by race over years"
+  },
+  "SG_CSV0000000000001274.csv": {
+    "__table__": "English pass rates by race and year"
+  },
+  "SG_CSV0000000000001275.csv": {
+    "__table__": "Pass rates by race and year"
+  },
+  "SG_CSV0000000000001276.csv": {
+    "__table__": "Percentage progress in ITE by race over years"
+  },
+  "SG_CSV0000000000001277.csv": {
+    "__table__": "English pass rates by race over years"
+  },
+  "SG_CSV0000000000001278.csv": {
+    "__table__": "Math pass rates by race and year"
+  },
+  "SG_CSV0000000000001279.csv": {
+    "__table__": "Pass rates by race and year"
+  },
+  "SG_CSV0000000000001280.csv": {
+    "__table__": "Mathematics pass rates by race and year"
+  },
+  "SG_CSV0000000000001281.csv": {
+    "__table__": "Post-secondary education progress by race and year"
+  },
+  "SG_CSV0000000000001282.csv": {
+    "__table__": "Post-secondary course enrollment percentages over years"
+  },
+  "SG_CSV0000000000001285.csv": {
+    "__table__": "Vaccination rates by race over time"
+  },
+  "SG_CSV0000000000001288.csv": {
+    "__table__": "PSLE English proficiency by race over years"
+  },
+  "SG_CSV0000000000001289.csv": {
+    "__table__": "PSLE Math pass rates by race over years"
+  },
+  "SG_CSV0000000000001290.csv": {
+    "__table__": "PSLE Mother Tongue Language pass rates by race and year"
+  },
+  "SG_CSV0000000000001291.csv": {
+    "__table__": "PSLE Science pass rates by race over years"
+  },
+  "SG_CSV0000000000001292.csv": {
+    "__table__": "PSLE English pass rates by race"
+  },
+  "SG_CSV0000000000001293.csv": {
+    "__table__": "PSLE Math pass rates by race"
+  },
+  "SG_CSV0000000000001294.csv": {
+    "__table__": "PSLE Mother Tongue Language pass rates by race"
+  },
+  "SG_CSV0000000000001295.csv": {
+    "__table__": "PSLE Science pass rates by race"
+  },
+  "SG_CSV0000000000001296.csv": {
+    "__table__": "Pass rates by race over years"
+  },
+  "SG_CSV0000000000001297.csv": {
+    "__table__": "Percentage of 3 O-level passes by race and year"
+  },
+  "SG_CSV0000000000001298.csv": {
+    "__table__": "Percentage of students achieving 5 O-level passes by race and year"
+  },
+  "SG_CSV0000000000001299.csv": {
+    "__table__": "Percentage of tax-deductible donations by source over years"
+  },
+  "SG_CSV0000000000001302.csv": {
+    "__table__": "Arrest statistics by age group, nationality, and gender"
+  },
+  "SG_CSV0000000000001303.csv": {
+    "__table__": "Arrest statistics by year and demographic category"
+  },
+  "SG_CSV0000000000001304.csv": {
+    "__table__": "Arrests by year, crime type, and age group"
+  },
+  "SG_CSV0000000000001305.csv": {
+    "__table__": "Arrest statistics by year and offense category"
+  },
+  "SG_CSV0000000000001306.csv": {
+    "__table__": "Pesticide and insecticide product registration details"
+  },
+  "SG_CSV0000000000001307.csv": {
+    "__table__": "Resident counts by planning area, subzone, age group, sex, type of dwelling, and year"
+  },
+  "SG_CSV0000000000001308.csv": {
+    "__table__": "Hazardous substances licences and permits issued annually"
+  },
+  "SG_CSV0000000000001309.csv": {
+    "__table__": "Annual course statistics by gender"
+  },
+  "SG_CSV0000000000001310.csv": {
+    "__table__": "Population density over years"
+  },
+  "SG_CSV0000000000001311.csv": {
+    "__table__": "Population growth rates over time"
+  },
+  "SG_CSV0000000000001313.csv": {
+    "__table__": "Population by age group and year"
+  },
+  "SG_CSV0000000000001314.csv": {
+    "__table__": "Population by age group and year"
+  },
+  "SG_CSV0000000000001315.csv": {
+    "__table__": "Population by education level over years"
+  },
+  "SG_CSV0000000000001316.csv": {
+    "__table__": "Population by gender over years"
+  },
+  "SG_CSV0000000000001317.csv": {
+    "__table__": "Population by gender over years"
+  },
+  "SG_CSV0000000000001319.csv": {
+    "__table__": "Postal service facilities by type and half-year"
+  },
+  "SG_CSV0000000000001320.csv": {
+    "__table__": "Sales of potable water by year and category"
+  },
+  "SG_CSV0000000000001321.csv": {
+    "__table__": "Junior college enrolment by year, age, and sex"
+  },
+  "SG_CSV0000000000001322.csv": {
+    "__table__": "Bus service details including operator, route, stops, and fares"
+  },
+  "SG_CSV0000000000001325.csv": {
+    "__table__": "Presidential election results by year and candidate"
+  },
+  "SG_CSV0000000000001326.csv": {
+    "__table__": "Prevalence rates of various diseases and behaviors over time"
+  },
+  "SG_CSV0000000000001327.csv": {
+    "__table__": "Housing prices by financial year, town, and room type"
+  },
+  "SG_CSV0000000000001328.csv": {
+    "__table__": "Primary school enrolment by year, age, and sex"
+  },
+  "SG_CSV0000000000001329.csv": {
+    "__table__": "Cause of death rankings by year"
+  },
+  "SG_CSV0000000000001331.csv": {
+    "__table__": "Number of principals by year, gender, school level, and age group"
+  },
+  "SG_CSV0000000000001332.csv": {
+    "__table__": "Number of principals by year, gender, school level, and service length"
+  },
+  "SG_CSV0000000000001335.csv": {
+    "__table__": "Residential property price index over time"
+  },
+  "SG_CSV0000000000001336.csv": {
+    "__table__": "Residential property values over time"
+  },
+  "SG_CSV0000000000001337.csv": {
+    "__table__": "Residential property values by quarter and type"
+  },
+  "SG_CSV0000000000001338.csv": {
+    "__table__": "Property price indices by quarter, property type, and locality"
+  },
+  "SG_CSV0000000000001339.csv": {
+    "__table__": "Sales units by quarter and sale type"
+  },
+  "SG_CSV0000000000001340.csv": {
+    "__table__": "Sales units by quarter and sale type"
+  },
+  "SG_CSV0000000000001341.csv": {
+    "__table__": "Sales units by quarter and sale type"
+  },
+  "SG_CSV0000000000001342.csv": {
+    "__table__": "Sales units by quarter and sale type"
+  },
+  "SG_CSV0000000000001343.csv": {
+    "__table__": "Probation completion rates by cohort and age group"
+  },
+  "SG_CSV0000000000001346.csv": {
+    "__table__": "Non-completion reasons by cohort year"
+  },
+  "SG_CSV0000000000001347.csv": {
+    "__table__": "New probation orders by age group and year"
+  },
+  "SG_CSV0000000000001348.csv": {
+    "__table__": "New probation orders by year and gender"
+  },
+  "SG_CSV0000000000001349.csv": {
+    "__table__": "New probation orders by year and grade of order"
+  },
+  "SG_CSV0000000000001350.csv": {
+    "__table__": "Probation orders by year and length of order"
+  },
+  "SG_CSV0000000000001351.csv": {
+    "__table__": "Recidivism rates by cohort and age group"
+  },
+  "SG_CSV0000000000001352.csv": {
+    "__table__": "Student registration by branch"
+  },
+  "SG_CSV0000000000001353.csv": {
+    "__table__": "Vaccination statistics over time"
+  },
+  "SG_CSV0000000000001354.csv": {
+    "__table__": "Price index by quarter and market segment"
+  },
+  "SG_CSV0000000000001355.csv": {
+    "__table__": "Sick leave proportions by year, industry, and type"
+  },
+  "SG_CSV0000000000001356.csv": {
+    "__table__": "Sick leave proportions by year, industry, and leave type"
+  },
+  "SG_CSV0000000000001357.csv": {
+    "__table__": "Sick leave proportions by year, industry, and leave type"
+  },
+  "SG_CSV0000000000001358.csv": {
+    "__table__": "Sick leave proportions over years"
+  },
+  "SG_CSV0000000000001359.csv": {
+    "__table__": "Sick leave proportions by year, employee type, and leave type"
+  },
+  "SG_CSV0000000000001360.csv": {
+    "__table__": "Flexible work arrangements by year"
+  },
+  "SG_CSV0000000000001361.csv": {
+    "__table__": "Workplace flexibility measures by industry and year"
+  },
+  "SG_CSV0000000000001362.csv": {
+    "__table__": "Workplace flexibility measures by industry over years"
+  },
+  "SG_CSV0000000000001363.csv": {
+    "__table__": "Workplace flexibility measures by industry and year"
+  },
+  "SG_CSV0000000000001364.csv": {
+    "__table__": "Leave utilization statistics over years"
+  },
+  "SG_CSV0000000000001365.csv": {
+    "__table__": "Leave entitlements by industry over years"
+  },
+  "SG_CSV0000000000001366.csv": {
+    "__table__": "Leave entitlements by industry over years"
+  },
+  "SG_CSV0000000000001367.csv": {
+    "__table__": "Leave entitlements by industry and year"
+  },
+  "SG_CSV0000000000001368.csv": {
+    "__table__": "Age group and gender specific values over years"
+  },
+  "SG_CSV0000000000001370.csv": {
+    "__table__": "Educational attainment by age group and gender over time"
+  },
+  "SG_CSV0000000000001371.csv": {
+    "__table__": "Ethnic group percentages over years"
+  },
+  "SG_CSV0000000000001372.csv": {
+    "__table__": "Public holidays with dates and days in 2021"
+  },
+  "SG_CSV0000000000001373.csv": {
+    "__table__": "Public holidays with dates and days in 2020"
+  },
+  "SG_CSV0000000000001374.csv": {
+    "__table__": "Public holidays with dates and days in 2022"
+  },
+  "SG_CSV0000000000001375.csv": {
+    "__table__": "Public holidays with dates and days"
+  },
+  "SG_CSV0000000000001376.csv": {
+    "__table__": "Inflow count of public service sector employees by age group, executive level, and year"
+  },
+  "SG_CSV0000000000001377.csv": {
+    "__table__": "Public service sector outflow by age group, executive level, and year"
+  },
+  "SG_CSV0000000000001378.csv": {
+    "__table__": "Public service sector employee outflow by length of service, executive level, and year"
+  },
+  "SG_CSV0000000000001379.csv": {
+    "__table__": "Retirement and re-employment statistics for public service sector staff"
+  },
+  "SG_CSV0000000000001380.csv": {
+    "__table__": "Annual MRT and bus ridership"
+  },
+  "SG_CSV0000000000001381.csv": {
+    "__table__": "Annual bus fleet size and route operations"
+  },
+  "SG_CSV0000000000001382.csv": {
+    "__table__": "Taxi fleet sizes by company and month"
+  },
+  "SG_CSV0000000000001383.csv": {
+    "__table__": "Annual average daily passenger journeys and journey distances"
+  },
+  "SG_CSV0000000000001384.csv": {
+    "__table__": "Public transport ridership by year and mode"
+  },
+  "SG_CSV0000000000001385.csv": {
+    "__table__": "Average distance per trip by year and mode of transportation"
+  },
+  "SG_CSV0000000000001388.csv": {
+    "__table__": "Qualified driving licence holders by year and class of licence"
+  },
+  "SG_CSV0000000000001389.csv": {
+    "__table__": "Vehicle registration counts by period, category, and type"
+  },
+  "SG_CSV0000000000001390.csv": {
+    "__table__": "Vehicle registration statistics by period, category, and type"
+  },
+  "SG_CSV0000000000001394.csv": {
+    "__table__": "Rate of natural increase over years"
+  },
+  "SG_CSV0000000000001395.csv": {
+    "__table__": "Reentry rates by age group over years"
+  },
+  "SG_CSV0000000000001396.csv": {
+    "__table__": "Reentry rates by quarter and age group"
+  },
+  "SG_CSV0000000000001397.csv": {
+    "__table__": "Reentry rates by education level over years"
+  },
+  "SG_CSV0000000000001398.csv": {
+    "__table__": "Reentry rates by quarter and education level"
+  },
+  "SG_CSV0000000000001399.csv": {
+    "__table__": "Reentry rates for different occupations over the years"
+  },
+  "SG_CSV0000000000001400.csv": {
+    "__table__": "Reentry rates by gender over years"
+  },
+  "SG_CSV0000000000001401.csv": {
+    "__table__": "Reentry rates by quarter and gender"
+  },
+  "SG_CSV0000000000001402.csv": {
+    "__table__": "Reentry rates for different occupations over quarters"
+  },
+  "SG_CSV0000000000001405.csv": {
+    "__table__": "Monthly values for Ready Mixed Concrete"
+  },
+  "SG_CSV0000000000001406.csv": {
+    "__table__": "Recidivism rates by year and type"
+  },
+  "SG_CSV0000000000001407.csv": {
+    "__table__": "Recycling rates for various waste types over years"
+  },
+  "SG_CSV0000000000001408.csv": {
+    "__table__": "APEC architects registered in Singapore with business addresses and professional alliance offers"
+  },
+  "SG_CSV0000000000001409.csv": {
+    "__table__": "Architect registration and firm information"
+  },
+  "SG_CSV0000000000001410.csv": {
+    "__table__": "Architectural firms in Singapore with contact information"
+  },
+  "SG_CSV0000000000001412.csv": {
+    "__table__": "Foreign architect projects in Singapore"
+  },
+  "SG_CSV0000000000001414.csv": {
+    "__table__": "Applicant registration details"
+  },
+  "SG_CSV0000000000001415.csv": {
+    "__table__": "Pharmaceutical product details including license information, classification, and manufacturing details"
+  },
+  "SG_CSV0000000000001416.csv": {
+    "__table__": "Company contact and address information"
+  },
+  "SG_CSV0000000000001417.csv": {
+    "__table__": "Annual vessel count and gross tonnage"
+  },
+  "SG_CSV0000000000001418.csv": {
+    "__table__": "Monthly vessel counts and gross tonnage"
+  },
+  "SG_CSV0000000000001421.csv": {
+    "__table__": "Regrossed balance amounts by year and balance group"
+  },
+  "SG_CSV0000000000001422.csv": {
+    "__table__": "Regrossed balance amounts by year and group"
+  },
+  "SG_CSV0000000000001423.csv": {
+    "__table__": "Annual age group statistics"
+  },
+  "SG_CSV0000000000001424.csv": {
+    "__table__": "Annual gender-based statistics"
+  },
+  "SG_CSV0000000000001425.csv": {
+    "__table__": "Annual ethnic population percentages"
+  },
+  "SG_CSV0000000000001428.csv": {
+    "__table__": "Annual relative humidity measurements"
+  },
+  "SG_CSV0000000000001430.csv": {
+    "__table__": "Tax assessment details over years"
+  },
+  "SG_CSV0000000000001431.csv": {
+    "__table__": "Tax relief claims by year and type"
+  },
+  "SG_CSV0000000000001432.csv": {
+    "__table__": "Population by age group over years"
+  },
+  "SG_CSV0000000000001433.csv": {
+    "__table__": "Population by age group and year"
+  },
+  "SG_CSV0000000000001434.csv": {
+    "__table__": "Population by education level over years"
+  },
+  "SG_CSV0000000000001435.csv": {
+    "__table__": "Population by gender over years"
+  },
+  "SG_CSV0000000000001436.csv": {
+    "__table__": "Population by main offence group over years"
+  },
+  "SG_CSV0000000000001438.csv": {
+    "__table__": "Company details including UEN, reference number, name, address, postal code, email, and contact number"
+  },
+  "SG_CSV0000000000001439.csv": {
+    "__table__": "Rental statistics for residential projects by quarter"
+  },
+  "SG_CSV0000000000001440.csv": {
+    "__table__": "HDB flat approvals by quarter and type"
+  },
+  "SG_CSV0000000000001441.csv": {
+    "__table__": "Monthly rent for flats by location and type"
+  },
+  "SG_CSV0000000000001444.csv": {
+    "__table__": "Diploma courses offered by schools in 2016"
+  },
+  "SG_CSV0000000000001445.csv": {
+    "__table__": "Diploma courses offered by schools in 2017"
+  },
+  "SG_CSV0000000000001446.csv": {
+    "__table__": "Diploma courses offered in 2019 by various schools"
+  },
+  "SG_CSV0000000000001447.csv": {
+    "__table__": "Courses offered in 2017"
+  },
+  "SG_CSV0000000000001448.csv": {
+    "__table__": "Courses offered in 2019"
+  },
+  "SG_CSV0000000000001449.csv": {
+    "__table__": "Course enrollment by gender"
+  },
+  "SG_CSV0000000000001450.csv": {
+    "__table__": "Specialist and Part-Time Diploma Courses Offered in 2019"
+  },
+  "SG_CSV0000000000001452.csv": {
+    "__table__": "Resale flat transactions with details"
+  },
+  "SG_CSV0000000000001453.csv": {
+    "__table__": "Resale flat transactions in Singapore"
+  },
+  "SG_CSV0000000000001454.csv": {
+    "__table__": "Resale flat transactions with details"
+  },
+  "SG_CSV0000000000001455.csv": {
+    "__table__": "Resale prices of HDB flats by month, town, and flat type"
+  },
+  "SG_CSV0000000000001456.csv": {
+    "__table__": "Resale flat transactions with details"
+  },
+  "SG_CSV0000000000001457.csv": {
+    "__table__": "Resale transactions by flat type and financial year"
+  },
+  "SG_CSV0000000000001526.csv": {
+    "__table__": "HDB dwelling distribution by occupation and flat type"
+  },
+  "SG_CSV0000000000001527.csv": {
+    "__table__": "Occupational distribution by housing type"
+  },
+  "SG_CSV0000000000001528.csv": {
+    "__table__": "Labour force by year, gender, and highest qualification"
+  },
+  "SG_CSV0000000000001529.csv": {
+    "__table__": "Labour force participation by year, sex, marital status, and age group"
+  },
+  "SG_CSV0000000000001531.csv": {
+    "__table__": "Labor force participation rates by year, sex, and age group"
+  },
+  "SG_CSV0000000000001532.csv": {
+    "__table__": "Labor force participation rates by gender over time"
+  },
+  "SG_CSV0000000000001534.csv": {
+    "__table__": "Resident long-term unemployment rates by year"
+  },
+  "SG_CSV0000000000001537.csv": {
+    "__table__": "Old-age support ratio over time"
+  },
+  "SG_CSV0000000000001586.csv": {
+    "__table__": "Resident population by gender over years"
+  },
+  "SG_CSV0000000000001628.csv": {
+    "__table__": "Healthcare facility counts by year and type"
+  },
+  "SG_CSV0000000000001629.csv": {
+    "__table__": "Rental data for different property types and districts"
+  },
+  "SG_CSV0000000000001630.csv": {
+    "__table__": "Quarterly subscription counts by internet speed"
+  },
+  "SG_CSV0000000000001631.csv": {
+    "__table__": "Broadband connections and subscriptions over time"
+  },
+  "SG_CSV0000000000001632.csv": {
+    "__table__": "Labour force statistics by year, sex, and age group"
+  },
+  "SG_CSV0000000000001633.csv": {
+    "__table__": "Labour force status by year, sex, marital status, and age group"
+  },
+  "SG_CSV0000000000001634.csv": {
+    "__table__": "Labour force status by year, gender, highest qualification, and age group"
+  },
+  "SG_CSV0000000000001635.csv": {
+    "__table__": "Retail sales index by category over time"
+  },
+  "SG_CSV0000000000001636.csv": {
+    "__table__": "Monthly retail sales by category"
+  },
+  "SG_CSV0000000000001637.csv": {
+    "__table__": "Quarterly retail sales by category"
+  },
+  "SG_CSV0000000000001638.csv": {
+    "__table__": "Monthly economic indicators for total and total excluding motor vehicles"
+  },
+  "SG_CSV0000000000001639.csv": {
+    "__table__": "Monthly retail sales index values"
+  },
+  "SG_CSV0000000000001640.csv": {
+    "__table__": "Quarterly economic indicators including total and excluding motor vehicles"
+  },
+  "SG_CSV0000000000001643.csv": {
+    "__table__": "Quarterly retrenchment statistics"
+  },
+  "SG_CSV0000000000001644.csv": {
+    "__table__": "Retrenchment statistics by quarter and occupation"
+  },
+  "SG_CSV0000000000001645.csv": {
+    "__table__": "Retrenchment statistics by occupation and year"
+  },
+  "SG_CSV0000000000001646.csv": {
+    "__table__": "Retrenchment statistics by quarter and industry"
+  },
+  "SG_CSV0000000000001647.csv": {
+    "__table__": "Retrenchment statistics by year and industry"
+  },
+  "SG_CSV0000000000001648.csv": {
+    "__table__": "Retrenchment data by quarter, industry, and employment type"
+  },
+  "SG_CSV0000000000001649.csv": {
+    "__table__": "Retrenchment data by year, industry, and employment type"
+  },
+  "SG_CSV0000000000001650.csv": {
+    "__table__": "Retrenchment statistics by quarter and industry sectors"
+  },
+  "SG_CSV0000000000001651.csv": {
+    "__table__": "Retrenchment data by year and industry"
+  },
+  "SG_CSV0000000000001652.csv": {
+    "__table__": "Retrenchment statistics by year"
+  },
+  "SG_CSV0000000000001653.csv": {
+    "__table__": "Annual total values"
+  },
+  "SG_CSV0000000000001654.csv": {
+    "__table__": "Annual sector-specific economic values"
+  },
+  "SG_CSV0000000000001655.csv": {
+    "__table__": "Economic values by sector and subsector over years"
+  },
+  "SG_CSV0000000000001656.csv": {
+    "__table__": "Economic values by sector and year"
+  },
+  "SG_CSV0000000000001657.csv": {
+    "__table__": "Infocomm industry revenue by year and segment"
+  },
+  "SG_CSV0000000000001658.csv": {
+    "__table__": "Monthly duty collections and releases for various products"
+  },
+  "SG_CSV0000000000001659.csv": {
+    "__table__": "Housing occupancy and ownership by relationship over years"
+  },
+  "SG_CSV0000000000001661.csv": {
+    "__table__": "Sales of potable water by year and customer type"
+  },
+  "SG_CSV0000000000001662.csv": {
+    "__table__": "Water sales by type and year"
+  },
+  "SG_CSV0000000000001663.csv": {
+    "__table__": "EC project status and sales by quarter"
+  },
+  "SG_CSV0000000000001664.csv": {
+    "__table__": "Sales of potable water by year and category"
+  },
+  "SG_CSV0000000000001665.csv": {
+    "__table__": "School programs and leadership development initiatives"
+  },
+  "SG_CSV0000000000001666.csv": {
+    "__table__": "School life expectancy by year and gender"
+  },
+  "SG_CSV0000000000001668.csv": {
+    "__table__": "Secondary school enrolment by year, age, and sex"
+  },
+  "SG_CSV0000000000001669.csv": {
+    "__table__": "Economic indicators per worker over time"
+  },
+  "SG_CSV0000000000001671.csv": {
+    "__table__": "Economic indicators over time"
+  },
+  "SG_CSV0000000000001672.csv": {
+    "__table__": "Economic indicators by year and category"
+  },
+  "SG_CSV0000000000001673.csv": {
+    "__table__": "Service provider details and offerings"
+  },
+  "SG_CSV0000000000001674.csv": {
+    "__table__": "Service level targets and achievements over financial years"
+  },
+  "SG_CSV0000000000001675.csv": {
+    "__table__": "Annual sex ratio over time"
+  },
+  "SG_CSV0000000000001676.csv": {
+    "__table__": "Satellite office locations and contact information"
+  },
+  "SG_CSV0000000000001677.csv": {
+    "__table__": "Enterprise metrics by year"
+  },
+  "SG_CSV0000000000001678.csv": {
+    "__table__": "Enterprise metrics by year and category"
+  },
+  "SG_CSV0000000000001680.csv": {
+    "__table__": "Quarterly employment statistics including total, short work week, and temporary layoff figures"
+  },
+  "SG_CSV0000000000001681.csv": {
+    "__table__": "Annual employment statistics including total, short work week, and temporary layoff figures"
+  },
+  "SG_CSV0000000000001682.csv": {
+    "__table__": "Quarterly employment status by industry"
+  },
+  "SG_CSV0000000000001683.csv": {
+    "__table__": "Employment statistics by year and industry"
+  },
+  "SG_CSV0000000000001684.csv": {
+    "__table__": "Quarterly employment statistics by occupation"
+  },
+  "SG_CSV0000000000001685.csv": {
+    "__table__": "Occupational employment statistics over years"
+  },
+  "SG_CSV0000000000001686.csv": {
+    "__table__": "School canteen stall advertisements"
+  },
+  "SG_CSV0000000000001688.csv": {
+    "__table__": "School bus operators and contact information"
+  },
+  "SG_CSV0000000000001695.csv": {
+    "__table__": "Diploma-Plus courses offered by various schools and their descriptions"
+  },
+  "SG_CSV0000000000001696.csv": {
+    "__table__": "Educational attainment by gender and year"
+  },
+  "SG_CSV0000000000001697.csv": {
+    "__table__": "Educational attainment by gender and age group over time"
+  },
+  "SG_CSV0000000000001699.csv": {
+    "__table__": "Population demographics by year, ethnicity, gender, and age group"
+  },
+  "SG_CSV0000000000001700.csv": {
+    "__table__": "Resident count by planning area, subzone, age group, sex, and year"
+  },
+  "SG_CSV0000000000001701.csv": {
+    "__table__": "Diploma-plus courses offered by various schools at Singapore Polytechnic"
+  },
+  "SG_CSV0000000000001708.csv": {
+    "__table__": "Singapore's portfolio investment assets by year, region, and country"
+  },
+  "SG_CSV0000000000001709.csv": {
+    "__table__": "Singapore's portfolio investment assets by year, region, and instrument type"
+  },
+  "SG_CSV0000000000001710.csv": {
+    "__table__": "Birth statistics by ethnic group and year"
+  },
+  "SG_CSV0000000000001711.csv": {
+    "__table__": "Inmate training statistics by year"
+  },
+  "SG_CSV0000000000001712.csv": {
+    "__table__": "Land development tenders and auctions"
+  },
+  "SG_CSV0000000000001713.csv": {
+    "__table__": "Land allocation and tender details"
+  },
+  "SG_CSV0000000000001714.csv": {
+    "__table__": "Survey responses on demographics, education, employment, and social views"
+  },
+  "SG_CSV0000000000001714__0.csv": {
+    "__table__": "Survey responses on opinion expression and demographic information"
+  },
+  "SG_CSV0000000000001714__1.csv": {
+    "__table__": "Survey responses on freedom of expression and demographic information"
+  },
+  "SG_CSV0000000000001714__10.csv": {
+    "__table__": "Demographic and socioeconomic data of individuals"
+  },
+  "SG_CSV0000000000001714__11.csv": {
+    "__table__": "Demographic and socioeconomic data including number of children, education, income, and social network usage"
+  },
+  "SG_CSV0000000000001714__12.csv": {
+    "__table__": "Demographic and socioeconomic data of individuals"
+  },
+  "SG_CSV0000000000001714__13.csv": {
+    "__table__": "Demographic and socioeconomic data of individuals"
+  },
+  "SG_CSV0000000000001714__14.csv": {
+    "__table__": "Respondent demographics and opinions on influential figures"
+  },
+  "SG_CSV0000000000001714__15.csv": {
+    "__table__": "Participant demographics and opinions on authority figures"
+  },
+  "SG_CSV0000000000001714__16.csv": {
+    "__table__": "Respondent demographics and opinions on authoritative figures"
+  },
+  "SG_CSV0000000000001714__17.csv": {
+    "__table__": "Respondent demographics and opinions on influential figures"
+  },
+  "SG_CSV0000000000001714__18.csv": {
+    "__table__": "Respondent demographics and opinions on influential figures"
+  },
+  "SG_CSV0000000000001714__19.csv": {
+    "__table__": "Respondent demographics and opinions on influential figures"
+  },
+  "SG_CSV0000000000001714__2.csv": {
+    "__table__": "Survey responses on freedom of expression and demographic information"
+  },
+  "SG_CSV0000000000001714__20.csv": {
+    "__table__": "Respondent demographics and opinions on authoritative figures"
+  },
+  "SG_CSV0000000000001714__21.csv": {
+    "__table__": "Occupation status and role indicators"
+  },
+  "SG_CSV0000000000001714__22.csv": {
+    "__table__": "Occupation status and role indicators"
+  },
+  "SG_CSV0000000000001714__23.csv": {
+    "__table__": "Occupation status and role indicators"
+  },
+  "SG_CSV0000000000001714__24.csv": {
+    "__table__": "Occupation status and role records"
+  },
+  "SG_CSV0000000000001714__25.csv": {
+    "__table__": "Occupation status and role records"
+  },
+  "SG_CSV0000000000001714__26.csv": {
+    "__table__": "Occupation status and role records"
+  },
+  "SG_CSV0000000000001714__27.csv": {
+    "__table__": "Occupation status and role indicators"
+  },
+  "SG_CSV0000000000001714__28.csv": {
+    "__table__": "Survey responses on demographics, education, occupation, and family status"
+  },
+  "SG_CSV0000000000001714__29.csv": {
+    "__table__": "Survey responses on demographics and lifestyle in Singapore"
+  },
+  "SG_CSV0000000000001714__3.csv": {
+    "__table__": "Survey responses on opinion expression and demographic details"
+  },
+  "SG_CSV0000000000001714__30.csv": {
+    "__table__": "Survey responses on living conditions, education, and occupation in Singapore"
+  },
+  "SG_CSV0000000000001714__31.csv": {
+    "__table__": "Survey responses on demographics, education, occupation, and family status"
+  },
+  "SG_CSV0000000000001714__32.csv": {
+    "__table__": "Survey responses on demographics and lifestyle"
+  },
+  "SG_CSV0000000000001714__33.csv": {
+    "__table__": "Respondent demographic and lifestyle information"
+  },
+  "SG_CSV0000000000001714__34.csv": {
+    "__table__": "Survey responses on demographics and lifestyle in Singapore"
+  },
+  "SG_CSV0000000000001714__35.csv": {
+    "__table__": "Demographic and socioeconomic data for individuals in Singapore"
+  },
+  "SG_CSV0000000000001714__36.csv": {
+    "__table__": "Demographic and socioeconomic data for individuals in Singapore"
+  },
+  "SG_CSV0000000000001714__37.csv": {
+    "__table__": "Demographic and socioeconomic data for individuals in Singapore"
+  },
+  "SG_CSV0000000000001714__38.csv": {
+    "__table__": "Demographic and socioeconomic data for individuals in Singapore"
+  },
+  "SG_CSV0000000000001714__39.csv": {
+    "__table__": "Demographic and socioeconomic data for Singapore residents"
+  },
+  "SG_CSV0000000000001714__4.csv": {
+    "__table__": "Survey responses on opinion expression and demographic details"
+  },
+  "SG_CSV0000000000001714__40.csv": {
+    "__table__": "Demographic and socioeconomic data for Singapore residents"
+  },
+  "SG_CSV0000000000001714__41.csv": {
+    "__table__": "Demographic and socioeconomic data for individuals in Singapore"
+  },
+  "SG_CSV0000000000001714__42.csv": {
+    "__table__": "Demographic and educational information of individuals"
+  },
+  "SG_CSV0000000000001714__43.csv": {
+    "__table__": "Demographic and educational information of individuals with children"
+  },
+  "SG_CSV0000000000001714__44.csv": {
+    "__table__": "Demographic and educational details of individuals with occupational status"
+  },
+  "SG_CSV0000000000001714__45.csv": {
+    "__table__": "Demographic and educational details of individuals"
+  },
+  "SG_CSV0000000000001714__46.csv": {
+    "__table__": "Demographic and educational information of individuals with occupational status"
+  },
+  "SG_CSV0000000000001714__47.csv": {
+    "__table__": "Demographic and educational information of individuals"
+  },
+  "SG_CSV0000000000001714__48.csv": {
+    "__table__": "Demographic and educational information of individuals"
+  },
+  "SG_CSV0000000000001714__5.csv": {
+    "__table__": "Survey responses on freedom of expression and demographic information"
+  },
+  "SG_CSV0000000000001714__6.csv": {
+    "__table__": "Survey responses on opinion expression and demographic details"
+  },
+  "SG_CSV0000000000001714__7.csv": {
+    "__table__": "Demographic and financial data of individuals with social network usage"
+  },
+  "SG_CSV0000000000001714__8.csv": {
+    "__table__": "Demographic and financial data of individuals with social network usage"
+  },
+  "SG_CSV0000000000001714__9.csv": {
+    "__table__": "Demographic and socioeconomic data of individuals including number of children, education, income, and social network usage"
+  },
+  "SG_CSV0000000000001715.csv": {
+    "__table__": "Solar PV installations by year, planning region, and residential status"
+  },
+  "SG_CSV0000000000001728.csv": {
+    "__table__": "Educational programs and courses offered in 2022"
+  },
+  "SG_CSV0000000000001729.csv": {
+    "__table__": "Short modular courses offered in 2022 with descriptions and references"
+  },
+  "SG_CSV0000000000001730.csv": {
+    "__table__": "Course offerings and descriptions for various professional development programs in 2022"
+  },
+  "SG_CSV0000000000001731.csv": {
+    "__table__": "Small license applications and issuances by year"
+  },
+  "SG_CSV0000000000001732.csv": {
+    "__table__": "Physical activity participation over years"
+  },
+  "SG_CSV0000000000001733.csv": {
+    "__table__": "Public service sector staff strength by age group, executive level, and year"
+  },
+  "SG_CSV0000000000001734.csv": {
+    "__table__": "Public service sector staff strength by gender, executive level, and year"
+  },
+  "SG_CSV0000000000001735.csv": {
+    "__table__": "Staff strength by educational qualification, public service sector, and executive level over years"
+  },
+  "SG_CSV0000000000001736.csv": {
+    "__table__": "Staff strength by length of service, sector, executive level, and year"
+  },
+  "SG_CSV0000000000001737.csv": {
+    "__table__": "Public service sector staff strength by tenure, executive level, and year"
+  },
+  "SG_CSV0000000000001738.csv": {
+    "__table__": "Financial year instrument types with counts and assessed stamp duties"
+  },
+  "SG_CSV0000000000001739.csv": {
+    "__table__": "Stamp duty transactions by year and type"
+  },
+  "SG_CSV0000000000001740.csv": {
+    "__table__": "Legal case counts by division, category, and subcategory over years"
+  },
+  "SG_CSV0000000000001741.csv": {
+    "__table__": "Clearance rates by year and category"
+  },
+  "SG_CSV0000000000001742.csv": {
+    "__table__": "Legal cases by year, category, and subcategory"
+  },
+  "SG_CSV0000000000001743.csv": {
+    "__table__": "State court referrals by age group and year"
+  },
+  "SG_CSV0000000000001744.csv": {
+    "__table__": "State courts referrals by year and gender"
+  },
+  "SG_CSV0000000000001745.csv": {
+    "__table__": "Still births by year, ethnicity, place of occurrence, attendant at birth, and child gender"
+  },
+  "SG_CSV0000000000001746.csv": {
+    "__table__": "Birth statistics by year, mother's age, child's weight, gender, gestation period, and stillbirth count"
+  },
+  "SG_CSV0000000000001747.csv": {
+    "__table__": "Still births by month, mother's race, and child's gender"
+  },
+  "SG_CSV0000000000001748.csv": {
+    "__table__": "Energy product consumption by year and distillate type"
+  },
+  "SG_CSV0000000000001749.csv": {
+    "__table__": "Economic values by year and industry sector"
+  },
+  "SG_CSV0000000000001750.csv": {
+    "__table__": "Economic values by sector and subsector over years"
+  },
+  "SG_CSV0000000000001751.csv": {
+    "__table__": "Economic values by sector and year"
+  },
+  "SG_CSV0000000000001752.csv": {
+    "__table__": "Annual total values"
+  },
+  "SG_CSV0000000000001753.csv": {
+    "__table__": "Work pass counts by month and type"
+  },
+  "SG_CSV0000000000001755.csv": {
+    "__table__": "New cancer cases by age group and year"
+  },
+  "SG_CSV0000000000001756.csv": {
+    "__table__": "New cancer cases by year and gender"
+  },
+  "SG_CSV0000000000001757.csv": {
+    "__table__": "Student and teacher counts by year, gender, and school type"
+  },
+  "SG_CSV0000000000001758.csv": {
+    "__table__": "Primary school student and teacher counts by year, gender, and school type"
+  },
+  "SG_CSV0000000000001759.csv": {
+    "__table__": "Student and teacher counts by year, sex, and school type"
+  },
+  "SG_CSV0000000000001760.csv": {
+    "__table__": "School statistics by year, level, and gender"
+  },
+  "SG_CSV0000000000001762.csv": {
+    "__table__": "ARV count by period, region, country, and gender"
+  },
+  "SG_CSV0000000000001763.csv": {
+    "__table__": "Travel departures by period, region, country, and length of stay"
+  },
+  "SG_CSV0000000000001764.csv": {
+    "__table__": "Arrivals by period, region, country, mode of arrival"
+  },
+  "SG_CSV0000000000001765.csv": {
+    "__table__": "Visitor days by period, region, and country"
+  },
+  "SG_CSV0000000000001766.csv": {
+    "__table__": "Teacher statistics by school type and qualification"
+  },
+  "SG_CSV0000000000001768.csv": {
+    "__table__": "Development status and amount of office and retail space over years"
+  },
+  "SG_CSV0000000000001769.csv": {
+    "__table__": "Development status and amount of office and retail space over years"
+  },
+  "SG_CSV0000000000001770.csv": {
+    "__table__": "Commercial space development by quarter, type, and status"
+  },
+  "SG_CSV0000000000001771.csv": {
+    "__table__": "Commercial space development status by quarter"
+  },
+  "SG_CSV0000000000001772.csv": {
+    "__table__": "Development status and number of units by year"
+  },
+  "SG_CSV0000000000001773.csv": {
+    "__table__": "Quarterly housing development status and unit counts"
+  },
+  "SG_CSV0000000000001774.csv": {
+    "__table__": "Property development units by year, type, and status"
+  },
+  "SG_CSV0000000000001775.csv": {
+    "__table__": "Property development status by quarter and type"
+  },
+  "SG_CSV0000000000001784.csv": {
+    "__table__": "Tanker statistics by year and category"
+  },
+  "SG_CSV0000000000001785.csv": {
+    "__table__": "Monthly tanker activity by category"
+  },
+  "SG_CSV0000000000001786.csv": {
+    "__table__": "Annual tanker statistics including number of tankers and gross tonnage"
+  },
+  "SG_CSV0000000000001787.csv": {
+    "__table__": "Monthly tanker traffic and gross tonnage"
+  },
+  "SG_CSV0000000000001788.csv": {
+    "__table__": "Tax cases and penalties by financial year and tax type"
+  },
+  "SG_CSV0000000000001789.csv": {
+    "__table__": "Tax and penalty cases by financial year"
+  },
+  "SG_CSV0000000000001790.csv": {
+    "__table__": "Tax arrears by financial year, tax type, and arrears type"
+  },
+  "SG_CSV0000000000001791.csv": {
+    "__table__": "Tax deductible donations by year and source"
+  },
+  "SG_CSV0000000000001792.csv": {
+    "__table__": "Donations by corporations and individuals across various sectors over the years"
+  },
+  "SG_CSV0000000000001793.csv": {
+    "__table__": "Tax rates for various gambling activities"
+  },
+  "SG_CSV0000000000001795.csv": {
+    "__table__": "Tax rates by income brackets over years"
+  },
+  "SG_CSV0000000000001796.csv": {
+    "__table__": "Property tax rates by type and annual value"
+  },
+  "SG_CSV0000000000001797.csv": {
+    "__table__": "Tax set-offs and rebates by year and type"
+  },
+  "SG_CSV0000000000001798.csv": {
+    "__table__": "Tax assessment data by year and economic sector"
+  },
+  "SG_CSV0000000000001799.csv": {
+    "__table__": "Tax assessment data by year, resident type, and income group"
+  },
+  "SG_CSV0000000000001800.csv": {
+    "__table__": "Tax assessment data by year and resident type"
+  },
+  "SG_CSV0000000000001801.csv": {
+    "__table__": "Taxpayer assessment data by income group and residency status"
+  },
+  "SG_CSV0000000000001802.csv": {
+    "__table__": "Taxpayer data by assessment year, income group, and residency status"
+  },
+  "SG_CSV0000000000001803.csv": {
+    "__table__": "Number of teachers by year, sex, school level, and age group"
+  },
+  "SG_CSV0000000000001804.csv": {
+    "__table__": "Teacher distribution by year, gender, school level, and service length"
+  },
+  "SG_CSV0000000000001805.csv": {
+    "__table__": "Part-time course offerings and descriptions by year and school"
+  },
+  "SG_CSV0000000000001806.csv": {
+    "__table__": "Part-time course enrollments by year, school, course type, course name, and gender"
+  },
+  "SG_CSV0000000000001808.csv": {
+    "__table__": "Ticket sales by year and artform"
+  },
+  "SG_CSV0000000000001809.csv": {
+    "__table__": "Case resolution times by financial year and type"
+  },
+  "SG_CSV0000000000001810.csv": {
+    "__table__": "Percentage of diagnoses for specific conditions over years"
+  },
+  "SG_CSV0000000000001811.csv": {
+    "__table__": "Cancer incidence rates by gender and type over periods"
+  },
+  "SG_CSV0000000000001812.csv": {
+    "__table__": "Disease conditions and their discharge percentages by year and rank"
+  },
+  "SG_CSV0000000000001813.csv": {
+    "__table__": "Country rankings in various global technology and competitiveness reports"
+  },
+  "SG_CSV0000000000001814.csv": {
+    "__table__": "Monthly trade values by region and country"
+  },
+  "SG_CSV0000000000001815.csv": {
+    "__table__": "Monthly regional values over time"
+  },
+  "SG_CSV0000000000001816.csv": {
+    "__table__": "Monthly total values over time"
+  },
+  "SG_CSV0000000000001817.csv": {
+    "__table__": "Monthly trade values by region and country"
+  },
+  "SG_CSV0000000000001818.csv": {
+    "__table__": "Monthly regional values"
+  },
+  "SG_CSV0000000000001819.csv": {
+    "__table__": "Monthly total values over time"
+  },
+  "SG_CSV0000000000001820.csv": {
+    "__table__": "Monthly air passenger arrivals by region and country"
+  },
+  "SG_CSV0000000000001821.csv": {
+    "__table__": "Monthly air passenger arrivals by region"
+  },
+  "SG_CSV0000000000001822.csv": {
+    "__table__": "Monthly air passenger arrivals"
+  },
+  "SG_CSV0000000000001823.csv": {
+    "__table__": "Air passenger departures by region and country over time"
+  },
+  "SG_CSV0000000000001824.csv": {
+    "__table__": "Monthly air passenger departures by region"
+  },
+  "SG_CSV0000000000001825.csv": {
+    "__table__": "Monthly air passenger departures"
+  },
+  "SG_CSV0000000000001826.csv": {
+    "__table__": "Land allocation and supply by quarter and product segment"
+  },
+  "SG_CSV0000000000001827.csv": {
+    "__table__": "Quarterly allocation and supply for different product segments"
+  },
+  "SG_CSV0000000000001831.csv": {
+    "__table__": "Vehicle sales by year and make"
+  },
+  "SG_CSV0000000000001832.csv": {
+    "__table__": "Vehicle counts by year and make"
+  },
+  "SG_CSV0000000000001833.csv": {
+    "__table__": "Vehicle sales by year and make"
+  },
+  "SG_CSV0000000000001838.csv": {
+    "__table__": "Population counts by age group and year"
+  },
+  "SG_CSV0000000000001839.csv": {
+    "__table__": "Divorce statistics by gender and age group"
+  },
+  "SG_CSV0000000000001840.csv": {
+    "__table__": "Annual divorce counts by gender"
+  },
+  "SG_CSV0000000000001841.csv": {
+    "__table__": "Annual total values"
+  },
+  "SG_CSV0000000000001842.csv": {
+    "__table__": "Total donations by year and category"
+  },
+  "SG_CSV0000000000001843.csv": {
+    "__table__": "Annual donations by sector"
+  },
+  "SG_CSV0000000000001846.csv": {
+    "__table__": "Fertility rates over time"
+  },
+  "SG_CSV0000000000001847.csv": {
+    "__table__": "Total fertility rate by ethnicity over years"
+  },
+  "SG_CSV0000000000001848.csv": {
+    "__table__": "Foreign reserve composition over years"
+  },
+  "SG_CSV0000000000001849.csv": {
+    "__table__": "Monthly foreign reserve data in Singapore dollars and US dollars"
+  },
+  "SG_CSV0000000000001851.csv": {
+    "__table__": "Government operating revenue and IRAS collection by financial year"
+  },
+  "SG_CSV0000000000001852.csv": {
+    "__table__": "Monthly electricity consumption by housing and dwelling type"
+  },
+  "SG_CSV0000000000001856.csv": {
+    "__table__": "Licensed food establishments by type and year"
+  },
+  "SG_CSV0000000000001858.csv": {
+    "__table__": "Total loans by month, loan type, and sector"
+  },
+  "SG_CSV0000000000001859.csv": {
+    "__table__": "Monthly total loans and their business and consumer segments"
+  },
+  "SG_CSV0000000000001861.csv": {
+    "__table__": "Marriage statistics by year and type"
+  },
+  "SG_CSV0000000000001865.csv": {
+    "__table__": "Net enrolment rates by year, level of education, and sex"
+  },
+  "SG_CSV0000000000001868.csv": {
+    "__table__": "Monthly subscriptions by network technology and plan type"
+  },
+  "SG_CSV0000000000001873.csv": {
+    "__table__": "Manufacturing sector output by year and industry"
+  },
+  "SG_CSV0000000000001874.csv": {
+    "__table__": "Annual total manufacturing value"
+  },
+  "SG_CSV0000000000001876.csv": {
+    "__table__": "Population statistics by year and category"
+  },
+  "SG_CSV0000000000001880.csv": {
+    "__table__": "Monthly international visitor arrivals by inbound tourism markets"
+  },
+  "SG_CSV0000000000001882.csv": {
+    "__table__": "Annual industry performance metrics"
+  },
+  "SG_CSV0000000000001884.csv": {
+    "__table__": "Number of trade disputes by year and industry"
+  },
+  "SG_CSV0000000000001885.csv": {
+    "__table__": "Trade disputes referred by year and nature"
+  },
+  "SG_CSV0000000000001886.csv": {
+    "__table__": "Warehouse types and quantities by year"
+  },
+  "SG_CSV0000000000001887.csv": {
+    "__table__": "Annual trade movements and permits"
+  },
+  "SG_CSV0000000000001889.csv": {
+    "__table__": "Annual visitor counts by origin"
+  },
+  "SG_CSV0000000000001890.csv": {
+    "__table__": "Trademark filings by class and year"
+  },
+  "SG_CSV0000000000001891.csv": {
+    "__table__": "Trademark filings by country and year"
+  },
+  "SG_CSV0000000000001892.csv": {
+    "__table__": "Traffic infrastructure counts by year and type"
+  },
+  "SG_CSV0000000000001894.csv": {
+    "__table__": "MRT station information including codes, names in English and Chinese, and lines"
+  },
+  "SG_CSV0000000000001895.csv": {
+    "__table__": "Family nucleus composition by ethnicity over years"
+  },
+  "SG_CSV0000000000001896.csv": {
+    "__table__": "Housing type and family nucleus distribution over years"
+  },
+  "SG_CSV0000000000001897.csv": {
+    "__table__": "Quarterly unit sales by market segment"
+  },
+  "SG_CSV0000000000001898.csv": {
+    "__table__": "Uncompleted private residential units by quarter, market segment"
+  },
+  "SG_CSV0000000000001899.csv": {
+    "__table__": "Unemployment by year, sex, age, and highest qualification"
+  },
+  "SG_CSV0000000000001904.csv": {
+    "__table__": "Annual course statistics by gender"
+  },
+  "SG_CSV0000000000001905.csv": {
+    "__table__": "Unlicensed moneylending statistics by year and category"
+  },
+  "SG_CSV0000000000001906.csv": {
+    "__table__": "Police division crime statistics by year"
+  },
+  "SG_CSV0000000000001907.csv": {
+    "__table__": "Housing units by quarter, market segment, and completion status"
+  },
+  "SG_CSV0000000000001908.csv": {
+    "__table__": "Car park lot availability by type"
+  },
+  "SG_CSV0000000000001909.csv": {
+    "__table__": "Parking rates and availability for various car parks in Singapore"
+  },
+  "SG_CSV0000000000001910.csv": {
+    "__table__": "Media activity usage by age group and year"
+  },
+  "SG_CSV0000000000001911.csv": {
+    "__table__": "Media activity usage by age group and year"
+  },
+  "SG_CSV0000000000001912.csv": {
+    "__table__": "Media consumption habits by age group and year"
+  },
+  "SG_CSV0000000000001914.csv": {
+    "__table__": "Land tender and development details"
+  },
+  "SG_CSV0000000000001915.csv": {
+    "__table__": "Vaccination doses by type and year"
+  },
+  "SG_CSV0000000000001916.csv": {
+    "__table__": "Age distribution of protection levels"
+  },
+  "SG_CSV0000000000001922.csv": {
+    "__table__": "Annual production of vegetables, seafood, hen shell eggs, and local landings"
+  },
+  "SG_CSV0000000000001923.csv": {
+    "__table__": "Infrastructure counts by year and type"
+  },
+  "SG_CSV0000000000001924.csv": {
+    "__table__": "Vessel statistics by year and type"
+  },
+  "SG_CSV0000000000001925.csv": {
+    "__table__": "Monthly vessel traffic by type and tonnage"
+  },
+  "SG_CSV0000000000001926.csv": {
+    "__table__": "Annual vessel count and gross tonnage"
+  },
+  "SG_CSV0000000000001927.csv": {
+    "__table__": "Monthly vessel counts and gross tonnage"
+  },
+  "SG_CSV0000000000001928.csv": {
+    "__table__": "Vessel calls and gross tonnage by year and purpose type"
+  },
+  "SG_CSV0000000000001929.csv": {
+    "__table__": "Vessel calls and gross tonnage by month and purpose type"
+  },
+  "SG_CSV0000000000001930.csv": {
+    "__table__": "Number of vice principals by year, sex, school level, and age group"
+  },
+  "SG_CSV0000000000001931.csv": {
+    "__table__": "Number of vice principals by year, gender, school level, and service length"
+  },
+  "SG_CSV0000000000001932.csv": {
+    "__table__": "Crime victim statistics by year, gender, age group, and crime type"
+  },
+  "SG_CSV0000000000001933.csv": {
+    "__table__": "Video game releases with details including year, title, publishers, release year, region, platform, and rating"
+  },
+  "SG_CSV0000000000001934.csv": {
+    "__table__": "International visitor arrivals by country of residence"
+  },
+  "SG_CSV0000000000001935.csv": {
+    "__table__": "Monthly visitor arrivals by region and country"
+  },
+  "SG_CSV0000000000001936.csv": {
+    "__table__": "Monthly international visitor arrivals by region"
+  },
+  "SG_CSV0000000000001937.csv": {
+    "__table__": "Monthly visitor arrivals by region"
+  },
+  "SG_CSV0000000000001938.csv": {
+    "__table__": "Museum visitorship by year"
+  },
+  "SG_CSV0000000000001939.csv": {
+    "__table__": "Dental clinic visits by year and facility type"
+  },
+  "SG_CSV0000000000001940.csv": {
+    "__table__": "Dental clinic visits by year"
+  },
+  "SG_CSV0000000000001941.csv": {
+    "__table__": "Mail volume by year and type"
+  },
+  "SG_CSV0000000000001942.csv": {
+    "__table__": "Monthly total mail volume"
+  },
+  "SG_CSV0000000000001944.csv": {
+    "__table__": "Monthly wage percentiles for various occupations"
+  },
+  "SG_CSV0000000000001945.csv": {
+    "__table__": "Monthly wage percentiles for various occupations by establishment size"
+  },
+  "SG_CSV0000000000001946.csv": {
+    "__table__": "Monthly wage percentiles for various occupations"
+  },
+  "SG_CSV0000000000001947.csv": {
+    "__table__": "Monthly wage percentiles for various occupations by establishment size"
+  },
+  "SG_CSV0000000000001948.csv": {
+    "__table__": "Occupational wage statistics by age group"
+  },
+  "SG_CSV0000000000001949.csv": {
+    "__table__": "Monthly wage percentiles for various occupations by establishment size and age group"
+  },
+  "SG_CSV0000000000001950.csv": {
+    "__table__": "Monthly wage percentiles for various occupations"
+  },
+  "SG_CSV0000000000001951.csv": {
+    "__table__": "Monthly wage percentiles for various occupations and industries"
+  },
+  "SG_CSV0000000000001952.csv": {
+    "__table__": "Monthly wage percentiles for various occupations and industries"
+  },
+  "SG_CSV0000000000001953.csv": {
+    "__table__": "Waste disposal and recycling statistics by year"
+  },
+  "SG_CSV0000000000001954.csv": {
+    "__table__": "Web presence by year and employment size"
+  },
+  "SG_CSV0000000000001955.csv": {
+    "__table__": "Epidemiological data on disease cases by week"
+  },
+  "SG_CSV0000000000001956.csv": {
+    "__table__": "Dengue and DHF cases by year and epidemiological week"
+  },
+  "SG_CSV0000000000001957.csv": {
+    "__table__": "Media consumption habits by age group and year"
+  },
+  "SG_CSV0000000000001958.csv": {
+    "__table__": "Media consumption habits by age group and year"
+  },
+  "SG_CSV0000000000001959.csv": {
+    "__table__": "Wet bulb temperature measurements"
+  },
+  "SG_CSV0000000000001961.csv": {
+    "__table__": "Annual labor force adjustments including redundancies, retrenchments, and early contract releases"
+  },
+  "SG_CSV0000000000001962.csv": {
+    "__table__": "Monthly service level by connection type"
+  },
+  "SG_CSV0000000000001963.csv": {
+    "__table__": "Prevalence of staff by year and number of staff"
+  },
+  "SG_CSV0000000000001964.csv": {
+    "__table__": "Visitor days by region, country, and year"
+  },
+  "SG_CSV0000000000001965.csv": {
+    "__table__": "Quarterly average monthly earnings by sex"
+  },
+  "SG_CSV0000000000001966.csv": {
+    "__table__": "Average monthly earnings by year and sex"
+  },
+  "SG_CSV0000000000001975.csv": {
+    "__table__": "Yearly enrolment by academic programme"
+  },
+  "SG_CSV0000000000001977.csv": {
+    "__table__": "Duties and taxes collection by category and year"
+  },
+  "SG_CSV0000000000001978.csv": {
+    "__table__": "Annual fund raising and disbursement amounts"
+  },
+  "SG_CSV0000000000001979.csv": {
+    "__table__": "Number of funded programs and beneficiaries per year"
+  },
+  "SG_CSV0000000000001981.csv": {
+    "__table__": "Youth court referrals by age and year"
+  },
+  "SG_CSV0000000000001982.csv": {
+    "__table__": "Youth court referrals by year and gender"
+  },
+  "SG_CSV0000000000004188__00.csv": {
+    "__table__": "Survey responses on bans and social network usage in Singapore"
+  },
+  "SG_CSV0000000000007433__90.csv": {
+    "__table__": "Japanese social and educational restrictions survey"
+  },
+  "SG_CSV0000000000009485__30.csv": {
+    "__table__": "Demographic and financial data of individuals in Singapore"
+  }
+}
