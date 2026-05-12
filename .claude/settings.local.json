@@ -1,6 +1,10 @@
 {
   "permissions": {
-    "allow": []
+    "allow": [
+      "Bash(python:*)",
+      "Bash(ls:*)",
+      "Bash(dir:*)"
+    ]
   },
   "enabledPlugins": {
     "academic-research-skills@academic-research-skills": true

@@ -69,6 +69,9 @@ def parse_args():
                         help='Early Stopping 的容忍 epoch 数（0 表示关闭，默认 8）')
     parser.add_argument('--embedding_model', type=str, default=None,
                         help='生成 embedding 所用的模型名称（记录到 results.json）')
+    parser.add_argument('--head_type', type=str, default='residual_mlp',
+                        choices=['linear', 'mlp_1layer', 'mlp_2layer', 'residual_mlp'],
+                        help='分类头类型（消融实验用，默认 residual_mlp 即 ImprovedCTAClassifier）')
     return parser.parse_args()
 
 
@@ -103,6 +106,7 @@ def get_config(args=None):
         'mixup_alpha': args.mixup_alpha,
         'patience': args.patience,
         'embedding_model': args.embedding_model,
+        'head_type': args.head_type,
     }
     return config
 
@@ -252,6 +256,47 @@ class ImprovedCTAClassifier(nn.Module):
 
 # 保留旧名以兼容已有代码
 SimpleMLP = ImprovedCTAClassifier
+
+
+def create_classifier(head_type, input_dim, hidden_dim, num_classes, dropout_rate, num_residual_blocks):
+    """分类头工厂函数 — 根据 head_type 返回不同结构的分类器（消融实验用）
+
+    Args:
+        head_type: 'linear' | 'mlp_1layer' | 'mlp_2layer' | 'residual_mlp'
+        input_dim: 输入 embedding 维度
+        hidden_dim: 隐藏层维度
+        num_classes: 类别数
+        dropout_rate: Dropout 比率
+        num_residual_blocks: 残差块数量（仅 residual_mlp 使用）
+    """
+    if head_type == 'linear':
+        return nn.Linear(input_dim, num_classes)
+    elif head_type == 'mlp_1layer':
+        return nn.Sequential(
+            nn.Linear(input_dim, hidden_dim),
+            nn.GELU(),
+            nn.Dropout(dropout_rate),
+            nn.Linear(hidden_dim, num_classes),
+        )
+    elif head_type == 'mlp_2layer':
+        return nn.Sequential(
+            nn.Linear(input_dim, hidden_dim),
+            nn.LayerNorm(hidden_dim),
+            nn.GELU(),
+            nn.Dropout(dropout_rate),
+            nn.Linear(hidden_dim, hidden_dim // 2),
+            nn.GELU(),
+            nn.Dropout(dropout_rate / 2),
+            nn.Linear(hidden_dim // 2, num_classes),
+        )
+    else:  # residual_mlp（默认）
+        return ImprovedCTAClassifier(
+            input_dim=input_dim,
+            hidden_dim=hidden_dim,
+            num_classes=num_classes,
+            dropout_rate=dropout_rate,
+            num_residual_blocks=num_residual_blocks,
+        )
 
 
 class FocalLoss(nn.Module):
@@ -526,7 +571,8 @@ def main():
             val_dataset, batch_size=CONFIG['batch_size'], shuffle=False)
 
         # --- 初始化模型 ---
-        model = ImprovedCTAClassifier(
+        model = create_classifier(
+            head_type=CONFIG['head_type'],
             input_dim=CONFIG['input_dim'],
             hidden_dim=CONFIG['hidden_dim'],
             num_classes=CONFIG['num_classes'],
@@ -633,7 +679,8 @@ def main():
 
         # 加载最佳模型用于测试
         if best_model_state is not None:
-            best_model = ImprovedCTAClassifier(
+            best_model = create_classifier(
+                head_type=CONFIG['head_type'],
                 input_dim=CONFIG['input_dim'],
                 hidden_dim=CONFIG['hidden_dim'],
                 num_classes=CONFIG['num_classes'],

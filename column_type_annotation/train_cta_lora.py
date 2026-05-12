@@ -317,8 +317,40 @@ def setup_model(model_path: str, num_classes: int, lora_r: int, lora_alpha: int,
 
 
 def tokenize_prefix(tokenizer, table_name: str, headers: List[str],
-                    data: List[List[str]], n_rows: int, max_length: int) -> torch.Tensor:
-    table_md = serialize_table(headers, data, n_rows)
+                    data: List[List[str]], n_rows: int, max_length: int,
+                    ablation: Optional[str] = None,
+                    target_col_idx: Optional[int] = None) -> torch.Tensor:
+    """构建 prefix 的 token ids。
+
+    Args:
+        ablation: 消融变体。None=完整, no_prefix=仅 system prompt,
+                  single_column=只含目标列, shuffle_columns=打乱列顺序
+        target_col_idx: ablation='single_column' 时，仅序列化该列
+    """
+    if ablation == "no_prefix":
+        # 只保留 system prompt，不含表格内容
+        messages = [{"role": "system", "content": SYSTEM_PROMPT}]
+        input_ids = tokenizer.apply_chat_template(
+            messages, tokenize=True, add_generation_prompt=True, return_tensors="pt"
+        )
+        return input_ids
+
+    # 根据消融变体调整 headers 和 data
+    cur_headers = headers
+    cur_data = data
+
+    if ablation == "single_column" and target_col_idx is not None:
+        # 只保留目标列
+        cur_headers = [headers[target_col_idx]]
+        cur_data = [[row[target_col_idx]] for row in data]
+    elif ablation == "shuffle_columns":
+        # 打乱列顺序（固定种子保证可复现）
+        indices = list(range(len(headers)))
+        random.Random(42).shuffle(indices)
+        cur_headers = [headers[i] for i in indices]
+        cur_data = [[row[i] if i < len(row) else "" for i in indices] for row in data]
+
+    table_md = serialize_table(cur_headers, cur_data, n_rows)
     user_text = f"Table name: {table_name}\n{table_md}"
     messages = [
         {"role": "system", "content": SYSTEM_PROMPT},
@@ -363,8 +395,14 @@ def expand_kv_cache(kv_cache, num_cols: int):
 
 
 def process_table(model, tokenizer, classifier, device,
-                  table_info, col_labels, sample_rows, max_prefix_length):
-    """处理一张表：prefix no_grad → suffix with grad → logits + hidden states"""
+                  table_info, col_labels, sample_rows, max_prefix_length,
+                  ablation=None):
+    """处理一张表：prefix no_grad → suffix with grad → logits + hidden states
+
+    Args:
+        ablation: 消融变体。None/no_prefix/shuffle_columns 共享 prefix，
+                  single_column 需要为每列构建独立 prefix。
+    """
     table_name = table_info['name']
     headers = table_info['headers']
     data = table_info['data']
@@ -381,9 +419,56 @@ def process_table(model, tokenizer, classifier, device,
     labels = torch.tensor(labels, dtype=torch.long, device=device)
     num_cols = len(col_names)
 
-    # Step 1: Prefix no_grad
-    prefix_ids = tokenize_prefix(tokenizer, table_name, headers, data,
-                                 sample_rows, max_prefix_length).to(device)
+    # ------ single_column 变体: 每列独立 prefix，无法共享 KV-cache ------
+    if ablation == "single_column":
+        all_logits = []
+        all_hiddens = []
+        for i, (col_idx, _) in enumerate(valid_cols):
+            # 为该列单独构建 prefix
+            prefix_ids = tokenize_prefix(
+                tokenizer, table_name, headers, data,
+                sample_rows, max_prefix_length,
+                ablation="single_column", target_col_idx=col_idx,
+            ).to(device)
+
+            with torch.no_grad():
+                prefix_out = model(input_ids=prefix_ids, use_cache=True)
+                kv_cache = prefix_out.past_key_values
+                del prefix_out
+
+            # 该列的 suffix
+            vals_i = col_values[i]
+            name_i = col_names[i]
+            suffix_ids, suffix_mask = tokenize_suffixes_batch(
+                tokenizer, [name_i], [vals_i]
+            )
+            suffix_ids = suffix_ids.to(device)
+            suffix_mask = suffix_mask.to(device)
+
+            batch_kv = expand_kv_cache(kv_cache, 1)
+            del kv_cache
+
+            out = model(input_ids=suffix_ids, attention_mask=suffix_mask,
+                        past_key_values=batch_kv, output_hidden_states=True)
+            last_pos = suffix_mask.sum(dim=1) - 1
+            hidden = out.hidden_states[-1][0, last_pos[0]]
+            logit = classifier(hidden.float().unsqueeze(0))
+
+            all_logits.append(logit)
+            all_hiddens.append(hidden)
+            del out, batch_kv
+
+        logits = torch.cat(all_logits, dim=0)
+        hidden = torch.stack(all_hiddens, dim=0)
+        torch.cuda.empty_cache()
+        return logits, labels, hidden
+
+    # ------ 其他变体: 共享 prefix + batch suffix ------
+    prefix_ids = tokenize_prefix(
+        tokenizer, table_name, headers, data,
+        sample_rows, max_prefix_length,
+        ablation=ablation,
+    ).to(device)
     with torch.no_grad():
         prefix_out = model(input_ids=prefix_ids, use_cache=True)
         kv_cache = prefix_out.past_key_values
@@ -419,7 +504,8 @@ def train_one_fold(model, tokenizer, classifier, optimizer, scheduler,
                    train_dataset, val_dataset,
                    num_epochs, grad_accum_steps, patience,
                    device, sample_rows, max_prefix_length,
-                   fold_idx, result_dir, save_model):
+                   fold_idx, result_dir, save_model,
+                   ablation=None):
     """训练单个 fold"""
     best_f1 = -1.0
     best_state = None
@@ -445,7 +531,8 @@ def train_one_fold(model, tokenizer, classifier, optimizer, scheduler,
             table_id, col_labels, table_info = item
             logits, labels, hidden = process_table(
                 model, tokenizer, classifier, device,
-                table_info, col_labels, sample_rows, max_prefix_length
+                table_info, col_labels, sample_rows, max_prefix_length,
+                ablation=ablation,
             )
             if logits is None:
                 continue
@@ -478,7 +565,8 @@ def train_one_fold(model, tokenizer, classifier, optimizer, scheduler,
 
         # --- Validate ---
         val_metrics = evaluate(model, tokenizer, classifier, val_dataset,
-                               criterion, device, sample_rows, max_prefix_length)
+                               criterion, device, sample_rows, max_prefix_length,
+                               ablation=ablation)
         val_acc = val_metrics['accuracy']
         val_macro_f1 = val_metrics['macro_f1']
         val_micro_f1 = val_metrics['micro_f1']
@@ -513,7 +601,7 @@ def train_one_fold(model, tokenizer, classifier, optimizer, scheduler,
 
 @torch.no_grad()
 def evaluate(model, tokenizer, classifier, dataset, criterion,
-             device, sample_rows, max_prefix_length):
+             device, sample_rows, max_prefix_length, ablation=None):
     """评估"""
     model.eval()
     classifier.eval()
@@ -531,7 +619,8 @@ def evaluate(model, tokenizer, classifier, dataset, criterion,
         table_id, col_labels, table_info = item
         logits, labels, _ = process_table(
             model, tokenizer, classifier, device,
-            table_info, col_labels, sample_rows, max_prefix_length
+            table_info, col_labels, sample_rows, max_prefix_length,
+            ablation=ablation,
         )
         if logits is None:
             continue
@@ -665,6 +754,13 @@ def parse_args():
     parser.add_argument("--save_model", action="store_true")
     parser.add_argument("--seed", type=int, default=42)
 
+    # 消融实验
+    parser.add_argument("--ablation", type=str, default=None,
+                        choices=["no_prefix", "single_column", "shuffle_columns", "no_profile"],
+                        help="消融实验变体（默认 None = 完整模型）")
+    parser.add_argument("--no_contrastive", action="store_true", default=False,
+                        help="关闭对比学习 loss（消融实验用）")
+
     # GPU
     parser.add_argument("--gpu_id", type=int, default=None)
 
@@ -693,6 +789,10 @@ def main():
     print(f"  Epochs:       {args.num_epochs}")
     print(f"  Grad accum:   {args.grad_accum_steps}")
     print(f"  Contrastive:  weight={args.contrastive_weight}, T={args.contrastive_temperature}")
+    if args.ablation:
+        print(f"  Ablation:     {args.ablation}")
+    if args.no_contrastive:
+        print(f"  No contrastive loss (消融实验)")
     print("=" * 60)
 
     os.makedirs(args.result_dir, exist_ok=True)
@@ -768,13 +868,15 @@ def main():
         )
 
         # Train
+        contrastive_w = 0.0 if args.no_contrastive else args.contrastive_weight
         best_state, best_f1 = train_one_fold(
             model, tokenizer, classifier, optimizer, scheduler,
-            criterion, con_criterion, args.contrastive_weight,
+            criterion, con_criterion, contrastive_w,
             train_dataset, val_dataset,
             args.num_epochs, args.grad_accum_steps, args.patience,
             model.device, args.sample_rows, args.max_prefix_length,
             fold_idx, args.result_dir, args.save_model,
+            ablation=args.ablation,
         )
 
         all_best_states.append(best_state)

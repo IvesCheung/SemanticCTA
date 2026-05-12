@@ -179,6 +179,46 @@ Key method (Section 3 of paper):
 
 Backbone: Qwen2.5-7B-Instruct. Benchmarks: GitTablesSC, GitTables, SOTAB-CTA, VizNet.
 
+## Paper Writing — Anti-AI-Style Checklist
+
+The following rules are distilled from real reviewer feedback (COLM/EMNLP/NeurIPS) on LLM-generated papers. **Every section of the paper must be checked against this list before submission.**
+
+### Method Section — Formulas
+- **Do NOT give every short sentence its own numbered equation.** Merge related definitions; inline trivial notation into prose (e.g., concatenations, single operations, standard losses like CE).
+- Target: ≤ 8–10 numbered equations across the entire method, not 20+.
+- Before writing a numbered equation, ask: *Does this equation introduce non-trivial notation that will be referenced later?* If not, inline it.
+- Standard building blocks (CE loss, L2-norm, softmax, stop-gradient) should appear as inline math, not as separate numbered equations.
+
+### Method Section — Prose & Structure
+- **No bullet lists** in method text. Use connected paragraphs with transitional phrases ("First …; then …; finally …").
+- **No pseudocode blocks** unless the algorithm is genuinely complex and non-obvious from the text.
+- **No baseline comparisons** in the method section. Save all empirical comparisons for experiments.
+- **Do NOT shift focus** from high-level motivation to a minor implementation detail mid-paragraph.
+
+### Notation & Naming
+- **Every symbol must be introduced** with a "let … denote" or "where … is …" before first use. No orphan symbols.
+- Module / component names should be **short and consistent**. Do NOT define a long name, abbreviate it, then use both forms interchangeably.
+- **Do NOT overuse bold** (\textbf). Reserve it for the model name on first use; thereafter use plain text.
+
+### Language — Avoid These AI Telltales
+- **Semicolons (`;`) and em-dashes (`—`)**: limit to ≤ 1 per paragraph. Replace with periods or commas.
+- **"Therefore" mid-sentence**: move to the beginning or rephrase.
+- **Flashy adverbs**: delete "elegantly", "seamlessly", "theoretically", "notably", "interestingly" anywhere they appear.
+- **Overclaiming modifiers**: do not repeat the paper's selling point as an adjective in every paragraph (e.g., do not say "our unified description-generation representation" five times).
+- **"To further …" / "To this end …"**: use sparingly; often the sentence reads better without them.
+
+### Intro & Abstract
+- The intro must have **≥ 3 paragraphs** with a natural motivation arc (problem → gap → idea → contributions). A 1–2 paragraph intro with stiff motivation is an instant AI red flag.
+- Contributions should be **concrete and incremental**, not grandiose ("we propose a novel framework that elegantly unifies …").
+
+### Appendix
+- Do NOT treat the appendix as a dumping ground. **Every appendix section must be referenced from the main text.**
+- Avoid excessive bullet lists, bold, and redundant tables in the appendix.
+
+### Figure & Table Style
+- Figures should be **readable at a glance**: large fonts (≥ 11 pt), clear labels, no overlapping text.
+- No unnecessary decoration or visual clutter.
+
 ## Conventions
 
 - All scripts use `argparse` CLI with Chinese-language comments and help text

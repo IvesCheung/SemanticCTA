@@ -306,7 +306,10 @@ class LLMHiddenStateEncoder:
         data: List[List[str]],
         n_rows: int = 5,
         profile: Optional[dict] = None,
-    ) -> torch.Tensor:
+        skip_prefix: bool = False,
+        use_cache: bool = True,
+        save_attention: bool = False,
+    ) -> Tuple[torch.Tensor, Optional[dict]]:
         """
         为一张表的所有列生成 embedding。
 
@@ -316,12 +319,104 @@ class LLMHiddenStateEncoder:
             data: 表格数据 (2D list)
             n_rows: 序列化行数
             profile: 可选 profiling 数据
+            skip_prefix: 跳过 table prefix，仅用 suffix 独立前向（消融实验）
+            use_cache: 是否使用 KV-cache 复用（效率对比时设为 False）
+            save_attention: 是否保存 attention 权重
 
         Returns:
-            tensor(num_cols, hidden_dim) — float32
+            (tensor(num_cols, hidden_dim), attention_dict or None)
         """
+        attention_data = None  # type: Optional[dict]
         device = self.device
         num_cols = len(headers)
+
+        # ------ 提取每列的采样值（所有模式共用） ------
+        col_values_list = []
+        for col_idx in range(num_cols):
+            vals = [str(row[col_idx]) for row in data[:n_rows] if col_idx < len(row)]
+            col_values_list.append(vals)
+
+        # ------ 模式 A: skip_prefix —— 不构建 prefix，每列独立完整序列 ------
+        if skip_prefix:
+            result_parts = []
+            for col_idx in range(num_cols):
+                name = headers[col_idx]
+                vals = col_values_list[col_idx]
+                values_str = ", ".join(str(v) for v in vals) if vals else "(empty)"
+                suffix_text = SUFFIX_TEMPLATE.format(col_name=name, col_values=values_str)
+                messages = [
+                    {"role": "system", "content": SYSTEM_PROMPT},
+                    {"role": "user", "content": suffix_text},
+                ]
+                input_ids = self.tokenizer.apply_chat_template(
+                    messages,
+                    tokenize=True,
+                    add_generation_prompt=True,
+                    return_tensors="pt",
+                ).to(device)
+
+                out = self.model(input_ids=input_ids, output_hidden_states=True)
+                last_pos = input_ids.shape[-1] - 1
+
+                col_reprs = []
+                for abs_layer_idx in self._abs_layers:
+                    h = out.hidden_states[abs_layer_idx]  # (1, seq_len, dim)
+                    col_reprs.append(h[0, last_pos])
+
+                if len(col_reprs) == 1:
+                    col_repr = col_reprs[0]
+                else:
+                    col_repr = torch.stack(col_reprs, dim=0).mean(dim=0)
+                result_parts.append(col_repr)
+                del out
+
+            result = torch.stack(result_parts, dim=0)
+            result = torch.nn.functional.normalize(result, p=2, dim=-1)
+            return result.float().cpu(), attention_data
+
+        # ------ 模式 B: no_cache —— 有 prefix 但不复用 KV-cache ------
+        if not use_cache:
+            prefix_text = self._build_prefix_text(table_name, headers, data, n_rows, profile)
+            result_parts = []
+
+            for col_idx in range(num_cols):
+                name = headers[col_idx]
+                vals = col_values_list[col_idx]
+                values_str = ", ".join(str(v) for v in vals) if vals else "(empty)"
+                suffix_text = SUFFIX_TEMPLATE.format(col_name=name, col_values=values_str)
+                # 拼接完整序列: prefix + suffix
+                full_user_text = prefix_text + "\n" + suffix_text
+                messages = [
+                    {"role": "system", "content": SYSTEM_PROMPT},
+                    {"role": "user", "content": full_user_text},
+                ]
+                input_ids = self.tokenizer.apply_chat_template(
+                    messages,
+                    tokenize=True,
+                    add_generation_prompt=True,
+                    return_tensors="pt",
+                ).to(device)
+
+                out = self.model(input_ids=input_ids, output_hidden_states=True)
+                last_pos = input_ids.shape[-1] - 1
+
+                col_reprs = []
+                for abs_layer_idx in self._abs_layers:
+                    h = out.hidden_states[abs_layer_idx]
+                    col_reprs.append(h[0, last_pos])
+
+                if len(col_reprs) == 1:
+                    col_repr = col_reprs[0]
+                else:
+                    col_repr = torch.stack(col_reprs, dim=0).mean(dim=0)
+                result_parts.append(col_repr)
+                del out
+
+            result = torch.stack(result_parts, dim=0)
+            result = torch.nn.functional.normalize(result, p=2, dim=-1)
+            return result.float().cpu(), attention_data
+
+        # ------ 模式 C: 默认 cached —— 原有 prefix KV-cache 逻辑 ------
 
         # Step 1: 构建 & tokenize prefix
         prefix_text = self._build_prefix_text(table_name, headers, data, n_rows, profile)
@@ -364,6 +459,7 @@ class LLMHiddenStateEncoder:
             attention_mask=suffix_mask,
             past_key_values=batch_kv_cache,
             output_hidden_states=True,
+            output_attentions=save_attention,
         )
 
         # 3e. 提取每个序列最后一个有效 token 的隐藏状态
@@ -387,6 +483,28 @@ class LLMHiddenStateEncoder:
         # L2 归一化：统一向量尺度，避免数值范围差异干扰分类器
         result = torch.nn.functional.normalize(result, p=2, dim=-1)
 
+        # 提取 attention 权重（如果启用）
+        if save_attention and hasattr(out, 'attentions') and out.attentions is not None:
+            attention_data = {}
+            # 只保存指定层的 attention（取 _abs_layers 中第一个，即主要提取层）
+            target_layer_idx = self._abs_layers[0]
+            # out.attentions 是 tuple: (num_layers,), each (batch, heads, suffix_len, total_len)
+            # 注意: total_len = prefix_len + suffix_len
+            attn_weights = out.attentions[target_layer_idx]  # (num_cols, heads, suffix_len, total_len)
+            # 取每列最后一个 token 对所有 prefix token 的 attention
+            attn_last = attn_weights[torch.arange(num_cols, device=device), :, last_token_positions]
+            # attn_last: (num_cols, heads, total_len)
+            # 平均所有 head
+            attn_avg = attn_last.mean(dim=1).cpu().float()  # (num_cols, total_len)
+            # 只保留 prefix 部分（去掉 suffix self-attention）
+            prefix_len = prefix_ids.shape[-1]
+            attn_to_prefix = attn_avg[:, :prefix_len]  # (num_cols, prefix_len)
+            attention_data = {
+                'attn_weights': attn_to_prefix,  # (num_cols, prefix_len)
+                'prefix_token_count': prefix_len,
+                'col_names': headers,
+            }
+
         # Step 4: 清理释放显存
         del batch_kv_cache, out, col_reprs
         # 多 GPU 时清理所有可见 GPU 的 cache
@@ -394,7 +512,7 @@ class LLMHiddenStateEncoder:
             with torch.cuda.device(gpu_idx):
                 torch.cuda.empty_cache()
 
-        return result.float().cpu()  # (num_cols, hidden_dim)
+        return result.float().cpu(), attention_data  # (num_cols, hidden_dim), attention_dict
 
 
 # ---------------------------------------------------------------------------
@@ -439,6 +557,16 @@ def parse_args():
                              "例: -1,-4,-8,-12 取4层做 mean pooling)")
     parser.add_argument("--gpu_id", type=int, default=None,
                         help="指定 GPU ID (默认 auto)")
+
+    # 消融 / 效率对比选项
+    parser.add_argument("--no_prefix", action="store_true", default=False,
+                        help="跳过 table prefix，每列 suffix 作为独立完整序列前向传播（消融实验 D4）")
+    parser.add_argument("--no_cache", action="store_true", default=False,
+                        help="禁用 KV-cache 复用，每列独立完整前向传播（效率对比实验）")
+    parser.add_argument("--save_attention", action="store_true", default=False,
+                        help="保存 attention 权重到文件（可视化用）")
+    parser.add_argument("--attention_output_path", type=str, default=None,
+                        help="attention 权重输出路径（配合 --save_attention 使用）")
 
     return parser.parse_args()
 
@@ -563,9 +691,18 @@ def generate_embeddings(
     profilling_path: Optional[str] = None,
     require_profile: bool = True,
     fold_dir: Optional[str] = None,
-) -> Dict[str, torch.Tensor]:
-    """为所有表生成 embedding"""
+    skip_prefix: bool = False,
+    use_cache: bool = True,
+    save_attention: bool = False,
+) -> Tuple[Dict[str, torch.Tensor], Dict[str, dict]]:
+    """为所有表生成 embedding
+
+    Returns:
+        (embeddings_map, attention_map)
+        attention_map 仅在 save_attention=True 时非空
+    """
     embeddings_map = {}
+    attention_map = {}
     missing_tables = []
     error_tables = []
 
@@ -594,15 +731,20 @@ def generate_embeddings(
 
             # 生成列 embedding
             table_name = get_basename(table_path)
-            col_embeddings = encoder.encode_table(
+            col_embeddings, attn_data = encoder.encode_table(
                 table_name=table_name,
                 headers=headers,
                 data=data,
                 n_rows=sample_rows,
                 profile=profile,
+                skip_prefix=skip_prefix,
+                use_cache=use_cache,
+                save_attention=save_attention,
             )
 
             embeddings_map[table_id] = col_embeddings
+            if attn_data is not None:
+                attention_map[table_id] = attn_data
 
         except Exception as e:
             error_tables.append((table_id, str(e)))
@@ -668,7 +810,7 @@ def generate_embeddings(
     elif error_tables:
         print(f"\nFirst 5 error tables: {error_tables[:5]}")
 
-    return embeddings_map
+    return embeddings_map, attention_map
 
 
 def main():
@@ -688,6 +830,9 @@ def main():
     print(f"Layers:           {layers}")
     print(f"Profiling:        {args.profilling_path or '(none)'}")
     print(f"Require profile:  {args.require_profile}")
+    print(f"No prefix:        {args.no_prefix}")
+    print(f"No cache:         {args.no_cache}")
+    print(f"Save attention:   {args.save_attention}")
     if args.gpu_id is not None:
         print(f"GPU ID:           {args.gpu_id}")
     print("=" * 60)
@@ -711,7 +856,7 @@ def main():
 
     # 3. 生成 embedding
     print("\n[Step 3] Generating embeddings...")
-    embeddings_map = generate_embeddings(
+    embeddings_map, attention_map = generate_embeddings(
         table_ids=table_ids,
         table_dir=args.table_dir,
         encoder=encoder,
@@ -720,6 +865,9 @@ def main():
         profilling_path=args.profilling_path,
         require_profile=args.require_profile,
         fold_dir=args.fold_dir,
+        skip_prefix=args.no_prefix,
+        use_cache=not args.no_cache,
+        save_attention=args.save_attention,
     )
 
     # 4. 保存
@@ -732,6 +880,16 @@ def main():
 
     print(f"Embeddings saved to: {args.output_path}")
     print(f"Total tables: {len(embeddings_map)}")
+
+    # 5. 保存 attention 权重（如果启用）
+    if args.save_attention and attention_map:
+        attn_path = args.attention_output_path
+        if attn_path is None:
+            attn_path = args.output_path.replace(".pkl", "_attention.pkl")
+        with open(attn_path, "wb") as f:
+            pickle.dump(attention_map, f)
+        print(f"Attention weights saved to: {attn_path}")
+        print(f"Total tables with attention: {len(attention_map)}")
 
     if embeddings_map:
         sample_id = list(embeddings_map.keys())[0]
